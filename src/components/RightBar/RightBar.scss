@@ -1,0 +1,136 @@
+.rightBar {
+  width: 385px;
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+.profile {
+  margin: 0;
+  padding: 15px 15px 10px 15px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 66px auto;
+  grid-template-areas: 
+    "avatar name"
+    "avatar medals"
+  ;
+
+  &__avatar {
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    grid-area: avatar;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-size: 18px;
+    grid-area: name;
+  }
+
+  &__medal-list {
+    margin: 0;
+    padding: 4px;
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+    list-style-type: none;
+    grid-area: medals;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+}
+
+.experience {
+  margin: 0;
+  padding: 0 15px 0 15px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 66px auto;
+  grid-template-areas: 
+    "logo title"
+    "logo progress"
+  ;
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    grid-area: logo;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 10px 0 0 10px;
+    width: 100%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-end;
+    color: white;
+    font-size: 17px;
+    grid-area: title;
+  }
+
+  &__progress {
+    margin: 0 0 0 15px;
+    padding: 0;
+    height: 20px;
+    width: 255px;
+    grid-area: progress;
+  }
+
+}
+
+.rank {
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 33px;
+  }
+
+  &__title {
+    margin: 0 0 0 18px;
+    padding: 0;
+    display: flex;
+    color: white;
+    font-size: 16px;
+  }
+
+  &__arrow {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    width: 14px;
+    height: 8px;
+  }
+
+
+}
