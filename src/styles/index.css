@@ -1,10 +1,10 @@
 @import "../vendor/fonts/fonts.css";
 @import "../vendor/normalize.css";
 .page {
-  min-width: 320px;
-  max-width: 1280px;
-  margin: 0 auto;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,7 @@
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   overflow: hidden;
+  position: relative;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -20,3 +21,59 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
+.menu {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftBar {
+  width: 95px;
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.leftBar__list {
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  list-style-type: none;
+}
+.leftBar__item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 95px;
+}
+.leftBar__item:nth-of-type(1) {
+  padding-bottom: 2px;
+}
+.leftBar__item:nth-of-type(3) {
+  padding-bottom: 2px;
+}
+.leftBar__item:last-of-type {
+  margin-top: auto;
+}
+.leftBar__icon {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.leftBar__icon:hover {
+  filter: brightness(20%);
+}
+
+/*# sourceMappingURL=index.css.map */
