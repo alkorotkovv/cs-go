@@ -192,7 +192,7 @@
   &__item {
     margin: 0;
     padding: 10px 0 6px 0;
-    border-left: 9px solid transparent;
+    border-left: 6px solid transparent;
     box-sizing: content-box;
     display: grid;
     grid-template-columns: 77px auto;
@@ -204,13 +204,13 @@
 
     &:hover {
       cursor: default;
-      border-left: 9px solid white;
+      border-left: 6px solid white;
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     }
   }
 
   &__avatar {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 18px;
     padding: 0;
     grid-area: avatar;
     border-left: 5px solid #30779D;
