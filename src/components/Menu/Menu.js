@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import menuLogo from '../../images/background_big_big.jpg';
+import menuLogo from '../../images/background.jpg';
 
 function Menu(props) {
 
