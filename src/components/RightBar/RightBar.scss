@@ -68,35 +68,31 @@
   &__medals {
     margin: 0;
     padding: 0;
+    height: 48px;
     display: flex;
     align-items: center;
   }
 
   &__arrows {
     margin: 0;
+    margin-left: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     list-style-type: none;
   }
 
-  &__medal-list {
-    margin: 0;
-    padding: 4px;
-    display: flex;
-    gap: 12px;
-    justify-content: start;
-    list-style-type: none;
-    grid-area: medals;
-  }
-
-  &__logo {
+  &__arrow {
     margin: 0;
     padding: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
+    opacity: 0.5;
+    
+    &_active {
+      opacity: 1;
+    }
   }
+
+
 }
 
 .experience {

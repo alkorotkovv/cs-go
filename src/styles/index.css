@@ -141,31 +141,25 @@
 .profile__medals {
   margin: 0;
   padding: 0;
+  height: 48px;
   display: flex;
   align-items: center;
 }
 .profile__arrows {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   list-style-type: none;
 }
-.profile__medal-list {
-  margin: 0;
-  padding: 4px;
-  display: flex;
-  gap: 12px;
-  justify-content: start;
-  list-style-type: none;
-  grid-area: medals;
-}
-.profile__logo {
+.profile__arrow {
   margin: 0;
   padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
+  opacity: 0.5;
+}
+.profile__arrow_active {
+  opacity: 1;
 }
 
 .experience {
@@ -402,6 +396,23 @@
   color: lightgray;
   text-shadow: 1px 1px darkgrey;
   grid-area: status;
+}
+
+.medal-list {
+  margin: 0;
+  padding: 4px;
+  display: flex;
+  gap: 12px;
+  justify-content: start;
+  list-style-type: none;
+  grid-area: medals;
+}
+.medal-list__logo {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */

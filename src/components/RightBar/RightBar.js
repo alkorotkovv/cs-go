@@ -3,7 +3,8 @@ import { Route, Switch, useHistory } from 'react-router-dom';
 
 import Friends from '../Friends/Friends';
 
-import { friendsArray } from '../../utils/constants';
+import { medalsArray } from '../../utils/constants';
+
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
 import rankLogo from '../../images/rankLogo.png';
@@ -20,11 +21,13 @@ import friendsLogo from '../../images/friends.png';
 import searchLogo from '../../images/search.png';
 import lastLogo from '../../images/last.png';
 import messageLogo from '../../images/message.png';
+import Medals from '../Medals/Medals';
 
 
 function RightBar() {
   
   const [isRankVisible, setIsRankVisible] = React.useState(false);
+  const [countMedalsBlock, setCountMedalsBlock] = React.useState(0);
 
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
@@ -36,10 +39,14 @@ function RightBar() {
 
   function handleArrLeftClick() {
     console.log("fhhfhfhf");
+    if (countMedalsBlock > 0)
+      setCountMedalsBlock(countMedalsBlock - 1);
   }
 
   function handleArrRightClick() {
     console.log("fhhfhfhf");
+    if (countMedalsBlock < Math.floor(medalsArray.length/5))
+      setCountMedalsBlock(countMedalsBlock + 1);
   }
 
   return (
@@ -49,16 +56,10 @@ function RightBar() {
           <img className='profile__avatar' src={avatar} alt="csgo"></img>
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
           <div className='profile__medals'>
-            <ul className='profile__medal-list'>
-              <li className='profile__medal'><img className='profile__logo' src={brokenFang} alt="медаль1"/></li>
-              <li className='profile__medal'><img className='profile__logo' src={medal2023} alt="медаль2"/></li>
-              <li className='profile__medal'><img className='profile__logo' src={medalRio} alt="медаль3"/></li>
-              <li className='profile__medal'><img className='profile__logo' src={medalChicken} alt="медаль4"/></li>
-              <li className='profile__medal'><img className='profile__logo' src={stockholm} alt="медаль5"/></li>
-            </ul>
+            <Medals countMedalsBlock={countMedalsBlock} />
             <ul className='profile__arrows'>
-              <li className='profile__arrow'><img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/></li>
-              <li className='profile__arrow'><img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/></li>
+              <li className={"profile__arrow" + ((countMedalsBlock > 0) ? " profile__arrow_active" : "")}><img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/></li>
+              <li className={"profile__arrow" + ((countMedalsBlock < Math.floor(medalsArray.length/5)) ? " profile__arrow_active" : "")}><img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/></li>
             </ul>
           </div>
           
