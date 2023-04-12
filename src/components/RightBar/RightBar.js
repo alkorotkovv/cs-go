@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
 
 import Friends from '../Friends/Friends';
 
@@ -10,11 +9,6 @@ import experienceLogo from '../../images/experienceLogo.png';
 import rankLogo from '../../images/rankLogo.png';
 import rankOld from '../../images/rankOld.png';
 import rankZona from '../../images/rankZona.png';
-import brokenFang from '../../images/broken_fang_medal.png';
-import medal2023 from '../../images/2023.png';
-import medalRio from '../../images/rio.png';
-import medalChicken from '../../images/chicken.png';
-import stockholm from '../../images/stockholm.png';
 import arrowDown from '../../images/arr_down.png';
 
 import friendsLogo from '../../images/friends.png';
