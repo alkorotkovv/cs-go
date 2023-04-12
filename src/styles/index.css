@@ -192,8 +192,85 @@
 .rank {
   margin: 0;
   padding: 5px 10px 10px 10px;
-  display: flex;
   align-items: center;
+}
+.rank_visible {
+  display: flex;
+}
+.rank_first {
+  display: flex;
+  animation: downup1 0.4s ease-in forwards;
+}
+.rank_second {
+  display: flex;
+  animation: downup2 0.4s ease-in forwards;
+}
+.rank_first-visible {
+  display: flex;
+  visibility: visible;
+  animation: updown1 0.4s ease;
+}
+.rank_second-visible {
+  display: flex;
+  visibility: visible;
+  animation: updown2 0.4s ease-in;
+}
+@keyframes updown1 {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+@keyframes updown2 {
+  from {
+    margin-top: -40px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+@keyframes downup1 {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    visibility: hidden;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    height: 100%;
+  }
+  to {
+    visibility: hidden;
+    margin-top: -5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 0;
+  }
+}
+@keyframes downup2 {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    visibility: hidden;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    height: 100%;
+  }
+  90% {
+    height: 0;
+  }
+  to {
+    visibility: hidden;
+    margin-top: -35px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 0;
+  }
 }
 .rank__logo {
   margin: 0;
@@ -210,11 +287,14 @@
 }
 .rank__arrow {
   margin: 0;
-  padding: 0;
+  padding: 6px 2px;
   margin-left: auto;
   display: flex;
   width: 14px;
   height: 8px;
+}
+.rank__arrow_up {
+  transform: rotate(180deg);
 }
 
 .tools {

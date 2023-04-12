@@ -21,6 +21,19 @@ import friendAvatar from '../../images/friend_avatar.png';
 
 
 function RightBar() {
+
+  
+  const [isRankVisible, setIsRankVisible] = React.useState(false);
+
+  const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
+  const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
+  const rankSecondSubClassName = (`rank rank_second ${isRankVisible === true ? " rank_second-visible" :  ""}`);
+
+  function handleRankClick() {
+    console.log("fhhfhfhf")
+    setIsRankVisible(!isRankVisible);
+  }
+
   return (
     <div className="rightBar">
       <div className='rightBar__main'>
@@ -41,16 +54,16 @@ function RightBar() {
           <p className='experience__title'>Ранг: Лейтенант, 22</p>
           <progress className='experience__progress' value="30" max="100"></progress>
         </div>
-        <div className='rank'>
+        <div className='rank rank_visible'>
           <img className='rank__logo' src={rankLogo} alt="rank"></img>
           <p className='rank__title'>Легендарный беркут-магистр</p>
-          <img className='rank__arrow' src={arrowDown} alt="arrow"></img>
+          <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}></img>
         </div>
-        <div className='rank'>
+        <div className={rankFirstSubClassName}>
           <img className='rank__logo' src={rankOld} alt="rank"></img>
           <p className='rank__title'>"Напарники": звание устарело</p>
         </div>
-        <div className='rank'>
+        <div className={rankSecondSubClassName}>
           <img className='rank__logo' src={rankZona} alt="rank"></img>
           <p className='rank__title'>Лис-охотник |||</p>
         </div>
