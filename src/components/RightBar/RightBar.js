@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 
-import Friend from '../Friend/Friend';
+import Friends from '../Friends/Friends';
 
 import { friendsArray } from '../../utils/constants';
 import avatar from '../../images/avatar.png';
@@ -21,12 +21,8 @@ import searchLogo from '../../images/search.png';
 import lastLogo from '../../images/last.png';
 import messageLogo from '../../images/message.png';
 
-import friendAvatar from '../../images/friend_avatar.png';
-
 
 function RightBar() {
-
-  console.log(friendsArray[0].avatar)
   
   const [isRankVisible, setIsRankVisible] = React.useState(false);
 
@@ -35,8 +31,15 @@ function RightBar() {
   const rankSecondSubClassName = (`rank rank_second ${isRankVisible === true ? " rank_second-visible" :  ""}`);
 
   function handleRankClick() {
-    console.log("fhhfhfhf")
     setIsRankVisible(!isRankVisible);
+  }
+
+  function handleArrLeftClick() {
+    console.log("fhhfhfhf");
+  }
+
+  function handleArrRightClick() {
+    console.log("fhhfhfhf");
   }
 
   return (
@@ -45,14 +48,20 @@ function RightBar() {
         <div className='profile'>
           <img className='profile__avatar' src={avatar} alt="csgo"></img>
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
-          <ul className='profile__medal-list'>
-            <li className='profile__medal'><img className='profile__logo' src={brokenFang} alt="медаль1"/></li>
-            <li className='profile__medal'><img className='profile__logo' src={medal2023} alt="медаль2"/></li>
-            <li className='profile__medal'><img className='profile__logo' src={medalRio} alt="медаль3"/></li>
-            <li className='profile__medal'><img className='profile__logo' src={medalChicken} alt="медаль4"/></li>
-            <li className='profile__medal'><img className='profile__logo' src={stockholm} alt="медаль5"/></li>
-            <li className='profile__arrows'></li>
-          </ul>
+          <div className='profile__medals'>
+            <ul className='profile__medal-list'>
+              <li className='profile__medal'><img className='profile__logo' src={brokenFang} alt="медаль1"/></li>
+              <li className='profile__medal'><img className='profile__logo' src={medal2023} alt="медаль2"/></li>
+              <li className='profile__medal'><img className='profile__logo' src={medalRio} alt="медаль3"/></li>
+              <li className='profile__medal'><img className='profile__logo' src={medalChicken} alt="медаль4"/></li>
+              <li className='profile__medal'><img className='profile__logo' src={stockholm} alt="медаль5"/></li>
+            </ul>
+            <ul className='profile__arrows'>
+              <li className='profile__arrow'><img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/></li>
+              <li className='profile__arrow'><img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/></li>
+            </ul>
+          </div>
+          
         </div>
         <div className='experience'>
           <img className='experience__logo' src={experienceLogo} alt="csgo"></img>
@@ -62,7 +71,7 @@ function RightBar() {
         <div className='rank rank_visible'>
           <img className='rank__logo' src={rankLogo} alt="rank"></img>
           <p className='rank__title'>Легендарный беркут-магистр</p>
-          <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}></img>
+          <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}/>
         </div>
         <div className={rankFirstSubClassName}>
           <img className='rank__logo' src={rankOld} alt="rank"></img>
@@ -80,15 +89,7 @@ function RightBar() {
           <li className='tools__item'><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
           <li className='tools__item'><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
         </ul>
-        <ul className= {"friends" + (isRankVisible ? " friends_short" : "")}>
-          {
-            friendsArray.map((element, index) => 
-              <Friend 
-                key={index} 
-              />
-            )
-           }  
-        </ul>
+        <Friends isRankVisible={isRankVisible} />
 
       </div>
     </div>

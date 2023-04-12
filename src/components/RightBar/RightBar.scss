@@ -65,6 +65,21 @@
     grid-area: name;
   }
 
+  &__medals {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrows {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
   &__medal-list {
     margin: 0;
     padding: 4px;
@@ -250,6 +265,14 @@
     &_up {
       transform: rotate(180deg);
     }
+
+    &_left {
+      transform: rotate(90deg);
+    }
+
+    &_right {
+      transform: rotate(270deg);
+    }
   }
 
 
@@ -277,28 +300,4 @@
 
 }
 
-.friends {
-  margin: 0;
-  padding: 0;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-
-  &_short {
-    height: 700px;
-  }
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        /* цвет дорожки */
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    /* цвет плашки */
-    border-radius: 2px;       /* закругления плашки */
-  }
-  
-}
 

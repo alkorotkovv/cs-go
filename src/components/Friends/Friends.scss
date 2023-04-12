@@ -1,0 +1,24 @@
+.friends {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &_short {
+    height: 700px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        /* цвет дорожки */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    /* цвет плашки */
+    border-radius: 2px;       /* закругления плашки */
+  }
+  
+}
