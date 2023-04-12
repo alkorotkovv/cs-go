@@ -1,5 +1,9 @@
 import React from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
+
+import Friend from '../Friend/Friend';
+
+import { friendsArray } from '../../utils/constants';
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
 import rankLogo from '../../images/rankLogo.png';
@@ -22,6 +26,7 @@ import friendAvatar from '../../images/friend_avatar.png';
 
 function RightBar() {
 
+  console.log(friendsArray[0].avatar)
   
   const [isRankVisible, setIsRankVisible] = React.useState(false);
 
@@ -75,22 +80,14 @@ function RightBar() {
           <li className='tools__item'><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
           <li className='tools__item'><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
         </ul>
-        <ul className='friends'>
-          <li className='friends__item'>
-            <img className='friends__avatar' src={friendAvatar} alt="друг"/>
-            <p className='friends__name'>дядя Федор</p>
-            <p className='friends__status'>Играет в CS:GO</p>
-          </li>
-          <li className='friends__item'>
-            <img className='friends__avatar' src={friendAvatar} alt="друг"/>
-            <p className='friends__name'>#ЖирныйRust_Deluxe</p>
-            <p className='friends__status'>Спит</p>
-          </li>
-          <li className='friends__item'>
-            <img className='friends__avatar' src={friendAvatar} alt="друг"/>
-            <p className='friends__name'>#ЖирныйRust_Deluxe</p>
-            <p className='friends__status'>Спит</p>
-          </li>
+        <ul className= {"friends" + (isRankVisible ? " friends_short" : "")}>
+          {
+            friendsArray.map((element, index) => 
+              <Friend 
+                key={index} 
+              />
+            )
+           }  
         </ul>
 
       </div>

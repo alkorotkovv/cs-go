@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1.5;
   color: black;
   position: absolute;
   top: 0;
   left: 0;
+  backdrop-filter: blur(20px);
 
   &__list {
     height: 1080px;
