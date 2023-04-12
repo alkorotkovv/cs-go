@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import menuLogo from '../../images/background.jpg';
 
 function Menu(props) {
 
   function handleClick(evt) {
-  }
-
-  function handleClose() {
   }
 
   return (
