@@ -109,13 +109,10 @@ export const friendsArray = [
 
 //Массив медалей
 export const medalsArray = [
+  
   {
     name: "Сломанный клык",
-    logo: medalLogo
-  },
-  {
-    name: "Сломанный клык",
-    logo: medalLogo
+    logo: "../../images/broken_fang_medal.png"
   },
   {
     name: "Сломанный клык",
