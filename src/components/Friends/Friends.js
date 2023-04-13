@@ -8,7 +8,10 @@ function Friends(props) {
       {
         friendsArray.map((element, index) => 
           <Friend 
-            key={index} 
+            key={index}
+            avatar={element.avatar}
+            name={element.name}
+            status={element.status}
           />
         )
         }  

@@ -374,6 +374,9 @@
   grid-area: avatar;
   border-left: 5px solid #30779D;
 }
+.friends__avatar_play {
+  border-left: 5px solid #47A04C;
+}
 .friends__name {
   margin: 0;
   padding: 0;
