@@ -91,7 +91,6 @@
   color: black;
   position: absolute;
   top: 0;
-  right: -290px;
   background-color: rgba(0, 101, 252, 0.726);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
@@ -111,10 +110,6 @@
   display: flex;
   flex-direction: column;
 }
-.rightBar:hover {
-  right: 0;
-}
-
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
@@ -416,6 +411,12 @@
   flex-direction: column;
   overflow-y: scroll;
 }
+.friends_big {
+  height: 800px;
+}
+.friends_short {
+  height: 700px;
+}
 .friends::-webkit-scrollbar {
   width: 8px;
 }
@@ -469,9 +470,101 @@
   margin: 0;
   padding: 0;
   display: flex;
+  font-size: 14px;
   color: lightgray;
   text-shadow: 1px 1px darkgrey;
   grid-area: status;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.search__up {
+  margin: 0 20px;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.search__logo {
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  animation: search-opacity-down 0.3s ease-in forwards;
+}
+.search__logo:last-of-type {
+  margin-left: auto;
+}
+.search__logo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: search-opacity-up 0.3s ease-in forwards;
+}
+.search__logo_active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: none;
+}
+.search__logo_active:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+@keyframes search-opacity-up {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes search-opacity-down {
+  from {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.search__progress {
+  margin: 0 4px;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.search__progress_visible {
+  opacity: 0;
+  animation: progress-visible 3s ease-in forwards;
+}
+.search__progress-bar {
+  margin: 0;
+  padding: 0 4px;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+}
+@keyframes progress-visible {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  10% {
+    height: 6px;
+    opacity: 1;
+  }
+  90% {
+    height: 6px;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
 }
 
 .profile__medals {

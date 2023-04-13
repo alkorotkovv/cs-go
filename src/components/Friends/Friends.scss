@@ -6,6 +6,14 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+
+  &_big {
+    height: 800px;
+  }
+
+  &_short {
+    height: 700px;
+  }
   
   &::-webkit-scrollbar {
     width: 8px;

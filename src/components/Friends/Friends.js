@@ -5,7 +5,7 @@ function Friends(props) {
   console.log(props)
   
   return (
-    <ul className= "friends">
+    <ul className={"friends" + (props.isRankVisible ? " friends_short" : " friends_big")}>
       {
         props.friendsArray.map((element, index) => 
           <Friend 
