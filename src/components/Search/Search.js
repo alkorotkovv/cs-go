@@ -19,6 +19,13 @@ function Search(props) {
     setIsDualActive(false);
     setIsZoneActive(false);
     setIsUpdateActive(false);
+
+
+    setIsProgressShow(true)
+    setTimeout(function() {
+      console.log(`Через секунду напечатаю`)
+      setIsProgressShow(false)
+    }, 3000)
   }
 
   function handleDualClick() {
@@ -26,6 +33,12 @@ function Search(props) {
     setIsDualActive(true);
     setIsZoneActive(false);
     setIsUpdateActive(false);
+
+    setIsProgressShow(true)
+    setTimeout(function() {
+      console.log(`Через секунду напечатаю`)
+      setIsProgressShow(false)
+    }, 3000)
   }
 
   function handleZoneClick() {
@@ -33,9 +46,20 @@ function Search(props) {
     setIsDualActive(false);
     setIsZoneActive(true);
     setIsUpdateActive(false);
+
+    setIsProgressShow(true)
+    setTimeout(function() {
+      console.log(`Через секунду напечатаю`)
+      setIsProgressShow(false)
+    }, 3000)
   }
 
   function handleUpdateClick() {
+    setIsProgressShow(true)
+    setTimeout(function() {
+      console.log(`Через секунду напечатаю`)
+      setIsProgressShow(false)
+    }, 3000)
   }
   
   return (
@@ -47,7 +71,7 @@ function Search(props) {
         <img className={"search__logo" + (isUpdateActive ? " search__logo_active" : "")} onClick={handleUpdateClick} src={updateIcon} alt="обновить"/>
       </div>
       <div className={"search__progress" + (isProgressShow ? " search__progress_visible" : "")}>
-        <div className='search__progress-bar'></div>
+        <div className={"search__progress-bar" + (isProgressShow ? " search__progress-bar_active" : "")}></div>
       </div>
       <Friends isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
     </div>

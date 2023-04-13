@@ -66,12 +66,11 @@
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    height: 6px;
+    height: 0;
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.3);
     
-
     &_visible {
-      opacity: 0;
       animation: progress-visible 3s ease-in forwards;
     }
   }
@@ -82,7 +81,12 @@
     width: 30%;
     height: 100%;
     background-color: white;
+
+    &_active {
+      animation: progress-up 3s linear;
+    }
   }
+
 
   @keyframes progress-visible {
     from {
@@ -100,6 +104,21 @@
     to {
       height: 0;
       opacity: 0;
+    }
+  }
+
+  @keyframes progress-up {
+    from {
+      width: 0%;
+    }
+    10%{
+      width: 20%;
+    }
+    90%{
+      width: 90%;
+    }
+    to {
+      width: 100%;
     }
   }
 }
