@@ -165,7 +165,7 @@ export const medalsArray = [
   },
 ]
 
-//Массив друзей
+//Массив недавних комрадов
 export const lastArray = [
   {
     avatar: friendPhoto3,
@@ -202,6 +202,21 @@ export const lastArray = [
     name: "ZiP",
     status: "В другой игре"
   },
+  {
+    avatar: friendPhoto19,
+    name: "Киберкотлета",
+    status: "В сети"
+  },
+  {
+    avatar: friendPhoto20,
+    name: "Рандомный чел",
+    status: "В сети"
+  },
+  
+]
+
+//Массив заявок вдрузья
+export const messagesArray = [  
   {
     avatar: friendPhoto19,
     name: "Киберкотлета",

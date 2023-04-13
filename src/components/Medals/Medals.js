@@ -9,7 +9,7 @@ function Medals(props) {
       {
         medalsArray.slice(5 * props.countMedalsBlock , 5 * props.countMedalsBlock + 5).map((element, index) => 
         (
-          <Medal index={index} element={element} />
+          <Medal key={index} index={index} element={element} />
         )
         )
       }

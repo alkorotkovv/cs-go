@@ -2,7 +2,7 @@ import React from 'react';
 
 import Friends from '../Friends/Friends';
 
-import { medalsArray, friendsArray, lastArray } from '../../utils/constants';
+import { medalsArray, friendsArray, lastArray, messagesArray } from '../../utils/constants';
 
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
@@ -16,6 +16,8 @@ import searchLogo from '../../images/search.png';
 import lastLogo from '../../images/last.png';
 import messageLogo from '../../images/message.png';
 import Medals from '../Medals/Medals';
+import Messages from '../Messages/Messages';
+import Frame from '../Frame/Frame';
 
 
 function RightBar() {
@@ -60,6 +62,13 @@ function RightBar() {
     setIsMessageVisible(false);
   }
 
+  function handleMessageClick() {
+    setIsFriensVisible(false);
+    setIsSearchVisible(false);
+    setIsLastVisible(false);
+    setIsMessageVisible(true);
+  }
+
   return (
     <div className="rightBar">
       <div className='rightBar__main'>
@@ -99,10 +108,13 @@ function RightBar() {
           <li className={"tools__item" + (isFriensVisible ? " tools__item_active" : "")} onClick={handleFriendsClick}><img className='tools__logo' src={friendsLogo} alt="друзья"/></li>
           <li className='tools__item'><img className='tools__logo' src={searchLogo} alt="поиск"/></li>
           <li className={"tools__item" + (isLastVisible ? " tools__item_active" : "")} onClick={handleLastClick}><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
-          <li className='tools__item'><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
+          <li className={"tools__item" + (isMessageVisible ? " tools__item_active" : "")} onClick={handleMessageClick}><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
         </ul>
-        <Friends isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray}/>
-        <Friends isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray}/>
+        <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
+        <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />
+        <Frame component={Messages} isVisible={isMessageVisible} isRankVisible={isRankVisible} friendsArray={messagesArray} />
+        
+        
 
       </div>
     </div>

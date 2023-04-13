@@ -17,7 +17,8 @@
 
   &__main {
     margin: 0;
-    padding: 0 0 5px 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgba(211, 211, 211, 0.5);
@@ -38,7 +39,7 @@
 
 .profile {
   margin: 0;
-  padding: 15px 15px 10px 15px;
+  padding: 18px 15px 0 15px;
   display: grid;
   column-gap: 15px;
   grid-template-columns: 66px auto;
@@ -58,10 +59,13 @@
   &__name {
     margin: 0;
     padding: 0;
+    height: 24px;
     display: flex;
+    align-items: flex-start;
     justify-content: start;
     color: white;
     font-size: 18px;
+    line-height: 1;
     grid-area: name;
   }
 
@@ -89,7 +93,7 @@
 
 .experience {
   margin: 0;
-  padding: 0 15px 0 15px;
+  padding: 8px 15px 2px 15px;
   display: grid;
   column-gap: 15px;
   row-gap: 0px;
@@ -133,11 +137,17 @@
 
 .rank {
   margin: 0;
-  padding: 5px 10px 10px 10px;
-  
+  padding: 6px 10px;  
   align-items: center;
 
+  &__title {
+    margin: 0;
+    padding: 0;
+    height: 38px;
+  }
+
   &_visible {
+    margin-bottom: 4px;
     display: flex;
   }
 

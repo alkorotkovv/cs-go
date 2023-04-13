@@ -99,7 +99,8 @@
 }
 .rightBar__main {
   margin: 0;
-  padding: 0 0 5px 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid rgba(211, 211, 211, 0.5);
@@ -116,7 +117,7 @@
 
 .profile {
   margin: 0;
-  padding: 15px 15px 10px 15px;
+  padding: 18px 15px 0 15px;
   display: grid;
   column-gap: 15px;
   grid-template-columns: 66px auto;
@@ -132,10 +133,13 @@
 .profile__name {
   margin: 0;
   padding: 0;
+  height: 24px;
   display: flex;
+  align-items: flex-start;
   justify-content: start;
   color: white;
   font-size: 18px;
+  line-height: 1;
   grid-area: name;
 }
 .profile__arrows {
@@ -157,7 +161,7 @@
 
 .experience {
   margin: 0;
-  padding: 0 15px 0 15px;
+  padding: 8px 15px 2px 15px;
   display: grid;
   column-gap: 15px;
   row-gap: 0px;
@@ -194,10 +198,16 @@
 
 .rank {
   margin: 0;
-  padding: 5px 10px 10px 10px;
+  padding: 6px 10px;
   align-items: center;
 }
+.rank__title {
+  margin: 0;
+  padding: 0;
+  height: 38px;
+}
 .rank_visible {
+  margin-bottom: 4px;
   display: flex;
 }
 .rank_first {
@@ -348,20 +358,29 @@
   }
 }
 
-.friends {
+.frame {
   margin: 0;
   padding: 0;
-  height: 800px;
+  animation: rightleft 0.25s linear forwards;
+}
+.frame_visible {
   display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  animation: rightleft 0.25s linear forwards, leftright 0.1s linear;
 }
-.friends_unvisible {
-  display: none;
+.frame_unvisible {
+  display: flex;
+  position: absolute;
+  margin-right: -385px;
+  margin-left: 385px;
+  opacity: 0;
+  animation: leftright 0.25s linear;
 }
-.friends_short {
+.frame_big {
+  height: 800px;
+  top: 280px;
+}
+.frame_short {
   height: 700px;
+  top: 380px;
 }
 @keyframes rightleft {
   from {
@@ -386,6 +405,16 @@
     margin-left: 250px;
     opacity: 0;
   }
+}
+
+.friends {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 .friends::-webkit-scrollbar {
   width: 8px;
@@ -448,13 +477,14 @@
 .profile__medals {
   margin: 0;
   padding: 0;
+  height: 40px;
   display: flex;
   align-items: center;
 }
 
 .medal-list {
   margin: 0;
-  padding: 4px;
+  padding: 0;
   display: flex;
   gap: 12px;
   justify-content: start;
@@ -468,6 +498,27 @@
   width: 40px;
   height: 40px;
   display: flex;
+}
+
+.messages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.messages__up {
+  margin: 0 20px;
+  padding: 20px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.messages__logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 26px;
+  height: 26px;
 }
 
 /*# sourceMappingURL=index.css.map */

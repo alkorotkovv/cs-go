@@ -1,10 +1,11 @@
-import { friendsArray } from '../../utils/constants';
 import Friend from '../Friend/Friend';
 
 function Friends(props) {
+
+  console.log(props)
   
   return (
-    <ul className= {(props.isVisible ? "friends" : "friends_unvisible") + (props.isRankVisible ? " friends_short" : "")}>
+    <ul className= "friends">
       {
         props.friendsArray.map((element, index) => 
           <Friend 

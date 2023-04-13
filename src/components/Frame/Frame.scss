@@ -1,0 +1,55 @@
+.frame {
+  margin: 0;
+  padding: 0;
+  animation: rightleft 0.25s linear forwards;
+
+    &_visible {
+      display: flex;
+    }
+
+    &_unvisible {
+      display: flex;
+      position: absolute;
+      margin-right: -385px;
+      margin-left: 385px;
+      opacity: 0;
+      animation: leftright 0.25s linear ;
+    }
+
+    &_big {
+      height: 800px;
+      top: 280px;
+    }
+
+    &_short {
+      height: 700px;
+      top: 380px;
+    }
+
+  @keyframes rightleft {
+    from {
+      margin-right: -250px;
+      margin-left: 250px;
+      opacity: 0;
+    }
+    to {
+      margin-right: 0px;
+      margin-left: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes leftright {
+    from {
+      margin-right: 0px;
+      margin-left: 0px;
+      opacity: 1;
+    }
+    to {
+      margin-right: -250px;
+      margin-left: 250px;
+      opacity: 0;
+    }
+  }
+
+}

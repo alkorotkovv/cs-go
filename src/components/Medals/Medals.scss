@@ -2,6 +2,7 @@
   &__medals {
     margin: 0;
     padding: 0;
+    height: 40px;
     display: flex;
     align-items: center;
   }
@@ -9,7 +10,7 @@
 
 .medal-list {
   margin: 0;
-  padding: 4px;
+  padding: 0;
   display: flex;
   gap: 12px;
   justify-content: start;

@@ -1,0 +1,24 @@
+.messages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+  &__up {
+    margin: 0 20px;
+    padding: 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 26px;
+    height: 26px;
+  }
+
+}
