@@ -2,7 +2,7 @@ import React from 'react';
 
 import Friends from '../Friends/Friends';
 
-import { medalsArray } from '../../utils/constants';
+import { medalsArray, friendsArray, lastArray } from '../../utils/constants';
 
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
@@ -23,6 +23,11 @@ function RightBar() {
   const [isRankVisible, setIsRankVisible] = React.useState(false);
   const [countMedalsBlock, setCountMedalsBlock] = React.useState(0);
 
+  const [isFriensVisible, setIsFriensVisible] = React.useState(true);
+  const [isSearchVisible, setIsSearchVisible] = React.useState(false);
+  const [isLastVisible, setIsLastVisible] = React.useState(false);
+  const [isMessageVisible, setIsMessageVisible] = React.useState(false);
+
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
   const rankSecondSubClassName = (`rank rank_second ${isRankVisible === true ? " rank_second-visible" :  ""}`);
@@ -32,15 +37,27 @@ function RightBar() {
   }
 
   function handleArrLeftClick() {
-    console.log("fhhfhfhf");
     if (countMedalsBlock > 0)
       setCountMedalsBlock(countMedalsBlock - 1);
   }
 
   function handleArrRightClick() {
-    console.log("fhhfhfhf");
     if (countMedalsBlock < Math.floor(medalsArray.length/5))
       setCountMedalsBlock(countMedalsBlock + 1);
+  }
+
+  function handleFriendsClick() {
+    setIsFriensVisible(true);
+    setIsSearchVisible(false);
+    setIsLastVisible(false);
+    setIsMessageVisible(false);
+  }
+
+  function handleLastClick() {
+    setIsFriensVisible(false);
+    setIsSearchVisible(false);
+    setIsLastVisible(true);
+    setIsMessageVisible(false);
   }
 
   return (
@@ -79,12 +96,13 @@ function RightBar() {
       </div>
       <div className='rightBar__sub'>
         <ul className='tools'>
-          <li className='tools__item tools__item_active'><img className='tools__logo' src={friendsLogo} alt="друзья"/></li>
+          <li className={"tools__item" + (isFriensVisible ? " tools__item_active" : "")} onClick={handleFriendsClick}><img className='tools__logo' src={friendsLogo} alt="друзья"/></li>
           <li className='tools__item'><img className='tools__logo' src={searchLogo} alt="поиск"/></li>
-          <li className='tools__item'><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
+          <li className={"tools__item" + (isLastVisible ? " tools__item_active" : "")} onClick={handleLastClick}><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
           <li className='tools__item'><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
         </ul>
-        <Friends isRankVisible={isRankVisible} />
+        <Friends isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray}/>
+        <Friends isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray}/>
 
       </div>
     </div>

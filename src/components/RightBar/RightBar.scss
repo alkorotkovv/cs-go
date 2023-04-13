@@ -269,6 +269,7 @@
 .tools {
   margin: 0;
   padding: 0 10px 0 20px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -279,10 +280,35 @@
     padding: 0;
     width: 64px;
     display: flex;
+    box-sizing:content-box;
     justify-content: center;
+    align-items: flex-start;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
+    }
 
     &_active {
-      border-bottom: 6px solid white;
+      border-bottom: 5px solid white;
+      animation: slow 0.2s linear forwards;
+
+      &:hover {
+        padding-bottom: 1px;
+        border-bottom: 5px solid white;
+      }
+
+      @keyframes slow {
+        from {
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+        to {
+          padding-bottom: 1px;
+          border-bottom: 5px solid rgba(255, 255, 255, 1);
+        }
+      }
     }
   }
 

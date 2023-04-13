@@ -4,9 +4,9 @@ import Friend from '../Friend/Friend';
 function Friends(props) {
   
   return (
-    <ul className= {"friends" + (props.isRankVisible ? " friends_short" : "")}>
+    <ul className= {(props.isVisible ? "friends" : "friends_unvisible") + (props.isRankVisible ? " friends_short" : "")}>
       {
-        friendsArray.map((element, index) => 
+        props.friendsArray.map((element, index) => 
           <Friend 
             key={index}
             avatar={element.avatar}

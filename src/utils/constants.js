@@ -164,3 +164,53 @@ export const medalsArray = [
     logo: medalLogo7
   },
 ]
+
+//Массив друзей
+export const lastArray = [
+  {
+    avatar: friendPhoto3,
+    name: "-",
+    status: "В сети"
+  },
+  {
+    avatar: friendPhoto4,
+    name: "Bogdan",
+    status: "В сети"
+  },
+  {
+    avatar: friendPhoto5,
+    name: "cl",
+    status: "Нет на месте"
+  },
+  {
+    avatar: friendPhoto6,
+    name: "kent10",
+    status: "В другой игре"
+  },
+  {
+    avatar: friendPhoto10,
+    name: "Space ASS",
+    status: "В другой игре"
+  },
+  {
+    avatar: friendPhoto17,
+    name: "YaRa",
+    status: "Нет на месте"
+  },
+  {
+    avatar: friendPhoto18,
+    name: "ZiP",
+    status: "В другой игре"
+  },
+  {
+    avatar: friendPhoto19,
+    name: "Киберкотлета",
+    status: "В сети"
+  },
+  {
+    avatar: friendPhoto20,
+    name: "Рандомный чел",
+    status: "В сети"
+  },
+  
+]
