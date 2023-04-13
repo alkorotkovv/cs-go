@@ -1,5 +1,11 @@
 import friendPhoto from '../images/friend_avatar.png';
-import medalLogo from '../images/broken_fang_medal.png';
+import medalLogo1 from '../images/broken_fang_medal.png';
+import medalLogo2 from '../images/2023.png';
+import medalLogo3 from '../images/chicken.png';
+import medalLogo4 from '../images/rio.png';
+import medalLogo5 from '../images/stockholm.png';
+import medalLogo6 from '../images/rio.png';
+import medalLogo7 from '../images/chicken.png';
 
 //Массив друзей
 export const friendsArray = [
@@ -112,30 +118,30 @@ export const medalsArray = [
   
   {
     name: "Сломанный клык",
-    logo: "../../images/broken_fang_medal.png"
+    logo: medalLogo1
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo2
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo3
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo4
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo5
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo6
   },
   {
     name: "Сломанный клык",
-    logo: medalLogo
+    logo: medalLogo7
   },
 ]

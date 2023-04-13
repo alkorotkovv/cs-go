@@ -138,13 +138,6 @@
   font-size: 18px;
   grid-area: name;
 }
-.profile__medals {
-  margin: 0;
-  padding: 0;
-  height: 48px;
-  display: flex;
-  align-items: center;
-}
 .profile__arrows {
   margin: 0;
   margin-left: auto;
@@ -398,6 +391,13 @@
   grid-area: status;
 }
 
+.profile__medals {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 .medal-list {
   margin: 0;
   padding: 4px;
@@ -407,6 +407,7 @@
   list-style-type: none;
   grid-area: medals;
 }
+
 .medal-list__logo {
   margin: 0;
   padding: 0;

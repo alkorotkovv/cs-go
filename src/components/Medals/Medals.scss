@@ -1,3 +1,12 @@
+.profile {
+  &__medals {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .medal-list {
   margin: 0;
   padding: 4px;
@@ -5,13 +14,5 @@
   gap: 12px;
   justify-content: start;
   list-style-type: none;
-  grid-area: medals;
-
-  &__logo {
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-  }
+  grid-area: medals; 
 }
