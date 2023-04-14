@@ -91,7 +91,6 @@
   color: black;
   position: absolute;
   top: 0;
-  right: -290px;
   background-color: rgba(0, 101, 252, 0.726);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
@@ -127,10 +126,6 @@
   display: flex;
   flex-direction: column;
 }
-.rightBar:hover {
-  right: 0;
-}
-
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
@@ -400,6 +395,32 @@
 }
 
 */
+.profile__medals {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.medal-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: start;
+  list-style-type: none;
+  grid-area: medals;
+}
+
+.medal-list__logo {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
 .frame {
   margin: 0;
   padding: 0;
@@ -447,235 +468,6 @@
     margin-left: 250px;
     opacity: 0;
   }
-}
-
-.friends {
-  margin: 0;
-  padding: 0;
-  height: 800px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-}
-.friends_big {
-  height: 800px;
-}
-.friends_short {
-  height: 700px;
-}
-.friends::-webkit-scrollbar {
-  width: 8px;
-}
-.friends::-webkit-scrollbar-track {
-  background: transparent; /* цвет дорожки */
-}
-.friends::-webkit-scrollbar-thumb {
-  background-color: #B6ADAE; /* цвет плашки */
-  border-radius: 2px; /* закругления плашки */
-}
-
-.friends {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-.friends__item {
-  margin: 0;
-  padding: 10px 0 6px 0;
-  border-left: 6px solid transparent;
-  box-sizing: content-box;
-  display: grid;
-  grid-template-columns: 77px auto;
-  column-gap: 20px;
-  grid-template-areas: "avatar name" "avatar status";
-}
-.friends__item:hover {
-  cursor: default;
-  border-left: 6px solid white;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-}
-.friends__avatar {
-  margin: 0 0 0 18px;
-  padding: 0;
-  grid-area: avatar;
-  border-left: 5px solid #30779D;
-}
-.friends__avatar_play {
-  border-left: 5px solid #47A04C;
-}
-.friends__name {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  color: white;
-  font-size: 15px;
-  grid-area: name;
-}
-.friends__status {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 14px;
-  color: lightgray;
-  text-shadow: 1px 1px darkgrey;
-  grid-area: status;
-}
-
-.search {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.search__up {
-  margin: 0 20px;
-  padding: 12px;
-  display: flex;
-  gap: 8px;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-}
-.search__logo {
-  margin: 0;
-  padding: 8px;
-  box-sizing: border-box;
-  animation: search-opacity-down 0.3s ease-in forwards;
-}
-.search__logo:last-of-type {
-  margin-left: auto;
-}
-.search__logo:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  animation: search-opacity-up 0.3s ease-in forwards;
-}
-.search__logo_active {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  animation: none;
-}
-.search__logo_active:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  animation: none;
-}
-@keyframes search-opacity-up {
-  from {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-@keyframes search-opacity-down {
-  from {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0);
-  }
-}
-.search__progress {
-  margin: 0 4px;
-  padding: 0;
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  height: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.search__progress_visible {
-  animation: progress-visible 3s ease-in forwards;
-}
-.search__progress-bar {
-  margin: 0;
-  padding: 0 4px;
-  width: 30%;
-  height: 100%;
-  background-color: white;
-}
-.search__progress-bar_active {
-  animation: progress-up 3s linear;
-}
-@keyframes progress-visible {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-  10% {
-    height: 6px;
-    opacity: 1;
-  }
-  90% {
-    height: 6px;
-    opacity: 1;
-  }
-  to {
-    height: 0;
-    opacity: 0;
-  }
-}
-@keyframes progress-up {
-  from {
-    width: 0%;
-  }
-  10% {
-    width: 20%;
-  }
-  90% {
-    width: 90%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.profile__medals {
-  margin: 0;
-  padding: 0;
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.medal-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 12px;
-  justify-content: start;
-  list-style-type: none;
-  grid-area: medals;
-}
-
-.medal-list__logo {
-  margin: 0;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-}
-
-.messages {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.messages__up {
-  margin: 0 20px;
-  padding: 20px;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-}
-.messages__logo {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 26px;
-  height: 26px;
 }
 
 .rightBar:hover .tools__item_1 {
@@ -882,6 +674,304 @@
     margin-top: 0px;
     height: 5px;
   }
+}
+
+.friends {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.friends_big {
+  height: 800px;
+}
+.friends_short {
+  height: 700px;
+}
+.friends::-webkit-scrollbar {
+  width: 8px;
+}
+.friends::-webkit-scrollbar-track {
+  background: transparent; /* цвет дорожки */
+}
+.friends::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE; /* цвет плашки */
+  border-radius: 2px; /* закругления плашки */
+}
+
+.friend {
+  margin: 0;
+  padding: 8px 0 8px 0;
+  border-left: 6px solid transparent;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 77px auto;
+  column-gap: 20px;
+  grid-template-areas: "avatar name" "avatar status";
+}
+.friend:hover {
+  cursor: default;
+  border-left: 6px solid white;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+.friend__avatar {
+  margin: 0 0 0 18px;
+  padding: 0;
+  grid-area: avatar;
+  border-left: 5px solid #30779D;
+}
+.friend__avatar_play {
+  border-left: 5px solid #47A04C;
+}
+.friend__name {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  grid-area: name;
+}
+.friend__status {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 14px;
+  color: lightgray;
+  text-shadow: 1px 1px darkgrey;
+  grid-area: status;
+}
+
+.players {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.players_big {
+  height: 800px;
+}
+.players_short {
+  height: 700px;
+}
+.players::-webkit-scrollbar {
+  width: 8px;
+}
+.players::-webkit-scrollbar-track {
+  background: transparent; /* цвет дорожки */
+}
+.players::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE; /* цвет плашки */
+  border-radius: 2px; /* закругления плашки */
+}
+
+.player {
+  margin: 0;
+  padding: 8px 18px 8px 0;
+  border-left: 6px solid transparent;
+  box-sizing: content-box;
+  display: grid;
+  column-gap: 8px;
+  align-items: center;
+  grid-template-columns: 77px 20px 50px 42px 1fr;
+  grid-template-areas: "avatar name name name message" "avatar prime rank country message";
+}
+.player:hover {
+  cursor: default;
+}
+.player__avatar {
+  margin: 0 0 0 18px;
+  padding: 0;
+  grid-area: avatar;
+}
+.player__name {
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  grid-area: name;
+}
+.player__prime {
+  margin: 0;
+  padding: 0;
+  grid-area: prime;
+}
+.player__rank {
+  margin: 0;
+  padding: 0;
+  grid-area: rank;
+}
+.player__country {
+  margin: 0;
+  padding: 0;
+  grid-area: country;
+}
+.player__message {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  justify-self: end;
+  animation: search-opacity-down 0.3s ease-in forwards;
+  grid-area: message;
+}
+.player__message:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: search-opacity-up 0.3s ease-in forwards;
+}
+@keyframes search-opacity-up {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes search-opacity-down {
+  from {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.search__up {
+  margin: 0 20px;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.search__logo {
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  animation: search-opacity-down 0.3s ease-in forwards;
+}
+.search__logo:last-of-type {
+  margin-left: auto;
+}
+.search__logo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: search-opacity-up 0.3s ease-in forwards;
+}
+.search__logo_active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: none;
+}
+.search__logo_active:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+@keyframes search-opacity-up {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes search-opacity-down {
+  from {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.search__progress {
+  margin: 0 4px;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.search__progress_visible {
+  animation: progress-visible 3s ease-in forwards;
+}
+.search__progress-bar {
+  margin: 0;
+  padding: 0 4px;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+}
+.search__progress-bar_active {
+  animation: progress-up 3s linear;
+}
+@keyframes progress-visible {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  10% {
+    height: 6px;
+    opacity: 1;
+  }
+  90% {
+    height: 6px;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+@keyframes progress-up {
+  from {
+    width: 0%;
+  }
+  10% {
+    width: 20%;
+  }
+  90% {
+    width: 90%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.messages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.messages__up {
+  margin: 0 20px;
+  padding: 20px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.messages__logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 26px;
+  height: 26px;
 }
 
 /*# sourceMappingURL=index.css.map */

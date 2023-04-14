@@ -1,0 +1,91 @@
+.player {
+  margin: 0;
+  padding: 8px 18px 8px 0;
+  border-left: 6px solid transparent;
+  box-sizing: content-box;
+  display: grid;
+  column-gap: 8px;
+  align-items: center;
+  grid-template-columns: 77px 20px 50px 42px 1fr;
+  //column-gap: 20px;
+  grid-template-areas: 
+  "avatar name name name message"
+  "avatar prime rank country message"
+  ;
+
+  &:hover {
+    cursor: default;
+  }
+  
+
+  &__avatar {
+    margin: 0 0 0 18px;
+    padding: 0;
+    grid-area: avatar;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    grid-area: name;
+  }
+
+  &__prime {
+    margin: 0;
+    padding: 0;
+    grid-area: prime;
+  }
+
+  &__rank {
+    margin: 0;
+    padding: 0;
+    grid-area: rank;
+  }
+
+  &__country {
+    margin: 0;
+    padding: 0;
+    grid-area: country;
+  }
+
+  &__message {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 42px;
+    height: 42px;
+    justify-self: end;
+    animation: search-opacity-down 0.3s ease-in forwards;
+    grid-area: message;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      animation: search-opacity-up 0.3s ease-in forwards;
+    }
+  }
+
+  @keyframes search-opacity-up {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @keyframes search-opacity-down {
+    from {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+
+}

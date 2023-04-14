@@ -1,4 +1,3 @@
-import { messagesArray } from '../../utils/constants';
 import addFriendIcon from '../../images/add_friend_icon.png';
 import Friends from '../Friends/Friends';
 

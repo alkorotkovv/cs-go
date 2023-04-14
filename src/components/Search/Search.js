@@ -4,7 +4,8 @@ import mmIcon from '../../images/mm_icon.png';
 import dualIcon from '../../images/dual_icon.png';
 import zoneIcon from '../../images/zone_icon.png';
 import updateIcon from '../../images/update_icon.png';
-import Friends from '../Friends/Friends';
+
+import Players from '../Players/Players';
 
 function Search(props) {
 
@@ -66,7 +67,7 @@ function Search(props) {
       <div className={"search__progress" + (isProgressShow ? " search__progress_visible" : "")}>
         <div className={"search__progress-bar" + (isProgressShow ? " search__progress-bar_active" : "")}></div>
       </div>
-      <Friends isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
+      <Players isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
 function Friend(props) {
 
   return (
-    <li className='friends__item'>
-      <img className={"friends__avatar" + (props.status === "Играет в CS:GO" ? " friends__avatar_play" : "")} src={props.avatar} alt="друг"/>
-      <p className='friends__name'>{props.name}</p>
-      <p className='friends__status'>{props.status}</p>
+    <li className='friend'>
+      <img className={"friend__avatar" + (props.status === "Играет в CS:GO" ? " friend__avatar_play" : "")} src={props.avatar} alt="друг"/>
+      <p className='friend__name'>{props.name}</p>
+      <p className='friend__status'>{props.status}</p>
     </li>
   );
 

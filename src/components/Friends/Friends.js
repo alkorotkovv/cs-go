@@ -2,8 +2,6 @@ import Friend from '../Friend/Friend';
 
 function Friends(props) {
 
-  console.log(props)
-  
   return (
     <ul className={"friends" + (props.isRankVisible ? " friends_short" : " friends_big")}>
       {

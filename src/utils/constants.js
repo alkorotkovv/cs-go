@@ -1,3 +1,19 @@
+//Звания
+import silver1 from '../images/ranks/supreme.png';
+import silver2 from '../images/ranks/silver2.png';
+import silver3 from '../images/ranks/silver3.png';
+import silver4 from '../images/ranks/silver4.png';
+import silver5 from '../images/ranks/silver5.png';
+import silver6 from '../images/ranks/silver6.png';
+import supreme from '../images/ranks/supreme.png';
+
+//Страны
+import russia from '../images/country/russia.png';
+import ukraine from '../images/country/ukraine.png';
+import turkey from '../images/country/turkey.png';
+import finland from '../images/country/finland.png';
+import romania from '../images/country/romania.png';
+
 //Аватарки друзей
 import friendPhoto1 from '../images/friends/friend_avatar1.png';
 import friendPhoto2 from '../images/friends/friend_avatar2.png';
@@ -195,103 +211,143 @@ export const searchArray = [
   {
     avatar: friendPhoto1,
     name: "дядя Фёдор",
-    status: "Играет в CS:GO"
+    prime: true,
+    rank: supreme,
+    country: russia
   },
   {
     avatar: friendPhoto2,
     name: "#ЖирныйRust_Deluxe",
-    status: "Спит"
+    prime: true,
+    rank: supreme,
+    country: ukraine
   },
   {
     avatar: friendPhoto3,
     name: "-",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: russia
   },
   {
     avatar: friendPhoto4,
     name: "Bogdan",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: russia
   },
   {
     avatar: friendPhoto5,
     name: "cl",
-    status: "Нет на месте"
+    prime: true,
+    rank: supreme,
+    country: russia
   },
   {
     avatar: friendPhoto6,
     name: "kent10",
-    status: "В другой игре"
+    prime: true,
+    rank: supreme,
+    country: russia
   },
   {
     avatar: friendPhoto7,
     name: "Krizhik",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: turkey
   },
   {
     avatar: friendPhoto8,
     name: "OneLove",
-    status: "Нет на месте"
+    prime: true,
+    rank: supreme,
+    country: turkey
   },
   {
     avatar: friendPhoto9,
     name: "silenium",
-    status: "В другой игре"
+    prime: true,
+    rank: supreme,
+    country: finland
   },
 
   {
     avatar: friendPhoto10,
     name: "Space ASS",
-    status: "В другой игре"
+    prime: true,
+    rank: supreme,
+    country: romania
   },
   {
     avatar: friendPhoto11,
     name: "V",
-    status: "Нет на месте"
+    prime: true,
+    rank: supreme,
+    country: finland
   },
   {
     avatar: friendPhoto12,
     name: "Виталик подошва",
-    status: "Играет в CS:GO"
+    prime: true,
+    rank: supreme,
+    country: finland
   },
   {
     avatar: friendPhoto13,
     name: "CTAS",
-    status: "Спит"
+    prime: true,
+    rank: supreme,
+    country: finland
   },
   {
     avatar: friendPhoto14,
     name: "DeadPool",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: finland
   },
   {
     avatar: friendPhoto15,
     name: "Gebert",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: romania
   },
   {
     avatar: friendPhoto16,
     name: "Renessance",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: romania
   },
   {
     avatar: friendPhoto17,
     name: "YaRa",
-    status: "Нет на месте"
+    prime: true,
+    rank: supreme,
+    country: turkey
   },
   {
     avatar: friendPhoto18,
     name: "ZiP",
-    status: "В другой игре"
+    prime: true,
+    rank: supreme,
+    country: ukraine
   },
   {
     avatar: friendPhoto19,
     name: "Киберкотлета",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: ukraine
   },
   {
     avatar: friendPhoto20,
     name: "Рандомный чел",
-    status: "В сети"
+    prime: true,
+    rank: supreme,
+    country: ukraine
   },
   
 ]
