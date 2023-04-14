@@ -3,7 +3,7 @@
 @import "../vendor/normalize.css";
 .page {
   width: 100vw;
-  height: 300vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -91,6 +91,7 @@
   color: black;
   position: absolute;
   top: 0;
+  right: -290px;
   background-color: rgba(0, 101, 252, 0.726);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
@@ -110,6 +111,10 @@
   display: flex;
   flex-direction: column;
 }
+.rightBar:hover {
+  right: 0;
+}
+
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
