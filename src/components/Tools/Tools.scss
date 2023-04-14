@@ -1,12 +1,7 @@
-$time: 0.18s;
+$time: 0.2s;
 
 .rightBar {
-  
-/*
-  & .tools__item_active{
-    //animation: slide 2s linear forwards;
-  }
-*/
+ 
 &:hover .tools__item_1{
   opacity: 1;
   position: absolute;
@@ -39,14 +34,14 @@ $time: 0.18s;
     opacity: 1;
     position: absolute;
     left: 20px;
-    //animation: slow 0.2s linear forwards;
+    animation: slow 0.2s linear forwards;
   }
 
   &:hover .tools__item_2_active{
     opacity: 1;
     position: absolute;
     left: 117px;
-    //animation: slow 0.2s linear forwards,
+    //animation: slow 0.2s linear forwards;
 
   }
 
@@ -93,8 +88,6 @@ $time: 0.18s;
       border-bottom: 1px solid white;
     }
 
-
-
     &_1 {
       padding: 0;
       position: absolute;
@@ -103,11 +96,10 @@ $time: 0.18s;
 
       &_active {
         border-bottom: 5px solid white;
-        animation: slow 0.2s linear forwards;
-
         opacity: 1;
         position: absolute;
         left: 20px;
+        animation: slow 0.2s linear forwards;
       }
     }
 
@@ -127,8 +119,6 @@ $time: 0.18s;
 
         
       }
-
-      
     }
 
     &_3 {
@@ -162,27 +152,9 @@ $time: 0.18s;
                    slide-left-4 $time linear forwards;
       }
 
-      &_active .tools {
-        background-color: aqua;
-      }
     }
 
     
-
-    
-    /*
-    &_active {
-      position: absolute;
-      left: 20px;
-
-      border-bottom: 5px solid white;
-      animation: slow 0.2s linear forwards;
-
-      &:hover {
-        padding-bottom: 1px;
-        border-bottom: 5px solid white;
-      }
-      */
 
       @keyframes slow {
         from {
