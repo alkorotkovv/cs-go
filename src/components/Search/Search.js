@@ -13,22 +13,9 @@ function Search(props) {
   const [isDualActive, setIsDualActive] = React.useState(false);
   const [isZoneActive, setIsZoneActive] = React.useState(false);
   const [isUpdateActive, setIsUpdateActive] = React.useState(false);
-  const [isProgressShow, setIsProgressShow] = React.useState(false);
-
-  function Reload() {
-    setIsProgressShow(false);
-    setTimeout(function() {
-      console.log(`Через секунду показываем`)
-      setIsProgressShow(true)
-    }, 100)
-    setTimeout(function() {
-      console.log(`Через 3секунды скрываем`)
-      setIsProgressShow(false)
-    }, 3000)
-  }
 
   function handleMmClick() {
-    Reload();
+    props.Reload();
     setIsMmActive(true);
     setIsDualActive(false);
     setIsZoneActive(false);
@@ -37,7 +24,7 @@ function Search(props) {
   }
 
   function handleDualClick() {
-    Reload();
+    props.Reload();
     setIsMmActive(false);
     setIsDualActive(true);
     setIsZoneActive(false);
@@ -45,7 +32,7 @@ function Search(props) {
   }
 
   function handleZoneClick() {
-    Reload();
+    props.Reload();
     setIsMmActive(false);
     setIsDualActive(false);
     setIsZoneActive(true);
@@ -53,7 +40,7 @@ function Search(props) {
   }
 
   function handleUpdateClick() {
-    Reload();
+    props.Reload();
   }
   
   return (
@@ -64,8 +51,8 @@ function Search(props) {
         <img className={"search__logo" + (isZoneActive ? " search__logo_active" : "")} onClick={handleZoneClick} src={zoneIcon} alt="запретка"/>
         <img className={"search__logo" + (isUpdateActive ? " search__logo_active" : "")} onClick={handleUpdateClick} src={updateIcon} alt="обновить"/>
       </div>
-      <div className={"search__progress" + (isProgressShow ? " search__progress_visible" : "")}>
-        <div className={"search__progress-bar" + (isProgressShow ? " search__progress-bar_active" : "")}></div>
+      <div className={"search__progress" + (props.isProgressShow ? " search__progress_visible" : "")}>
+        <div className={"search__progress-bar" + (props.isProgressShow ? " search__progress-bar_active" : "")}></div>
       </div>
       <Players isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
     </div>

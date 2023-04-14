@@ -1,11 +1,22 @@
 //Звания
-import silver1 from '../images/ranks/supreme.png';
+import silver1 from '../images/ranks/silver1.png';
 import silver2 from '../images/ranks/silver2.png';
 import silver3 from '../images/ranks/silver3.png';
 import silver4 from '../images/ranks/silver4.png';
 import silver5 from '../images/ranks/silver5.png';
 import silver6 from '../images/ranks/silver6.png';
+import nova1 from '../images/ranks/nova1.png';
+import nova2 from '../images/ranks/nova2.png';
+import nova3 from '../images/ranks/nova3.png';
+import nova4 from '../images/ranks/nova4.png';
+import ak from '../images/ranks/ak.png';
+import ak_master from '../images/ranks/ak_master.png';
+import double_ak from '../images/ranks/double_ak.png';
+import big_star from '../images/ranks/big_star.png';
+import eagle from '../images/ranks/eagle.png';
+import lem from '../images/ranks/lem.png';
 import supreme from '../images/ranks/supreme.png';
+import global from '../images/ranks/global.png';
 
 //Страны
 import russia from '../images/country/russia.png';
@@ -219,21 +230,21 @@ export const searchArray = [
     avatar: friendPhoto2,
     name: "#ЖирныйRust_Deluxe",
     prime: true,
-    rank: supreme,
+    rank: global,
     country: ukraine
   },
   {
     avatar: friendPhoto3,
     name: "-",
     prime: true,
-    rank: supreme,
+    rank: lem,
     country: russia
   },
   {
     avatar: friendPhoto4,
     name: "Bogdan",
     prime: true,
-    rank: supreme,
+    rank: lem,
     country: russia
   },
   {
@@ -247,28 +258,28 @@ export const searchArray = [
     avatar: friendPhoto6,
     name: "kent10",
     prime: true,
-    rank: supreme,
+    rank: eagle,
     country: russia
   },
   {
     avatar: friendPhoto7,
     name: "Krizhik",
     prime: true,
-    rank: supreme,
+    rank: eagle,
     country: turkey
   },
   {
     avatar: friendPhoto8,
     name: "OneLove",
     prime: true,
-    rank: supreme,
+    rank: big_star,
     country: turkey
   },
   {
     avatar: friendPhoto9,
     name: "silenium",
     prime: true,
-    rank: supreme,
+    rank: double_ak,
     country: finland
   },
 
@@ -276,7 +287,7 @@ export const searchArray = [
     avatar: friendPhoto10,
     name: "Space ASS",
     prime: true,
-    rank: supreme,
+    rank: double_ak,
     country: romania
   },
   {
@@ -290,63 +301,63 @@ export const searchArray = [
     avatar: friendPhoto12,
     name: "Виталик подошва",
     prime: true,
-    rank: supreme,
+    rank: ak_master,
     country: finland
   },
   {
     avatar: friendPhoto13,
     name: "CTAS",
     prime: true,
-    rank: supreme,
+    rank: ak,
     country: finland
   },
   {
     avatar: friendPhoto14,
     name: "DeadPool",
     prime: true,
-    rank: supreme,
+    rank: nova4,
     country: finland
   },
   {
     avatar: friendPhoto15,
     name: "Gebert",
     prime: true,
-    rank: supreme,
+    rank: nova3,
     country: romania
   },
   {
     avatar: friendPhoto16,
     name: "Renessance",
     prime: true,
-    rank: supreme,
+    rank: nova2,
     country: romania
   },
   {
     avatar: friendPhoto17,
     name: "YaRa",
     prime: true,
-    rank: supreme,
+    rank: nova1,
     country: turkey
   },
   {
     avatar: friendPhoto18,
     name: "ZiP",
     prime: true,
-    rank: supreme,
+    rank: silver6,
     country: ukraine
   },
   {
     avatar: friendPhoto19,
     name: "Киберкотлета",
     prime: true,
-    rank: supreme,
+    rank: silver5,
     country: ukraine
   },
   {
     avatar: friendPhoto20,
     name: "Рандомный чел",
     prime: true,
-    rank: supreme,
+    rank: silver4,
     country: ukraine
   },
   

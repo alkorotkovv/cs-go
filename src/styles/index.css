@@ -3,7 +3,7 @@
 @import "../vendor/normalize.css";
 .page {
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -95,22 +95,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
   transition: 0.2s linear;
-  /*
-  &:hover .tools__item:last-of-type{
-    //margin-right: 33px;
-  }
-
-  & .tools__item_active{
-    //animation: slide 2s linear forwards;
-  }
-
-  &:hover .tools__item_active{
-    position: relative;
-    left: 0;
-    //transform: translate(-20px, 0);
-    //transition: transform 2s;
-  }
-  */
 }
 .rightBar__main {
   margin: 0;
@@ -139,7 +123,13 @@
   padding: 0;
   width: 64px;
   height: 64px;
+  box-sizing: border-box;
   grid-area: avatar;
+  animation: avatar-border-off 0.1s linear;
+}
+.profile__avatar:hover {
+  border: 4px solid white;
+  animation: avatar-border-on 0.1s linear;
 }
 .profile__name {
   margin: 0;
@@ -168,6 +158,22 @@
 }
 .profile__arrow_active {
   opacity: 1;
+}
+@keyframes avatar-border-on {
+  from {
+    border: 0 solid white;
+  }
+  to {
+    border: 4px solid white;
+  }
+}
+@keyframes avatar-border-off {
+  from {
+    border: 4px solid white;
+  }
+  to {
+    border: 0 solid white;
+  }
 }
 
 .experience {
@@ -327,74 +333,6 @@
   transform: rotate(270deg);
 }
 
-/*
-.tools {
-  margin: 0;
-  padding: 0 10px 0 20px;
-  height: 64px;
-  display: flex;
-  justify-content: right;
-  list-style-type: none;
-  align-items: center;
-
-  &__item {
-    margin: 0 33px 0 0;
-    padding: 0;
-    width: 64px;
-    display: flex;
-    box-sizing:content-box;
-    justify-content: center;
-    align-items: flex-start;
-    border-bottom: 5px solid transparent;
-
-    &:last-of-type {
-      margin: 0;
-    }
-
-    &:hover {
-      padding-bottom: 5px;
-      border-bottom: 1px solid white;
-    }
-
-    &_active {
-      position: absolute;
-      left: 20px;
-
-      border-bottom: 5px solid white;
-      animation: slow 0.2s linear forwards;
-
-      &:hover {
-        padding-bottom: 1px;
-        border-bottom: 5px solid white;
-      }
-
-      @keyframes slow {
-        from {
-          padding-bottom: 5px;
-          border-bottom: 1px solid rgba(255, 255, 255, 1);
-        }
-        to {
-          padding-bottom: 1px;
-          border-bottom: 5px solid rgba(255, 255, 255, 1);
-        }
-      }
-
-      @keyframes slide {
-        from {
-          position: absolute;
-          left: 0;
-        }
-        to {
-          position: absolute;
-          left: 20px;
-        }
-      }
-    }
-  }
-
-}
-
-*/
 .profile__medals {
   margin: 0;
   padding: 0;
@@ -679,17 +617,16 @@
 .friends {
   margin: 0;
   padding: 0;
-  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
 }
 .friends_big {
-  height: 800px;
+  height: 798px;
 }
 .friends_short {
-  height: 700px;
+  height: 698px;
 }
 .friends::-webkit-scrollbar {
   width: 8px;
@@ -747,17 +684,16 @@
 .players {
   margin: 0;
   padding: 0;
-  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
 }
 .players_big {
-  height: 800px;
+  height: 728px;
 }
 .players_short {
-  height: 700px;
+  height: 628px;
 }
 .players::-webkit-scrollbar {
   width: 8px;
@@ -772,13 +708,12 @@
 
 .player {
   margin: 0;
-  padding: 8px 18px 8px 0;
+  padding: 8px 24px 8px 0;
   border-left: 6px solid transparent;
-  box-sizing: content-box;
   display: grid;
   column-gap: 8px;
   align-items: center;
-  grid-template-columns: 77px 20px 50px 42px 1fr;
+  grid-template-columns: 77px 20px 50px auto 1fr;
   grid-template-areas: "avatar name name name message" "avatar prime rank country message";
 }
 .player:hover {
@@ -787,7 +722,15 @@
 .player__avatar {
   margin: 0 0 0 18px;
   padding: 0;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
   grid-area: avatar;
+  animation: avatar-border-off 0.1s ease-in forwards;
+}
+.player__avatar:hover {
+  border: 4px solid white;
+  animation: avatar-border-on 0.1s ease-in forwards;
 }
 .player__name {
   margin: 0;
@@ -820,15 +763,15 @@
   width: 42px;
   height: 42px;
   justify-self: end;
-  animation: search-opacity-down 0.3s ease-in forwards;
+  animation: message-opacity-down 0.3s ease-in forwards;
   grid-area: message;
 }
 .player__message:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  animation: search-opacity-up 0.3s ease-in forwards;
+  animation: message-opacity-up 0.3s ease-in forwards;
 }
-@keyframes search-opacity-up {
+@keyframes message-opacity-up {
   from {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -836,12 +779,28 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
-@keyframes search-opacity-down {
+@keyframes message-opacity-down {
   from {
     background-color: rgba(0, 0, 0, 0.2);
   }
   to {
     background-color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes avatar-border-on {
+  from {
+    border: 0 solid white;
+  }
+  to {
+    border: 4px solid white;
+  }
+}
+@keyframes avatar-border-off {
+  from {
+    border: 4px solid white;
+  }
+  to {
+    border: 0 solid white;
   }
 }
 

@@ -1,18 +1,17 @@
 .friends {
   margin: 0;
   padding: 0;
-  height: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
 
   &_big {
-    height: 800px;
+    height: 798px;
   }
 
   &_short {
-    height: 700px;
+    height: 698px;
   }
   
   &::-webkit-scrollbar {

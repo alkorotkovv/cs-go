@@ -11,10 +11,6 @@ import rankOld from '../../images/rankOld.png';
 import rankZona from '../../images/rankZona.png';
 import arrowDown from '../../images/arr_down.png';
 
-import friendsLogo from '../../images/friends.png';
-import searchLogo from '../../images/search.png';
-import lastLogo from '../../images/last.png';
-import messageLogo from '../../images/message.png';
 import Medals from '../Medals/Medals';
 import Messages from '../Messages/Messages';
 import Frame from '../Frame/Frame';
@@ -32,9 +28,25 @@ function RightBar() {
   const [isLastVisible, setIsLastVisible] = React.useState(false);
   const [isMessageVisible, setIsMessageVisible] = React.useState(false);
 
+  const [isProgressShow, setIsProgressShow] = React.useState(false);
+
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
   const rankSecondSubClassName = (`rank rank_second ${isRankVisible === true ? " rank_second-visible" :  ""}`);
+
+  //Функция запускает прогресс бар под тулзами при поиске
+  function Reload() {
+    window.scrollTo(0, 0);
+    setIsProgressShow(false);
+    setTimeout(function() {
+      console.log(`Через секунду показываем`)
+      setIsProgressShow(true)
+    }, 100)
+    setTimeout(function() {
+      console.log(`Через 3секунды скрываем`)
+      setIsProgressShow(false)
+    }, 3000)
+  }
 
   function handleRankClick() {
     setIsRankVisible(!isRankVisible);
@@ -58,10 +70,11 @@ function RightBar() {
   }
 
   function handleSearchClick() {
+    Reload();
     setIsFriensVisible(false);
     setIsSearchVisible(true);
     setIsLastVisible(false);
-    setIsMessageVisible(false);
+    setIsMessageVisible(false);    
   }
 
   function handleLastClick() {
@@ -81,7 +94,7 @@ function RightBar() {
   return (
     <div className="rightBar">
       <div className='rightBar__main'>
-        
+
         <div className='profile'>
           <img className='profile__avatar' src={avatar} alt="csgo"></img>
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
@@ -125,7 +138,7 @@ function RightBar() {
           isMessageVisible={isMessageVisible}
         />
         <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
-        <Frame component={Search} isVisible={isSearchVisible} isRankVisible={isRankVisible} friendsArray={searchArray} />
+        <Frame component={Search} isVisible={isSearchVisible} isRankVisible={isRankVisible} friendsArray={searchArray}  isProgressShow={isProgressShow} setIsProgressShow={setIsProgressShow} Reload={Reload}/>
         <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />
         <Frame component={Messages} isVisible={isMessageVisible} isRankVisible={isRankVisible} friendsArray={messagesArray} />
         
