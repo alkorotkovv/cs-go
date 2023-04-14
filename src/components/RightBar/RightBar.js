@@ -19,6 +19,7 @@ import Medals from '../Medals/Medals';
 import Messages from '../Messages/Messages';
 import Frame from '../Frame/Frame';
 import Search from '../Search/Search';
+import Tools from '../Tools/Tools';
 
 
 function RightBar() {
@@ -112,12 +113,15 @@ function RightBar() {
         </div>
       </div>
       <div className='rightBar__sub'>
+        <Tools />
+        {/*
         <ul className='tools'>
           <li className={"tools__item" + (isFriensVisible ? " tools__item_active" : "")} onClick={handleFriendsClick}><img className='tools__logo' src={friendsLogo} alt="друзья"/></li>
           <li className={"tools__item" + (isSearchVisible ? " tools__item_active" : "")} onClick={handleSearchClick}><img className='tools__logo' src={searchLogo} alt="поиск"/></li>
           <li className={"tools__item" + (isLastVisible ? " tools__item_active" : "")} onClick={handleLastClick}><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
           <li className={"tools__item" + (isMessageVisible ? " tools__item_active" : "")} onClick={handleMessageClick}><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
         </ul>
+        */}
         <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
         <Frame component={Search} isVisible={isSearchVisible} isRankVisible={isRankVisible} friendsArray={searchArray} />
         <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />

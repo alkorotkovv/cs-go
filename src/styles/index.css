@@ -96,6 +96,22 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
   transition: 0.18s linear;
+  /*
+  &:hover .tools__item:last-of-type{
+    //margin-right: 33px;
+  }
+
+  & .tools__item_active{
+    //animation: slide 2s linear forwards;
+  }
+
+  &:hover .tools__item_active{
+    position: relative;
+    left: 0;
+    //transform: translate(-20px, 0);
+    //transition: transform 2s;
+  }
+  */
 }
 .rightBar__main {
   margin: 0;
@@ -316,48 +332,74 @@
   transform: rotate(270deg);
 }
 
+/*
 .tools {
   margin: 0;
   padding: 0 10px 0 20px;
   height: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   list-style-type: none;
   align-items: center;
-}
-.tools__item {
-  margin: 0;
-  padding: 0;
-  width: 64px;
-  display: flex;
-  box-sizing: content-box;
-  justify-content: center;
-  align-items: flex-start;
-  border-bottom: 5px solid transparent;
-}
-.tools__item:hover {
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
-}
-.tools__item_active {
-  border-bottom: 5px solid white;
-  animation: slow 0.2s linear forwards;
-}
-.tools__item_active:hover {
-  padding-bottom: 1px;
-  border-bottom: 5px solid white;
-}
-@keyframes slow {
-  from {
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+
+  &__item {
+    margin: 0 33px 0 0;
+    padding: 0;
+    width: 64px;
+    display: flex;
+    box-sizing:content-box;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 5px solid transparent;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
+    }
+
+    &_active {
+      position: absolute;
+      left: 20px;
+
+      border-bottom: 5px solid white;
+      animation: slow 0.2s linear forwards;
+
+      &:hover {
+        padding-bottom: 1px;
+        border-bottom: 5px solid white;
+      }
+
+      @keyframes slow {
+        from {
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+        to {
+          padding-bottom: 1px;
+          border-bottom: 5px solid rgba(255, 255, 255, 1);
+        }
+      }
+
+      @keyframes slide {
+        from {
+          position: absolute;
+          left: 0;
+        }
+        to {
+          position: absolute;
+          left: 20px;
+        }
+      }
+    }
   }
-  to {
-    padding-bottom: 1px;
-    border-bottom: 5px solid rgb(255, 255, 255);
-  }
+
 }
 
+*/
 .frame {
   margin: 0;
   padding: 0;
@@ -634,6 +676,222 @@
   display: flex;
   width: 26px;
   height: 26px;
+}
+
+.rightBar {
+  /*
+    & .tools__item_active{
+      //animation: slide 2s linear forwards;
+    }
+  */
+}
+.rightBar:hover .tools__item_1 {
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  animation: none;
+}
+.rightBar:hover .tools__item_2 {
+  opacity: 1;
+  position: absolute;
+  left: 117px;
+  animation: slide-right-2 0.18s linear forwards;
+}
+.rightBar:hover .tools__item_3 {
+  opacity: 1;
+  position: absolute;
+  left: 214px;
+  animation: slide-right-3 0.18s linear forwards;
+}
+.rightBar:hover .tools__item_4 {
+  opacity: 1;
+  position: absolute;
+  left: 311px;
+  animation: slide-right-4 0.18s linear forwards;
+}
+.rightBar:hover .tools__item_1_active {
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+}
+.rightBar:hover .tools__item_2_active {
+  opacity: 1;
+  position: absolute;
+  left: 117px;
+}
+.rightBar:hover .tools__item_3_active {
+  opacity: 1;
+  position: absolute;
+  left: 214px;
+}
+.rightBar:hover .tools__item_4_active {
+  opacity: 1;
+  position: absolute;
+  left: 311px;
+}
+
+.tools {
+  margin: 0;
+  padding: 0 10px 0 20px;
+  height: 64px;
+  display: flex;
+  gap: 33px;
+  position: relative;
+  justify-content: right;
+  list-style-type: none;
+  align-items: center;
+}
+.tools__item {
+  margin: 0;
+  padding: 0;
+  width: 64px;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 5px solid transparent;
+  /*
+  &_active {
+    position: absolute;
+    left: 20px;
+
+    border-bottom: 5px solid white;
+    animation: slow 0.2s linear forwards;
+
+    &:hover {
+      padding-bottom: 1px;
+      border-bottom: 5px solid white;
+    }
+    */
+}
+.tools__item:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+.tools__item_1 {
+  padding: 0;
+  position: absolute;
+  left: 20px;
+  opacity: 0;
+}
+.tools__item_1_active {
+  border-bottom: 5px solid white;
+  animation: slow 0.2s linear forwards;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+}
+.tools__item_2 {
+  padding: 0;
+  position: absolute;
+  left: 117px;
+  opacity: 0;
+}
+.tools__item_2_active {
+  border-bottom: 5px solid white;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  animation: slow 0.2s linear forwards, slide-left-2 0.18s linear forwards;
+}
+.tools__item_3 {
+  padding: 0;
+  position: absolute;
+  left: 214px;
+  opacity: 0;
+}
+.tools__item_3_active {
+  border-bottom: 5px solid white;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  animation: slow 0.2s linear forwards, slide-left-3 0.18s linear forwards;
+}
+.tools__item_4 {
+  padding: 0;
+  position: absolute;
+  left: 311px;
+  opacity: 0;
+}
+.tools__item_4_active {
+  border-bottom: 5px solid white;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  animation: slow 0.2s linear forwards, slide-left-4 0.18s linear forwards;
+}
+.tools__item_4_active .tools {
+  background-color: aqua;
+}
+@keyframes slow {
+  from {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  to {
+    padding-bottom: 1px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+  }
+}
+@keyframes slide-left-2 {
+  from {
+    position: absolute;
+    left: 117px;
+  }
+  to {
+    position: absolute;
+    left: 20px;
+  }
+}
+@keyframes slide-left-3 {
+  from {
+    position: absolute;
+    left: 214px;
+  }
+  to {
+    position: absolute;
+    left: 20px;
+  }
+}
+@keyframes slide-left-4 {
+  from {
+    position: absolute;
+    left: 311px;
+  }
+  to {
+    position: absolute;
+    left: 20px;
+  }
+}
+@keyframes slide-right-2 {
+  from {
+    position: absolute;
+    left: 20px;
+  }
+  to {
+    position: absolute;
+    left: 117px;
+  }
+}
+@keyframes slide-right-3 {
+  from {
+    position: absolute;
+    left: 20px;
+  }
+  to {
+    position: absolute;
+    left: 214px;
+  }
+}
+@keyframes slide-right-4 {
+  from {
+    position: absolute;
+    left: 20px;
+  }
+  to {
+    position: absolute;
+    left: 311px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

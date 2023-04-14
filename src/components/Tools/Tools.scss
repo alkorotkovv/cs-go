@@ -1,0 +1,271 @@
+$time: 0.18s;
+
+.rightBar {
+  
+/*
+  & .tools__item_active{
+    //animation: slide 2s linear forwards;
+  }
+*/
+&:hover .tools__item_1{
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  animation: none;
+}
+
+&:hover .tools__item_2{
+  opacity: 1;
+  position: absolute;
+  left: 117px;
+  animation: slide-right-2 $time linear forwards;
+}
+
+&:hover .tools__item_3{
+  opacity: 1;
+  position: absolute;
+  left: 214px;
+  animation: slide-right-3 $time linear forwards;
+}
+
+&:hover .tools__item_4{
+  opacity: 1;
+  position: absolute;
+  left: 311px;
+  animation: slide-right-4 $time linear forwards;
+}
+
+  &:hover .tools__item_1_active{
+    opacity: 1;
+    position: absolute;
+    left: 20px;
+    //animation: slow 0.2s linear forwards;
+  }
+
+  &:hover .tools__item_2_active{
+    opacity: 1;
+    position: absolute;
+    left: 117px;
+    //animation: slow 0.2s linear forwards,
+
+  }
+
+  &:hover .tools__item_3_active{
+    opacity: 1;
+    position: absolute;
+    left: 214px;
+    //animation: slow 0.2s linear forwards;
+    
+  }
+
+  &:hover .tools__item_4_active{
+    opacity: 1;
+    position: absolute;
+    left: 311px;
+    //animation: slow 0.2s linear forwards;
+    
+  }
+}
+
+.tools {
+  margin: 0;
+  padding: 0 10px 0 20px;
+  height: 64px;
+  display: flex;
+  gap: 33px;
+  position: relative;
+  justify-content: right;
+  list-style-type: none;
+  align-items: center;
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    display: flex;
+    box-sizing:content-box;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
+    }
+
+
+
+    &_1 {
+      padding: 0;
+      position: absolute;
+      left: 20px;
+      opacity: 0;
+
+      &_active {
+        border-bottom: 5px solid white;
+        animation: slow 0.2s linear forwards;
+
+        opacity: 1;
+        position: absolute;
+        left: 20px;
+      }
+    }
+
+    &_2 {
+      padding: 0;
+      position: absolute;
+      left: 117px; 
+      opacity: 0;
+
+      &_active {
+        border-bottom: 5px solid white;
+        opacity: 1;
+        position: absolute;
+        left: 20px;
+        animation: slow 0.2s linear forwards,
+                   slide-left-2 $time linear forwards;
+
+        
+      }
+
+      
+    }
+
+    &_3 {
+      padding: 0;
+      position: absolute;
+      left: 214px;
+      opacity: 0;
+
+      &_active {
+        border-bottom: 5px solid white;
+        opacity: 1;
+        position: absolute;
+        left: 20px;
+        animation: slow 0.2s linear forwards,
+                   slide-left-3 $time linear forwards;
+      }
+    }
+
+    &_4 {
+      padding: 0;
+      position: absolute;
+      left: 311px;
+      opacity: 0;
+
+      &_active {
+        border-bottom: 5px solid white;
+        opacity: 1;
+        position: absolute;
+        left: 20px;
+        animation: slow 0.2s linear forwards,
+                   slide-left-4 $time linear forwards;
+      }
+
+      &_active .tools {
+        background-color: aqua;
+      }
+    }
+
+    
+
+    
+    /*
+    &_active {
+      position: absolute;
+      left: 20px;
+
+      border-bottom: 5px solid white;
+      animation: slow 0.2s linear forwards;
+
+      &:hover {
+        padding-bottom: 1px;
+        border-bottom: 5px solid white;
+      }
+      */
+
+      @keyframes slow {
+        from {
+          padding-bottom: 5px;
+          border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+        to {
+          padding-bottom: 1px;
+          border-bottom: 5px solid rgba(255, 255, 255, 1);
+        }
+      }
+
+      @keyframes slide-left-2 {
+        from {
+          position: absolute;
+          left: 117px;
+        }
+        to {
+          position: absolute;
+          left: 20px;
+        }
+      }
+
+      @keyframes slide-left-3 {
+        from {
+          position: absolute;
+          left: 214px;
+        }
+        to {
+          position: absolute;
+          left: 20px;
+        }
+      }
+
+      @keyframes slide-left-4 {
+        from {
+          position: absolute;
+          left: 311px;
+        }
+        to {
+          position: absolute;
+          left: 20px;
+        }
+      }
+
+      @keyframes slide-right-2 {
+        from {
+          position: absolute;
+          left: 20px;
+        }
+        to {
+          position: absolute;
+          left: 117px;
+        }
+      }
+
+      @keyframes slide-right-3 {
+        from {
+          position: absolute;
+          left: 20px;
+        }
+        to {
+          position: absolute;
+          left: 214px;
+        }
+      }
+
+      @keyframes slide-right-4 {
+        from {
+          position: absolute;
+          left: 20px;
+        }
+        to {
+          position: absolute;
+          left: 311px;
+        }
+      }
+
+
+
+
+    }
+  }
+
+
+
