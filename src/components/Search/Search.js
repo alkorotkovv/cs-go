@@ -54,7 +54,7 @@ function Search(props) {
       <div className={"search__progress" + (props.isProgressShow ? " search__progress_visible" : "")}>
         <div className={"search__progress-bar" + (props.isProgressShow ? " search__progress-bar_active" : "")}></div>
       </div>
-      <Players isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
+      <Players isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray} isProgressShow={props.isProgressShow} Reload={props.Reload}/>
     </div>
   )
 }
