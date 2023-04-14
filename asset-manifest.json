@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cs-go/static/css/main.bd3fbfd7.css",
+    "main.js": "/cs-go/static/js/main.5add8e87.js",
+    "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
+    "static/media/background.jpg": "/cs-go/static/media/background.9241de7fae211b4f49a8.jpg",
+    "static/media/Inter-Bold.woff?v=3.19": "/cs-go/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-Medium.woff?v=3.19": "/cs-go/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff?v=3.19": "/cs-go/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/cs-go/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Bold.woff2?v=3.19": "/cs-go/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Medium.woff2?v=3.19": "/cs-go/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2?v=3.19": "/cs-go/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/cs-go/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/avatar.png": "/cs-go/static/media/avatar.ede65a949288683bb463.png",
+    "static/media/experienceLogo.png": "/cs-go/static/media/experienceLogo.951b00020a7b1a55edd1.png",
+    "index.html": "/cs-go/index.html",
+    "main.bd3fbfd7.css.map": "/cs-go/static/css/main.bd3fbfd7.css.map",
+    "main.5add8e87.js.map": "/cs-go/static/js/main.5add8e87.js.map",
+    "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd3fbfd7.css",
+    "static/js/main.5add8e87.js"
+  ]
+}
