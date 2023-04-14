@@ -81,6 +81,7 @@ function RightBar() {
   return (
     <div className="rightBar">
       <div className='rightBar__main'>
+        
         <div className='profile'>
           <img className='profile__avatar' src={avatar} alt="csgo"></img>
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
@@ -91,8 +92,8 @@ function RightBar() {
               <li className={"profile__arrow" + ((countMedalsBlock < Math.floor(medalsArray.length/5)) ? " profile__arrow_active" : "")}><img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/></li>
             </ul>
           </div>
-          
         </div>
+
         <div className='experience'>
           <img className='experience__logo' src={experienceLogo} alt="csgo"></img>
           <p className='experience__title'>Ранг: Лейтенант, 22</p>
@@ -113,15 +114,16 @@ function RightBar() {
         </div>
       </div>
       <div className='rightBar__sub'>
-        <Tools />
-        {/*
-        <ul className='tools'>
-          <li className={"tools__item" + (isFriensVisible ? " tools__item_active" : "")} onClick={handleFriendsClick}><img className='tools__logo' src={friendsLogo} alt="друзья"/></li>
-          <li className={"tools__item" + (isSearchVisible ? " tools__item_active" : "")} onClick={handleSearchClick}><img className='tools__logo' src={searchLogo} alt="поиск"/></li>
-          <li className={"tools__item" + (isLastVisible ? " tools__item_active" : "")} onClick={handleLastClick}><img className='tools__logo' src={lastLogo} alt="недавние"/></li>
-          <li className={"tools__item" + (isMessageVisible ? " tools__item_active" : "")} onClick={handleMessageClick}><img className='tools__logo' src={messageLogo} alt="приглашение"/></li>
-        </ul>
-        */}
+        <Tools 
+          handleFriendsClick={handleFriendsClick} 
+          handleSearchClick={handleSearchClick} 
+          handleLastClick={handleLastClick} 
+          handleMessageClick={handleMessageClick}
+          isFriensVisible={isFriensVisible}
+          isSearchVisible={isSearchVisible}
+          isLastVisible={isLastVisible}
+          isMessageVisible={isMessageVisible}
+        />
         <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
         <Frame component={Search} isVisible={isSearchVisible} isRankVisible={isRankVisible} friendsArray={searchArray} />
         <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />

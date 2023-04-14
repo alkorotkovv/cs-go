@@ -706,7 +706,6 @@
   opacity: 1;
   position: absolute;
   left: 20px;
-  animation: slow 0.2s linear forwards;
 }
 .rightBar:hover .tools__item_2_active {
   opacity: 1;
@@ -740,14 +739,19 @@
   padding: 0;
   width: 64px;
   display: flex;
-  box-sizing: content-box;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  border-bottom: 5px solid transparent;
+  align-items: center;
 }
-.tools__item:hover {
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+.tools__item:hover .tools__underline {
+  margin-top: 4px;
+  height: 1px;
+  background-color: white;
+}
+.tools__item:hover .tools__underline_active {
+  margin-top: 0;
+  height: 5px;
+  background-color: white;
 }
 .tools__item_1 {
   padding: 0;
@@ -756,11 +760,9 @@
   opacity: 0;
 }
 .tools__item_1_active {
-  border-bottom: 5px solid white;
   opacity: 1;
   position: absolute;
   left: 20px;
-  animation: slow 0.2s linear forwards;
 }
 .tools__item_2 {
   padding: 0;
@@ -769,11 +771,10 @@
   opacity: 0;
 }
 .tools__item_2_active {
-  border-bottom: 5px solid white;
   opacity: 1;
   position: absolute;
   left: 20px;
-  animation: slow 0.2s linear forwards, slide-left-2 0.2s linear forwards;
+  animation: slide-left-2 0.2s linear forwards;
 }
 .tools__item_3 {
   padding: 0;
@@ -782,11 +783,10 @@
   opacity: 0;
 }
 .tools__item_3_active {
-  border-bottom: 5px solid white;
   opacity: 1;
   position: absolute;
   left: 20px;
-  animation: slow 0.2s linear forwards, slide-left-3 0.2s linear forwards;
+  animation: slide-left-3 0.2s linear forwards;
 }
 .tools__item_4 {
   padding: 0;
@@ -795,21 +795,10 @@
   opacity: 0;
 }
 .tools__item_4_active {
-  border-bottom: 5px solid white;
   opacity: 1;
   position: absolute;
   left: 20px;
-  animation: slow 0.2s linear forwards, slide-left-4 0.2s linear forwards;
-}
-@keyframes slow {
-  from {
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-  }
-  to {
-    padding-bottom: 1px;
-    border-bottom: 5px solid rgb(255, 255, 255);
-  }
+  animation: slide-left-4 0.2s linear forwards;
 }
 @keyframes slide-left-2 {
   from {
@@ -869,6 +858,29 @@
   to {
     position: absolute;
     left: 311px;
+  }
+}
+.tools__underline {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+}
+.tools__underline_active {
+  margin-top: 0;
+  height: 5px;
+  background-color: white;
+  animation: slow 0.2s linear;
+}
+@keyframes slow {
+  from {
+    margin-top: 4px;
+    height: 1px;
+  }
+  to {
+    margin-top: 0px;
+    height: 5px;
   }
 }
 

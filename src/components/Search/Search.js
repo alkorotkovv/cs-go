@@ -14,52 +14,45 @@ function Search(props) {
   const [isUpdateActive, setIsUpdateActive] = React.useState(false);
   const [isProgressShow, setIsProgressShow] = React.useState(false);
 
-  function handleMmClick() {
-    setIsMmActive(true);
-    setIsDualActive(false);
-    setIsZoneActive(false);
-    setIsUpdateActive(false);
-
-
-    setIsProgressShow(true)
+  function Reload() {
+    setIsProgressShow(false);
     setTimeout(function() {
-      console.log(`Через секунду напечатаю`)
+      console.log(`Через секунду показываем`)
+      setIsProgressShow(true)
+    }, 100)
+    setTimeout(function() {
+      console.log(`Через 3секунды скрываем`)
       setIsProgressShow(false)
     }, 3000)
   }
 
+  function handleMmClick() {
+    Reload();
+    setIsMmActive(true);
+    setIsDualActive(false);
+    setIsZoneActive(false);
+    setIsUpdateActive(false);    
+
+  }
+
   function handleDualClick() {
+    Reload();
     setIsMmActive(false);
     setIsDualActive(true);
     setIsZoneActive(false);
     setIsUpdateActive(false);
-
-    setIsProgressShow(true)
-    setTimeout(function() {
-      console.log(`Через секунду напечатаю`)
-      setIsProgressShow(false)
-    }, 3000)
   }
 
   function handleZoneClick() {
+    Reload();
     setIsMmActive(false);
     setIsDualActive(false);
     setIsZoneActive(true);
     setIsUpdateActive(false);
-
-    setIsProgressShow(true)
-    setTimeout(function() {
-      console.log(`Через секунду напечатаю`)
-      setIsProgressShow(false)
-    }, 3000)
   }
 
   function handleUpdateClick() {
-    setIsProgressShow(true)
-    setTimeout(function() {
-      console.log(`Через секунду напечатаю`)
-      setIsProgressShow(false)
-    }, 3000)
+    Reload();
   }
   
   return (
