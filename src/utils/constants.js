@@ -78,6 +78,8 @@ import medalLogo5 from '../images/stockholm.png';
 import medalLogo6 from '../images/rio.png';
 import medalLogo7 from '../images/chicken.png';
 
+import anubis from '../movies/anubis.webm'
+
 //Массив медалей
 export const medalsArray = [
   
