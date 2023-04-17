@@ -91,6 +91,7 @@
   color: black;
   position: absolute;
   top: 0;
+  right: -290px;
   background-color: rgba(0, 101, 252, 0.726);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
@@ -111,6 +112,10 @@
   flex-direction: column;
   position: relative;
 }
+.rightBar:hover {
+  right: 0;
+}
+
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
@@ -377,11 +382,11 @@
   animation: leftright 0.25s linear;
 }
 .frame_big {
-  height: 800px;
+  height: 798px;
   top: 280px;
 }
 .frame_short {
-  height: 700px;
+  height: 698px;
   top: 380px;
 }
 @keyframes rightleft {
@@ -623,12 +628,6 @@
   flex-direction: column;
   overflow-y: scroll;
 }
-.friends_big {
-  height: 798px;
-}
-.friends_short {
-  height: 698px;
-}
 .friends::-webkit-scrollbar {
   width: 8px;
 }
@@ -859,6 +858,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  flex-direction: column;
 }
 .search__up {
   margin: 0 20px;
@@ -871,6 +871,8 @@
 .search__logo {
   margin: 0;
   padding: 8px;
+  width: 42px;
+  height: 42px;
   box-sizing: border-box;
   animation: search-opacity-down 0.3s ease-in forwards;
 }

@@ -188,8 +188,8 @@ function RightBar() {
         />
         <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
         <Frame 
-          component={Search} 
-          isVisible={isSearchVisible} 
+          component={Search}
+          isVisible={isSearchVisible}
           isRankVisible={isRankVisible}
           isMmActive={isMmActive}
           isDualActive={isDualActive}
@@ -199,13 +199,11 @@ function RightBar() {
           handleDualClick={handleDualClick}
           handleZoneClick={handleZoneClick}
           handleUpdateClick={handleUpdateClick}
-          isProgressShow={isProgressShow} 
-          setIsProgressShow={setIsProgressShow} 
+          isProgressShow={isProgressShow}
+          setIsProgressShow={setIsProgressShow}
           Reload={Reload}/>
         <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />
         <Frame component={Messages} isVisible={isMessageVisible} isRankVisible={isRankVisible} friendsArray={messagesArray} />
-        
-        
 
       </div>
     </div>

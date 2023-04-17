@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  flex-direction: column;
 
   &__up {
     margin: 0 20px;
@@ -15,6 +16,8 @@
   &__logo {
     margin: 0;
     padding: 8px;
+    width: 42px;
+    height: 42px;
     box-sizing: border-box;
     animation: search-opacity-down 0.3s ease-in forwards;
 

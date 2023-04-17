@@ -12,42 +12,6 @@ import { searchArray_mm,
 import Players from '../Players/Players';
 
 function Search(props) {
-
-  /*
-  const [isMmActive, setIsMmActive] = React.useState(true);
-  const [isDualActive, setIsDualActive] = React.useState(false);
-  const [isZoneActive, setIsZoneActive] = React.useState(false);
-  const [isUpdateActive, setIsUpdateActive] = React.useState(false);
-
-  function handleMmClick() {
-    props.Reload();
-    setIsMmActive(true);
-    setIsDualActive(false);
-    setIsZoneActive(false);
-    setIsUpdateActive(false);    
-
-  }
-
-  function handleDualClick() {
-    props.Reload();
-    setIsMmActive(false);
-    setIsDualActive(true);
-    setIsZoneActive(false);
-    setIsUpdateActive(false);
-  }
-
-  function handleZoneClick() {
-    props.Reload();
-    setIsMmActive(false);
-    setIsDualActive(false);
-    setIsZoneActive(true);
-    setIsUpdateActive(false);
-  }
-
-  function handleUpdateClick() {
-    props.Reload();
-  }
-  */
   
   return (
     <div className='search'>

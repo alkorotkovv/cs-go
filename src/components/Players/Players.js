@@ -24,7 +24,7 @@ function Players(props) {
             isVisible={props.isVisible}
           />
         )
-        }  
+      }  
     </ul>
   )
 }
