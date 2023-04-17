@@ -14,9 +14,8 @@ function Menu(props) {
   return (
     <div className="menu" onClick={handleClick} >
       <video id="nubexVideo" width="auto" height="auto" autoPlay muted loop="loop" preload="auto">
-        {/*<source src={anubis} type='video/webm' ></source>*/}
+        <source src={anubis} type='video/webm' ></source>
         {/*<source src={terr} type='video/webm' ></source>*/}
-        <img src={terrgif} alt="я джифка"></img>
       </video>
       <img src={terrgif} alt="я джифка"></img>
       <img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />

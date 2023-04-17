@@ -2,7 +2,13 @@ import React from 'react';
 
 import Friends from '../Friends/Friends';
 
-import { medalsArray, friendsArray, searchArray, lastArray, messagesArray } from '../../utils/constants';
+import { medalsArray, 
+         friendsArray, 
+         searchArray_mm, 
+         searchArray_dual,
+         searchArray_zone, 
+         lastArray, 
+         messagesArray } from '../../utils/constants';
 
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
@@ -28,7 +34,12 @@ function RightBar() {
   const [isLastVisible, setIsLastVisible] = React.useState(false);
   const [isMessageVisible, setIsMessageVisible] = React.useState(false);
 
+  const [isMmActive, setIsMmActive] = React.useState(true);
+  const [isDualActive, setIsDualActive] = React.useState(false);
+  const [isZoneActive, setIsZoneActive] = React.useState(false);
+  const [isUpdateActive, setIsUpdateActive] = React.useState(false);
   const [isProgressShow, setIsProgressShow] = React.useState(false);
+  const [searchArray, setSearchArray] = React.useState(searchArray_mm);
 
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
@@ -62,6 +73,8 @@ function RightBar() {
       setCountMedalsBlock(countMedalsBlock + 1);
   }
 
+
+//Функции для работы Tools
   function handleFriendsClick() {
     setIsFriensVisible(true);
     setIsSearchVisible(false);
@@ -90,6 +103,43 @@ function RightBar() {
     setIsLastVisible(false);
     setIsMessageVisible(true);
   }
+
+//Функции для работы Search
+  function handleMmClick() {
+    setSearchArray(searchArray_mm);
+    Reload();
+    setIsMmActive(true);
+    setIsDualActive(false);
+    setIsZoneActive(false);
+    setIsUpdateActive(false);    
+
+  }
+
+  function handleDualClick() {
+    setSearchArray(searchArray_dual);
+    Reload();
+    setIsMmActive(false);
+    setIsDualActive(true);
+    setIsZoneActive(false);
+    setIsUpdateActive(false);
+  }
+
+  function handleZoneClick() {
+    setSearchArray(searchArray_zone);
+    Reload();
+    setIsMmActive(false);
+    setIsDualActive(false);
+    setIsZoneActive(true);
+    setIsUpdateActive(false);
+  }
+
+  function handleUpdateClick() {
+    Reload();
+  }
+
+
+
+
 
   return (
     <div className="rightBar">
@@ -138,7 +188,22 @@ function RightBar() {
           isMessageVisible={isMessageVisible}
         />
         <Frame component={Friends} isVisible={isFriensVisible} isRankVisible={isRankVisible} friendsArray={friendsArray} />
-        <Frame component={Search} isVisible={isSearchVisible} isRankVisible={isRankVisible} friendsArray={searchArray}  isProgressShow={isProgressShow} setIsProgressShow={setIsProgressShow} Reload={Reload}/>
+        <Frame 
+          component={Search} 
+          isVisible={isSearchVisible} 
+          isRankVisible={isRankVisible} 
+          friendsArray={searchArray}  
+          isMmActive={isMmActive}
+          isDualActive={isDualActive}
+          isZoneActive={isZoneActive}
+          isUpdateActive={isUpdateActive}
+          handleMmClick={handleMmClick}
+          handleDualClick={handleDualClick}
+          handleZoneClick={handleZoneClick}
+          handleUpdateClick={handleUpdateClick}
+          isProgressShow={isProgressShow} 
+          setIsProgressShow={setIsProgressShow} 
+          Reload={Reload}/>
         <Frame component={Friends} isVisible={isLastVisible} isRankVisible={isRankVisible} friendsArray={lastArray} />
         <Frame component={Messages} isVisible={isMessageVisible} isRankVisible={isRankVisible} friendsArray={messagesArray} />
         

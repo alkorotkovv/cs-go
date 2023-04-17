@@ -9,6 +9,7 @@ import Players from '../Players/Players';
 
 function Search(props) {
 
+  /*
   const [isMmActive, setIsMmActive] = React.useState(true);
   const [isDualActive, setIsDualActive] = React.useState(false);
   const [isZoneActive, setIsZoneActive] = React.useState(false);
@@ -42,14 +43,15 @@ function Search(props) {
   function handleUpdateClick() {
     props.Reload();
   }
+  */
   
   return (
     <div className='search'>
       <div className='search__up'>
-        <img className={"search__logo" + (isMmActive ? " search__logo_active" : "")} onClick={handleMmClick} src={mmIcon} alt="мм"/>
-        <img className={"search__logo" + (isDualActive ? " search__logo_active" : "")} onClick={handleDualClick} src={dualIcon} alt="напарники"/>
-        <img className={"search__logo" + (isZoneActive ? " search__logo_active" : "")} onClick={handleZoneClick} src={zoneIcon} alt="запретка"/>
-        <img className={"search__logo" + (isUpdateActive ? " search__logo_active" : "")} onClick={handleUpdateClick} src={updateIcon} alt="обновить"/>
+        <img className={"search__logo" + (props.isMmActive ? " search__logo_active" : "")} onClick={props.handleMmClick} src={mmIcon} alt="мм"/>
+        <img className={"search__logo" + (props.isDualActive ? " search__logo_active" : "")} onClick={props.handleDualClick} src={dualIcon} alt="напарники"/>
+        <img className={"search__logo" + (props.isZoneActive ? " search__logo_active" : "")} onClick={props.handleZoneClick} src={zoneIcon} alt="запретка"/>
+        <img className={"search__logo" + (props.isUpdateActive ? " search__logo_active" : "")} onClick={props.handleUpdateClick} src={updateIcon} alt="обновить"/>
       </div>
       <div className={"search__progress" + (props.isProgressShow ? " search__progress_visible" : "")}>
         <div className={"search__progress-bar" + (props.isProgressShow ? " search__progress-bar_active" : "")}></div>

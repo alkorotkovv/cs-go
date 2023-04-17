@@ -1,22 +1,59 @@
-//Звания
-import silver1 from '../images/ranks/silver1.png';
-import silver2 from '../images/ranks/silver2.png';
-import silver3 from '../images/ranks/silver3.png';
-import silver4 from '../images/ranks/silver4.png';
-import silver5 from '../images/ranks/silver5.png';
-import silver6 from '../images/ranks/silver6.png';
-import nova1 from '../images/ranks/nova1.png';
-import nova2 from '../images/ranks/nova2.png';
-import nova3 from '../images/ranks/nova3.png';
-import nova4 from '../images/ranks/nova4.png';
-import ak from '../images/ranks/ak.png';
-import ak_master from '../images/ranks/ak_master.png';
-import double_ak from '../images/ranks/double_ak.png';
-import big_star from '../images/ranks/big_star.png';
-import eagle from '../images/ranks/eagle.png';
-import lem from '../images/ranks/lem.png';
-import supreme from '../images/ranks/supreme.png';
-import global from '../images/ranks/global.png';
+//Звания в ММ
+import silver1_mm from '../images/ranks/mm/silver1.png';
+import silver2_mm from '../images/ranks/mm/silver2.png';
+import silver3_mm from '../images/ranks/mm/silver3.png';
+import silver4_mm from '../images/ranks/mm/silver4.png';
+import silver5_mm from '../images/ranks/mm/silver5.png';
+import silver6_mm from '../images/ranks/mm/silver6.png';
+import nova1_mm from '../images/ranks/mm/nova1.png';
+import nova2_mm from '../images/ranks/mm/nova2.png';
+import nova3_mm from '../images/ranks/mm/nova3.png';
+import nova4_mm from '../images/ranks/mm/nova4.png';
+import ak_mm from '../images/ranks/mm/ak.png';
+import ak_master_mm from '../images/ranks/mm/ak_master.png';
+import double_ak_mm from '../images/ranks/mm/double_ak.png';
+import big_star_mm from '../images/ranks/mm/big_star.png';
+import eagle_mm from '../images/ranks/mm/eagle.png';
+import lem_mm from '../images/ranks/mm/lem.png';
+import supreme_mm from '../images/ranks/mm/supreme.png';
+import global_mm from '../images/ranks/mm/global.png';
+
+//Звания в напарниках
+import silver1_dual from '../images/ranks/dual/silver1.png';
+import silver2_dual from '../images/ranks/dual/silver2.png';
+import silver3_dual from '../images/ranks/dual/silver3.png';
+import silver4_dual from '../images/ranks/dual/silver4.png';
+import silver5_dual from '../images/ranks/dual/silver5.png';
+import silver6_dual from '../images/ranks/dual/silver6.png';
+import nova1_dual from '../images/ranks/dual/nova1.png';
+import nova2_dual from '../images/ranks/dual/nova2.png';
+import nova3_dual from '../images/ranks/dual/nova3.png';
+import nova4_dual from '../images/ranks/dual/nova4.png';
+import ak_dual from '../images/ranks/dual/ak.png';
+import ak_master_dual from '../images/ranks/dual/ak_master.png';
+import double_ak_dual from '../images/ranks/dual/double_ak.png';
+import big_star_dual from '../images/ranks/dual/big_star.png';
+import eagle_dual from '../images/ranks/dual/eagle.png';
+import lem_dual from '../images/ranks/dual/lem.png';
+import supreme_dual from '../images/ranks/dual/supreme.png';
+import global_dual from '../images/ranks/dual/global.png';
+
+//Звания в зоне
+import rat1 from '../images/ranks/zone/rat1.png';
+import rat2 from '../images/ranks/zone/rat2.png';
+import hare1 from '../images/ranks/zone/hare1.png';
+import hare2 from '../images/ranks/zone/hare2.png';
+import scout1 from '../images/ranks/zone/scout1.png';
+import scout2 from '../images/ranks/zone/scout2.png';
+import scout_elite from '../images/ranks/zone/scout_elite.png';
+import fox1 from '../images/ranks/zone/fox1.png';
+import fox2 from '../images/ranks/zone/fox2.png';
+import fox3 from '../images/ranks/zone/fox3.png';
+import fox_elite from '../images/ranks/zone/fox_elite.png';
+import wolf1 from '../images/ranks/zone/wolf1.png';
+import wolf2 from '../images/ranks/zone/wolf2.png';
+import wolf3 from '../images/ranks/zone/wolf3.png';
+import howl from '../images/ranks/zone/howl.png';
 
 //Страны
 import russia from '../images/country/russia.png';
@@ -77,8 +114,6 @@ import medalLogo4 from '../images/rio.png';
 import medalLogo5 from '../images/stockholm.png';
 import medalLogo6 from '../images/rio.png';
 import medalLogo7 from '../images/chicken.png';
-
-import anubis from '../movies/anubis.webm'
 
 //Массив медалей
 export const medalsArray = [
@@ -219,69 +254,69 @@ export const friendsArray = [
   
 ]
 
-//Массив поиска
-export const searchArray = [
+//Массив поиска ММ
+export const searchArray_mm = [
   {
     avatar: friendPhoto1,
     name: "дядя Фёдор",
     prime: true,
-    rank: supreme,
+    rank: supreme_mm,
     country: russia
   },
   {
     avatar: friendPhoto2,
     name: "#ЖирныйRust_Deluxe",
     prime: true,
-    rank: global,
+    rank: global_mm,
     country: ukraine
   },
   {
     avatar: friendPhoto3,
     name: "-",
     prime: true,
-    rank: lem,
+    rank: lem_mm,
     country: russia
   },
   {
     avatar: friendPhoto4,
     name: "Bogdan",
     prime: true,
-    rank: lem,
+    rank: lem_mm,
     country: russia
   },
   {
     avatar: friendPhoto5,
     name: "cl",
     prime: true,
-    rank: supreme,
+    rank: supreme_mm,
     country: russia
   },
   {
     avatar: friendPhoto6,
     name: "kent10",
     prime: true,
-    rank: eagle,
+    rank: eagle_mm,
     country: russia
   },
   {
     avatar: friendPhoto7,
     name: "Krizhik",
     prime: true,
-    rank: eagle,
+    rank: eagle_mm,
     country: turkey
   },
   {
     avatar: friendPhoto8,
     name: "OneLove",
     prime: true,
-    rank: big_star,
+    rank: big_star_mm,
     country: turkey
   },
   {
     avatar: friendPhoto9,
     name: "silenium",
     prime: true,
-    rank: double_ak,
+    rank: double_ak_mm,
     country: finland
   },
 
@@ -289,80 +324,214 @@ export const searchArray = [
     avatar: friendPhoto10,
     name: "Space ASS",
     prime: true,
-    rank: double_ak,
+    rank: double_ak_mm,
     country: romania
   },
   {
     avatar: friendPhoto11,
     name: "V",
     prime: true,
-    rank: supreme,
+    rank: supreme_mm,
     country: finland
   },
   {
     avatar: friendPhoto12,
     name: "Виталик подошва",
     prime: true,
-    rank: ak_master,
+    rank: ak_master_mm,
     country: finland
   },
   {
     avatar: friendPhoto13,
     name: "CTAS",
     prime: true,
-    rank: ak,
+    rank: ak_mm,
     country: finland
   },
   {
     avatar: friendPhoto14,
     name: "DeadPool",
     prime: true,
-    rank: nova4,
+    rank: nova4_mm,
     country: finland
   },
   {
     avatar: friendPhoto15,
     name: "Gebert",
     prime: true,
-    rank: nova3,
+    rank: nova3_mm,
     country: romania
   },
   {
     avatar: friendPhoto16,
     name: "Renessance",
     prime: true,
-    rank: nova2,
+    rank: nova2_mm,
     country: romania
   },
   {
     avatar: friendPhoto17,
     name: "YaRa",
     prime: true,
-    rank: nova1,
+    rank: nova1_mm,
     country: turkey
   },
   {
     avatar: friendPhoto18,
     name: "ZiP",
     prime: true,
-    rank: silver6,
+    rank: silver6_mm,
     country: ukraine
   },
   {
     avatar: friendPhoto19,
     name: "Киберкотлета",
     prime: true,
-    rank: silver5,
+    rank: silver5_mm,
     country: ukraine
   },
   {
     avatar: friendPhoto20,
     name: "Рандомный чел",
     prime: true,
-    rank: silver4,
+    rank: silver4_mm,
     country: ukraine
   },
   
+]
+
+//Массив поиска напарники
+export const searchArray_dual = [
+  {
+    avatar: friendPhoto1,
+    name: "дядя Фёдор",
+    prime: true,
+    rank: supreme_dual,
+    country: russia
+  },
+  {
+    avatar: friendPhoto2,
+    name: "#ЖирныйRust_Deluxe",
+    prime: true,
+    rank: global_dual,
+    country: ukraine
+  },
+  {
+    avatar: friendPhoto3,
+    name: "-",
+    prime: true,
+    rank: lem_dual,
+    country: russia
+  },
+  {
+    avatar: friendPhoto4,
+    name: "Bogdan",
+    prime: true,
+    rank: lem_dual,
+    country: russia
+  },
+  {
+    avatar: friendPhoto5,
+    name: "cl",
+    prime: true,
+    rank: supreme_dual,
+    country: russia
+  },
+  {
+    avatar: friendPhoto6,
+    name: "kent10",
+    prime: true,
+    rank: eagle_dual,
+    country: russia
+  },
+  {
+    avatar: friendPhoto7,
+    name: "Krizhik",
+    prime: true,
+    rank: eagle_dual,
+    country: turkey
+  },
+  {
+    avatar: friendPhoto8,
+    name: "OneLove",
+    prime: true,
+    rank: big_star_dual,
+    country: turkey
+  },
+  {
+    avatar: friendPhoto9,
+    name: "silenium",
+    prime: true,
+    rank: double_ak_dual,
+    country: finland
+  }
+]
+
+//Массив поиска зона
+export const searchArray_zone = [
+  {
+    avatar: friendPhoto1,
+    name: "дядя Фёдор",
+    prime: true,
+    rank: wolf1,
+    country: russia
+  },
+  {
+    avatar: friendPhoto2,
+    name: "#ЖирныйRust_Deluxe",
+    prime: true,
+    rank: wolf2,
+    country: ukraine
+  },
+  {
+    avatar: friendPhoto3,
+    name: "-",
+    prime: true,
+    rank: fox1,
+    country: russia
+  },
+  {
+    avatar: friendPhoto4,
+    name: "Bogdan",
+    prime: true,
+    rank: howl,
+    country: russia
+  },
+  {
+    avatar: friendPhoto5,
+    name: "cl",
+    prime: true,
+    rank: rat1,
+    country: russia
+  },
+  {
+    avatar: friendPhoto6,
+    name: "kent10",
+    prime: true,
+    rank: scout_elite,
+    country: russia
+  },
+  {
+    avatar: friendPhoto7,
+    name: "Krizhik",
+    prime: true,
+    rank: wolf3,
+    country: turkey
+  },
+  {
+    avatar: friendPhoto8,
+    name: "OneLove",
+    prime: true,
+    rank: wolf1,
+    country: turkey
+  },
+  {
+    avatar: friendPhoto9,
+    name: "silenium",
+    prime: true,
+    rank: fox1,
+    country: finland
+  }
 ]
 
 //Массив недавних комрадов
