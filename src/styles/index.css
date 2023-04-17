@@ -28,6 +28,92 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.news {
+  margin: 0;
+  padding: 8px 48px 0 24px;
+  width: 720px;
+  height: 760px;
+  box-sizing: border-box;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 24px;
+  left: 128px;
+  align-items: start;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "logo title" "items items";
+  overflow-y: scroll;
+}
+.news__logo {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  grid-area: logo;
+}
+.news__title {
+  margin: 0;
+  padding: 0;
+  color: white;
+  grid-area: title;
+}
+.news__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  grid-area: items;
+}
+.news::-webkit-scrollbar {
+  width: 8px;
+}
+.news::-webkit-scrollbar-track {
+  background: transparent; /* цвет дорожки */
+}
+.news::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE; /* цвет плашки */
+  border-radius: 2px; /* закругления плашки */
+}
+
+.new {
+  margin: 0;
+  padding: 0;
+  width: 720px;
+  color: white;
+  display: grid;
+  column-gap: 24px;
+  row-gap: 8px;
+  grid-template-areas: "logo date" "logo title" "logo text";
+  grid-area: new;
+}
+.new__logo {
+  margin: 0;
+  padding: 0;
+  grid-area: logo;
+}
+.new__title {
+  margin: 0;
+  padding: 0;
+  grid-area: title;
+}
+.new__date {
+  margin: 0;
+  padding: 0;
+  grid-area: date;
+}
+.new__text {
+  margin: 0;
+  padding: 0;
+  max-height: 42px;
+  grid-area: text;
+  overflow: hidden;
 }
 
 .leftBar {

@@ -10,17 +10,15 @@ function News(props) {
     <div className='news'>
       <img className='news__logo' src={newsIcon} alt="новости"/>
       <p className='news__title'>Новости</p>
-      <ul className="new">
+      <ul className="news__items">
       {
         newsArray.map((element, index) => 
           <New 
             key={index}
-            avatar={element.avatar}
-            name={element.name}
-            rank={element.rank}
-            country={element.country}
-            isProgressShow={props.isProgressShow}
-            isVisible={props.isVisible}
+            logo={element.logo}
+            date={element.date}
+            title={element.title}
+            text={element.text}
           />
         )
       }  
