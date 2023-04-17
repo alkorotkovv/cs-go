@@ -11,7 +11,7 @@ function Players(props) {
 
   
   return (
-    <ul id="players"className={"players" + (props.isRankVisible ? " players_short" : " players_big") + (props.isVisible ? " players_visible" : " players_unvisible")}>
+    <ul id="players" className={"players" + (props.isRankVisible ? " players_short" : " players_big") + (props.isVisible ? " players_visible" : " players_unvisible")}>
       {
         props.friendsArray.map((element, index) => 
           <Player 

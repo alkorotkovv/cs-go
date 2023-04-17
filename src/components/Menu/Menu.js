@@ -4,6 +4,8 @@ import anubis from '../../movies/anubis.webm';
 import terr from '../../movies/terr.webm';
 import terrgif from '../../movies/giff.gif';
 
+import News from '../News/News';
+
 function Menu(props) {
 
   //console.log (terr);
@@ -19,6 +21,7 @@ function Menu(props) {
       </video>
       {/*<img src={terrgif} alt="я джифка"></img>*/}
       {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
+      <News />
     </div>
   )
 }
