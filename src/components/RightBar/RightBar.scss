@@ -1,4 +1,4 @@
-$time: 0.2s;
+$time: 0.5s;
 
 .rightBar {
   width: 385px;
@@ -11,31 +11,32 @@ $time: 0.2s;
   color: black;
   position: absolute;
   top: 0;
-  right: -290px;
-  background-color: rgba(0, 101, 252, 0.726);  
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
+  //right: -290px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90% , rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
-  transition: $time linear;
+  transition: 0.2s linear;
 
   &__main {
     margin: 0;
-    padding: 0;
+    padding: 0 0 9px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
   }
 
   &__sub {
     margin: 0;
     padding: 0;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
   &:hover {
-    right: 0;
+   //right: 0;
   }
 
 }
@@ -59,6 +60,7 @@ $time: 0.2s;
     box-sizing: border-box;
     grid-area: avatar;
     animation: avatar-border-off 0.1s linear;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
 
     &:hover {
       border: 4px solid white;
@@ -76,6 +78,7 @@ $time: 0.2s;
     color: white;
     font-size: 18px;
     line-height: 1;
+    filter: drop-shadow( 2px 2px 3px rgba(0, 0, 0, 1));
     grid-area: name;
   }
 
@@ -121,10 +124,10 @@ $time: 0.2s;
 
 .experience {
   margin: 0;
-  padding: 8px 15px 2px 15px;
+  padding: 7px 15px 0 15px;
   display: grid;
   column-gap: 15px;
-  row-gap: 0px;
+  row-gap: 10px;
   grid-template-columns: 66px auto;
   grid-template-areas: 
     "logo title"
@@ -136,6 +139,7 @@ $time: 0.2s;
     padding: 0;
     width: 70px;
     height: 70px;
+    filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, 1));
     grid-area: logo;
   }
 
@@ -149,16 +153,28 @@ $time: 0.2s;
     align-self: flex-end;
     color: white;
     font-size: 17px;
+    filter: drop-shadow( 2px 2px 3px rgba(0, 0, 0, 1));
     grid-area: title;
   }
 
   &__progress {
     margin: 0 0 0 10px;
     padding: 0;
-    height: 20px;
-    width: 260px;
+    height: 8px;
+    width: 256px;
     display: flex;
+    background-color: #1C242E;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.5);
     grid-area: progress;
+  }
+
+  &__progress-bar {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(91, 194, 250);  
+    background: linear-gradient( 90deg, rgba(19, 93, 135, 1) 5%, rgba(37, 112, 156, 1) 15%, rgba(61, 145, 193, 1) 40%, rgba(91, 194, 250, 1) 100%);
   }
 
 }
@@ -171,34 +187,38 @@ $time: 0.2s;
   &__title {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
     height: 38px;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
   }
 
   &_visible {
-    margin-bottom: 4px;
     display: flex;
   }
 
   &_first {
+    padding: 4px 10px;  
     display: flex;
-    animation: downup1 0.4s ease-in forwards;
+    animation: downup1 $time ease-in forwards;
   }
 
   &_second {
     display: flex;
-    animation: downup2 0.4s ease-in forwards;
+    animation: downup2 $time ease-in forwards;
   }
 
   &_first-visible {
+    padding: 4px 10px 2px 10px;  
     display: flex;
     visibility: visible;
-    animation: updown1 0.4s ease;
+    animation: updown1 $time ease;
   }
 
   &_second-visible {
     display: flex;
     visibility: visible;
-    animation: updown2 0.4s ease-in;
+    animation: updown2 $time ease-in;
   }
 
   @keyframes updown1 {
@@ -212,7 +232,10 @@ $time: 0.2s;
 
   @keyframes updown2 {
     from {
-      margin-top: -40px;
+      margin-top: -45px;
+    }
+    30% {
+      margin-top: -45px;
     }
     to {
       margin-top: 0px;
@@ -223,11 +246,13 @@ $time: 0.2s;
     from {
       margin-top: 0px;
     }
-    50% {
-      visibility: hidden;
+    60% {
       margin-top: -5px;
       margin-bottom: 5px;
       height: 100%;
+    }
+    80% {
+      visibility: hidden;
     }
     to {
       visibility: hidden;
@@ -243,13 +268,13 @@ $time: 0.2s;
     from {
       margin-top: 0px;
     }
-    50% {
-      visibility: hidden;
-      margin-top: -40px;
-      margin-bottom: 40px;
+    60% {
+      margin-top: -45px;
+      margin-bottom: 45px;
       height: 100%;
     }
-    90% {
+    80% {
+      visibility: hidden;
       height: 0;
     }
     to {
@@ -257,7 +282,6 @@ $time: 0.2s;
       margin-top: -35px;   
       padding-top: 0;
       padding-bottom: 0;
-      overflow: hidden;
       height: 0;
     }
   }
@@ -270,6 +294,7 @@ $time: 0.2s;
     padding: 0;
     width: 80px;
     height: 33px;
+    filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 1));
   }
 
   &__title {

@@ -17,8 +17,8 @@ function Menu(props) {
         <source src={anubis} type='video/webm' ></source>
         {/*<source src={terr} type='video/webm' ></source>*/}
       </video>
-      <img src={terrgif} alt="я джифка"></img>
-      <img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />
+      {/*<img src={terrgif} alt="я джифка"></img>*/}
+      {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
     </div>
   )
 }

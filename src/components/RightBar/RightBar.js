@@ -155,11 +155,12 @@ function RightBar() {
             </ul>
           </div>
         </div>
-
         <div className='experience'>
           <img className='experience__logo' src={experienceLogo} alt="csgo"></img>
           <p className='experience__title'>Ранг: Лейтенант, 22</p>
-          <progress className='experience__progress' value="30" max="100"></progress>
+          <div className='experience__progress'>
+            <div className='experience__progress-bar'></div>
+          </div>
         </div>
         <div className='rank rank_visible'>
           <img className='rank__logo' src={rankLogo} alt="rank"></img>
