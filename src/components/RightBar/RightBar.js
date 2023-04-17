@@ -111,8 +111,7 @@ function RightBar() {
     setIsMmActive(true);
     setIsDualActive(false);
     setIsZoneActive(false);
-    setIsUpdateActive(false);    
-
+    setIsUpdateActive(false);
   }
 
   function handleDualClick() {

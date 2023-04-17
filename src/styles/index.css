@@ -91,7 +91,6 @@
   color: black;
   position: absolute;
   top: 0;
-  right: -290px;
   background-color: rgba(0, 101, 252, 0.726);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(211, 211, 211, 0.6), rgba(0, 0, 0, 0.7));
   backdrop-filter: blur(20px);
@@ -110,11 +109,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.rightBar:hover {
-  right: 0;
-}
-
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
@@ -693,6 +689,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  position: absolute;
 }
 .players_big {
   height: 728px;
@@ -700,8 +697,11 @@
 .players_short {
   height: 628px;
 }
+.players_visible {
+  animation: players-show 1s ease-in forwards;
+}
 .players_unvisible {
-  display: none;
+  animation: players-hide 4s ease-in forwards;
 }
 .players::-webkit-scrollbar {
   width: 8px;
@@ -712,6 +712,26 @@
 .players::-webkit-scrollbar-thumb {
   background-color: #B6ADAE; /* цвет плашки */
   border-radius: 2px; /* закругления плашки */
+}
+@keyframes players-hide {
+  from {
+    margin-top: 0;
+    z-index: 100;
+  }
+  to {
+    margin-top: 800px;
+    z-index: 100;
+  }
+}
+@keyframes players-show {
+  from {
+    margin-top: 100px;
+    z-index: 0;
+  }
+  to {
+    margin-top: 0;
+    z-index: 0;
+  }
 }
 
 .player {
@@ -727,7 +747,7 @@
   cursor: default;
 }
 .player_animated {
-  animation: player-show 3s ease-in;
+  animation: player-show 2s ease-in;
 }
 .player__avatar {
   margin: 0 0 0 18px;
@@ -815,10 +835,23 @@
 }
 @keyframes player-show {
   from {
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: -100px;
+    opacity: 0;
+  }
+  40% {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+  80% {
+    margin-top: 10px;
   }
   to {
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -923,7 +956,7 @@
     width: 20%;
   }
   90% {
-    width: 90%;
+    width: 50%;
   }
   to {
     width: 100%;

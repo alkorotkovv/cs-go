@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  position: absolute;
 
   &_big {
     height: 728px;
@@ -14,8 +15,12 @@
     height: 628px;
   }
 
+  &_visible {
+    animation: players-show 1s ease-in forwards;
+  }
+
   &_unvisible {
-    display: none;
+    animation: players-hide 4s ease-in forwards;
   }
   
   &::-webkit-scrollbar {
@@ -29,4 +34,25 @@
     border-radius: 2px;       /* закругления плашки */
   }
   
+  @keyframes players-hide {
+    from {
+      margin-top: 0;
+      z-index: 100;
+    }
+    to {
+      margin-top: 800px;
+      z-index: 100;
+    }
+  }
+
+  @keyframes players-show {
+    from {
+      margin-top: 100px;
+      z-index: 0;
+    }
+    to {
+      margin-top: 0;
+      z-index: 0;
+    }
+  }
 }
