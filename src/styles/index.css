@@ -700,6 +700,9 @@
 .players_short {
   height: 628px;
 }
+.players_unvisible {
+  display: none;
+}
 .players::-webkit-scrollbar {
   width: 8px;
 }
@@ -722,6 +725,9 @@
 }
 .player:hover {
   cursor: default;
+}
+.player_animated {
+  animation: player-show 3s ease-in;
 }
 .player__avatar {
   margin: 0 0 0 18px;
@@ -805,6 +811,14 @@
   }
   to {
     border: 0 solid white;
+  }
+}
+@keyframes player-show {
+  from {
+    margin-top: 100px;
+  }
+  to {
+    margin-top: 0;
   }
 }
 

@@ -11,9 +11,14 @@
   "avatar name name name message"
   "avatar prime rank country message"
   ;
+  //animation: player-show 3s ease-in ;
 
   &:hover {
     cursor: default;
+  }
+
+  &_animated {
+    animation: player-show 3s ease-in ;
   }
   
 
@@ -112,6 +117,16 @@
       border: 0 solid white;
     }
   }
+
+  @keyframes player-show {
+    from {
+      margin-top: 100px;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+
 
 
 }

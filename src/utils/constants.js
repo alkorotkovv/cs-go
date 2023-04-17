@@ -403,63 +403,63 @@ export const searchArray_mm = [
 //Массив поиска напарники
 export const searchArray_dual = [
   {
-    avatar: friendPhoto1,
-    name: "дядя Фёдор",
+    avatar: friendPhoto10,
+    name: "Непонятный",
     prime: true,
     rank: supreme_dual,
     country: russia
   },
   {
-    avatar: friendPhoto2,
-    name: "#ЖирныйRust_Deluxe",
+    avatar: friendPhoto13,
+    name: "Убиватор",
     prime: true,
     rank: global_dual,
     country: ukraine
   },
   {
-    avatar: friendPhoto3,
-    name: "-",
+    avatar: friendPhoto8,
+    name: "+++",
     prime: true,
     rank: lem_dual,
     country: russia
   },
   {
-    avatar: friendPhoto4,
-    name: "Bogdan",
+    avatar: friendPhoto9,
+    name: "Бага",
     prime: true,
     rank: lem_dual,
     country: russia
   },
   {
-    avatar: friendPhoto5,
-    name: "cl",
+    avatar: friendPhoto2,
+    name: "clown",
     prime: true,
     rank: supreme_dual,
     country: russia
   },
   {
-    avatar: friendPhoto6,
+    avatar: friendPhoto12,
     name: "kent10",
     prime: true,
     rank: eagle_dual,
     country: russia
   },
   {
-    avatar: friendPhoto7,
+    avatar: friendPhoto13,
     name: "Krizhik",
     prime: true,
     rank: eagle_dual,
     country: turkey
   },
   {
-    avatar: friendPhoto8,
+    avatar: friendPhoto7,
     name: "OneLove",
     prime: true,
     rank: big_star_dual,
     country: turkey
   },
   {
-    avatar: friendPhoto9,
+    avatar: friendPhoto17,
     name: "silenium",
     prime: true,
     rank: double_ak_dual,
@@ -470,56 +470,56 @@ export const searchArray_dual = [
 //Массив поиска зона
 export const searchArray_zone = [
   {
-    avatar: friendPhoto1,
-    name: "дядя Фёдор",
+    avatar: friendPhoto19,
+    name: "OneLove",
     prime: true,
     rank: wolf1,
     country: russia
   },
   {
-    avatar: friendPhoto2,
-    name: "#ЖирныйRust_Deluxe",
+    avatar: friendPhoto10,
+    name: "Norwing",
     prime: true,
     rank: wolf2,
     country: ukraine
   },
   {
-    avatar: friendPhoto3,
-    name: "-",
+    avatar: friendPhoto9,
+    name: "Armakit",
     prime: true,
     rank: fox1,
     country: russia
   },
   {
-    avatar: friendPhoto4,
-    name: "Bogdan",
+    avatar: friendPhoto11,
+    name: "Artem",
     prime: true,
     rank: howl,
     country: russia
   },
   {
-    avatar: friendPhoto5,
-    name: "cl",
+    avatar: friendPhoto8,
+    name: "velmozha",
     prime: true,
     rank: rat1,
     country: russia
   },
   {
-    avatar: friendPhoto6,
-    name: "kent10",
+    avatar: friendPhoto18,
+    name: "kent",
     prime: true,
     rank: scout_elite,
     country: russia
   },
   {
-    avatar: friendPhoto7,
+    avatar: friendPhoto4,
     name: "Krizhik",
     prime: true,
     rank: wolf3,
     country: turkey
   },
   {
-    avatar: friendPhoto8,
+    avatar: friendPhoto9,
     name: "OneLove",
     prime: true,
     rank: wolf1,
@@ -584,7 +584,7 @@ export const lastArray = [
   
 ]
 
-//Массив заявок вдрузья
+//Массив заявок в друзья
 export const messagesArray = [  
   {
     avatar: friendPhoto19,

@@ -5,6 +5,10 @@ import dualIcon from '../../images/dual_icon.png';
 import zoneIcon from '../../images/zone_icon.png';
 import updateIcon from '../../images/update_icon.png';
 
+import { searchArray_mm, 
+         searchArray_dual,
+         searchArray_zone } from '../../utils/constants';
+
 import Players from '../Players/Players';
 
 function Search(props) {
@@ -56,7 +60,9 @@ function Search(props) {
       <div className={"search__progress" + (props.isProgressShow ? " search__progress_visible" : "")}>
         <div className={"search__progress-bar" + (props.isProgressShow ? " search__progress-bar_active" : "")}></div>
       </div>
-      <Players isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray} isProgressShow={props.isProgressShow} Reload={props.Reload}/>
+      <Players isVisible={props.isMmActive} isRankVisible={props.isRankVisible} friendsArray={searchArray_mm} isProgressShow={props.isProgressShow} Reload={props.Reload}/>
+      <Players isVisible={props.isDualActive} isRankVisible={props.isRankVisible} friendsArray={searchArray_dual} isProgressShow={props.isProgressShow} Reload={props.Reload}/>
+      <Players isVisible={props.isZoneActive} isRankVisible={props.isRankVisible} friendsArray={searchArray_zone} isProgressShow={props.isProgressShow} Reload={props.Reload}/>
     </div>
   )
 }

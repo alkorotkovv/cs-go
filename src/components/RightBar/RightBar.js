@@ -191,8 +191,7 @@ function RightBar() {
         <Frame 
           component={Search} 
           isVisible={isSearchVisible} 
-          isRankVisible={isRankVisible} 
-          friendsArray={searchArray}  
+          isRankVisible={isRankVisible}
           isMmActive={isMmActive}
           isDualActive={isDualActive}
           isZoneActive={isZoneActive}

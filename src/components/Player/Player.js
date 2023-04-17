@@ -4,7 +4,7 @@ import messageLogo from '../../images/message.png';
 function Friend(props) {
 
   return (
-    <li className='player'>
+    <li className={"player" + (props.isProgressShow ? " player_animated" : "")}>
       <img className="player__avatar" src={props.avatar} alt="игрок"/>
       <p className='player__name'>{props.name}</p>
       <img className="player__prime" src={primeIcon} alt="игрок"/>
