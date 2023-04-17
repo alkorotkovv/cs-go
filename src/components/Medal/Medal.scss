@@ -1,10 +1,16 @@
 .medal-list {
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+
   &__logo {
     margin: 0;
     padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     display: flex;
-    filter: drop-shadow( 2px 2px 3px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, 0.8));
   }
 }

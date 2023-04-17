@@ -39,6 +39,8 @@ function RightBar() {
   const [isZoneActive, setIsZoneActive] = React.useState(false);
   const [isUpdateActive, setIsUpdateActive] = React.useState(false);
   const [isProgressShow, setIsProgressShow] = React.useState(false);
+  const [isMedalsSwipingLeft, setIsMedalsSwipingLeft] = React.useState(false);
+  const [isMedalsSwipingRight, setIsMedalsSwipingRight] = React.useState(false);
   const [searchArray, setSearchArray] = React.useState(searchArray_mm);
 
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
@@ -59,18 +61,38 @@ function RightBar() {
     }, 3000)
   }
 
+  function SwipeLeft() {
+    setIsMedalsSwipingLeft(true);
+    setTimeout(function() {
+      setIsMedalsSwipingLeft(false)
+    }, 200)
+  }
+
+  function SwipeRight() {
+    setIsMedalsSwipingRight(true);
+    setTimeout(function() {
+      setIsMedalsSwipingRight(false)
+    }, 200)
+  }
+
   function handleRankClick() {
     setIsRankVisible(!isRankVisible);
   }
 
   function handleArrLeftClick() {
-    if (countMedalsBlock > 0)
+    
+    if (countMedalsBlock > 0) {
+      SwipeLeft();
       setCountMedalsBlock(countMedalsBlock - 1);
+    }      
   }
 
   function handleArrRightClick() {
-    if (countMedalsBlock < Math.floor(medalsArray.length/5))
+    
+    if (countMedalsBlock < Math.floor(medalsArray.length/5)) {
+      SwipeRight();
       setCountMedalsBlock(countMedalsBlock + 1);
+    }      
   }
 
 
@@ -145,13 +167,17 @@ function RightBar() {
       <div className='rightBar__main'>
 
         <div className='profile'>
-          <img className='profile__avatar' src={avatar} alt="csgo"></img>
+          <img className='profile__avatar' src={avatar} alt="аватар"></img>
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
           <div className='profile__medals'>
-            <Medals countMedalsBlock={countMedalsBlock} />
+            <Medals countMedalsBlock={countMedalsBlock} isMedalsSwipingLeft={isMedalsSwipingLeft} isMedalsSwipingRight={isMedalsSwipingRight}/>
             <ul className='profile__arrows'>
-              <li className={"profile__arrow" + ((countMedalsBlock > 0) ? " profile__arrow_active" : "")}><img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/></li>
-              <li className={"profile__arrow" + ((countMedalsBlock < Math.floor(medalsArray.length/5)) ? " profile__arrow_active" : "")}><img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/></li>
+              <li className={"profile__arrow" + ((countMedalsBlock > 0) ? " profile__arrow_active" : "")}>
+                <img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/>
+              </li>
+              <li className={"profile__arrow" + ((countMedalsBlock < Math.floor(medalsArray.length/5)) ? " profile__arrow_active" : "")}>
+                <img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/>
+              </li>
             </ul>
           </div>
         </div>

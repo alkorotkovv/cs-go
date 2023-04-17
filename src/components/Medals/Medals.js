@@ -2,9 +2,11 @@ import { medalsArray } from '../../utils/constants';
 import Medal from '../Medal/Medal';
 
 function Medals(props) {
+
+  console.log(props)
   
   return (    
-    <ul className='medal-list'>
+    <ul className={"medal-list" + (props.isMedalsSwipingLeft ? " medal-list_left" : "") + (props.isMedalsSwipingRight ? " medal-list_right" : "")}>
       
       {
         medalsArray.slice(5 * props.countMedalsBlock , 5 * props.countMedalsBlock + 5).map((element, index) => 

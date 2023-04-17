@@ -2,18 +2,55 @@
   &__medals {
     margin: 0;
     padding: 0;
-    height: 40px;
+    height: 42px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    overflow: hidden;
   }
 }
 
 .medal-list {
   margin: 0;
   padding: 0;
+  height: 100%;
   display: flex;
   gap: 12px;
   justify-content: start;
   list-style-type: none;
   grid-area: medals; 
+  
+
+  &_left {
+    animation: medals-left 0.2s linear;
+  }
+
+  &_right {
+    animation: medals-right 0.2s linear;
+  }
+}
+
+@keyframes medals-left {
+  from {
+    margin-left: -200px;
+    margin-right: 200px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes medals-right {
+  from {
+    margin-left: 200px;
+    margin-right: -200px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
 }

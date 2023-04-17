@@ -11,7 +11,7 @@ $time: 0.5s;
   color: black;
   position: absolute;
   top: 0;
-  //right: -290px;
+  right: -290px;
   background-color: rgba(0, 0, 0, 0.2);
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90% , rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
@@ -36,7 +36,7 @@ $time: 0.5s;
   }
 
   &:hover {
-   //right: 0;
+   right: 0;
   }
 
 }
@@ -71,7 +71,7 @@ $time: 0.5s;
   &__name {
     margin: 0;
     padding: 0;
-    height: 24px;
+    height: 22px;
     display: flex;
     align-items: flex-start;
     justify-content: start;

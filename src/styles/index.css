@@ -3,7 +3,7 @@
 @import "../vendor/normalize.css";
 .page {
   width: 100vw;
-  height: 300vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -91,6 +91,7 @@
   color: black;
   position: absolute;
   top: 0;
+  right: -290px;
   background-color: rgba(0, 0, 0, 0.2);
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90%, rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
@@ -112,6 +113,10 @@
   flex-direction: column;
   position: relative;
 }
+.rightBar:hover {
+  right: 0;
+}
+
 .profile {
   margin: 0;
   padding: 18px 15px 0 15px;
@@ -137,7 +142,7 @@
 .profile__name {
   margin: 0;
   padding: 0;
-  height: 24px;
+  height: 22px;
   display: flex;
   align-items: flex-start;
   justify-content: start;
@@ -361,28 +366,64 @@
 .profile__medals {
   margin: 0;
   padding: 0;
-  height: 40px;
+  height: 42px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 .medal-list {
   margin: 0;
   padding: 0;
+  height: 100%;
   display: flex;
   gap: 12px;
   justify-content: start;
   list-style-type: none;
   grid-area: medals;
 }
+.medal-list_left {
+  animation: medals-left 0.2s linear;
+}
+.medal-list_right {
+  animation: medals-right 0.2s linear;
+}
 
+@keyframes medals-left {
+  from {
+    margin-left: -200px;
+    margin-right: 200px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes medals-right {
+  from {
+    margin-left: 200px;
+    margin-right: -200px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+.medal-list__item {
+  margin: 0;
+  padding: 0;
+}
 .medal-list__logo {
   margin: 0;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: flex;
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
 }
 
 .frame {
