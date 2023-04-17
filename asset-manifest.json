@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.bd3fbfd7.css",
-    "main.js": "/cs-go/static/js/main.5add8e87.js",
+    "main.css": "/cs-go/static/css/main.2b2ec060.css",
+    "main.js": "/cs-go/static/js/main.421f0604.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
+    "static/media/giff.gif": "/cs-go/static/media/giff.ba416791a8556b1eb7ba.gif",
+    "static/media/terr.webm": "/cs-go/static/media/terr.0b96251de64e9adbc6c4.webm",
+    "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
     "static/media/background.jpg": "/cs-go/static/media/background.9241de7fae211b4f49a8.jpg",
     "static/media/Inter-Bold.woff?v=3.19": "/cs-go/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
     "static/media/Inter-Medium.woff?v=3.19": "/cs-go/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
@@ -13,14 +16,24 @@
     "static/media/Inter-Black.woff2?v=3.19": "/cs-go/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
     "static/media/Inter-Regular.woff2?v=3.19": "/cs-go/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "static/media/avatar.png": "/cs-go/static/media/avatar.ede65a949288683bb463.png",
+    "static/media/new10.png": "/cs-go/static/media/new10.fbb666dc679652947541.png",
+    "static/media/new4.png": "/cs-go/static/media/new4.9d9c2a6a0a0c8dcb4ee8.png",
+    "static/media/new3.png": "/cs-go/static/media/new3.0d5437fc5de278661741.png",
+    "static/media/new2.png": "/cs-go/static/media/new2.6967eeb39019a795518a.png",
+    "static/media/new7.png": "/cs-go/static/media/new7.a8a64cf7cedff9ffa568.png",
+    "static/media/new6.png": "/cs-go/static/media/new6.18a314886b9c0874989a.png",
+    "static/media/new8.png": "/cs-go/static/media/new8.4028fd71abcd631995d1.png",
+    "static/media/new9.png": "/cs-go/static/media/new9.01cf6d14d87a98b80bb0.png",
     "static/media/experienceLogo.png": "/cs-go/static/media/experienceLogo.951b00020a7b1a55edd1.png",
+    "static/media/new5.png": "/cs-go/static/media/new5.002f95c683c71224c97c.png",
+    "static/media/new1.png": "/cs-go/static/media/new1.739855be8b3f8a99c3b2.png",
     "index.html": "/cs-go/index.html",
-    "main.bd3fbfd7.css.map": "/cs-go/static/css/main.bd3fbfd7.css.map",
-    "main.5add8e87.js.map": "/cs-go/static/js/main.5add8e87.js.map",
+    "main.2b2ec060.css.map": "/cs-go/static/css/main.2b2ec060.css.map",
+    "main.421f0604.js.map": "/cs-go/static/js/main.421f0604.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd3fbfd7.css",
-    "static/js/main.5add8e87.js"
+    "static/css/main.2b2ec060.css",
+    "static/js/main.421f0604.js"
   ]
 }
