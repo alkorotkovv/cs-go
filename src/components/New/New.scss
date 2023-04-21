@@ -1,40 +1,56 @@
 .new {
   margin: 0;
   padding: 0;
-  width: 720px;
   color: white;
-  display: grid;
+  display: flex;
+  box-sizing: border-box;
   column-gap: 24px;
   row-gap: 8px;
-  grid-template-areas: 
-  "logo date"
-  "logo title"
-  "logo text";
-  grid-area: new;
 
   &__logo {
     margin: 0;
     padding: 0;
-    grid-area: logo;
+  }
+
+  &__block {
+    margin: 0;
+    padding: 20px 0;
+    max-width: 400px;
+    display: flex;
+    gap: 8px;
+    box-sizing: border-box;
+    flex-direction: column;
+    
   }
 
   &__title {
     margin: 0;
     padding: 0;
-    grid-area: title;
+    display: flex;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
   }
 
   &__date {
     margin: 0;
     padding: 0;
-    grid-area: date;
+    display: flex;
+    font-size: 10px;
+    line-height: 1;
   }
 
   &__text {
     margin: 0;
     padding: 0;
-    max-height: 42px;
-    grid-area: text;
+    display: flex;
+    max-height: 28px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    //white-space: nowrap;
+    //text-overflow: ellipsis;
     overflow: hidden;
   }
 
