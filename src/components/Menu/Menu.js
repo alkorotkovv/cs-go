@@ -5,6 +5,7 @@ import terr from '../../movies/terr.webm';
 import terrgif from '../../movies/giff.gif';
 
 import News from '../News/News';
+import Shop from '../Shop/Shop';
 
 function Menu(props) {
 
@@ -22,6 +23,7 @@ function Menu(props) {
       {/*<img src={terrgif} alt="я джифка"></img>*/}
       {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
       <News />
+      <Shop />
     </div>
   )
 }

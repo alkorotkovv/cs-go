@@ -611,6 +611,7 @@ export const messagesArray = [
   
 ]
 
+//Массив новостей
 export const newsArray = [
   {
     logo: new1,
@@ -709,5 +710,20 @@ export const newsArray = [
     Карты
     Вы очень долго ждали этого момента, и он наконец настал. Классическая карта Tuscan доступна во всех режимах игры, так что скорее изучите её вдоль и поперёк!`
   }
+
+]
+
+//Массив товаров
+export const productsArray = [
+  {
+    logo: new1,
+    name: "Капсула с наклейками",
+    price: "72p"
+  },
+  {
+    logo: new2,
+    name: "Верная служба",
+    price: "72p"
+  },
 
 ]

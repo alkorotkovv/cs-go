@@ -1,0 +1,13 @@
+.shop {
+  margin: 0;
+  padding: 0;
+  width: 720px;
+  height: 256px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(40px);
+  position: absolute;
+  left: 128px;
+  bottom: 24px;
+}
