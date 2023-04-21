@@ -5,17 +5,41 @@
   display: flex;
   box-sizing: border-box;
   column-gap: 24px;
-  row-gap: 8px;
+  row-gap: 8px;  
+  overflow: hidden;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &:hover &__logo {
+    transform: scale(1.1);
+  }
+
+  &__logo-block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-width: 192px;
+    max-width: 192px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
 
   &__logo {
     margin: 0;
     padding: 0;
+    //width: 100%;
+    //height: 100%;
+    display: flex;
+    object-fit: cover;
+    transition: 0.2s linear;
   }
 
-  &__block {
+  &__article-block {
     margin: 0;
     padding: 20px 0;
-    max-width: 400px;
     display: flex;
     gap: 8px;
     box-sizing: border-box;

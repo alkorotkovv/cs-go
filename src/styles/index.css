@@ -15,6 +15,7 @@
   font-style: normal;
   overflow: hidden;
   position: relative;
+  cursor: default;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -91,15 +92,34 @@
   box-sizing: border-box;
   column-gap: 24px;
   row-gap: 8px;
+  overflow: hidden;
+  transition: 0.2s linear;
+}
+.new:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.new:hover .new__logo {
+  transform: scale(1.1);
+}
+.new__logo-block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 192px;
+  max-width: 192px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .new__logo {
   margin: 0;
   padding: 0;
+  display: flex;
+  object-fit: cover;
+  transition: 0.2s linear;
 }
-.new__block {
+.new__article-block {
   margin: 0;
   padding: 20px 0;
-  max-width: 400px;
   display: flex;
   gap: 8px;
   box-sizing: border-box;
