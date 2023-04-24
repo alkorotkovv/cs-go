@@ -426,6 +426,7 @@
   top: 0;
   left: 0;
   backdrop-filter: blur(20px);
+  z-index: 100;
 }
 .leftBar__list {
   height: 1080px;
@@ -458,6 +459,9 @@
   width: 100%;
   height: 100%;
 }
+.leftBar__icon_active {
+  filter: brightness(20%);
+}
 .leftBar__icon:hover {
   filter: brightness(20%);
 }
@@ -478,6 +482,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90%, rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
   transition: 0.2s linear;
+  z-index: 100;
 }
 .rightBar__main {
   margin: 0;
@@ -1428,6 +1433,21 @@
   display: flex;
   width: 26px;
   height: 26px;
+}
+
+.play {
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+  height: 500px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: green;
+}
+.play_visible {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */

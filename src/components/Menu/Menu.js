@@ -7,15 +7,13 @@ import anubis from '../../movies/anubis.webm';
 import News from '../News/News';
 import Shop from '../Shop/Shop';
 
+
 function Menu(props) {
 
-  //console.log (terr);
-
-  function handleClick(evt) {
-  }
+  
 
   return (
-    <div className="menu" onClick={handleClick} >
+    <div className="menu">
       <video id="nubexVideo" width="auto" height="auto" autoPlay muted loop="loop" preload="auto">
         <source src={anubis} type='video/webm' ></source>
         {/*<source src={terr} type='video/webm' ></source>*/}
@@ -24,6 +22,7 @@ function Menu(props) {
       {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
       <News />
       <Shop />
+      
     </div>
   )
 }

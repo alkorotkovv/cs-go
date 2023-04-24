@@ -16,6 +16,7 @@ $time: 0.5s;
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90% , rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
   transition: 0.2s linear;
+  z-index: 100;
 
   &__main {
     margin: 0;
