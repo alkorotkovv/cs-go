@@ -4,9 +4,6 @@ import Friends from '../Friends/Friends';
 
 import { medalsArray, 
          friendsArray, 
-         searchArray_mm, 
-         searchArray_dual,
-         searchArray_zone, 
          lastArray, 
          messagesArray } from '../../utils/constants';
 
