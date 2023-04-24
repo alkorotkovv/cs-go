@@ -1,8 +1,8 @@
 import React from 'react';
-import menuLogo from '../../images/background.jpg';
+//import menuLogo from '../../images/background.jpg';
 import anubis from '../../movies/anubis.webm';
-import terr from '../../movies/terr.webm';
-import terrgif from '../../movies/giff.gif';
+//import terr from '../../movies/terr.webm';
+//import terrgif from '../../movies/giff.gif';
 
 import News from '../News/News';
 import Shop from '../Shop/Shop';

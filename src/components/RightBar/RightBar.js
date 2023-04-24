@@ -41,7 +41,7 @@ function RightBar() {
   const [isProgressShow, setIsProgressShow] = React.useState(false);
   const [isMedalsSwipingLeft, setIsMedalsSwipingLeft] = React.useState(false);
   const [isMedalsSwipingRight, setIsMedalsSwipingRight] = React.useState(false);
-  const [searchArray, setSearchArray] = React.useState(searchArray_mm);
+  //const [searchArray, setSearchArray] = React.useState(searchArray_mm);
 
   const rankArrowClassName = (`rank__arrow ${isRankVisible === true ? " rank__arrow_up" :  ""}`);
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
@@ -129,7 +129,7 @@ function RightBar() {
 
 //Функции для работы Search
   function handleMmClick() {
-    setSearchArray(searchArray_mm);
+    //setSearchArray(searchArray_mm);
     Reload();
     setIsMmActive(true);
     setIsDualActive(false);
@@ -138,7 +138,7 @@ function RightBar() {
   }
 
   function handleDualClick() {
-    setSearchArray(searchArray_dual);
+    //setSearchArray(searchArray_dual);
     Reload();
     setIsMmActive(false);
     setIsDualActive(true);
@@ -147,7 +147,7 @@ function RightBar() {
   }
 
   function handleZoneClick() {
-    setSearchArray(searchArray_zone);
+    //setSearchArray(searchArray_zone);
     Reload();
     setIsMmActive(false);
     setIsDualActive(false);
