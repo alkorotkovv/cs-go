@@ -377,6 +377,10 @@
   display: flex;
   gap: 5px;
   flex-direction: column;
+  text-decoration: none;
+}
+.product:hover {
+  cursor: default;
 }
 .product__logo {
   margin: 0;
@@ -447,7 +451,6 @@
 }
 .leftBar__item:last-of-type {
   margin-top: auto;
-  margin-bottom: 100px;
 }
 .leftBar__icon {
   margin: 0;
@@ -1141,7 +1144,7 @@
   animation: players-show 1s ease-in forwards;
 }
 .players_unvisible {
-  animation: players-hide 4s ease-in forwards;
+  animation: players-hide 3s ease-in forwards;
 }
 .players::-webkit-scrollbar {
   width: 8px;

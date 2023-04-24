@@ -16,6 +16,7 @@ function Products(props) {
               logo={element.logo}
               name={element.name}
               price={element.price}
+              link={element.link}
             />            
           )
         }  

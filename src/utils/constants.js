@@ -791,101 +791,121 @@ export const casesArray = [
   {
     logo: case1,
     name: "Кейс «Революция»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case2,
     name: "Гремучий кейс",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_31"
   },
   {
     logo: case3,
     name: "Кейс «Грёзы и кошмары»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_30"
   },
   {
     logo: case4,
     name: "Кейс операции «Хищные воды»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_29"
   },
   {
     logo: case5,
     name: "Кейс «Змеиный укус»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case6,
     name: "Кейс операции «Сломанный клык»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case7,
     name: "Кейс «Разлом»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case8,
     name: "Кейс «Призма 2»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case9,
     name: "Кейс «Расколотая сеть»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case10,
     name: "Кейс «CS20»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case11,
     name: "Кейс «Призма»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case12,
     name: "Кейс «Запретная зона»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case13,
     name: "Кейс «Горизонт»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case14,
     name: "Кейс «Решающий момент»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case15,
     name: "Кейс «Спектр 2»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case16,
     name: "Кейс операции «Гидра»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case17,
     name: "Кейс «Спектр»",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case18,
     name: "Перчаточный кейс",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case19,
     name: "Гамма-кейс #2",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   },
   {
     logo: case20,
     name: "Гамма-кейс",
-    price: "Торговая площадка"
+    price: "Торговая площадка",
+    link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   }
 ]

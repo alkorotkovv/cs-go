@@ -6,6 +6,11 @@
   display: flex;
   gap: 5px;
   flex-direction: column;
+  text-decoration: none;
+
+  &:hover {
+    cursor: default;
+  }
 
   &__logo {
     margin: 0;
