@@ -127,6 +127,35 @@ import new8 from '../images/news/new8.png';
 import new9 from '../images/news/new9.png';
 import new10 from '../images/news/new10.png';
 
+//Капсулы, кейсы и тд из магазина
+import cupon1 from '../images/shop/cupon1.png';
+import cupon2 from '../images/shop/cupon2.png';
+import cupon3 from '../images/shop/cupon3.png';
+import cupon4 from '../images/shop/cupon4.png';
+import shop1 from '../images/shop/shop1.png';
+import shop2 from '../images/shop/shop2.png';
+import shop3 from '../images/shop/shop3.png';
+import case1 from '../images/shop/cases/case1.png';
+import case2 from '../images/shop/cases/case2.png';
+import case3 from '../images/shop/cases/case3.png';
+import case4 from '../images/shop/cases/case4.png';
+import case5 from '../images/shop/cases/case5.png';
+import case6 from '../images/shop/cases/case6.png';
+import case7 from '../images/shop/cases/case7.png';
+import case8 from '../images/shop/cases/case8.png';
+import case9 from '../images/shop/cases/case9.png';
+import case10 from '../images/shop/cases/case10.png';
+import case11 from '../images/shop/cases/case11.png';
+import case12 from '../images/shop/cases/case12.png';
+import case13 from '../images/shop/cases/case13.png';
+import case14 from '../images/shop/cases/case14.png';
+import case15 from '../images/shop/cases/case15.png';
+import case16 from '../images/shop/cases/case16.png';
+import case17 from '../images/shop/cases/case17.png';
+import case18 from '../images/shop/cases/case18.png';
+import case19 from '../images/shop/cases/case19.png';
+import case20 from '../images/shop/cases/case20.png';
+
 //Массив медалей
 export const medalsArray = [
   
@@ -713,17 +742,150 @@ export const newsArray = [
 
 ]
 
-//Массив товаров
-export const productsArray = [
+//Массив товаров купонов
+export const cuponsArray = [
   {
-    logo: new1,
-    name: "Капсула с наклейками",
-    price: "72p"
+    logo: cupon1,
+    name: "Капсула с наклейками Шпионаж",
+    price: "72 pуб"
   },
   {
-    logo: new2,
-    name: "Верная служба",
-    price: "72p"
+    logo: cupon2,
+    name: "Набор музыки | Denzel Curry — ULTIMATE",
+    price: "360 руб - 480 руб"
   },
+  {
+    logo: cupon3,
+    name: "Капсула наклеек десятилетия",
+    price: "72 pуб"
+  },
+  {
+    logo: cupon4,
+    name: "Капсула с наклейками CS20",
+    price: "72 pуб"
+  }
 
+]
+
+//Массив товаров из магазина
+export const shopArray = [
+  {
+    logo: shop1,
+    name: "Хранилище",
+    price: "163 pуб"
+  },
+  {
+    logo: shop2,
+    name: "Именной ярлык",
+    price: "163 руб"
+  },
+  {
+    logo: shop3,
+    name: "Двойной обменник Stattrek",
+    price: "81 pуб"
+  }
+]
+
+//Массив кейсов
+export const casesArray = [
+  {
+    logo: case1,
+    name: "Кейс «Революция»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case2,
+    name: "Гремучий кейс",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case3,
+    name: "Кейс «Грёзы и кошмары»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case4,
+    name: "Кейс операции «Хищные воды»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case5,
+    name: "Кейс «Змеиный укус»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case6,
+    name: "Кейс операции «Сломанный клык»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case7,
+    name: "Кейс «Разлом»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case8,
+    name: "Кейс «Призма 2»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case9,
+    name: "Кейс «Расколотая сеть»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case10,
+    name: "Кейс «CS20»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case11,
+    name: "Кейс «Призма»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case12,
+    name: "Кейс «Запретная зона»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case13,
+    name: "Кейс «Горизонт»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case14,
+    name: "Кейс «Решающий момент»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case15,
+    name: "Кейс «Спектр 2»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case16,
+    name: "Кейс операции «Гидра»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case17,
+    name: "Кейс «Спектр»",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case18,
+    name: "Перчаточный кейс",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case19,
+    name: "Гамма-кейс #2",
+    price: "Торговая площадка"
+  },
+  {
+    logo: case20,
+    name: "Гамма-кейс",
+    price: "Торговая площадка"
+  }
 ]

@@ -1,0 +1,58 @@
+.shop {
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__arrow {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 22px;
+    height: 12px;
+    opacity: 0.5;
+
+    &_left {
+      
+      transform: rotate(90deg);
+    }
+
+    &_right {
+      margin-left: auto;
+      transform: rotate(270deg);
+    }
+
+    &_active {
+      opacity: 1;
+    }
+
+    &_unvisible {
+      visibility: hidden;
+    }
+  }
+
+  &__products {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  }
+
+  @keyframes slows {
+  from {
+    padding-bottom: 7px;
+    border-bottom: 1px solid white;
+  }
+  to {
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+  }
+}

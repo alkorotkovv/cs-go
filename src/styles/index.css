@@ -161,12 +161,124 @@
   width: 720px;
   height: 256px;
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(40px);
   position: absolute;
   left: 128px;
   bottom: 24px;
+}
+.shop__header {
+  margin: 0;
+  padding: 10px 16px 0 16px;
+  display: flex;
+  gap: 26px;
+}
+.shop__title {
+  margin: 0;
+  padding: 0 0 5px 0;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.shop__title:hover {
+  padding-bottom: 7px;
+  border-bottom: 1px solid white;
+}
+.shop__title_active {
+  border-bottom: 3px solid white;
+  animation: slows 0.1s linear;
+}
+.shop__title_active:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
+
+.shop__items {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: left;
+  align-items: center;
+}
+.shop__arrow {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 22px;
+  height: 12px;
+  opacity: 0.5;
+}
+.shop__arrow_left {
+  transform: rotate(90deg);
+}
+.shop__arrow_right {
+  margin-left: auto;
+  transform: rotate(270deg);
+}
+.shop__arrow_active {
+  opacity: 1;
+}
+.shop__arrow_unvisible {
+  visibility: hidden;
+}
+.shop__products {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+@keyframes slows {
+  from {
+    padding-bottom: 7px;
+    border-bottom: 1px solid white;
+  }
+  to {
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+  }
+}
+.product {
+  margin: 0;
+  padding: 0;
+  width: 162px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.product__logo {
+  margin: 0;
+  padding: 0;
+  width: 162px;
+  height: 162px;
+  display: flex;
+}
+.product__title {
+  margin: 0;
+  padding: 0;
+  max-width: 162px;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: lightgray;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.product__price {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(59, 134, 59);
 }
 
 .leftBar {

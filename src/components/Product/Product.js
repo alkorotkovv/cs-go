@@ -12,9 +12,9 @@ function Product(props) {
   
   return (
     <div className='product'>
-      <img className='product__logo' src={"../"} alt="logo" onClick={handleArrLeftClick}/>
-      <p className='product__title'>Tovar</p>
-      <p className='product__price'>72p</p>
+      <img className='product__logo' src={props.logo} alt="logo" onClick={handleArrLeftClick}/>
+      <p className='product__title'>{props.name}</p>
+      <p className='product__price'>{props.price}</p>
     </div>
   )
 }

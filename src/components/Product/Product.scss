@@ -1,0 +1,39 @@
+.product {
+  margin: 0;
+  padding: 0;
+  width: 162px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 162px;
+    height: 162px;
+    display: flex;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    max-width: 162px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: lightgray;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__price {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(59, 134, 59);
+  }
+}

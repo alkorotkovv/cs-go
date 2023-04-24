@@ -47,6 +47,10 @@ function RightBar() {
   const rankFirstSubClassName = (`rank rank_first ${isRankVisible === true ? " rank_first-visible" :  ""}`);
   const rankSecondSubClassName = (`rank rank_second ${isRankVisible === true ? " rank_second-visible" :  ""}`);
 
+//Показать или скрыть звание
+  function handleRankClick() {
+    setIsRankVisible(!isRankVisible);
+  }
   //Функция запускает прогресс бар под тулзами при поиске
   function Reload() {
     window.scrollTo(0, 0);
@@ -61,6 +65,7 @@ function RightBar() {
     }, 3000)
   }
 
+  //Функции свайпа медалей влево и вправо
   function SwipeLeft() {
     setIsMedalsSwipingLeft(true);
     setTimeout(function() {
@@ -75,10 +80,7 @@ function RightBar() {
     }, 200)
   }
 
-  function handleRankClick() {
-    setIsRankVisible(!isRankVisible);
-  }
-
+//Функции обработки нажатия на стрелки влево и вправо
   function handleArrLeftClick() {
     
     if (countMedalsBlock > 0) {
@@ -94,7 +96,6 @@ function RightBar() {
       setCountMedalsBlock(countMedalsBlock + 1);
     }      
   }
-
 
 //Функции для работы Tools
   function handleFriendsClick() {
