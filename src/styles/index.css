@@ -345,6 +345,30 @@
     opacity: 1;
   }
 }
+@keyframes cupons-right {
+  from {
+    margin-left: -400px;
+    margin-right: 400px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes cupons-left {
+  from {
+    margin-left: 400px;
+    margin-right: -400px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
 .product {
   margin: 0;
   padding: 0;

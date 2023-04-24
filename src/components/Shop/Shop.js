@@ -59,6 +59,7 @@ function Shop(props) {
       }
       //Скрываем поиск купонов
       setIsFindVisible(false);
+      //SwipeLeft();
     }
     else if (isShopVisible) {
       if (countShopBlock > 0) {
@@ -85,6 +86,7 @@ function Shop(props) {
       }
       //Показываем поиск купонов
       setIsFindVisible(true);
+      //SwipeRight();
     }
     else if (isShopVisible) {
       if (countShopBlock < Math.floor(productsArray.length/4) - 1) {

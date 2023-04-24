@@ -80,6 +80,14 @@
       gap: 8px;
       margin: 0 22px;
     }
+
+    &_left {
+      //animation: cupons-left 0.2s linear;
+    }
+  
+    &_right {
+      //animation: cupons-right 0.2s linear;
+    }
   }
 
   &__input {
@@ -162,6 +170,32 @@
     margin-left: -600px;
     margin-right: 600px;
     opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes cupons-right {
+  from {
+    margin-left: -400px;
+    margin-right: 400px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes cupons-left {
+  from {
+    margin-left: 400px;
+    margin-right: -400px;
+    opacity: 0;
   }
   to {
     margin-left: 0;

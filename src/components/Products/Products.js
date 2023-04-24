@@ -20,7 +20,7 @@ function Products(props) {
           )
         }  
       </ul>
-      <div className={"shop__find" + (props.isFindVisible ? " shop__find_visible" : "")}>
+      <div className={"shop__find" + (props.isFindVisible ? " shop__find_visible" : "") + (props.isProductsSwipingLeft ? " shop__find_left" : "") + (props.isProductsSwipingRight ? " shop__find_right" : "")}>
         <input className='shop__input' type="text" name="cupon" id="cupon" placeholder="Поиск"></input>
         <button className='shop__button' type="submit">Поиск купонов</button>
       </div>
