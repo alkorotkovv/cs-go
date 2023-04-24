@@ -6,7 +6,6 @@
   display: flex;
   gap: 5px;
   flex-direction: column;
-  
 
   &__logo {
     margin: 0;
@@ -14,6 +13,13 @@
     width: 162px;
     height: 162px;
     display: flex;
+    transition: all 0.2s linear;
+
+    &:hover {
+      scale: 1.05;
+      filter:brightness(110%);
+      
+    }
   }
 
   &__title {
@@ -34,6 +40,7 @@
     padding: 0;
     font-size: 13px;
     font-weight: 500;
-    color: rgb(59, 134, 59);
+    color: rgb(67, 155, 67);
   }
 }
+

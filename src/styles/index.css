@@ -206,6 +206,8 @@
   box-sizing: border-box;
   justify-content: left;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 .shop__arrow {
   margin: 0;
@@ -225,6 +227,9 @@
 .shop__arrow_active {
   opacity: 1;
 }
+.shop__arrow_active:hover {
+  filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
 .shop__arrow_unvisible {
   visibility: hidden;
 }
@@ -235,6 +240,56 @@
   justify-content: space-between;
   gap: 8px;
 }
+.shop__products_left {
+  animation: products-left 0.2s linear;
+}
+.shop__products_right {
+  animation: products-right 0.2s linear;
+}
+.shop__products_unvisible {
+  display: none;
+}
+.shop__find {
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 44px);
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.shop__find_visible {
+  display: flex;
+  gap: 8px;
+  margin: 0 22px;
+}
+.shop__input {
+  margin: 0;
+  padding: 0 10px;
+  width: 445px;
+  height: 36px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #4B4B4B;
+  border-radius: 5px;
+  color: #4B4B4B;
+  outline: none;
+}
+.shop__input::placeholder {
+  color: #4B4B4B;
+}
+.shop__button {
+  margin: 0;
+  padding: 0;
+  width: 155px;
+  height: 32px;
+  box-shadow: none;
+  background-image: linear-gradient(#38813A, green);
+  border: none;
+  color: white;
+}
 
 @keyframes slows {
   from {
@@ -244,6 +299,50 @@
   to {
     padding-bottom: 5px;
     border-bottom: 3px solid white;
+  }
+}
+@keyframes products-right {
+  from {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+  50% {
+    margin-left: -600px;
+    margin-right: 600px;
+    opacity: 0.5;
+  }
+  51% {
+    margin-left: 600px;
+    margin-right: -600px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes products-left {
+  from {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+  }
+  50% {
+    margin-left: 600px;
+    margin-right: -600px;
+    opacity: 0.5;
+  }
+  51% {
+    margin-left: -600px;
+    margin-right: 600px;
+    opacity: 0.5;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
   }
 }
 .product {
@@ -261,6 +360,11 @@
   width: 162px;
   height: 162px;
   display: flex;
+  transition: all 0.2s linear;
+}
+.product__logo:hover {
+  scale: 1.05;
+  filter: brightness(110%);
 }
 .product__title {
   margin: 0;
@@ -278,7 +382,7 @@
   padding: 0;
   font-size: 13px;
   font-weight: 500;
-  color: rgb(59, 134, 59);
+  color: rgb(67, 155, 67);
 }
 
 .leftBar {
