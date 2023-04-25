@@ -3,16 +3,24 @@ import arrowDown from '../../images/arr_down.png';
 
 function Select(props) {
 
-  console.log(props.options)
+  //this.style.setProperty("--translate", `400px`)
+  let select = React.useRef();
+
+  //select.style.cssText = "--translate: `400px`";
+
+  
+
+  console.log(select.current)
 
   const [isOpen, setIsOpen] = React.useState(false);
 
-  React.useEffect(() => {
-      document.addEventListener("click", handleClick);
-    return () => { document.removeEventListener("click", handleClick)};
+  React.useEffect(() => {    
+    select.current.style.cssText = `--minwidth: ${props.minwidth} `
+    document.addEventListener("click", handleClick);
+      return () => { document.removeEventListener("click", handleClick)};
   }, [])
 
-  //Обработчик клика по экарну
+  //Обработчик клика по экрану
   function handleClick(evt) {
     if (document.querySelector('.select__options').classList.contains('select__options_visible')) {
       setIsOpen(false)
@@ -25,16 +33,16 @@ function Select(props) {
   }
   
   return (
-    <div className={"select" + (isOpen ? " select_active" : "")} id='select'>
+    <div className={"select" + (isOpen ? " select_active" : "")} id='select' ref={select}>
       <div className='select__header' >
-        <h1 className='select__title'>ОФИЦИАЛЬНЫЙ ПОДБОР ИГР</h1>
+        <h1 className='select__title'>{props.title}</h1>
         <img className='select__arrow' src={arrowDown} alt="arrow"/>
       </div>
       <ul className={"select__options" + (isOpen ? " select__options_visible" : "")}>
         {
         props.options.map((element, index) => 
         (
-          <li className='select__option' key={index}><p className='select__option-text'>{element}</p></li>
+          <li className='select__option' key={index} onClick={element.handle}><p className='select__option-text'>{element.name}</p></li>
         )
         )
         } 

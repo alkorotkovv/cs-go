@@ -1442,6 +1442,7 @@
   margin: 0;
   padding: 12px;
   width: fit-content;
+  min-width: var(--minwidth);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -1472,6 +1473,7 @@
   line-height: 1;
   color: white;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .select__arrow {
   margin: 0;
