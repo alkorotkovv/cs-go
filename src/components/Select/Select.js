@@ -3,7 +3,7 @@ import arrowDown from '../../images/arr_down.png';
 
 function Select(props) {
 
-  let select = React.useRef();
+  let select = React.useRef("");
 
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -11,7 +11,7 @@ function Select(props) {
     select.current.style.cssText = `--minwidth: ${props.minwidth} `
     document.addEventListener("click", handleClick);
       return () => { document.removeEventListener("click", handleClick)};
-  }, [])
+  })
 
   //Обработчик клика по экрану
   function handleClick(evt) {
