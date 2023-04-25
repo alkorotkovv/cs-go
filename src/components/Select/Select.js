@@ -3,14 +3,7 @@ import arrowDown from '../../images/arr_down.png';
 
 function Select(props) {
 
-  //this.style.setProperty("--translate", `400px`)
   let select = React.useRef();
-
-  //select.style.cssText = "--translate: `400px`";
-
-  
-
-  console.log(select.current)
 
   const [isOpen, setIsOpen] = React.useState(false);
 

@@ -8,7 +8,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40px);
 
   &_visible {
@@ -18,8 +18,9 @@
 
   &__title {
     margin: 0;
-    padding: 37px 35px 38px 35px;
-    font-size: 20px;
+    padding: 34px 35px 34px 35px;
+    font-size: 28px;
+    font-weight: 500;
     line-height: 1;
     border-bottom: 1px solid gray;
     letter-spacing: 1px;
@@ -28,7 +29,7 @@
 
   &__select {
     margin: 0;
-    padding: 8px 35px;
+    padding: 8px 22px;
     display: flex;
     border-bottom: 1px solid gray;
   }

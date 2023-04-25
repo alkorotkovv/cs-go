@@ -1,6 +1,6 @@
 .select {
   margin: 0;
-  padding: 12px;
+  padding: 17px 12px 13px 12px;
   width: fit-content;
   min-width: var(--minwidth);
   display: flex;
@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1;
     color: white;
@@ -51,7 +51,7 @@
 
   &__options {
     margin: 0;
-    padding: 30px 0;
+    padding: 16px 0;
     display: none;
     box-sizing: border-box;
     flex-direction: column;
