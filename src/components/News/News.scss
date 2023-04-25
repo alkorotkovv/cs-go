@@ -19,9 +19,11 @@
   "logo title"
   "items items";
   overflow-y: scroll;  
+  animation: showing 0.2s linear forwards;
 
   &_unvisible {
-    display: none;
+    //display: none;
+    animation: hiding 0.2s linear forwards;
   }
   
 
@@ -58,5 +60,24 @@
   &::-webkit-scrollbar-thumb {
     background-color: #B6ADAE;    /* цвет плашки */
     border-radius: 2px;       /* закругления плашки */
+  }
+}
+
+@keyframes hiding {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+    display: none;
+  }
+}
+
+@keyframes showing {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
   }
 }

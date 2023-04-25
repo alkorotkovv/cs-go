@@ -12,6 +12,10 @@
   left: 128px;
   bottom: 24px;
 
+  &_unvisible {
+    display: none;
+  }
+
   &__header {
     margin: 0;
     padding: 10px 16px 0 16px;

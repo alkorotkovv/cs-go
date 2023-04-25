@@ -120,7 +120,7 @@ function Shop(props) {
   }
   
   return (
-    <div className='shop'>
+    <div className={"shop" + (props.isVisible ? " " : " shop_unvisible")}>
       <div className='shop__header'>
         <p className={"shop__title" + (isCuponsVisible ? " shop__title_active" : "")} onClick={handleCuponsClick}>Купоны</p>
         <p className={"shop__title" + (isShopVisible ? " shop__title_active" : "")} onClick={handleShopClick}>Магазин</p>

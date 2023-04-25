@@ -27,7 +27,7 @@ function Menu(props) {
       {/*<img src={terrgif} alt="я джифка"></img>*/}
       {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
       <News isVisible={props.isMainVisible} />
-      <Shop />
+      <Shop isVisible={props.isMainVisible} />
       
     </div>
   )
