@@ -10,7 +10,13 @@ import Shop from '../Shop/Shop';
 
 function Menu(props) {
 
-  
+  /*
+  const [isVisible, setIsVisible] = React.useState(true);
+
+  React.useEffect(() => {
+    setIsVisible(props.isPlayVisible);
+  }, [])
+  */
 
   return (
     <div className="menu">
@@ -20,7 +26,7 @@ function Menu(props) {
       </video>
       {/*<img src={terrgif} alt="я джифка"></img>*/}
       {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
-      <News />
+      <News isVisible={props.isMainVisible} />
       <Shop />
       
     </div>

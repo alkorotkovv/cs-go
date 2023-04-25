@@ -23,8 +23,8 @@ function LeftBar(props) {
     props.handleNetClick();
   }
 
-  function handleInventaryClick() {
-    props.handleInventaryClick();
+  function handleInventoryClick() {
+    props.handleInventoryClick();
   }
 
   function handleTVClick() {
@@ -49,7 +49,7 @@ function LeftBar(props) {
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isMainVisible ? " leftBar__icon_active" : "")} src={csgoLogo} alt="csgo" onClick={handleMainClick}/></li>
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isPlayVisible ? " leftBar__icon_active" : "")} src={playLogo} alt="csgo" onClick={handlePlayClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={netLogo} alt="csgo" onClick={handleNetClick}/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={inventaryLogo} alt="csgo" onClick={handleInventaryClick}/></li>
+        <li className='leftBar__item'><img className="leftBar__icon" src={inventaryLogo} alt="csgo" onClick={handleInventoryClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={tvLogo} alt="csgo" onClick={handleTVClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={statisticLogo} alt="csgo" onClick={handleStatisticClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={settingsLogo} alt="csgo" onClick={handleSettingsClick}/></li>
