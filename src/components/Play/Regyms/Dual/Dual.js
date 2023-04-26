@@ -1,5 +1,5 @@
 import React  from 'react';
-import Map from '../../../App/Map/Map';
+import Map from '../../../Map/Map';
 import Switch from '../../../Switch/Switch';
 
 import { dualMapsArray } from '../../../../utils/constants';
@@ -19,6 +19,7 @@ function Dual(props) {
               <Map 
                 key={index}
                 logo={element.logo}
+                icon={element.icon}
                 name={element.name}
                 time={element.time}
               />            

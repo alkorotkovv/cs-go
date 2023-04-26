@@ -23,24 +23,22 @@
   &__main {
     margin: 0;
     padding: 0;
-    max-height: 90%;
     display: flex;
     justify-content: center;
     flex: 1;
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   &__maps {
     margin: 0;
     padding: 24px 0 0 0;
-    max-height: 690px;
+    box-sizing: border-box;
     display: grid;
     column-gap: 32px;
     row-gap: 48px;
     grid-template-columns: repeat(5, 224px);
-    grid-template-rows: repeat(2, 262px);
-    //grid-auto-rows: 262px;
+    grid-auto-rows: 262px;
     
   }
 }

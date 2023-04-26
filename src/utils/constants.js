@@ -157,7 +157,28 @@ import case19 from '../images/shop/cases/case19.png';
 import case20 from '../images/shop/cases/case20.png';
 
 //Карты
+import de_boyard from '../images/maps/de_boyard.jpg';
+import de_chalice from '../images/maps/de_chalice.jpg';
+import de_vertigo from '../images/maps/de_vertigo.jpg';
 import de_inferno from '../images/maps/de_inferno.jpg';
+import de_overpass from '../images/maps/de_overpass.jpg';
+import de_cbble from '../images/maps/de_cbble.jpg';
+import de_train from '../images/maps/de_train.jpg';
+import de_nuke from '../images/maps/de_nuke.jpg';
+import de_shortdust from '../images/maps/de_shortdust.jpg';
+import de_lake from '../images/maps/de_lake.jpg';
+
+//Иконки карт
+import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
+import de_chalice_icon from '../images/maps/icons/de_chalice_icon.png';
+import de_vertigo_icon from '../images/maps/icons/de_vertigo_icon.png';
+import de_inferno_icon from '../images/maps/icons/de_inferno_icon.png';
+import de_overpass_icon from '../images/maps/icons/de_overpass_icon.png';
+import de_cbble_icon from '../images/maps/icons/de_cbble_icon.png';
+import de_train_icon from '../images/maps/icons/de_train_icon.png';
+import de_nuke_icon from '../images/maps/icons/de_nuke_icon.png';
+import de_shortdust_icon from '../images/maps/icons/de_shortdust_icon.png';
+import de_lake_icon from '../images/maps/icons/de_lake_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -916,43 +937,63 @@ export const casesArray = [
 //Массив карт для напарников
 export const dualMapsArray = [
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_boyard,
+    icon: de_boyard_icon,
+    name: "Boyard",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_chalice,
+    icon: de_chalice_icon,
+    name: "Chalice",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_vertigo,
+    icon: de_vertigo_icon,
+    name: "Vertigo",
     time: "Время ожидания: 02:03"
   },
   {
     logo: de_inferno,
+    icon: de_inferno_icon,
     name: "Inferno",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_overpass,
+    icon: de_overpass_icon,
+    name: "Overpass",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_cbble,
+    icon: de_cbble_icon,
+    name: "Cobblestone",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_train,
+    icon: de_train_icon,
+    name: "Train",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_nuke,
+    icon: de_nuke_icon,
+    name: "Nuke",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_shortdust,
+    icon: de_shortdust_icon,
+    name: "Shortdust",
     time: "Время ожидания: 02:03"
   },
   {
-    logo: de_inferno,
-    name: "Inferno",
+    logo: de_lake,
+    icon: de_lake_icon,
+    name: "Lake",
     time: "Время ожидания: 02:03"
-  },
+  }
 ]
