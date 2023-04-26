@@ -940,60 +940,70 @@ export const dualMapsArray = [
     logo: de_boyard,
     icon: de_boyard_icon,
     name: "Boyard",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   },
   {
     logo: de_chalice,
     icon: de_chalice_icon,
     name: "Chalice",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   },
   {
     logo: de_vertigo,
     icon: de_vertigo_icon,
     name: "Vertigo",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
   },
   {
     logo: de_inferno,
     icon: de_inferno_icon,
     name: "Inferno",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
   },
   {
     logo: de_overpass,
     icon: de_overpass_icon,
     name: "Overpass",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
   },
   {
     logo: de_cbble,
     icon: de_cbble_icon,
     name: "Cobblestone",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   },
   {
     logo: de_train,
     icon: de_train_icon,
     name: "Train",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   },
   {
     logo: de_nuke,
     icon: de_nuke_icon,
     name: "Nuke",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
   },
   {
     logo: de_shortdust,
     icon: de_shortdust_icon,
     name: "Shortdust",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   },
   {
     logo: de_lake,
     icon: de_lake_icon,
     name: "Lake",
-    time: "Время ожидания: 02:03"
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   }
 ]

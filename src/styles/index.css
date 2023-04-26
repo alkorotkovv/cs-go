@@ -126,7 +126,7 @@
   background-color: #22A526;
 }
 .switch__checkbox:checked + .switch__label::after {
-  left: calc(100% - 2px);
+  left: calc(100% - 4px);
   transform: translateX(-100%);
 }
 .switch__span {
@@ -1624,6 +1624,7 @@
   height: 100%;
   background-color: black;
   position: relative;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
 }
 .map__logo {
   margin: 0;
@@ -1673,6 +1674,37 @@
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0.8;
+}
+.map__checkbox {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.8;
+}
+.map__competitive {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0.8;
+}
+.map__competitive_visible {
+  display: flex;
 }
 
 .panel {

@@ -48,7 +48,7 @@
   }
   
   &__checkbox:checked + &__label::after {
-    left: calc(100% - 2px);
+    left: calc(100% - 4px);
     transform: translateX(-100%);
   }
 

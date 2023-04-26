@@ -22,6 +22,7 @@ function Dual(props) {
                 icon={element.icon}
                 name={element.name}
                 time={element.time}
+                isCompetitive={element.isCompetitive}
               />            
             )
           }  
