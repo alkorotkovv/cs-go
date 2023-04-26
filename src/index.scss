@@ -1,6 +1,11 @@
 @import "../vendor/fonts/fonts.css";
 @import "../vendor/normalize.css";
 
+//Вспомогательные компоненты
+@import "./components/Select/Select.scss";
+@import "./components/Switch/Switch.scss";
+
+//Основные компоненты проекта
 @import "./components/App/App.scss";
 @import "./components/Menu/Menu.scss";
 @import "./components/News/News.scss";
@@ -21,7 +26,7 @@
 @import "./components/Search/Search.scss";
 @import "./components/Messages/Messages.scss";
 
-@import "./components/Select/Select.scss";
+
 
 @import "./components/Panel/Panel.scss";
 @import "./components/Play/Play.scss";

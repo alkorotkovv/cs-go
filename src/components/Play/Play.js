@@ -1,7 +1,9 @@
 import React  from 'react';
 import Panel from '../Panel/Panel';
 import Select from '../Select/Select';
+import Switch from '../Switch/Switch';
 import Competitive from './Regyms/Competitive/Competitive';
+
 
 function Play(props) {
 
@@ -130,7 +132,9 @@ function Play(props) {
             <li className={"play__regym" + (isZone ? " play__regym_active" : " ")} onClick={handleZoneClick}><p className='play__regym-text'>Запретная зона</p></li>
         </ul>
         <div className='play__settings'>
-          
+          <Switch span="Закрытый подбор" id="switch1"/>
+          <Switch span="Рейтинговые игры" id="switch2"/>
+          <Switch span="Открытая группа" id="switch3"/>
         </div>
         <Competitive isVisible={isCompetitive} />
         <div className='play__bottom'>
