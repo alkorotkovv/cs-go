@@ -1720,14 +1720,108 @@
 }
 .play__bottom {
   margin: 0;
-  padding: 0;
+  padding: 0 33px;
   height: 95px;
   display: flex;
+  align-items: center;
+  justify-content: end;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
   border-top: 1px solid gray;
 }
+.play__button {
+  margin: 0;
+  padding: 6px 65px;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #1A721D;
+  background-color: rgb(14, 73, 16);
+  background: linear-gradient(90deg, rgb(78, 195, 84) 5%, rgb(29, 124, 32) 15%, rgb(14, 73, 16) 40%, rgb(14, 73, 16) 100%);
+  overflow: hidden;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: all 0.2s linear;
+}
+.play__button:hover {
+  box-shadow: 0px 0px 16px 2px rgba(78, 195, 84, 0.4);
+}
+.play__button-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 26px;
+  font-weight: 700;
+  color: #4CAF50;
+  line-height: 1;
+  letter-spacing: 3px;
+  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+}
+.play__button-color {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(78, 195, 84);
+  opacity: 0.3;
+  animation: color 6s linear infinite;
+}
 
+@keyframes gradient {
+  0% {
+    background: linear-gradient(90deg, rgb(78, 195, 84) 5%, rgb(29, 124, 32) 15%, rgb(14, 73, 16) 40%, rgb(14, 73, 16) 100%);
+  }
+  1% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(78, 195, 84) 15%, rgb(29, 124, 32) 40%, rgb(14, 73, 16) 100%);
+  }
+  2% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(78, 195, 84) 25%, rgb(29, 124, 32) 40%, rgb(14, 73, 16) 100%);
+  }
+  3% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 25%, rgb(78, 195, 84) 40%, rgb(14, 73, 16) 100%);
+  }
+  4% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 25%, rgb(78, 195, 84) 40%, rgb(14, 73, 16) 100%);
+  }
+  5% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 40%, rgb(78, 195, 84) 50%, rgb(29, 124, 32) 100%);
+  }
+  6% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 50%, rgb(78, 195, 84) 60%, rgb(29, 124, 32) 100%);
+  }
+  7% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 60%, rgb(78, 195, 84) 70%, rgb(29, 124, 32) 100%);
+  }
+  8% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 70%, rgb(78, 195, 84) 80%, rgb(29, 124, 32) 100%);
+  }
+  9% {
+    background: linear-gradient(90deg, rgb(29, 124, 32) 5%, rgb(29, 124, 32) 15%, rgb(29, 124, 32) 80%, rgb(78, 195, 84) 90%, rgb(29, 124, 32) 100%);
+  }
+  10% {
+    background: linear-gradient(90deg, rgb(78, 195, 84) 5%, rgb(29, 124, 32) 15%, rgb(14, 73, 16) 40%, rgb(14, 73, 16) 100%);
+  }
+  100% {
+    background: linear-gradient(90deg, rgb(78, 195, 84) 5%, rgb(29, 124, 32) 15%, rgb(14, 73, 16) 40%, rgb(14, 73, 16) 100%);
+  }
+}
+@keyframes color {
+  from {
+    margin-left: -250px;
+    margin-right: 250px;
+  }
+  40% {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 0;
+  }
+}
 .competitive {
   margin: 0;
   padding: 0;

@@ -138,7 +138,10 @@ function Play(props) {
         </div>
         <Competitive isVisible={isCompetitive} />
         <div className='play__bottom'>
-
+          <div className='play__button'>
+            <p className='play__button-text'>НАЧАТЬ </p>
+            <div className='play__button-color'></div>
+          </div>
         </div>
     </Panel>
   )
