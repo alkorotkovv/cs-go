@@ -1622,6 +1622,8 @@
   display: flex;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
   background-color: black;
   position: relative;
   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
@@ -1632,9 +1634,17 @@
   display: flex;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   object-fit: cover;
   object-position: center;
   opacity: 0.5;
+  transition: all 0.2s linear;
+}
+.map__logo_checked {
+  scale: 1.2;
+}
+.map__logo_checked:hover {
+  scale: 1.2;
 }
 .map__icon {
   margin: 0;
