@@ -17,4 +17,63 @@
     display: flex;
     border-bottom: 1px solid gray;
   }
+
+  &__regyms {
+    margin: 0;
+    padding: 0 33px;
+    display: flex;
+    gap: 28px;
+    list-style-type: none;
+  }
+
+  &__regym {
+    margin: 0;
+    padding: 17px 8px;
+    display: flex;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+      padding-bottom: 21px;
+      border-bottom: 1px solid white;
+    }
+
+    &_active {
+      border-bottom: 5px solid white;
+
+      &:hover {
+        padding-bottom: 17px;
+        border-bottom: 5px solid white;
+      }
+    }
+  }
+
+  &__regym-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: white;
+
+  }
+
+  &__settings {
+    margin: 0;
+    padding: 0;
+    min-height: 63px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  &__bottom {
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid gray;
+  }
+
+
 }

@@ -189,9 +189,10 @@
   position: absolute;
   left: 128px;
   bottom: 24px;
+  animation: showing 0.2s linear forwards;
 }
 .shop_unvisible {
-  display: none;
+  animation: hiding 0.2s linear forwards;
 }
 .shop__header {
   margin: 0;
@@ -222,6 +223,23 @@
   border-bottom: 3px solid white;
 }
 
+@keyframes hiding {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+    display: none;
+  }
+}
+@keyframes showing {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
 .shop__items {
   margin: 0;
   padding: 0;
@@ -1593,6 +1611,76 @@
   padding: 8px 22px;
   display: flex;
   border-bottom: 1px solid gray;
+}
+.play__regyms {
+  margin: 0;
+  padding: 0 33px;
+  display: flex;
+  gap: 28px;
+  list-style-type: none;
+}
+.play__regym {
+  margin: 0;
+  padding: 17px 8px;
+  display: flex;
+  border-bottom: 5px solid transparent;
+}
+.play__regym:hover {
+  padding-bottom: 21px;
+  border-bottom: 1px solid white;
+}
+.play__regym_active {
+  border-bottom: 5px solid white;
+}
+.play__regym_active:hover {
+  padding-bottom: 17px;
+  border-bottom: 5px solid white;
+}
+.play__regym-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.play__settings {
+  margin: 0;
+  padding: 0;
+  min-height: 63px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.play__bottom {
+  margin: 0;
+  padding: 0;
+  height: 95px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid gray;
+}
+
+.competitive {
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.competitive_visible {
+  display: flex;
+}
+
+.inventary__title {
+  margin: 0;
+  padding: 34px 35px 34px 35px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  border-bottom: 1px solid gray;
+  letter-spacing: 1px;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

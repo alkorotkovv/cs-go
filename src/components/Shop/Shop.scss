@@ -11,9 +11,10 @@
   position: absolute;
   left: 128px;
   bottom: 24px;
+  animation: showing 0.2s linear forwards;
 
   &_unvisible {
-    display: none;
+    animation: hiding 0.2s linear forwards;
   }
 
   &__header {
@@ -49,4 +50,23 @@
     }
   }
 
+}
+
+@keyframes hiding {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+    display: none;
+  }
+}
+
+@keyframes showing {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }

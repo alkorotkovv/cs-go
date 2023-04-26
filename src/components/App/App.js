@@ -4,6 +4,7 @@ import Menu from '../Menu/Menu.js';
 import LeftBar from '../LeftBar/LeftBar.js';
 import RightBar from '../RightBar/RightBar.js';
 import Play from '../Play/Play';
+import Inventary from '../Inventary/Inventary.js';
 
 function App() {
 
@@ -114,6 +115,7 @@ function App() {
       />
       <RightBar />
       <Play isVisible={isPlayVisible} />
+      <Inventary isVisible={isInventoryVisible} />
     </div>
   );
 

@@ -1,0 +1,11 @@
+.competitive {
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &_visible {
+    display: flex;
+  }
+}
