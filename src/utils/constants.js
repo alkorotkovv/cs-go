@@ -156,6 +156,9 @@ import case18 from '../images/shop/cases/case18.png';
 import case19 from '../images/shop/cases/case19.png';
 import case20 from '../images/shop/cases/case20.png';
 
+//Карты
+import de_inferno from '../images/maps/de_inferno.jpg';
+
 //Массив медалей
 export const medalsArray = [
   
@@ -908,4 +911,48 @@ export const casesArray = [
     price: "Торговая площадка",
     link: "https://steamcommunity.com/market/search?q=&appid=730&lock_appid=730&category_730_ItemSet%5B%5D=tag_set_community_32"
   }
+]
+
+//Массив карт для напарников
+export const dualMapsArray = [
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
+  {
+    logo: de_inferno,
+    name: "Inferno",
+    time: "Время ожидания: 02:03"
+  },
 ]

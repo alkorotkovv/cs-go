@@ -27,9 +27,19 @@
 @import "./components/Messages/Messages.scss";
 
 
-
+@import "./components/Map/Map.scss";
 @import "./components/Panel/Panel.scss";
 @import "./components/Play/Play.scss";
+@import "./components/Play/Types/Official/Official.scss";
+@import "./components/Play/Types/Bots/Bots.scss";
+
+
+
 @import "./components/Play/Regyms/Competitive/Competitive.scss";
+@import "./components/Play/Regyms/Dual/Dual.scss";
+@import "./components/Play/Regyms/Usual/Usual.scss";
+@import "./components/Play/Regyms/Deathmatch/Deathmatch.scss";
+@import "./components/Play/Regyms/Military/Military.scss";
+@import "./components/Play/Regyms/Zone/Zone.scss";
 
 @import "./components/Inventary/Inventary.scss";

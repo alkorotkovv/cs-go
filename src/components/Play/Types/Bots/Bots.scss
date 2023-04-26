@@ -1,0 +1,10 @@
+.bots {
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+
+  &_visible {
+    display: flex;
+  }
+}
