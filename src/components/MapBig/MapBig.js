@@ -7,12 +7,18 @@ function MapBig(props) {
   console.log(props);
 
   const [isChecked, setIsChecked] = React.useState(false);
-  const [isShow, setIsShow] = React.useState(false);
+  const [isShow, setIsShow] = React.useState(props.maps[0].logo);
 
   React.useEffect(() => {
+    let i = 0;
     setInterval(function() {
-      //console.log("2s")
-    }, 2000)
+      if (i < props.maps.length - 1)
+        i = i + 1;
+      else 
+        i = 0;
+      setIsShow(props.maps[i].logo);
+      console.log(i);
+    }, 3000)
   }, [])
 
   function handleClick() {
@@ -22,11 +28,13 @@ function MapBig(props) {
 
   return (
     <li className={"map-big" + (isChecked ? " map-big_checked" : " ")} onClick={handleClick}>
-      {
+      <img className="map-big__logo" src={isShow} alt="logo"/>
+      
+      {/*
         props.maps.map((element, index) => 
-          <img className={"map-big__logo" + ` map-big__logo_${index}`} src={element.logo} alt="logo"/>
+          <img className={"map-big__logo" + ` map-big__logo_${index}`} src={isShow} alt="logo"/>
         )
-      }
+    */}
       <ul className='map-big__list'>
         {
           props.maps.map((element, index) => 
