@@ -167,6 +167,15 @@ import de_train from '../images/maps/de_train.jpg';
 import de_nuke from '../images/maps/de_nuke.jpg';
 import de_shortdust from '../images/maps/de_shortdust.jpg';
 import de_lake from '../images/maps/de_lake.jpg';
+import premier from '../images/maps/premier.jpg';
+import de_ancient from '../images/maps/de_ancient.jpg';
+import de_anubis from '../images/maps/de_anubis.jpg';
+import de_mirage from '../images/maps/de_mirage.jpg';
+import de_tuscan from '../images/maps/de_tuscan.jpg';
+import de_dust2 from '../images/maps/de_dust2.jpg';
+import de_cache from '../images/maps/de_cache.jpg';
+import cs_agency from '../images/maps/cs_agency.jpg';
+import cs_office from '../images/maps/cs_office.jpg';
 
 //Иконки карт
 import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
@@ -179,6 +188,15 @@ import de_train_icon from '../images/maps/icons/de_train_icon.png';
 import de_nuke_icon from '../images/maps/icons/de_nuke_icon.png';
 import de_shortdust_icon from '../images/maps/icons/de_shortdust_icon.png';
 import de_lake_icon from '../images/maps/icons/de_lake_icon.png';
+import premier_icon from '../images/maps/icons/premier_icon.png';
+import de_ancient_icon from '../images/maps/icons/de_ancient_icon.png';
+import de_anubis_icon from '../images/maps/icons/de_anubis_icon.png';
+import de_mirage_icon from '../images/maps/icons/de_mirage_icon.png';
+import de_tuscan_icon from '../images/maps/icons/de_tuscan_icon.png';
+import de_dust2_icon from '../images/maps/icons/de_dust2_icon.png';
+import de_cache_icon from '../images/maps/icons/de_cache_icon.png';
+import cs_agency_icon from '../images/maps/icons/cs_agency_icon.png';
+import cs_office_icon from '../images/maps/icons/cs_office_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -937,23 +955,23 @@ export const casesArray = [
 //Массив карт для соревновательного режима
 export const competitiveMapsArray = [
   {
-    logo: de_boyard,
-    icon: de_boyard_icon,
-    name: "Boyard",
+    logo: premier,
+    icon: premier_icon,
+    name: "Премьер-режим",
     time: "Время ожидания: 02:03",
-    isCompetitive: false
+    isCompetitive: true
   },
   {
-    logo: de_chalice,
-    icon: de_chalice_icon,
-    name: "Chalice",
+    logo: de_ancient,
+    icon: de_ancient_icon,
+    name: "Ancient",
     time: "Время ожидания: 02:03",
-    isCompetitive: false
+    isCompetitive: true
   },
   {
-    logo: de_vertigo,
-    icon: de_vertigo_icon,
-    name: "Vertigo",
+    logo: de_anubis,
+    icon: de_anubis_icon,
+    name: "Anubis",
     time: "Время ожидания: 02:03",
     isCompetitive: true
   },
@@ -965,6 +983,20 @@ export const competitiveMapsArray = [
     isCompetitive: true
   },
   {
+    logo: de_mirage,
+    icon: de_mirage_icon,
+    name: "Mirage",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_nuke,
+    icon: de_nuke_icon,
+    name: "Nuke",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
     logo: de_overpass,
     icon: de_overpass_icon,
     name: "Overpass",
@@ -972,9 +1004,23 @@ export const competitiveMapsArray = [
     isCompetitive: true
   },
   {
-    logo: de_cbble,
-    icon: de_cbble_icon,
-    name: "Cobblestone",
+    logo: de_vertigo,
+    icon: de_vertigo_icon,
+    name: "Vertigo",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_tuscan,
+    icon: de_tuscan_icon,
+    name: "Tuscan",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_dust2,
+    icon: de_dust2_icon,
+    name: "Dust 2",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   },
@@ -986,37 +1032,23 @@ export const competitiveMapsArray = [
     isCompetitive: false
   },
   {
-    logo: de_nuke,
-    icon: de_nuke_icon,
-    name: "Nuke",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_shortdust,
-    icon: de_shortdust_icon,
-    name: "Shortdust",
+    logo: de_cache,
+    icon: de_cache_icon,
+    name: "Cache",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   },
   {
-    logo: de_lake,
-    icon: de_lake_icon,
-    name: "Lake",
+    logo: cs_agency,
+    icon: cs_agency_icon,
+    name: "Agency",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   },
   {
-    logo: de_lake,
-    icon: de_lake_icon,
-    name: "Lake",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_lake,
-    icon: de_lake_icon,
-    name: "Lake",
+    logo: cs_office,
+    icon: cs_office_icon,
+    name: "Office",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   }

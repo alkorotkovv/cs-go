@@ -75,7 +75,9 @@
   &__title {
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
+    justify-content: center;
     position: absolute;
     font-size: 20px;
     font-weight: 400;

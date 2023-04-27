@@ -5,7 +5,10 @@ import Map from '../../../Map/Map';
 import add_all_icon from '../../../../images/add_all_icon.png';
 import delete_all_icon from '../../../../images/delete_all_icon.png';
 import save_icon from '../../../../images/save_icon.png';
+import setup_setting_icon from '../../../../images/setup_setting_icon.png';
+
 import { competitiveMapsArray } from '../../../../utils/constants';
+import Setup from '../../../Setup/Setup';
 
 
 function Competitive(props) {
@@ -13,9 +16,18 @@ function Competitive(props) {
   return (
     <div className={"regym regym_competitive" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_competitive'>
-        <Switch span="Закрытый подбор" id="switch_competitive_1"/>
-        <Switch span="Рейтинговые игры" id="switch_competitive_2"/>
-        <Switch span="Открытая группа" id="switch_competitive_3"/>
+        <div className='wrapper'>
+          <Switch span="Закрытый подбор" id="switch_competitive_1"/>
+        </div>
+        <div className='wrapper'>
+          <Setup span="Короткая игра" id="setup_competitive_1" image={setup_setting_icon} />
+        </div>
+        <div className='wrapper'>
+          <Switch span="Рейтинговые игры" id="switch_competitive_2"/>
+        </div>
+        <div className='wrapper'>
+          <Switch span="Открытая группа" id="switch_competitive_3"/>
+        </div>
       </div>
       <div className='regym__main regym__main_competitive'>
         <div className='filters'>
