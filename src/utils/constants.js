@@ -174,8 +174,12 @@ import de_mirage from '../images/maps/de_mirage.jpg';
 import de_tuscan from '../images/maps/de_tuscan.jpg';
 import de_dust2 from '../images/maps/de_dust2.jpg';
 import de_cache from '../images/maps/de_cache.jpg';
+import de_canals from '../images/maps/de_canals.jpg';
 import cs_agency from '../images/maps/cs_agency.jpg';
 import cs_office from '../images/maps/cs_office.jpg';
+import cs_militia from '../images/maps/cs_militia.jpg';
+import cs_italy from '../images/maps/cs_italy.jpg';
+import cs_assault from '../images/maps/cs_assault.jpg';
 
 //Иконки карт
 import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
@@ -195,8 +199,12 @@ import de_mirage_icon from '../images/maps/icons/de_mirage_icon.png';
 import de_tuscan_icon from '../images/maps/icons/de_tuscan_icon.png';
 import de_dust2_icon from '../images/maps/icons/de_dust2_icon.png';
 import de_cache_icon from '../images/maps/icons/de_cache_icon.png';
+import de_canals_icon from '../images/maps/icons/de_canals_icon.png';
 import cs_agency_icon from '../images/maps/icons/cs_agency_icon.png';
 import cs_office_icon from '../images/maps/icons/cs_office_icon.png';
+import cs_militia_icon from '../images/maps/icons/cs_militia_icon.png';
+import cs_italy_icon from '../images/maps/icons/cs_italy_icon.png';
+import cs_assault_icon from '../images/maps/icons/cs_assault_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -1123,6 +1131,143 @@ export const dualMapsArray = [
     logo: de_lake,
     icon: de_lake_icon,
     name: "Lake",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  }
+]
+
+//Массив всех карт из игры
+export const allMapsArray = [
+  {
+    logo: premier,
+    icon: premier_icon,
+    name: "Премьер-режим",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_ancient,
+    icon: de_ancient_icon,
+    name: "Ancient",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_anubis,
+    icon: de_anubis_icon,
+    name: "Anubis",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_inferno,
+    icon: de_inferno_icon,
+    name: "Inferno",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_mirage,
+    icon: de_mirage_icon,
+    name: "Mirage",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_nuke,
+    icon: de_nuke_icon,
+    name: "Nuke",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_overpass,
+    icon: de_overpass_icon,
+    name: "Overpass",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_vertigo,
+    icon: de_vertigo_icon,
+    name: "Vertigo",
+    time: "Время ожидания: 02:03",
+    isCompetitive: true
+  },
+  {
+    logo: de_tuscan,
+    icon: de_tuscan_icon,
+    name: "Tuscan",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_dust2,
+    icon: de_dust2_icon,
+    name: "Dust 2",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_train,
+    icon: de_train_icon,
+    name: "Train",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_cache,
+    icon: de_cache_icon,
+    name: "Cache",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: cs_agency,
+    icon: cs_agency_icon,
+    name: "Agency",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: cs_office,
+    icon: cs_office_icon,
+    name: "Office",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_canals,
+    icon: de_canals_icon,
+    name: "Canals",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_cbble,
+    icon: de_cbble_icon,
+    name: "Cobblestone",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: cs_militia,
+    icon: cs_militia_icon,
+    name: "Militia",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: cs_italy,
+    icon: cs_italy_icon,
+    name: "Italy",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: cs_assault,
+    icon: cs_assault_icon,
+    name: "Assault",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   }

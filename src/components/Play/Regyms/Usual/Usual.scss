@@ -19,6 +19,7 @@
 
   &__maps {
     &_usual {
+      grid-template-columns: repeat(4, 224px);
     }
   }
   

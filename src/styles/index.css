@@ -2275,6 +2275,10 @@
   margin-left: auto;
 }
 
+.regym__maps_usual {
+  grid-template-columns: repeat(4, 224px);
+}
+
 .wrapper_usual:nth-child(1) {
   margin-left: auto;
 }

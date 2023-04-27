@@ -4,7 +4,8 @@ import Switch from '../../../Switch/Switch';
 import setup_prime_icon from '../../../../images/setup_prime_icon.png';
 import MapBig from '../../../MapBig/MapBig';
 
-import { competitiveMapsArray } from '../../../../utils/constants';
+import { allMapsArray } from '../../../../utils/constants';
+import Map from '../../../Map/Map';
 
 function Usual(props) {
   
@@ -19,16 +20,45 @@ function Usual(props) {
         </div>
       </div>
       <div className='regym__main regym__main_usual'>
+        <ul className="regym__maps regym__maps_usual">
         <MapBig maps={[
-          competitiveMapsArray.find((e) => e.name === "Anubis"),
-          competitiveMapsArray.find((e) => e.name === "Mirage"),
-          competitiveMapsArray.find((e) => e.name === "Inferno"),
-          competitiveMapsArray.find((e) => e.name === "Overpass"),
-          competitiveMapsArray.find((e) => e.name === "Nuke"),
-          competitiveMapsArray.find((e) => e.name === "Train")
+          allMapsArray.find((e) => e.name === "Canals"),
+          allMapsArray.find((e) => e.name === "Vertigo"),
+          allMapsArray.find((e) => e.name === "Cobblestone"),
+          allMapsArray.find((e) => e.name === "Ancient"),
+          allMapsArray.find((e) => e.name === "Cache"),
+          allMapsArray.find((e) => e.name === "Tuscan")
+          ]} 
+          name="Разминирование, группа Сигма"
+        />
+        
+        <MapBig maps={[
+          allMapsArray.find((e) => e.name === "Anubis"),
+          allMapsArray.find((e) => e.name === "Mirage"),
+          allMapsArray.find((e) => e.name === "Inferno"),
+          allMapsArray.find((e) => e.name === "Overpass"),
+          allMapsArray.find((e) => e.name === "Nuke"),
+          allMapsArray.find((e) => e.name === "Train")
           ]} 
           name="Разминирование, группа Дельта"
         />
+        <Map
+          logo={allMapsArray.find((e) => e.name === "Dust 2").logo}
+          icon={allMapsArray.find((e) => e.name === "Dust 2").icon}
+          name={allMapsArray.find((e) => e.name === "Dust 2").name}
+          time={allMapsArray.find((e) => e.name === "Dust 2").time}
+          isCompetitive={allMapsArray.find((e) => e.name === "Dust 2").isCompetitive}
+        />
+        <MapBig maps={[
+          allMapsArray.find((e) => e.name === "Agency"),
+          allMapsArray.find((e) => e.name === "Militia"),
+          allMapsArray.find((e) => e.name === "Office"),
+          allMapsArray.find((e) => e.name === "Italy"),
+          allMapsArray.find((e) => e.name === "Assault")
+          ]} 
+          name="Освобождение заложников"
+        />
+        </ul>
       </div>
     </div>
   )
