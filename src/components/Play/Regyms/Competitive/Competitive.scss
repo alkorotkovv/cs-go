@@ -26,10 +26,109 @@
 
 .filters {
   margin: 0;
-  padding: 0;
-  min-width: 199px;
+  padding: 10px 12px;
+  min-width: 200px;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   border-right: 1px solid $line_color;
+
+  &__templates-block {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    font-size: 16px;
+    color: lightgray;
+    
+  }
+
+  &__templates {
+    margin: 0;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  &__template {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    
+    &_active {
+      background-color: rgba($color: #8B847D, $alpha: 1);      
+      color: black;
+    }
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.15);      
+    }
+  }
+
+  &__template-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  &__actions-block {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  &__actions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  &__action {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 4px;
+    gap: 8px;
+    color: white;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.15);      
+    }
+  }
+
+  &__action-icon {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__action-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 14px;   
+  }
+
 }
 
 .maps {
