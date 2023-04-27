@@ -1964,17 +1964,17 @@
   display: flex;
 }
 
-.competitive {
+.regym {
   margin: 0;
   padding: 0;
   height: 100%;
   display: none;
   flex-direction: column;
 }
-.competitive_visible {
+.regym_visible {
   display: flex;
 }
-.competitive__settings {
+.regym__settings {
   margin: 0;
   padding: 0 33px;
   display: flex;
@@ -1984,44 +1984,15 @@
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
-.competitive__main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.dual {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: none;
-  flex-direction: column;
-}
-.dual_visible {
-  display: flex;
-}
-.dual__settings {
-  margin: 0;
-  padding: 0 33px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.dual__main {
+.regym__main {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
 }
-.dual__maps {
+.regym__maps {
   margin: 0;
   padding: 24px 0 0 0;
   box-sizing: border-box;
@@ -2032,34 +2003,9 @@
   grid-auto-rows: 262px;
 }
 
-.usual {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: none;
-  flex-direction: column;
+.regym__settings_dual {
+  justify-content: end;
 }
-.usual_visible {
-  display: flex;
-}
-.usual__settings {
-  margin: 0;
-  padding: 0 33px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.usual__main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .deathmatch {
   margin: 0;
   padding: 0;
@@ -2081,62 +2027,6 @@
   border-bottom: 1px solid gray;
 }
 .deathmatch__main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.military {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: none;
-  flex-direction: column;
-}
-.military_visible {
-  display: flex;
-}
-.military__settings {
-  margin: 0;
-  padding: 0 33px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.military__main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.zone {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: none;
-  flex-direction: column;
-}
-.zone_visible {
-  display: flex;
-}
-.zone__settings {
-  margin: 0;
-  padding: 0 33px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.zone__main {
   margin: 0;
   padding: 0;
   display: flex;
