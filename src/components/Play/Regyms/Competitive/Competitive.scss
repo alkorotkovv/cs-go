@@ -7,9 +7,48 @@
   }
 
   &__settings {
+
+    &_competitive {
+    }
   }
 
   &__main {
+    &_competitive {
+    }
+  }
+
+  &__maps {
+    &_competitive {
+    }
   }
   
+}
+
+.filters {
+  margin: 0;
+  padding: 0;
+  min-width: 199px;
+  display: flex;
+  border-right: 1px solid $line_color;
+}
+
+.maps {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        // цвет дорожки 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    // цвет плашки 
+    border-radius: 2px;       // закругления плашки 
+  }
 }

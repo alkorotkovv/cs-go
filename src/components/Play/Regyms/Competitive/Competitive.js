@@ -1,5 +1,8 @@
 import React  from 'react';
 import Switch from '../../../Switch/Switch';
+import Map from '../../../Map/Map';
+
+import { competitiveMapsArray } from '../../../../utils/constants';
 
 function Competitive(props) {
   
@@ -11,7 +14,25 @@ function Competitive(props) {
         <Switch span="Открытая группа" id="switch_competitive_3"/>
       </div>
       <div className='regym__main regym__main_competitive'>
-        СОРЕВНОВАТЕЛЬНЫЙ
+        <div className='filters'>
+
+        </div>
+        <div className='maps'>
+          <ul className="regym__maps regym__maps_competitive">
+            {
+              competitiveMapsArray.map((element, index) => 
+                <Map 
+                  key={index}
+                  logo={element.logo}
+                  icon={element.icon}
+                  name={element.name}
+                  time={element.time}
+                  isCompetitive={element.isCompetitive}
+                />            
+              )
+            }  
+          </ul>
+        </div>
       </div>
     </div>
   )

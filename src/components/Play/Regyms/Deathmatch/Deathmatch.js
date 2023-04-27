@@ -4,11 +4,11 @@ import Switch from '../../../Switch/Switch';
 function Deathmatch(props) {
   
   return (
-    <div className={"deathmatch" + (props.isVisible ? " deathmatch_visible" : " ")}>
-      <div className='deathmatch__settings'>
+    <div className={"regym regym_deathmatch" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_deathmatch'>
         <Switch span="Открытая группа" id="switch_deathmatch_1"/>
       </div>
-      <div className='deathmatch__main'>
+      <div className='regym__main regym__main_deathmatch'>
         БОЙ НАСМЕРТЬ
       </div>
     </div>

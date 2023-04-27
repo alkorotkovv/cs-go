@@ -595,11 +595,12 @@
 }
 
 .leftBar {
-  width: 95px;
+  width: 96px;
   height: 1080px;
   margin: 0;
   padding: 0;
   display: flex;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1.5;
   color: black;
@@ -1763,6 +1764,16 @@
 .panel_visible {
   animation: slide-right 0.2s ease-out forwards;
 }
+.panel__title {
+  margin: 0;
+  padding: 34px 35px 34px 35px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+  color: white;
+}
 
 @keyframes slide-right {
   from {
@@ -1785,21 +1796,11 @@
     visibility: hidden;
   }
 }
-.play__title {
-  margin: 0;
-  padding: 34px 35px 34px 35px;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1;
-  border-bottom: 1px solid gray;
-  letter-spacing: 1px;
-  color: white;
-}
 .play__select {
   margin: 0;
   padding: 8px 22px;
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .official {
@@ -1815,13 +1816,14 @@
 .official__regyms {
   margin: 0;
   padding: 0 33px;
+  min-height: 63px;
   display: flex;
   gap: 28px;
   list-style-type: none;
 }
 .official__regym {
   margin: 0;
-  padding: 17px 8px;
+  padding: 21px 8px 15px 8px;
   display: flex;
   border-bottom: 5px solid transparent;
 }
@@ -1855,14 +1857,14 @@
 .official__bottom {
   margin: 0;
   padding: 0 33px;
-  height: 95px;
+  height: 96px;
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: end;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
-  border-top: 1px solid gray;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .official__button {
   margin: 0;
@@ -1994,20 +1996,21 @@
   gap: 20px;
   align-items: center;
   min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .regym__main {
   margin: 0;
   padding: 0;
   display: flex;
+  max-height: 696px;
   justify-content: center;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .regym__maps {
   margin: 0;
-  padding: 24px 0 0 0;
+  padding: 24px 0;
   box-sizing: border-box;
   display: grid;
   column-gap: 32px;
@@ -2016,37 +2019,40 @@
   grid-auto-rows: 262px;
 }
 
+.filters {
+  margin: 0;
+  padding: 0;
+  min-width: 199px;
+  display: flex;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.maps {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow-y: auto;
+}
+.maps::-webkit-scrollbar {
+  width: 8px;
+}
+.maps::-webkit-scrollbar-track {
+  background: transparent;
+}
+.maps::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE;
+  border-radius: 2px;
+}
+
 .regym__settings_dual {
   justify-content: end;
 }
-.deathmatch {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: none;
-  flex-direction: column;
+.regym__settings_deathmatch {
+  justify-content: end;
 }
-.deathmatch_visible {
-  display: flex;
-}
-.deathmatch__settings {
-  margin: 0;
-  padding: 0 33px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  min-height: 63px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-.deathmatch__main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .inventary__title {
   margin: 0;
   padding: 34px 35px 34px 35px;

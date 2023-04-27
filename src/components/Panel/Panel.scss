@@ -16,6 +16,17 @@
   &_visible {
     animation: slide-right 0.2s ease-out forwards;
   }
+
+  &__title {
+    margin: 0;
+    padding: 34px 35px 34px 35px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1;
+    border-bottom: 1px solid $line_color;
+    letter-spacing: 1px;
+    color: white;
+  }
 }
 
 @keyframes slide-right {

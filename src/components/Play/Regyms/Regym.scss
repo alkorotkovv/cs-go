@@ -16,8 +16,8 @@
     gap: 20px;
     align-items: center;
     min-height: 63px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid $line_color;
+    border-bottom: 1px solid $line_color;
 
   }
 
@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    max-height: 696px;
     justify-content: center;
     flex: 1;
     background-color: rgba(0, 0, 0, 0.2);
@@ -32,13 +33,14 @@
 
   &__maps {
     margin: 0;
-    padding: 24px 0 0 0;
+    padding: 24px 0;
     box-sizing: border-box;
     display: grid;
     column-gap: 32px;
     row-gap: 48px;
     grid-template-columns: repeat(5, 224px);
     grid-auto-rows: 262px;
+    //grid-auto-flow: row;
     
   }
 

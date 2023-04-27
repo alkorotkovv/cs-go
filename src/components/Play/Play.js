@@ -63,8 +63,7 @@ function Play(props) {
 
   
   return (
-    <Panel name="play" isVisible={props.isVisible}>
-        <h1 className='play__title'>ИГРАТЬ</h1>
+    <Panel title={"ИГРАТЬ"} name="play" isVisible={props.isVisible}>
         <div className='play__select'>
         <Select 
           options={[
