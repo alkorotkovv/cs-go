@@ -16,7 +16,7 @@ function Map(props) {
       <img className='map__icon' src={props.icon} alt="icon"/>
       <p className='map__title'>{props.name}</p>
       <p className='map__time'>{props.time}</p>
-      <div className='map__checkbox'></div>
+      <div className={"map__checkbox" + (isChecked ? " map__checkbox_visible" : " ")}></div>
       <img className={"map__competitive" + (props.isCompetitive ? " map__competitive_visible" : " ")} src={competitiveIcon} alt="icon"/>
     </li>
   )

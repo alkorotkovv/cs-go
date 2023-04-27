@@ -1630,6 +1630,12 @@
   border: 0px solid white;
   transition: all 0.2s linear;
 }
+.map:hover .map__logo {
+  scale: 1.02;
+}
+.map:hover .map__logo_checked {
+  scale: 1.2;
+}
 .map_checked .map__logo {
   scale: 1.2;
 }
@@ -1648,9 +1654,6 @@
   object-position: center;
   opacity: 0.5;
   transition: all 0.2s linear;
-}
-.map__logo_checked:hover {
-  scale: 1.2;
 }
 .map__icon {
   margin: 0;
@@ -1704,6 +1707,12 @@
   top: 8px;
   right: 8px;
   opacity: 0.8;
+}
+.map__checkbox_visible {
+  background-image: url(../images/map_checkbox_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 .map__competitive {
   margin: 0;
