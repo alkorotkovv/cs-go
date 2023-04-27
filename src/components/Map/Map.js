@@ -1,5 +1,6 @@
 import React  from 'react';
 import competitiveIcon from '../../images/csgo_map_icon.png';
+import timeIcon from '../../images/map_time_icon.png';
 
 function Map(props) {
 
@@ -15,7 +16,10 @@ function Map(props) {
       <img className={"map__logo" + (isChecked ? " map__logo_checked" : " ")} src={props.logo} alt="logo"/>
       <img className='map__icon' src={props.icon} alt="icon"/>
       <p className='map__title'>{props.name}</p>
-      <p className='map__time'>{props.time}</p>
+      <div className='map__time'>
+        <img className='map__time-icon' src={timeIcon} alt="icon"/>
+        <p className='map__time-text'>{props.time}</p>
+      </div>
       <div className={"map__checkbox" + (isChecked ? " map__checkbox_visible" : " ")}></div>
       <img className={"map__competitive" + (props.isCompetitive ? " map__competitive_visible" : " ")} src={competitiveIcon} alt="icon"/>
     </li>
