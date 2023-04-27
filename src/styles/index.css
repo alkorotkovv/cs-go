@@ -1627,6 +1627,15 @@
   background-color: black;
   position: relative;
   box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  border: 0px solid white;
+  transition: all 0.2s linear;
+}
+.map_checked .map__logo {
+  scale: 1.2;
+}
+.map_checked {
+  border: 7px solid white;
+  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
 }
 .map__logo {
   margin: 0;
@@ -1639,9 +1648,6 @@
   object-position: center;
   opacity: 0.5;
   transition: all 0.2s linear;
-}
-.map__logo_checked {
-  scale: 1.2;
 }
 .map__logo_checked:hover {
   scale: 1.2;

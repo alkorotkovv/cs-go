@@ -16,6 +16,7 @@
 - Анимации
 - Шрифты
 - Адаптивность
+- Размеры картинок
 
 ## ССылка на GHPages: https://alkorotkovv.github.io/cs-go/
 
