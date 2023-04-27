@@ -25,12 +25,11 @@
 }
 
 .wrapper {
-  margin: 0;
-  padding: 0;
-  display: flex;
 
-  &:nth-child(3) {
-    margin-left: auto;
+  &_competitive {
+    &:nth-child(3) {
+      margin-left: auto;
+    }
   }
 }
 
