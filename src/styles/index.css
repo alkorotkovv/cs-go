@@ -2365,8 +2365,8 @@
 @keyframes soft-regym-switch {
   from {
     opacity: 0.1;
-    padding-left: 200px;
-    padding-right: -200px;
+    padding-left: 400px;
+    padding-right: -400px;
   }
   to {
     opacity: 1;
