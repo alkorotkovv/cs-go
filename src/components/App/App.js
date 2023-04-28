@@ -114,8 +114,8 @@ function App() {
         handleSettingsClick={handleSettingsClick}
       />
       <RightBar />
-      <Play isVisible={isPlayVisible} />
-      <Inventary isVisible={isInventoryVisible} />
+      { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
+      { isInventoryVisible ? <Inventary isVisible={isInventoryVisible} /> : <></> }
     </div>
   );
 

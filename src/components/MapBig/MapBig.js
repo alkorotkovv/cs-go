@@ -5,33 +5,10 @@ import timeIcon from '../../images/map_time_icon.png';
 function MapBig(props) {
 
   const [isChecked, setIsChecked] = React.useState(false);
-  const [isShow, setIsShow] = React.useState(props.maps[0].logo);
+  const [logoNow, setLogoNow] = React.useState(props.maps[0].logo);
   const [isAnim, setIsAnim] = React.useState(false);
   const intervalAnimRef = React.useRef(null);
   let i;
-
-  /*
-  intervalAnimRef.current = setInterval( () => {
-    if (i < props.maps.length - 1)
-      i = i + 1;
-    else 
-      i = 0;
-
-    setIsShow(props.maps[i].logo);
-
-    setTimeout(function() {
-      setIsAnim(true);
-    }, 3500);
-
-    setTimeout(function() {
-      setIsAnim(false);
-    }, 6500)
-
-    console.log("fff")
-
-  }, 5000);
-  */
-  
 
   //Эффект для плавной смены картинок на фоне
   React.useEffect(() => {
@@ -44,50 +21,25 @@ function MapBig(props) {
     })
   }, [])
 
-
+//Анимация для плавной смены картинок на фоне
   function Animation() {
     if (i < props.maps.length - 1)
-        i = i + 1;
-      else 
-        i = 0;
-  
-      setIsShow(props.maps[i].logo);
-  
-      setTimeout(function() {
-        setIsAnim(true);
-      }, 3500);
-  
-      setTimeout(function() {
-        setIsAnim(false);
-      }, 6500)
-  
-      console.log("fff")
+      i = i + 1;
+    else 
+      i = 0;
+
+    setLogoNow(props.maps[i].logo);
+
+    setTimeout(function() {
+      setIsAnim(true);
+    }, 3500);
+
+    setTimeout(function() {
+      setIsAnim(false);
+    }, 6500)
+
+    console.log("Анимируется задний фон биг-мап")
   }
-
-
-  function doAnimation() {
-    
-    setInterval( function() {
-      if (i < props.maps.length - 1)
-        i = i + 1;
-      else 
-        i = 0;
-
-      setIsShow(props.maps[i].logo);
-
-      setTimeout(function() {
-        setIsAnim(true);
-      }, 3500);
-
-      setTimeout(function() {
-        setIsAnim(false);
-      }, 6500)
-
-      console.log("fff")
-
-    }, 5000);
-  }
-
 
   function handleClick() {
     setIsChecked(!isChecked);
@@ -100,12 +52,14 @@ function MapBig(props) {
                      (isChecked && !isAnim ? " map-big__logo_checked" : " ") + 
                      (isChecked && isAnim ? " map-big__logo_checked map-big__logo_checked-anim" : " ") +
                      (!isChecked && isAnim ? " map-big__logo_anim" : "")} 
-        src={isShow} alt="logo"/>
-      {/*
+        src={logoNow} alt="logo"/>
+      {
+      /*
         props.maps.map((element, index) => 
           <img className={"map-big__logo" + ` map-big__logo_${index}`} src={isShow} alt="logo"/>
         )
-    */}
+      */
+      }
       <ul className='map-big__list'>
         {
           props.maps.map((element, index) => 
