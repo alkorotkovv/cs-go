@@ -18,7 +18,13 @@
     min-height: 63px;
     border-top: 1px solid $line_color;
     border-bottom: 1px solid $line_color;
+  }
 
+  &__main-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &__main {
@@ -28,9 +34,7 @@
     max-height: 696px;
     justify-content: center;
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.2);
-
-    animation: soft-regym-switch 0.2s linear forwards;
+    animation: soft-regym-switch 0.3s linear forwards;
   }
 
   &__maps {
@@ -56,23 +60,15 @@
 
 @keyframes soft-regym-switch {
   from {
-    opacity: 1;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  50% {
-    opacity: 0;
-    padding-left: 400px;
-    padding-right: -400px;
-  }
-  51% {
-    opacity: 0;
-    padding-left: 400px;
-    padding-right: -400px;
+    opacity: 0.1;
+    padding-left: 200px;
+    padding-right: -200px;
+    //background-color: rgba($color: #000000, $alpha: 1);
   }
   to {
     opacity: 1;
     padding-left: 0;
     padding-right: 0;
+    //background-color: rgba($color: #000000, $alpha: 0.2);
   }
 }

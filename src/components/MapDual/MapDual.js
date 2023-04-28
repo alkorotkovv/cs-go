@@ -11,8 +11,6 @@ function MapDual(props) {
   const intervalAnimRef = React.useRef(null);
   let i;  
   let period = randomIntFromInterval(7, 14) * 1000;
-  //let period = props.period;
-  //let period = 6000;
 
   //Функция получения рандомного числа из интервала
   function randomIntFromInterval(min, max) {

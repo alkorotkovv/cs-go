@@ -15,23 +15,25 @@ function Dual(props) {
           <Switch span="Открытая группа" id="switch_dual_2"/>
         </div>
       </div>
-      <div className='regym__main regym__main_dual'>
-        <ul className="regym__maps regym__maps_dual">
-          {
-            dualMapsArray.map((element, index) => 
-              <Map 
-                key={index}
-                logo={element.logo}
-                icon={element.icon}
-                name={element.name}
-                time={element.time}
-                isCompetitive={element.isCompetitive}
-                isCheckable={true}
-                isTimeVisible={true}
-              />            
-            )
-          }  
-        </ul>
+      <div className='regym__main-wrapper'>
+        <div className='regym__main regym__main_dual'>
+          <ul className="regym__maps regym__maps_dual">
+            {
+              dualMapsArray.map((element, index) => 
+                <Map 
+                  key={index}
+                  logo={element.logo}
+                  icon={element.icon}
+                  name={element.name}
+                  time={element.time}
+                  isCompetitive={element.isCompetitive}
+                  isCheckable={true}
+                  isTimeVisible={true}
+                />            
+              )
+            }  
+          </ul>
+        </div>
       </div>
     </div>
   )

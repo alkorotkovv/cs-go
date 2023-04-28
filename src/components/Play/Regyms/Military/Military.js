@@ -18,55 +18,57 @@ function Military(props) {
           <Switch span="Открытая группа" id="switch_military_1"/>
         </div>
       </div>
-      <div className='regym__main regym__main_military'>
-        <ul className="regym__maps regym__maps_usual">          
-          <MapDual maps={[
-            allMapsArray.find((e) => e.name === "Lake"),
-            allMapsArray.find((e) => e.name === "Baggage"),
-            allMapsArray.find((e) => e.name === "Safehouse"),
-            allMapsArray.find((e) => e.name === "St Marc"),
-            allMapsArray.find((e) => e.name === "Shoots"),
-            allMapsArray.find((e) => e.name === "Lunacy"),
-            allMapsArray.find((e) => e.name === "Monastery")
-            ]} 
-            name="Гонка вооружений"
-            isCheckable={true}
-          />        
-          <MapBig maps={[
-            allMapsArray.find((e) => e.name === "Lake"),
-            allMapsArray.find((e) => e.name === "Safehouse"),
-            allMapsArray.find((e) => e.name === "Sugarcane"),
-            allMapsArray.find((e) => e.name === "Bank"),
-            allMapsArray.find((e) => e.name === "St Marc"),
-            allMapsArray.find((e) => e.name === "Shortdust")
-            ]} 
-            name="Уничтожение объекта"
-            isCheckable={true}
-          />        
-          <MapBig maps={[
-            allMapsArray.find((e) => e.name === "Lake"),
-            allMapsArray.find((e) => e.name === "Safehouse"),
-            allMapsArray.find((e) => e.name === "Dizzy"),
-            allMapsArray.find((e) => e.name === "Lunacy"),
-            allMapsArray.find((e) => e.name === "Shoots")
-            ]} 
-            name="Перелётные снайперы"
-            isCheckable={true}
-          />        
-          <MapDual maps={[
-            allMapsArray.find((e) => e.name === "Inferno"),
-            allMapsArray.find((e) => e.name === "Mirage"),
-            allMapsArray.find((e) => e.name === "Dust 2"),
-            allMapsArray.find((e) => e.name === "Nuke"),
-            allMapsArray.find((e) => e.name === "Overpass"),
-            allMapsArray.find((e) => e.name === "Train"),
-            allMapsArray.find((e) => e.name === "Vertigo"),
-            allMapsArray.find((e) => e.name === "Ancient")
-            ]} 
-            name="Зачистка"
-            isCheckable={true}
-          />
-        </ul>
+      <div className='regym__main-wrapper'>
+        <div className='regym__main regym__main_military'>
+          <ul className="regym__maps regym__maps_usual">          
+            <MapDual maps={[
+              allMapsArray.find((e) => e.name === "Lake"),
+              allMapsArray.find((e) => e.name === "Baggage"),
+              allMapsArray.find((e) => e.name === "Safehouse"),
+              allMapsArray.find((e) => e.name === "St Marc"),
+              allMapsArray.find((e) => e.name === "Shoots"),
+              allMapsArray.find((e) => e.name === "Lunacy"),
+              allMapsArray.find((e) => e.name === "Monastery")
+              ]} 
+              name="Гонка вооружений"
+              isCheckable={true}
+            />        
+            <MapBig maps={[
+              allMapsArray.find((e) => e.name === "Lake"),
+              allMapsArray.find((e) => e.name === "Safehouse"),
+              allMapsArray.find((e) => e.name === "Sugarcane"),
+              allMapsArray.find((e) => e.name === "Bank"),
+              allMapsArray.find((e) => e.name === "St Marc"),
+              allMapsArray.find((e) => e.name === "Shortdust")
+              ]} 
+              name="Уничтожение объекта"
+              isCheckable={true}
+            />        
+            <MapBig maps={[
+              allMapsArray.find((e) => e.name === "Lake"),
+              allMapsArray.find((e) => e.name === "Safehouse"),
+              allMapsArray.find((e) => e.name === "Dizzy"),
+              allMapsArray.find((e) => e.name === "Lunacy"),
+              allMapsArray.find((e) => e.name === "Shoots")
+              ]} 
+              name="Перелётные снайперы"
+              isCheckable={true}
+            />        
+            <MapDual maps={[
+              allMapsArray.find((e) => e.name === "Inferno"),
+              allMapsArray.find((e) => e.name === "Mirage"),
+              allMapsArray.find((e) => e.name === "Dust 2"),
+              allMapsArray.find((e) => e.name === "Nuke"),
+              allMapsArray.find((e) => e.name === "Overpass"),
+              allMapsArray.find((e) => e.name === "Train"),
+              allMapsArray.find((e) => e.name === "Vertigo"),
+              allMapsArray.find((e) => e.name === "Ancient")
+              ]} 
+              name="Зачистка"
+              isCheckable={true}
+            />
+          </ul>
+        </div>
       </div>
     </div>
   )
