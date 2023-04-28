@@ -21,51 +21,49 @@ function Military(props) {
       <div className='regym__main regym__main_military'>
         <ul className="regym__maps regym__maps_usual">          
           <MapDual maps={[
-            allMapsArray.find((e) => e.name === "Canals"),
-            allMapsArray.find((e) => e.name === "Vertigo"),
-            allMapsArray.find((e) => e.name === "Cobblestone"),
-            allMapsArray.find((e) => e.name === "Ancient"),
-            allMapsArray.find((e) => e.name === "Cache"),
-            allMapsArray.find((e) => e.name === "Ancient"),
-            allMapsArray.find((e) => e.name === "Tuscan")
+            allMapsArray.find((e) => e.name === "Lake"),
+            allMapsArray.find((e) => e.name === "Baggage"),
+            allMapsArray.find((e) => e.name === "Safehouse"),
+            allMapsArray.find((e) => e.name === "St Marc"),
+            allMapsArray.find((e) => e.name === "Shoots"),
+            allMapsArray.find((e) => e.name === "Lunacy"),
+            allMapsArray.find((e) => e.name === "Monastery")
             ]} 
             name="Гонка вооружений"
-            period={3000}
             isCheckable={true}
           />        
           <MapBig maps={[
-            allMapsArray.find((e) => e.name === "Anubis"),
-            allMapsArray.find((e) => e.name === "Mirage"),
-            allMapsArray.find((e) => e.name === "Inferno"),
-            allMapsArray.find((e) => e.name === "Overpass"),
-            allMapsArray.find((e) => e.name === "Nuke"),
-            allMapsArray.find((e) => e.name === "Train")
+            allMapsArray.find((e) => e.name === "Lake"),
+            allMapsArray.find((e) => e.name === "Safehouse"),
+            allMapsArray.find((e) => e.name === "Sugarcane"),
+            allMapsArray.find((e) => e.name === "Bank"),
+            allMapsArray.find((e) => e.name === "St Marc"),
+            allMapsArray.find((e) => e.name === "Shortdust")
             ]} 
-            name="Разминирование, группа Дельта"
-            period={5000}
+            name="Уничтожение объекта"
             isCheckable={true}
           />        
           <MapBig maps={[
-            allMapsArray.find((e) => e.name === "Anubis"),
-            allMapsArray.find((e) => e.name === "Mirage"),
-            allMapsArray.find((e) => e.name === "Inferno"),
-            allMapsArray.find((e) => e.name === "Overpass"),
-            allMapsArray.find((e) => e.name === "Nuke"),
-            allMapsArray.find((e) => e.name === "Train")
+            allMapsArray.find((e) => e.name === "Lake"),
+            allMapsArray.find((e) => e.name === "Safehouse"),
+            allMapsArray.find((e) => e.name === "Dizzy"),
+            allMapsArray.find((e) => e.name === "Lunacy"),
+            allMapsArray.find((e) => e.name === "Shoots")
             ]} 
-            name="Разминирование, группа Дельта"
-            period={5000}
+            name="Перелётные снайперы"
             isCheckable={true}
           />        
           <MapDual maps={[
-            allMapsArray.find((e) => e.name === "Agency"),
-            allMapsArray.find((e) => e.name === "Militia"),
-            allMapsArray.find((e) => e.name === "Office"),
-            allMapsArray.find((e) => e.name === "Italy"),
-            allMapsArray.find((e) => e.name === "Assault")
+            allMapsArray.find((e) => e.name === "Inferno"),
+            allMapsArray.find((e) => e.name === "Mirage"),
+            allMapsArray.find((e) => e.name === "Dust 2"),
+            allMapsArray.find((e) => e.name === "Nuke"),
+            allMapsArray.find((e) => e.name === "Overpass"),
+            allMapsArray.find((e) => e.name === "Train"),
+            allMapsArray.find((e) => e.name === "Vertigo"),
+            allMapsArray.find((e) => e.name === "Ancient")
             ]} 
-            name="Освобождение заложников"
-            period={5000}
+            name="Зачистка"
             isCheckable={true}
           />
         </ul>

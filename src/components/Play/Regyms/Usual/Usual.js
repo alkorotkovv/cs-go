@@ -30,7 +30,6 @@ function Usual(props) {
             allMapsArray.find((e) => e.name === "Tuscan")
             ]} 
             name="Разминирование, группа Сигма"
-            period={3000}
             isCheckable={false}
           />        
           <MapBig maps={[
@@ -42,7 +41,6 @@ function Usual(props) {
             allMapsArray.find((e) => e.name === "Train")
             ]} 
             name="Разминирование, группа Дельта"
-            period={5000}
             isCheckable={false}
           />        
           <Map
@@ -62,7 +60,6 @@ function Usual(props) {
             allMapsArray.find((e) => e.name === "Assault")
             ]} 
             name="Освобождение заложников"
-            period={5000}
             isCheckable={false}
           />
         </ul>

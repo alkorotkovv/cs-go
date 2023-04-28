@@ -180,6 +180,15 @@ import cs_office from '../images/maps/cs_office.jpg';
 import cs_militia from '../images/maps/cs_militia.jpg';
 import cs_italy from '../images/maps/cs_italy.jpg';
 import cs_assault from '../images/maps/cs_assault.jpg';
+import ar_baggage from '../images/maps/ar_baggage.jpg';
+import de_safehouse from '../images/maps/de_safehouse.jpg';
+import de_stmarc from '../images/maps/de_stmarc.jpg';
+import ar_shoots from '../images/maps/ar_shoots.jpg';
+import lunacy from '../images/maps/lunacy.jpg';
+import ar_monastery from '../images/maps/ar_monastery.jpg';
+import de_sugarcane from '../images/maps/de_sugarcane.jpg';
+import de_bank from '../images/maps/de_bank.jpg';
+import ar_dizzy from '../images/maps/ar_dizzy.jpg';
 
 //Иконки карт
 import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
@@ -205,6 +214,15 @@ import cs_office_icon from '../images/maps/icons/cs_office_icon.png';
 import cs_militia_icon from '../images/maps/icons/cs_militia_icon.png';
 import cs_italy_icon from '../images/maps/icons/cs_italy_icon.png';
 import cs_assault_icon from '../images/maps/icons/cs_assault_icon.png';
+import ar_baggage_icon from '../images/maps/icons/ar_baggage_icon.png';
+import de_safehouse_icon from '../images/maps/icons/de_safehouse_icon.png';
+import de_stmarc_icon from '../images/maps/icons/de_stmarc_icon.png';
+import ar_shoots_icon from '../images/maps/icons/ar_shoots_icon.png';
+import lunacy_icon from '../images/maps/icons/lunacy_icon.png';
+import ar_monastery_icon from '../images/maps/icons/ar_monastery_icon.png';
+import de_sugarcane_icon from '../images/maps/icons/de_sugarcane_icon.png';
+import de_bank_icon from '../images/maps/icons/de_bank_icon.png';
+import ar_dizzy_icon from '../images/maps/icons/ar_dizzy_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -1268,6 +1286,83 @@ export const allMapsArray = [
     logo: cs_assault,
     icon: cs_assault_icon,
     name: "Assault",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_lake,
+    icon: de_lake_icon,
+    name: "Lake",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: ar_baggage,
+    icon: ar_baggage_icon,
+    name: "Baggage",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_safehouse,
+    icon: de_safehouse_icon,
+    name: "Safehouse",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_stmarc,
+    icon: de_stmarc_icon,
+    name: "St Marc",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: ar_shoots,
+    icon: ar_shoots_icon,
+    name: "Shoots",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: lunacy,
+    icon: lunacy_icon,
+    name: "Lunacy",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: ar_monastery,
+    icon: ar_monastery_icon,
+    name: "Monastery",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_sugarcane,
+    icon: de_sugarcane_icon,
+    name: "Sugarcane",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_bank,
+    icon: de_bank_icon,
+    name: "Bank",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_shortdust,
+    icon: de_shortdust_icon,
+    name: "Shortdust",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: ar_dizzy,
+    icon: ar_dizzy_icon,
+    name: "Dizzy",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   }
