@@ -29,6 +29,8 @@
     justify-content: center;
     flex: 1;
     background-color: rgba(0, 0, 0, 0.2);
+
+    animation: soft-regym-switch 0.2s linear forwards;
   }
 
   &__maps {
@@ -50,4 +52,27 @@
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+@keyframes soft-regym-switch {
+  from {
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  50% {
+    opacity: 0;
+    padding-left: 400px;
+    padding-right: -400px;
+  }
+  51% {
+    opacity: 0;
+    padding-left: 400px;
+    padding-right: -400px;
+  }
+  to {
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

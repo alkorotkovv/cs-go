@@ -2336,6 +2336,7 @@
   justify-content: center;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.2);
+  animation: soft-regym-switch 0.2s linear forwards;
 }
 .regym__maps {
   margin: 0;
@@ -2354,6 +2355,28 @@
   display: flex;
 }
 
+@keyframes soft-regym-switch {
+  from {
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  50% {
+    opacity: 0;
+    padding-left: 400px;
+    padding-right: -400px;
+  }
+  51% {
+    opacity: 0;
+    padding-left: 400px;
+    padding-right: -400px;
+  }
+  to {
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .wrapper_competitive:nth-child(3) {
   margin-left: auto;
 }
@@ -2630,7 +2653,7 @@
 }
 .row__wins {
   margin: 0 0 0 auto;
-  padding: 0 140px 0 0;
+  padding: 0 40px 0 0;
   display: flex;
   font-size: 16px;
   font-weight: 400;
