@@ -52,7 +52,18 @@
     opacity: 0.5;
     transition: all 0.2s linear;
     z-index: 0;
+    //animation: soft-logo-switch 5s linear infinite;
+    //animation-delay: 2.5s;
 
+    
+
+    &_anim {
+      animation: soft-logo-switch 3s linear infinite;
+    }
+
+    &_checked-anim {
+      animation: soft-logo-checked-switch 3s linear infinite;
+    }
   }
   
   &__list {
@@ -101,4 +112,29 @@
   }
 
   
+}
+
+
+@keyframes soft-logo-switch {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes soft-logo-checked-switch {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

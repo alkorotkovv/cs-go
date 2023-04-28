@@ -1833,6 +1833,12 @@
   transition: all 0.2s linear;
   z-index: 0;
 }
+.map-big__logo_anim {
+  animation: soft-logo-switch 3s linear infinite;
+}
+.map-big__logo_checked-anim {
+  animation: soft-logo-checked-switch 3s linear infinite;
+}
 .map-big__list {
   margin: 0;
   padding: 10px;
@@ -1874,6 +1880,28 @@
   opacity: 0.8;
 }
 
+@keyframes soft-logo-switch {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes soft-logo-checked-switch {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .panel {
   margin: 0;
   padding: 0 96px;
