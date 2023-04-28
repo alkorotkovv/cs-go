@@ -21,7 +21,7 @@ function Usual(props) {
       </div>
       <div className='regym__main regym__main_usual'>
         <ul className="regym__maps regym__maps_usual">
-          {/*
+          
         <MapBig maps={[
           allMapsArray.find((e) => e.name === "Canals"),
           allMapsArray.find((e) => e.name === "Vertigo"),
@@ -43,7 +43,7 @@ function Usual(props) {
           ]} 
           name="Разминирование, группа Дельта"
         />
-        */}
+        
         <Map
           logo={allMapsArray.find((e) => e.name === "Dust 2").logo}
           icon={allMapsArray.find((e) => e.name === "Dust 2").icon}

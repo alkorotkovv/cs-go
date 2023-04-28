@@ -7,10 +7,66 @@ function MapBig(props) {
   const [isChecked, setIsChecked] = React.useState(false);
   const [isShow, setIsShow] = React.useState(props.maps[0].logo);
   const [isAnim, setIsAnim] = React.useState(false);
+  const intervalAnimRef = React.useRef(null);
+  let i;
+
+  /*
+  intervalAnimRef.current = setInterval( () => {
+    if (i < props.maps.length - 1)
+      i = i + 1;
+    else 
+      i = 0;
+
+    setIsShow(props.maps[i].logo);
+
+    setTimeout(function() {
+      setIsAnim(true);
+    }, 3500);
+
+    setTimeout(function() {
+      setIsAnim(false);
+    }, 6500)
+
+    console.log("fff")
+
+  }, 5000);
+  */
+  
 
   //Эффект для плавной смены картинок на фоне
   React.useEffect(() => {
-    let i;
+    intervalAnimRef.current = setInterval( Animation, 5000 );
+    console.log("Смонтировали")
+
+    return(() => {
+        console.log("Размонтировали")
+        clearInterval(intervalAnimRef.current)
+    })
+  }, [])
+
+
+  function Animation() {
+    if (i < props.maps.length - 1)
+        i = i + 1;
+      else 
+        i = 0;
+  
+      setIsShow(props.maps[i].logo);
+  
+      setTimeout(function() {
+        setIsAnim(true);
+      }, 3500);
+  
+      setTimeout(function() {
+        setIsAnim(false);
+      }, 6500)
+  
+      console.log("fff")
+  }
+
+
+  function doAnimation() {
+    
     setInterval( function() {
       if (i < props.maps.length - 1)
         i = i + 1;
@@ -30,7 +86,8 @@ function MapBig(props) {
       console.log("fff")
 
     }, 5000);
-  }, [])
+  }
+
 
   function handleClick() {
     setIsChecked(!isChecked);

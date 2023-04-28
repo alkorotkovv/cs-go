@@ -70,7 +70,7 @@ function Competitive(props) {
                   name={element.name}
                   time={element.time}
                   isCompetitive={element.isCompetitive}
-                />            
+                />
               )
             }  
           </ul>
