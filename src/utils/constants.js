@@ -189,6 +189,7 @@ import ar_monastery from '../images/maps/ar_monastery.jpg';
 import de_sugarcane from '../images/maps/de_sugarcane.jpg';
 import de_bank from '../images/maps/de_bank.jpg';
 import ar_dizzy from '../images/maps/ar_dizzy.jpg';
+import sirocco from '../images/maps/sirocco.jpg';
 
 //Иконки карт
 import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
@@ -223,6 +224,7 @@ import ar_monastery_icon from '../images/maps/icons/ar_monastery_icon.png';
 import de_sugarcane_icon from '../images/maps/icons/de_sugarcane_icon.png';
 import de_bank_icon from '../images/maps/icons/de_bank_icon.png';
 import ar_dizzy_icon from '../images/maps/icons/ar_dizzy_icon.png';
+import sirocco_icon from '../images/maps/icons/sirocco_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -1363,6 +1365,13 @@ export const allMapsArray = [
     logo: ar_dizzy,
     icon: ar_dizzy_icon,
     name: "Dizzy",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: sirocco,
+    icon: sirocco_icon,
+    name: "Sirocco",
     time: "Время ожидания: 02:03",
     isCompetitive: false
   }
