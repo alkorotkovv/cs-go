@@ -165,6 +165,436 @@
   color: white;
 }
 
+.map {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  border: 0px solid white;
+  transition: all 0.2s linear;
+}
+.map:hover .map__logo {
+  scale: 1.02;
+}
+.map:hover .map__logo_checked {
+  scale: 1.2;
+}
+.map_checked {
+  border: 7px solid white;
+  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
+}
+.map_checked .map__logo {
+  scale: 1.2;
+  opacity: 1;
+}
+.map_checked .map__icon {
+  opacity: 1;
+}
+.map_checked .map__title {
+  opacity: 1;
+}
+.map_checked .map__time {
+  opacity: 1;
+}
+.map_checked .map__competitive {
+  opacity: 1;
+}
+.map__logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+}
+.map__icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.8;
+}
+.map__title {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  bottom: 45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.8;
+}
+.map__time {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  box-sizing: border-box;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.8;
+}
+.map__time-icon {
+  margin: 0;
+  padding: 0;
+}
+.map__time-text {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+}
+.map__checkbox {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.8;
+}
+.map__checkbox_visible {
+  background-image: url(../images/map_checkbox_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.map__checkbox_unvisible {
+  opacity: 0;
+}
+.map__competitive {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0.8;
+}
+.map__competitive_visible {
+  display: flex;
+}
+
+.map-big {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+  height: fit-content;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  border: 0px solid white;
+  transition: all 0.2s linear;
+}
+.map-big:hover .map-big__logo {
+  scale: 1.02;
+}
+.map-big:hover .map-big__logo_checked {
+  scale: 1.2;
+}
+.map-big_checked {
+  border: 7px solid white;
+  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
+}
+.map-big_checked .map-big__logo {
+  scale: 1.2;
+  opacity: 1;
+}
+.map-big_checked .map-big__list {
+  opacity: 1;
+}
+.map-big_checked .map-big__title {
+  opacity: 1;
+}
+.map-big__logo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+  z-index: 0;
+}
+.map-big__logo_anim {
+  animation: soft-logo-switch 3s linear infinite;
+}
+.map-big__logo_checked-anim {
+  animation: soft-logo-checked-switch 3s linear infinite;
+}
+.map-big__list {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+.map-big__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  opacity: 0.8;
+}
+.map-big__icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.map-big__title {
+  margin: 0;
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 1;
+  opacity: 0.8;
+}
+.map-big__checkbox {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.8;
+}
+.map-big__checkbox_visible {
+  background-image: url(../images/map_checkbox_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.map-big__checkbox_unvisible {
+  opacity: 0;
+}
+
+@keyframes soft-logo-switch {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes soft-logo-checked-switch {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.map-dual {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+  height: fit-content;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  border: 0px solid white;
+  transition: all 0.2s linear;
+}
+.map-dual:hover .map-dual__logo {
+  scale: 1.02;
+}
+.map-dual:hover .map-dual__logo_checked {
+  scale: 1.2;
+}
+.map-dual_checked {
+  border: 7px solid white;
+  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
+}
+.map-dual_checked .map-dual__logo {
+  scale: 1.2;
+  opacity: 1;
+}
+.map-dual_checked .map-dual__list {
+  opacity: 1;
+}
+.map-dual_checked .map-dual__title {
+  opacity: 1;
+}
+.map-dual__logo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+  z-index: 0;
+}
+.map-dual__logo_anim {
+  animation: soft-logo-switch 3s linear infinite;
+}
+.map-dual__logo_checked-anim {
+  animation: soft-logo-checked-switch 3s linear infinite;
+}
+.map-dual__list {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+.map-dual__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  opacity: 0.8;
+}
+.map-dual__icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.map-dual__title {
+  margin: 0;
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 1;
+  opacity: 0.8;
+}
+.map-dual__checkbox {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.8;
+}
+.map-dual__checkbox_visible {
+  background-image: url(../images/map_checkbox_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.map-dual__checkbox_unvisible {
+  opacity: 0;
+}
+
+@keyframes soft-logo-switch {
+  from {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes soft-logo-checked-switch {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .page {
   width: 100vw;
   height: 100vh;
@@ -1642,269 +2072,6 @@
   height: 26px;
 }
 
-.map {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: black;
-  position: relative;
-  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
-  border: 0px solid white;
-  transition: all 0.2s linear;
-}
-.map:hover .map__logo {
-  scale: 1.02;
-}
-.map:hover .map__logo_checked {
-  scale: 1.2;
-}
-.map_checked {
-  border: 7px solid white;
-  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
-}
-.map_checked .map__logo {
-  scale: 1.2;
-  opacity: 1;
-}
-.map_checked .map__icon {
-  opacity: 1;
-}
-.map_checked .map__title {
-  opacity: 1;
-}
-.map_checked .map__time {
-  opacity: 1;
-}
-.map_checked .map__competitive {
-  opacity: 1;
-}
-.map__logo {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.5;
-  transition: all 0.2s linear;
-}
-.map__icon {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0.8;
-}
-.map__title {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 1px;
-  bottom: 45px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0.8;
-}
-.map__time {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  box-sizing: border-box;
-  justify-content: center;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 0.8;
-}
-.map__time-icon {
-  margin: 0;
-  padding: 0;
-}
-.map__time-text {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 1px;
-}
-.map__checkbox {
-  margin: 0;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  box-sizing: border-box;
-  display: flex;
-  border: 2px solid white;
-  border-radius: 5px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  opacity: 0.8;
-}
-.map__checkbox_visible {
-  background-image: url(../images/map_checkbox_icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;
-}
-.map__checkbox_unvisible {
-  opacity: 0;
-}
-.map__competitive {
-  margin: 0;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  box-sizing: border-box;
-  display: none;
-  border: 1px solid white;
-  border-radius: 5px;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  opacity: 0.8;
-}
-.map__competitive_visible {
-  display: flex;
-}
-
-.map-big {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 224px;
-  height: fit-content;
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: black;
-  position: relative;
-  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
-  border: 0px solid white;
-  transition: all 0.2s linear;
-}
-.map-big:hover .map-big__logo {
-  scale: 1.02;
-}
-.map-big:hover .map-big__logo_checked {
-  scale: 1.2;
-}
-.map-big_checked {
-  border: 7px solid white;
-  box-shadow: 0px 0px 4px 1px rgb(255, 255, 255);
-}
-.map-big_checked .map-big__logo {
-  scale: 1.2;
-  opacity: 1;
-}
-.map-big_checked .map-big__list {
-  opacity: 1;
-}
-.map-big_checked .map-big__title {
-  opacity: 1;
-}
-.map-big__logo {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.5;
-  transition: all 0.2s linear;
-  z-index: 0;
-}
-.map-big__logo_anim {
-  animation: soft-logo-switch 3s linear infinite;
-}
-.map-big__logo_checked-anim {
-  animation: soft-logo-checked-switch 3s linear infinite;
-}
-.map-big__list {
-  margin: 0;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  opacity: 0.8;
-}
-.map-big__item {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  position: relative;
-  width: 70px;
-  height: 70px;
-  opacity: 0.8;
-}
-.map-big__icon {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.map-big__title {
-  margin: 0;
-  padding: 16px 0;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  letter-spacing: 1px;
-  z-index: 1;
-  opacity: 0.8;
-}
-
-@keyframes soft-logo-switch {
-  from {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@keyframes soft-logo-checked-switch {
-  from {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .panel {
   margin: 0;
   padding: 0 96px;
@@ -2317,6 +2484,14 @@
 .regym__settings_deathmatch {
   justify-content: end;
 }
+.wrapper_deathmatch:nth-child(2) {
+  margin-left: auto;
+}
+
+.wrapper_military:nth-child(1) {
+  margin-left: auto;
+}
+
 .inventary__title {
   margin: 0;
   padding: 34px 35px 34px 35px;

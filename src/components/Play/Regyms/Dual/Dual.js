@@ -1,7 +1,6 @@
 import React  from 'react';
 import Map from '../../../Map/Map';
 import Switch from '../../../Switch/Switch';
-
 import { dualMapsArray } from '../../../../utils/constants';
 
 function Dual(props) {
@@ -27,6 +26,7 @@ function Dual(props) {
                 name={element.name}
                 time={element.time}
                 isCompetitive={element.isCompetitive}
+                isCheckable={true}
               />            
             )
           }  

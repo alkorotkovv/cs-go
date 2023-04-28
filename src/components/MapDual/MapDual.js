@@ -3,7 +3,7 @@ import competitiveIcon from '../../images/csgo_map_icon.png';
 import timeIcon from '../../images/map_time_icon.png';
 import premier from '../../images/maps/premier.jpg';
 
-function MapBig(props) {
+function MapDual(props) {
 
   const [isChecked, setIsChecked] = React.useState(false);
   const [logoNow, setLogoNow] = React.useState(props.maps[0].logo);
@@ -31,7 +31,7 @@ function MapBig(props) {
     })
   }, [])
 
-//Анимация для плавной смены картинок на фоне
+  //Анимация для плавной смены картинок на фоне
   function Animation() {
     if (i < props.maps.length - 1)
       i = i + 1;
@@ -49,42 +49,34 @@ function MapBig(props) {
     }, period+1500)
 
     console.log(period)
-    console.log("Анимируется задний фон биг-мап")
+    console.log("Анимируется задний фон дуал-мап")
   }
 
+  //Обработчик нажатия на чекбокс 
   function handleClick() {
     setIsChecked(!isChecked);
   }
 
 
   return (
-    <li className={"map-big" + (isChecked ? " map-big_checked" : " ")} onClick={handleClick}>
-      <img className={"map-big__logo" + 
-                     (isChecked && !isAnim ? " map-big__logo_checked" : " ") + 
-                     (isChecked && isAnim ? " map-big__logo_checked map-big__logo_checked-anim" : " ") +
-                     (!isChecked && isAnim ? " map-big__logo_anim" : "")} 
+    <li className={"map-dual" + (isChecked ? " map-dual_checked" : " ")} onClick={handleClick}>
+      <img className={"map-dual__logo" + 
+                     (isChecked && !isAnim ? " map-dual__logo_checked" : " ") + 
+                     (isChecked && isAnim ? " map-dual__logo_checked map-dual__logo_checked-anim" : " ") +
+                     (!isChecked && isAnim ? " map-dual__logo_anim" : "")} 
         src={logoNow} alt="logo"/>
-      {
-      /*
-      <img className="map-big__logo map-big__logo_back" src={premier} alt="logo"/>
-      
-        props.maps.map((element, index) => 
-          <img className={"map-big__logo" + ` map-big__logo_${index}`} src={isShow} alt="logo"/>
-        )
-      */
-      }
-      <ul className='map-big__list'>
+      <ul className='map-dual__list'>
         {
           props.maps.map((element, index) => 
-            <li key={index} className='map-big__item'><img className='map-big__icon' src={element.icon} alt="icon"/></li>
+            <li key={index} className='map-dual__item'><img className='map-dual__icon' src={element.icon} alt="icon"/></li>
           )
         }
       </ul>
-      <p className='map-big__title'>{props.name}</p>
-      <div className={"map-big__checkbox" + (isChecked ? " map-big__checkbox_visible" : " ") + (props.isCheckable ? " " : " map-big__checkbox_unvisible")}></div>
+      <p className='map-dual__title'>{props.name}</p>
+      <div className={"map-dual__checkbox" + (isChecked ? " map-dual__checkbox_visible" : " ") + (props.isCheckable ? " " : " map-dual__checkbox_unvisible")}></div>
     </li>
   )
   
 }
 
-export default MapBig;
+export default MapDual;

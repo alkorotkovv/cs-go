@@ -6,6 +6,9 @@
 @import "./components/Select/Select.scss";
 @import "./components/Switch/Switch.scss";
 @import "./components/Setup/Setup.scss";
+@import "./components/Map/Map.scss";
+@import "./components/MapBig/MapBig.scss";
+@import "./components/MapDual/MapDual.scss";
 
 //Основные компоненты проекта
 @import "./components/App/App.scss";
@@ -29,8 +32,7 @@
 @import "./components/Messages/Messages.scss";
 
 
-@import "./components/Map/Map.scss";
-@import "./components/MapBig/MapBig.scss";
+
 @import "./components/Panel/Panel.scss";
 @import "./components/Play/Play.scss";
 @import "./components/Play/Types/Official/Official.scss";

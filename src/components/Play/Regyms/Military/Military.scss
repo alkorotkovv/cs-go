@@ -23,3 +23,12 @@
   }
   
 }
+
+.wrapper {
+
+  &_military {
+    &:nth-child(1) {
+      margin-left: auto;
+    }
+  }
+}
