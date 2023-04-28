@@ -2331,6 +2331,8 @@
 .regym__main-wrapper {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -2357,8 +2359,6 @@
 .wrapper {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
 }
 
