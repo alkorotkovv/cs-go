@@ -138,6 +138,10 @@
       background-position: center;
       opacity: 1;
     }
+
+    &_unvisible {
+      opacity: 0;
+    }
   }
 
   &__competitive {

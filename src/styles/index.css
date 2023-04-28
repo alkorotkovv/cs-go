@@ -1766,6 +1766,9 @@
   background-position: center;
   opacity: 1;
 }
+.map__checkbox_unvisible {
+  opacity: 0;
+}
 .map__competitive {
   margin: 0;
   padding: 0;

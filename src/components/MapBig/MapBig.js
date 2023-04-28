@@ -1,6 +1,7 @@
 import React  from 'react';
 import competitiveIcon from '../../images/csgo_map_icon.png';
 import timeIcon from '../../images/map_time_icon.png';
+import premier from '../../images/maps/premier.jpg';
 
 function MapBig(props) {
 
@@ -8,11 +9,20 @@ function MapBig(props) {
   const [logoNow, setLogoNow] = React.useState(props.maps[0].logo);
   const [isAnim, setIsAnim] = React.useState(false);
   const intervalAnimRef = React.useRef(null);
-  let i;
+  let i;  
+  let period = randomIntFromInterval(4, 9) * 1000;
+  //let period = props.period;
+  //let period = 6000;
+
+  //Функция получения рандомного числа из интервала
+  function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  
 
   //Эффект для плавной смены картинок на фоне
   React.useEffect(() => {
-    intervalAnimRef.current = setInterval( Animation, 5000 );
+    intervalAnimRef.current = setInterval( Animation, period );
     console.log("Смонтировали")
 
     return(() => {
@@ -32,12 +42,13 @@ function MapBig(props) {
 
     setTimeout(function() {
       setIsAnim(true);
-    }, 3500);
+    }, period-1500);
 
     setTimeout(function() {
       setIsAnim(false);
-    }, 6500)
+    }, period+1500)
 
+    console.log(period)
     console.log("Анимируется задний фон биг-мап")
   }
 
@@ -55,6 +66,8 @@ function MapBig(props) {
         src={logoNow} alt="logo"/>
       {
       /*
+      <img className="map-big__logo map-big__logo_back" src={premier} alt="logo"/>
+      
         props.maps.map((element, index) => 
           <img className={"map-big__logo" + ` map-big__logo_${index}`} src={isShow} alt="logo"/>
         )

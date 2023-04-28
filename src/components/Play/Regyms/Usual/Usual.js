@@ -31,6 +31,7 @@ function Usual(props) {
           allMapsArray.find((e) => e.name === "Tuscan")
           ]} 
           name="Разминирование, группа Сигма"
+          period={3000}
         />
         
         <MapBig maps={[
@@ -42,14 +43,15 @@ function Usual(props) {
           allMapsArray.find((e) => e.name === "Train")
           ]} 
           name="Разминирование, группа Дельта"
+          period={5000}
         />
         
         <Map
           logo={allMapsArray.find((e) => e.name === "Dust 2").logo}
           icon={allMapsArray.find((e) => e.name === "Dust 2").icon}
           name={allMapsArray.find((e) => e.name === "Dust 2").name}
-          time={allMapsArray.find((e) => e.name === "Dust 2").time}
-          isCompetitive={allMapsArray.find((e) => e.name === "Dust 2").isCompetitive}
+          time={""}
+          isCompetitive={false}
         />
         <MapBig maps={[
           allMapsArray.find((e) => e.name === "Agency"),
@@ -59,6 +61,7 @@ function Usual(props) {
           allMapsArray.find((e) => e.name === "Assault")
           ]} 
           name="Освобождение заложников"
+          period={5000}
         />
         </ul>
       </div>

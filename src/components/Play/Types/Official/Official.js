@@ -69,32 +69,6 @@ function Official(props) {
     setIsMilitary(false);
     setIsZone(true);
   }
-
-  let block;
-  if (isCompetitive)
-    block = (
-      <Competitive isVisible={isCompetitive} />
-    )
-  else if (isDual)
-    block = (
-      <Dual isVisible={isDual} />
-    )
-  else if (isUsual)
-    block = (
-      <Usual isVisible={isUsual} />
-    )
-  else if (isDual)
-    block = (
-      <Deathmatch isVisible={isDeathmatch} />
-    )
-  else if (isMilitary)
-    block = (
-      <Military isVisible={isMilitary} />
-   )
-  else if (isZone)
-    block = (
-      <Zone isVisible={isZone} />
-    )
   
   return (
     <div className={"official" + (props.isVisible ? " official_visible" : " ")}>
@@ -107,16 +81,12 @@ function Official(props) {
         <li className={"official__regym" + (isZone ? " official__regym_active" : " ")} onClick={handleZoneClick}><p className='official__regym-text'>Запретная зона</p></li>
       </ul>
       <div className='official__main'>
-        {
-          block
-          /*
-        <Competitive isVisible={isCompetitive} />
-        <Dual isVisible={isDual} />
-        <Usual isVisible={isUsual} />
-        <Deathmatch isVisible={isDeathmatch} />
-        <Military isVisible={isMilitary} />
-        <Zone isVisible={isZone} />
-        */}
+        { isCompetitive ? <Competitive isVisible={isCompetitive} /> : <></>}
+        { isDual ? <Dual isVisible={isDual} /> : <></>}
+        { isUsual ? <Usual isVisible={isUsual} /> : <></>}
+        { isDeathmatch ? <Deathmatch isVisible={isDeathmatch} /> : <></>}
+        { isMilitary ? <Military isVisible={isMilitary} /> : <></>}
+        { isZone ? <Zone isVisible={isZone} /> : <></>}
       </div>
       <div className='official__bottom'>
         <div className='official__button'>

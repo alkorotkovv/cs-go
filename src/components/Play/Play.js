@@ -92,8 +92,8 @@ function Play(props) {
             minwidth="300px"
         />
         </div>
-        <Official isVisible={isOfficial} />
-        <Bots isVisible={isBots} />
+        { isOfficial ? <Official isVisible={isOfficial} /> : <></>}
+        { isBots ? <Bots isVisible={isBots} /> : <></>}
     </Panel>
   )
 }
