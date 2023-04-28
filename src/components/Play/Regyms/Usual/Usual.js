@@ -49,9 +49,10 @@ function Usual(props) {
             logo={allMapsArray.find((e) => e.name === "Dust 2").logo}
             icon={allMapsArray.find((e) => e.name === "Dust 2").icon}
             name={allMapsArray.find((e) => e.name === "Dust 2").name}
-            time={""}
+            time={allMapsArray.find((e) => e.name === "Dust 2").time}
             isCompetitive={false}
             isCheckable={false}
+            isTimeVisible={false}
           />
           <MapBig maps={[
             allMapsArray.find((e) => e.name === "Agency"),

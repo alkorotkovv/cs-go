@@ -1,12 +1,10 @@
 import React  from 'react';
 import Switch from '../../../Switch/Switch';
 import Map from '../../../Map/Map';
-
 import add_all_icon from '../../../../images/add_all_icon.png';
 import delete_all_icon from '../../../../images/delete_all_icon.png';
 import save_icon from '../../../../images/save_icon.png';
 import setup_setting_icon from '../../../../images/setup_setting_icon.png';
-
 import { competitiveMapsArray } from '../../../../utils/constants';
 import Setup from '../../../Setup/Setup';
 
@@ -71,6 +69,7 @@ function Competitive(props) {
                   time={element.time}
                   isCompetitive={element.isCompetitive}
                   isCheckable={true}
+                  isTimeVisible={true}
                 />
               )
             }  

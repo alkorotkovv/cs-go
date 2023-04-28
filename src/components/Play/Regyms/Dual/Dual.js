@@ -27,6 +27,7 @@ function Dual(props) {
                 time={element.time}
                 isCompetitive={element.isCompetitive}
                 isCheckable={true}
+                isTimeVisible={true}
               />            
             )
           }  

@@ -93,7 +93,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    display: flex;
+    display: none;
     gap: 12px;
     box-sizing: border-box;
     justify-content: center;
@@ -102,6 +102,10 @@
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 0.8;
+
+    &_visible {
+      display: flex;
+    }
   }
 
   &__time-icon {
