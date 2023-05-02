@@ -1,0 +1,33 @@
+.regym {
+
+  &_dual {
+  }
+
+  &_visible {
+  }
+
+  &__settings {
+
+    &_dual {
+    }
+  }
+
+  &__main {
+    &_dual {
+    }
+  }
+
+  &__maps {
+    &_dual {
+    }
+  }
+  
+}
+
+.wrapper {
+  &_dual {  
+    &:nth-child(1) {
+      margin-left: auto;
+    }
+  }
+}

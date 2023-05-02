@@ -190,6 +190,7 @@ import de_sugarcane from '../images/maps/de_sugarcane.jpg';
 import de_bank from '../images/maps/de_bank.jpg';
 import ar_dizzy from '../images/maps/ar_dizzy.jpg';
 import sirocco from '../images/maps/sirocco.jpg';
+import random from '../images/maps/random.jpg';
 
 //Иконки карт
 import de_boyard_icon from '../images/maps/icons/de_boyard_icon.png';
@@ -225,6 +226,7 @@ import de_sugarcane_icon from '../images/maps/icons/de_sugarcane_icon.png';
 import de_bank_icon from '../images/maps/icons/de_bank_icon.png';
 import ar_dizzy_icon from '../images/maps/icons/ar_dizzy_icon.png';
 import sirocco_icon from '../images/maps/icons/sirocco_icon.png';
+import random_icon from '../images/maps/icons/random_icon.png';
 
 //Массив медалей
 export const medalsArray = [
@@ -983,6 +985,13 @@ export const casesArray = [
 //Массив всех карт из игры
 export const allMapsArray = [
   {
+    logo: random,
+    icon: random_icon,
+    name: "Случайно",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
     logo: premier,
     icon: premier_icon,
     name: "Премьер-режим",
@@ -1215,8 +1224,8 @@ export const allMapsArray = [
   }
 ]
 
-//Массив карт для соревновательного режима
-export const competitiveMapsArray = [
+//Массив карт для официального соревновательного режима
+export const officialCompetitiveMapsArray = [
   allMapsArray.find((e) => e.name === "Премьер-режим"),
   allMapsArray.find((e) => e.name === "Ancient"),
   allMapsArray.find((e) => e.name === "Anubis"),
@@ -1233,8 +1242,40 @@ export const competitiveMapsArray = [
   allMapsArray.find((e) => e.name === "Office")
 ]
 
-//Массив карт для режима напарников
-export const dualMapsArray = [
+//Массив карт для официального режима напарников
+export const officialDualMapsArray = [
+  allMapsArray.find((e) => e.name === "Boyard"),
+  allMapsArray.find((e) => e.name === "Chalice"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Cobblestone"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Shortdust"),
+  allMapsArray.find((e) => e.name === "Lake")
+]
+
+//Массив карт для ботского соревновательного режима
+export const botsCompetitiveMapsArray = [
+  allMapsArray.find((e) => e.name === "Случайно"),
+  allMapsArray.find((e) => e.name === "Ancient"),
+  allMapsArray.find((e) => e.name === "Anubis"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Mirage"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Tuscan"),
+  allMapsArray.find((e) => e.name === "Dust 2"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Cache"),
+  allMapsArray.find((e) => e.name === "Agency"),
+  allMapsArray.find((e) => e.name === "Office")
+]
+
+//Массив карт для официального режима напарников
+export const botsDualMapsArray = [
   allMapsArray.find((e) => e.name === "Boyard"),
   allMapsArray.find((e) => e.name === "Chalice"),
   allMapsArray.find((e) => e.name === "Vertigo"),

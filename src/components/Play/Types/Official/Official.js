@@ -1,10 +1,10 @@
 import React  from 'react';
-import Competitive from '../../Regyms/Competitive/Competitive';
-import Deathmatch from '../../Regyms/Deathmatch/Deathmatch';
-import Dual from '../../Regyms/Dual/Dual';
-import Military from '../../Regyms/Military/Military';
-import Usual from '../../Regyms/Usual/Usual';
-import Zone from '../../Regyms/Zone/Zone';
+import Competitive from './Regyms/Competitive/Competitive';
+import Deathmatch from './Regyms/Deathmatch/Deathmatch';
+import Dual from './Regyms/Dual/Dual';
+import Military from './Regyms/Military/Military';
+import Usual from './Regyms/Usual/Usual';
+import Zone from './Regyms/Zone/Zone';
 
 function Official(props) {
 

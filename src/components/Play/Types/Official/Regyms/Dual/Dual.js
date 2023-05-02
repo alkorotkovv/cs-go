@@ -1,7 +1,7 @@
 import React  from 'react';
-import Map from '../../../Map/Map';
-import Switch from '../../../Switch/Switch';
-import { dualMapsArray } from '../../../../utils/constants';
+import Map from '../../../../../Map/Map';
+import Switch from '../../../../../Switch/Switch';
+import { officialDualMapsArray } from '../../../../../../utils/constants';
 
 function Dual(props) {
   
@@ -19,7 +19,7 @@ function Dual(props) {
         <div className='regym__main regym__main_dual'>
           <ul className="regym__maps regym__maps_dual">
             {
-              dualMapsArray.map((element, index) => 
+              officialDualMapsArray.map((element, index) => 
                 <Map 
                   key={index}
                   logo={element.logo}

@@ -1,10 +1,10 @@
 import React  from 'react';
-import Setup from '../../../Setup/Setup';
-import Switch from '../../../Switch/Switch';
-import setup_prime_icon from '../../../../images/setup_prime_icon.png';
-import MapDual from '../../../MapDual/MapDual';
-import MapBig from '../../../MapBig/MapBig';
-import { allMapsArray } from '../../../../utils/constants';
+import Setup from '../../../../../Setup/Setup';
+import Switch from '../../../../../Switch/Switch';
+import setup_prime_icon from '../../../../../../images/setup_prime_icon.png';
+import MapDual from '../../../../../MapDual/MapDual';
+import MapBig from '../../../../../MapBig/MapBig';
+import { allMapsArray } from '../../../../../../utils/constants';
 
 function Military(props) {
   

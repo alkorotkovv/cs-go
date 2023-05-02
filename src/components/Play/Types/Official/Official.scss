@@ -26,8 +26,7 @@
 
     &:hover {
       padding-bottom: 21px;
-      border-bottom: 1px solid white;
-      
+      border-bottom: 1px solid white;      
     }
 
     &_active {
@@ -39,6 +38,16 @@
         border-bottom: 5px solid white;
       }
     }
+
+    &_unactive {
+
+      &:hover {
+        padding-bottom: 15px;
+        border-bottom: 5px solid transparent;
+      }
+
+    }
+    
   }
 
   &__regym-text {
@@ -48,6 +57,10 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     color: white;
+
+    &_unactive {
+      color: #5A5A5A;
+    }
 
   }
 

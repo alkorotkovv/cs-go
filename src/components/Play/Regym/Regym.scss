@@ -34,6 +34,7 @@
     padding: 24px 0;
     display: flex;
     max-height: 696px;
+    box-sizing: border-box;
     justify-content: center;
     flex: 1;
     animation: soft-regym-switch 0.3s linear forwards;

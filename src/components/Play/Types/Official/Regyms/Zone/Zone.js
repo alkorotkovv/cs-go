@@ -1,8 +1,8 @@
 import React  from 'react';
-import Switch from '../../../Switch/Switch';
-import { allMapsArray } from '../../../../utils/constants';
-import updateIcon from '../../../../images/update_icon.png';
-import avatar from '../../../../images/avatar.png';
+import Switch from '../../../../../Switch/Switch';
+import { allMapsArray } from '../../../../../../utils/constants';
+import updateIcon from '../../../../../../images/update_icon.png';
+import avatar from '../../../../../../images/avatar.png';
 
 function Zone(props) {
   
