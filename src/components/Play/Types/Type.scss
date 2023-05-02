@@ -9,6 +9,11 @@
     display: flex;
   }
 
+  &_servers {
+    position: absolute;
+    z-index: 999;
+  }
+
 
   &__regyms {
     margin: 0;

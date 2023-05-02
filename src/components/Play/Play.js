@@ -4,6 +4,7 @@ import Select from '../Select/Select';
 import Official from './Types/Official/Official';
 import Bots from './Types/Bots/Bots';
 import Instruction from './Types/Instruction/Instruction';
+import Servers from './Types/Servers/Servers';
 
 
 
@@ -37,7 +38,7 @@ function Play(props) {
   }
 
   function handler3() {
-    //props.setIsInstruction(true);
+    //setTitle("Инструктаж");
     setIsInstruction(true);
   }
 
@@ -51,17 +52,17 @@ function Play(props) {
   }
 
   function handler5() {
-    setTitle("Список серверов сообщества");
-    setIsOfficial(false);
-    setIsBots(false);
-    setIsInstruction(false);
-    setIsWorkshop(true);
-    setIsServers(false);
+    //setTitle("Список серверов сообщества");
+    setIsServers(true);
   }
 
   //Обработчик закрытия попапа ИНСТРУКТАЖ
   function handleInstructionClose() {
     setIsInstruction(false);
+  }
+
+  function handleServersClose() {
+    setIsServers(false);
   }
   
   return (
@@ -100,6 +101,7 @@ function Play(props) {
         { isBots ? <Bots isVisible={isBots} /> : <></>}
     </Panel>
     { isInstruction ? <Instruction isVisible={isInstruction} handleClose={handleInstructionClose} /> : <></>}
+    { isServers ? <Servers isVisible={isServers} handleClose={handleServersClose} /> : <></>}
     </>
   )
 }

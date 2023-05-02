@@ -2229,6 +2229,10 @@
 .type_visible {
   display: flex;
 }
+.type_servers {
+  position: absolute;
+  z-index: 999;
+}
 .type__regyms {
   margin: 0;
   padding: 0 33px;
