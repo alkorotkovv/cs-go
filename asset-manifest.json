@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.13e3506b.css",
-    "main.js": "/cs-go/static/js/main.585e4583.js",
+    "main.css": "/cs-go/static/css/main.bb8aa49e.css",
+    "main.js": "/cs-go/static/js/main.a0f8e3e2.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/de_ancient.jpg": "/cs-go/static/media/de_ancient.2e0ebf1886572577d7fc.jpg",
     "static/media/lunacy.jpg": "/cs-go/static/media/lunacy.e6e02fa00a8a13e14ed4.jpg",
@@ -37,6 +37,7 @@
     "static/media/cs_italy.jpg": "/cs-go/static/media/cs_italy.c59ec2f0ad57c2fbc447.jpg",
     "static/media/de_train.jpg": "/cs-go/static/media/de_train.7e5096387f34e181c479.jpg",
     "static/media/de_canals.jpg": "/cs-go/static/media/de_canals.4a054db4e6b55cd81b9c.jpg",
+    "static/media/random.jpg": "/cs-go/static/media/random.1d952238e4612b6da87a.jpg",
     "static/media/Inter-Bold.woff?v=3.19": "/cs-go/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
     "static/media/Inter-Medium.woff?v=3.19": "/cs-go/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff?v=3.19": "/cs-go/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -87,6 +88,7 @@
     "static/media/de_dust2_icon.png": "/cs-go/static/media/de_dust2_icon.7f345c9c85c0b89ff6ef.png",
     "static/media/de_inferno_icon.png": "/cs-go/static/media/de_inferno_icon.bdbb3ddc12f962e014d4.png",
     "static/media/new1.png": "/cs-go/static/media/new1.739855be8b3f8a99c3b2.png",
+    "static/media/random_icon.png": "/cs-go/static/media/random_icon.77ff71f709e01f87ba1b.png",
     "static/media/de_ancient_icon.png": "/cs-go/static/media/de_ancient_icon.a8dd63ef49c46bd9d26c.png",
     "static/media/de_mirage_icon.png": "/cs-go/static/media/de_mirage_icon.0afa1444172777d046a3.png",
     "static/media/shop2.png": "/cs-go/static/media/shop2.e182978b8f2ab4be284c.png",
@@ -110,12 +112,12 @@
     "static/media/de_vertigo_icon.png": "/cs-go/static/media/de_vertigo_icon.6b93b9c41609bbe1be6f.png",
     "static/media/cs_assault_icon.png": "/cs-go/static/media/cs_assault_icon.7ea67bf5c89ba9961543.png",
     "index.html": "/cs-go/index.html",
-    "main.13e3506b.css.map": "/cs-go/static/css/main.13e3506b.css.map",
-    "main.585e4583.js.map": "/cs-go/static/js/main.585e4583.js.map",
+    "main.bb8aa49e.css.map": "/cs-go/static/css/main.bb8aa49e.css.map",
+    "main.a0f8e3e2.js.map": "/cs-go/static/js/main.a0f8e3e2.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13e3506b.css",
-    "static/js/main.585e4583.js"
+    "static/css/main.bb8aa49e.css",
+    "static/js/main.a0f8e3e2.js"
   ]
 }
