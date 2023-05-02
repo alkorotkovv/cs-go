@@ -4,6 +4,7 @@ import Select from '../Select/Select';
 import Official from './Types/Official/Official';
 import Bots from './Types/Bots/Bots';
 import Instruction from './Types/Instruction/Instruction';
+import Workshop from './Types/Workshop/Workshop';
 import Servers from './Types/Servers/Servers';
 
 
@@ -99,6 +100,7 @@ function Play(props) {
         </div>
         { isOfficial ? <Official isVisible={isOfficial} /> : <></>}
         { isBots ? <Bots isVisible={isBots} /> : <></>}
+        { isWorkshop ? <Workshop isVisible={isWorkshop} /> : <></>}
     </Panel>
     { isInstruction ? <Instruction isVisible={isInstruction} handleClose={handleInstructionClose} /> : <></>}
     { isServers ? <Servers isVisible={isServers} handleClose={handleServersClose} /> : <></>}

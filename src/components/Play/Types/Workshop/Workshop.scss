@@ -1,0 +1,44 @@
+.workshop {
+
+  &__input {
+    margin: 4px 0;
+    padding: 7px;
+    width: 512px;    
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #DDDDDD;
+
+    &::placeholder {
+      color: #DDDDDD;
+    }
+
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+      padding-bottom: 4px;
+      border-bottom: 5px solid white;
+      animation: input-underline 0.2s linear forwards;
+    }
+  }
+
+
+
+}
+
+@keyframes input-underline {
+  from {
+    padding-bottom: 7px;
+    border-bottom: 2px solid white;
+  }
+  to {
+    padding-bottom: 4px;
+    border-bottom: 5px solid white;
+  }
+}
