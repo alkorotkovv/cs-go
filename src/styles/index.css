@@ -2241,6 +2241,12 @@
   opacity: 0.3;
   animation: color 6s linear infinite;
 }
+.type__select {
+  margin: 0 0 0 auto;
+  padding: 8px 22px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 @keyframes color {
   from {

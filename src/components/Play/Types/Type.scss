@@ -127,6 +127,13 @@
     animation: color 6s linear infinite;
   }
 
+  &__select {
+    margin: 0 0 0 auto;
+    padding: 8px 22px;
+    display: flex;
+    border-bottom: 1px solid $line_color;
+  }
+
 }
 
 

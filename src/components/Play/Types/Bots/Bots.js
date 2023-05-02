@@ -1,4 +1,5 @@
 import React  from 'react';
+import Select from '../../../Select/Select';
 import Competitive from './Regyms/Competitive/Competitive';
 import Dual from './Regyms/Dual/Dual';
 import Usual from './Regyms/Usual/Usual';
@@ -13,11 +14,34 @@ import Military from './Regyms/Military/Military';
 
 function Bots(props) {
 
+  const [title, setTitle] = React.useState("Легкие боты")
+
   const [isCompetitive, setIsCompetitive] = React.useState(true)
   const [isDual, setIsDual] = React.useState(false)
   const [isUsual, setIsUsual] = React.useState(false)
   const [isDeathmatch, setIsDeathmatch] = React.useState(false)
   const [isMilitary, setIsMilitary] = React.useState(false)
+
+  //Обработчики селекта
+  function handler1() {
+    setTitle("Без ботов");
+  }
+
+  function handler2() {
+    setTitle("Безобидные боты");
+  }
+
+  function handler3() {
+    setTitle("Легкие боты");
+  }
+
+  function handler4() {
+    setTitle("Средние боты");
+  }
+
+  function handler5() {
+    setTitle("Сложные боты");
+  }
 
   //Обработчики режимов игры
   function handleCompetitiveClick() {
@@ -70,6 +94,35 @@ function Bots(props) {
         <li className={"type__regym" + (isDeathmatch ? " type__regym_active" : " ")} onClick={handleDeathmatchClick}><p className='type__regym-text'>Бой насмерть</p></li>
         <li className={"type__regym" + (isMilitary ? " type__regym_active" : " ")} onClick={handleMilitaryClick}><p className='type__regym-text'>Военные игры</p></li>
         <li className={"type__regym type__regym_unactive"} ><p className='type__regym-text type__regym-text_unactive'>Запретная зона</p></li>
+        <div className='type__select'>
+        <Select 
+          class="bots"
+          options={[
+              {
+                name:"Без ботов",
+                handle: handler1
+              },
+              {
+                name: "Безобидные боты", 
+                handle: handler2
+              },
+              {
+                name: "Легкие боты", 
+                handle: handler3
+              },
+              {
+                name: "Средние боты", 
+                handle: handler4
+              },
+              {
+                name: "Сложные боты", 
+                handle: handler5
+              }
+            ]} 
+            title={title}
+            minwidth="200px"
+        />
+        </div>
       </ul>
       <div className='type__main'>
         { isCompetitive ? <Competitive isVisible={isCompetitive} /> : <></>}

@@ -1,7 +1,5 @@
 import React  from 'react';
-import Setup from '../../../../../Setup/Setup';
 import Switch from '../../../../../Switch/Switch';
-import setup_prime_icon from '../../../../../../images/setup_prime_icon.png';
 import MapDual from '../../../../../MapDual/MapDual';
 import MapBig from '../../../../../MapBig/MapBig';
 import { allMapsArray } from '../../../../../../utils/constants';
@@ -28,7 +26,7 @@ function Military(props) {
               allMapsArray.find((e) => e.name === "Monastery")
               ]} 
               name="Гонка вооружений"
-              isCheckable={true}
+              isCheckable={false}
             />        
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Lake"),
@@ -39,7 +37,7 @@ function Military(props) {
               allMapsArray.find((e) => e.name === "Shortdust")
               ]} 
               name="Уничтожение объекта"
-              isCheckable={true}
+              isCheckable={false}
             />        
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Lake"),
@@ -49,7 +47,7 @@ function Military(props) {
               allMapsArray.find((e) => e.name === "Shoots")
               ]} 
               name="Перелётные снайперы"
-              isCheckable={true}
+              isCheckable={false}
             />        
             <MapDual maps={[
               allMapsArray.find((e) => e.name === "Inferno"),
@@ -62,7 +60,7 @@ function Military(props) {
               allMapsArray.find((e) => e.name === "Ancient")
               ]} 
               name="Зачистка"
-              isCheckable={true}
+              isCheckable={false}
             />
           </ul>
         </div>
