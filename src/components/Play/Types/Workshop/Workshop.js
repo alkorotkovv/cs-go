@@ -33,7 +33,7 @@ function Workshop(props) {
         <input className='workshop__input' id="workshop-map" name="workshop-map" type="text" size="40" placeholder="Поиск по картам" />
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="workshop"
             options={[
                 {
                   name:"Без ботов",
@@ -59,6 +59,9 @@ function Workshop(props) {
               title={title}
               minwidth="200px"
           />
+        </div>
+        <div className='workshop__button'>
+          <p className='workshop__button-title'>ОТКРЫТЬ МАСТЕРСКУЮ</p>
         </div>
       </div>
       <div className='type__main'>
