@@ -1,6 +1,6 @@
 .regym {
 
-  &_deathmatch-official {
+  &_military-bots {
   }
 
   &_visible {
@@ -8,18 +8,17 @@
 
   &__settings {
 
-    &_deathmatch-official {
-      justify-content: end;
+    &_military-bots {
     }
   }
 
   &__main {
-    &_deathmatch-official {
+    &_military-bots {
     }
   }
 
   &__maps {
-    &_deathmatch-official {
+    &_military-bots {
       grid-template-columns: repeat(4, 224px);
     }
   }
@@ -28,8 +27,8 @@
 
 .wrapper {
 
-  &_deathmatch-official {
-    &:nth-child(2) {
+  &_military-bots {
+    &:nth-child(1) {
       margin-left: auto;
     }
   }

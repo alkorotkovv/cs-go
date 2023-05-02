@@ -1,9 +1,9 @@
 import React  from 'react';
 import Competitive from './Regyms/Competitive/Competitive';
-import Deathmatch from './Regyms/Deathmatch/Deathmatch';
 import Dual from './Regyms/Dual/Dual';
-import Military from './Regyms/Military/Military';
 import Usual from './Regyms/Usual/Usual';
+import Deathmatch from './Regyms/Deathmatch/Deathmatch';
+import Military from './Regyms/Military/Military';
 import Zone from './Regyms/Zone/Zone';
 
 function Official(props) {
@@ -71,16 +71,16 @@ function Official(props) {
   }
   
   return (
-    <div className={"official" + (props.isVisible ? " official_visible" : " ")}>
-      <ul className='official__regyms'>
-        <li className={"official__regym" + (isCompetitive ? " official__regym_active" : " ")} onClick={handleCompetitiveClick}><p className='official__regym-text'>Соревновательный</p></li>
-        <li className={"official__regym" + (isDual ? " official__regym_active" : " ")} onClick={handleDualClick}><p className='official__regym-text'>Напарники</p></li>
-        <li className={"official__regym" + (isUsual ? " official__regym_active" : " ")} onClick={handleUsualClick}><p className='official__regym-text'>Обычный</p></li>
-        <li className={"official__regym" + (isDeathmatch ? " official__regym_active" : " ")} onClick={handleDeathmatchClick}><p className='official__regym-text'>Бой насмерть</p></li>
-        <li className={"official__regym" + (isMilitary ? " official__regym_active" : " ")} onClick={handleMilitaryClick}><p className='official__regym-text'>Военные игры</p></li>
-        <li className={"official__regym" + (isZone ? " official__regym_active" : " ")} onClick={handleZoneClick}><p className='official__regym-text'>Запретная зона</p></li>
+    <div className={"type type_official" + (props.isVisible ? " type_visible" : " ")}>
+      <ul className='type__regyms'>
+        <li className={"type__regym" + (isCompetitive ? " type__regym_active" : " ")} onClick={handleCompetitiveClick}><p className='type__regym-text'>Соревновательный</p></li>
+        <li className={"type__regym" + (isDual ? " type__regym_active" : " ")} onClick={handleDualClick}><p className='type__regym-text'>Напарники</p></li>
+        <li className={"type__regym" + (isUsual ? " type__regym_active" : " ")} onClick={handleUsualClick}><p className='type__regym-text'>Обычный</p></li>
+        <li className={"type__regym" + (isDeathmatch ? " type__regym_active" : " ")} onClick={handleDeathmatchClick}><p className='type__regym-text'>Бой насмерть</p></li>
+        <li className={"type__regym" + (isMilitary ? " type__regym_active" : " ")} onClick={handleMilitaryClick}><p className='type__regym-text'>Военные игры</p></li>
+        <li className={"type__regym" + (isZone ? " type__regym_active" : " ")} onClick={handleZoneClick}><p className='type__regym-text'>Запретная зона</p></li>
       </ul>
-      <div className='official__main'>
+      <div className='type__main'>
         { isCompetitive ? <Competitive isVisible={isCompetitive} /> : <></>}
         { isDual ? <Dual isVisible={isDual} /> : <></>}
         { isUsual ? <Usual isVisible={isUsual} /> : <></>}
@@ -88,10 +88,10 @@ function Official(props) {
         { isMilitary ? <Military isVisible={isMilitary} /> : <></>}
         { isZone ? <Zone isVisible={isZone} /> : <></>}
       </div>
-      <div className='official__bottom'>
-        <div className='official__button'>
-          <p className='official__button-text'>НАЧАТЬ </p>
-          <div className='official__button-color'></div>
+      <div className='type__bottom'>
+        <div className='type__button'>
+          <p className='type__button-text'>НАЧАТЬ </p>
+          <div className='type__button-color'></div>
         </div>
       </div>
     </div>

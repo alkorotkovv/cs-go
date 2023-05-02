@@ -12,19 +12,19 @@ import Setup from '../../../../../Setup/Setup';
 function Competitive(props) {
   
   return (
-    <div className={"regym regym_competitive" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_competitive'>
-        <div className='wrapper wrapper_competitive'>
-          <Setup span="Любая длительность" id="setup_competitive_1" image={setup_setting_icon} />
+    <div className={"regym regym_competitive-bots" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_competitive-bots'>
+        <div className='wrapper wrapper_competitive-bots'>
+          <Setup span="Любая длительность" id="setup_competitive-bots_1" image={setup_setting_icon} />
         </div>
-        <div className='wrapper wrapper_competitive'>
-          <Switch span="Открытая группа" id="switch_competitive_2"/>
+        <div className='wrapper wrapper_competitive-bots'>
+          <Switch span="Открытая группа" id="switch_competitive-bots_2"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_competitive'>
+        <div className='regym__main regym__main_competitive-bots'>
           <div className='maps'>
-            <ul className="regym__maps regym__maps_competitive">
+            <ul className="regym__maps regym__maps_competitive-bots">
               {
                 botsCompetitiveMapsArray.map((element, index) => 
                   <Map 
@@ -35,7 +35,7 @@ function Competitive(props) {
                     time={element.time}
                     isCompetitive={element.isCompetitive}
                     isCheckable={false}
-                    isTimeVisible={true}
+                    isTimeVisible={false}
                   />
                 )
               }  

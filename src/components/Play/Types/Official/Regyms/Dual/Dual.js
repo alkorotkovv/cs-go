@@ -6,18 +6,18 @@ import { officialDualMapsArray } from '../../../../../../utils/constants';
 function Dual(props) {
   
   return (
-    <div className={"regym regym_dual" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_dual'>
-        <div className='wrapper wrapper_dual'>
-          <Switch span="Рейтинговые игры" id="switch_dual_1"/>
+    <div className={"regym regym_dual-official" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_dual-official'>
+        <div className='wrapper wrapper_dual-official'>
+          <Switch span="Рейтинговые игры" id="switch_dual-official_1"/>
         </div>
-        <div className='wrapper wrapper_dual'>
-          <Switch span="Открытая группа" id="switch_dual_2"/>
+        <div className='wrapper wrapper_dual-official'>
+          <Switch span="Открытая группа" id="switch_dual-official_2"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_dual'>
-          <ul className="regym__maps regym__maps_dual">
+        <div className='regym__main regym__main_dual-official'>
+          <ul className="regym__maps regym__maps_dual-official">
             {
               officialDualMapsArray.map((element, index) => 
                 <Map 

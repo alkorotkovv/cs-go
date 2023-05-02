@@ -12,23 +12,23 @@ import Setup from '../../../../../Setup/Setup';
 function Competitive(props) {
   
   return (
-    <div className={"regym regym_competitive" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_competitive'>
-        <div className='wrapper wrapper_competitive'>
-          <Switch span="Закрытый подбор" id="switch_competitive_1"/>
+    <div className={"regym regym_competitive-official" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_competitive-official'>
+        <div className='wrapper wrapper_competitive-official'>
+          <Switch span="Закрытый подбор" id="switch_competitive-official_1"/>
         </div>
-        <div className='wrapper wrapper_competitive'>
-          <Setup span="Короткая игра" id="setup_competitive_1" image={setup_setting_icon} />
+        <div className='wrapper wrapper_competitive-official'>
+          <Setup span="Короткая игра" id="setup_competitive-official_1" image={setup_setting_icon} />
         </div>
-        <div className='wrapper wrapper_competitive'>
-          <Switch span="Рейтинговые игры" id="switch_competitive_2"/>
+        <div className='wrapper wrapper_competitive-official'>
+          <Switch span="Рейтинговые игры" id="switch_competitive-official_2"/>
         </div>
-        <div className='wrapper wrapper_competitive'>
-          <Switch span="Открытая группа" id="switch_competitive_3"/>
+        <div className='wrapper wrapper_competitive-official'>
+          <Switch span="Открытая группа" id="switch_competitive-official_3"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_competitive'>
+        <div className='regym__main regym__main_competitive-official'>
           <div className='filters'>
             <div className='filters__templates-block'>
               <p className='filters__title'>Шаблоны</p>
@@ -59,7 +59,7 @@ function Competitive(props) {
 
           </div>
           <div className='maps'>
-            <ul className="regym__maps regym__maps_competitive">
+            <ul className="regym__maps regym__maps_competitive-official">
               {
                 officialCompetitiveMapsArray.map((element, index) => 
                   <Map 

@@ -1274,7 +1274,7 @@ export const botsCompetitiveMapsArray = [
   allMapsArray.find((e) => e.name === "Office")
 ]
 
-//Массив карт для официального режима напарников
+//Массив карт для ботского режима напарников
 export const botsDualMapsArray = [
   allMapsArray.find((e) => e.name === "Boyard"),
   allMapsArray.find((e) => e.name === "Chalice"),
@@ -1286,4 +1286,50 @@ export const botsDualMapsArray = [
   allMapsArray.find((e) => e.name === "Nuke"),
   allMapsArray.find((e) => e.name === "Shortdust"),
   allMapsArray.find((e) => e.name === "Lake")
+]
+
+//Массив карт для ботского режима обычный
+export const botsUsualMapsArray = [
+  allMapsArray.find((e) => e.name === "Случайно"),
+  allMapsArray.find((e) => e.name === "Dust 2"),
+  allMapsArray.find((e) => e.name === "Mirage"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Cobblestone"),
+  allMapsArray.find((e) => e.name === "Anubis"),
+  allMapsArray.find((e) => e.name === "Cache"),
+  allMapsArray.find((e) => e.name === "Ancient"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Canals"),
+  allMapsArray.find((e) => e.name === "Tuscan"),
+  allMapsArray.find((e) => e.name === "Agency"),
+  allMapsArray.find((e) => e.name === "Militia"),
+  allMapsArray.find((e) => e.name === "Office"),
+  allMapsArray.find((e) => e.name === "Italy"),
+  allMapsArray.find((e) => e.name === "Assault")
+]
+
+//Массив карт для ботского режима обычный
+export const botsDeathmatchMapsArray = [
+  allMapsArray.find((e) => e.name === "Случайно"),
+  allMapsArray.find((e) => e.name === "Dust 2"),
+  allMapsArray.find((e) => e.name === "Mirage"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Cobblestone"),
+  allMapsArray.find((e) => e.name === "Ancient"),
+  allMapsArray.find((e) => e.name === "Cache"),
+  allMapsArray.find((e) => e.name === "Anubis"),
+  allMapsArray.find((e) => e.name === "Tuscan"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Canals"),
+  allMapsArray.find((e) => e.name === "Agency"),
+  allMapsArray.find((e) => e.name === "Militia"),
+  allMapsArray.find((e) => e.name === "Office"),
+  allMapsArray.find((e) => e.name === "Italy"),
+  allMapsArray.find((e) => e.name === "Assault")
 ]

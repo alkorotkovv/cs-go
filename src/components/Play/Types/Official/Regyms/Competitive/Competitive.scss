@@ -1,6 +1,6 @@
 .regym {
 
-  &_competitive {
+  &_competitive-official {
   }
 
   &_visible {
@@ -8,17 +8,17 @@
 
   &__settings {
 
-    &_competitive {
+    &_competitive-official {
     }
   }
 
   &__main {
-    &_competitive {
+    &_competitive-official {
     }
   }
 
   &__maps {
-    &_competitive {
+    &_competitive-official {
     }
   }
   
@@ -26,7 +26,7 @@
 
 .wrapper {
 
-  &_competitive {
+  &_competitive-official {
     &:nth-child(3) {
       margin-left: auto;
     }

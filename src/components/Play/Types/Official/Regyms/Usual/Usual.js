@@ -10,18 +10,18 @@ import { allMapsArray } from '../../../../../../utils/constants';
 function Usual(props) {
   
   return (
-    <div className={"regym regym_usual" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_usual'>
-        <div className='wrapper wrapper_usual'>
-          <Setup span="Прайм-статус включён" id="setup_usual_1" image={setup_prime_icon} />
+    <div className={"regym regym_usual-official" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_usual-official'>
+        <div className='wrapper wrapper_usual-official'>
+          <Setup span="Прайм-статус включён" id="setup_usual-official_1" image={setup_prime_icon} />
         </div>
-        <div className='wrapper wrapper_usual'>
-          <Switch span="Открытая группа" id="switch_usual_1"/>
+        <div className='wrapper wrapper_usual-official'>
+          <Switch span="Открытая группа" id="switch_usual-official_1"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_usual'>
-          <ul className="regym__maps regym__maps_usual">          
+        <div className='regym__main regym__main_usual-official'>
+          <ul className="regym__maps regym__maps_usual-official">          
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Canals"),
               allMapsArray.find((e) => e.name === "Vertigo"),

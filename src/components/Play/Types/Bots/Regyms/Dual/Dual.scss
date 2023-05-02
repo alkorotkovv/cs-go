@@ -1,6 +1,6 @@
 .regym {
 
-  &_dual {
+  &_dual-bots {
   }
 
   &_visible {
@@ -8,24 +8,24 @@
 
   &__settings {
 
-    &_dual {
+    &_dual-bots {
     }
   }
 
   &__main {
-    &_dual {
+    &_dual-bots {
     }
   }
 
   &__maps {
-    &_dual {
+    &_dual-bots {
     }
   }
   
 }
 
 .wrapper {
-  &_dual {  
+  &_dual-bots {  
     &:nth-child(1) {
       margin-left: auto;
     }

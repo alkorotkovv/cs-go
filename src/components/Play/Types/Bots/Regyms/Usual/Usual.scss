@@ -1,6 +1,6 @@
 .regym {
 
-  &_usual-official {
+  &_usual-bots {
   }
 
   &_visible {
@@ -8,18 +8,19 @@
 
   &__settings {
 
-    &_usual-official {
+    &_usual-bots {
     }
   }
 
   &__main {
-    &_usual-official {
+    &_usual-bots {
+      overflow-y: auto;
     }
   }
 
   &__maps {
-    &_usual-official {
-      grid-template-columns: repeat(4, 224px);
+    &_usual-bots {
+      grid-template-columns: repeat(5, 224px);
     }
   }
   
@@ -27,7 +28,7 @@
 
 .wrapper {
 
-  &_usual-official {
+  &_usual-bots {
     &:nth-child(1) {
       margin-left: auto;
     }

@@ -10,21 +10,21 @@ import { allMapsArray } from '../../../../../../utils/constants';
 function Deathmatch(props) {
   
   return (
-    <div className={"regym regym_deathmatch" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_deathmatch'>
-        <div className='wrapper wrapper_deathmatch'>
-          <Setup span="Классический" id="setup_deathmatch_1" image={setup_setting_icon} />
+    <div className={"regym regym_deathmatch-official" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_deathmatch-official'>
+        <div className='wrapper wrapper_deathmatch-official'>
+          <Setup span="Классический" id="setup_deathmatch-official_1" image={setup_setting_icon} />
         </div>
-        <div className='wrapper wrapper_deathmatch'>
-          <Setup span="Прайм-статус включён" id="setup_deathmatch_2" image={setup_prime_icon} />
+        <div className='wrapper wrapper_deathmatch-official'>
+          <Setup span="Прайм-статус включён" id="setup_deathmatch-official_2" image={setup_prime_icon} />
         </div>
-        <div className='wrapper wrapper_deathmatch'>
-          <Switch span="Открытая группа" id="switch_deathmatch_1"/>
+        <div className='wrapper wrapper_deathmatch-official'>
+          <Switch span="Открытая группа" id="switch_deathmatch-official_1"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_deathmatch'>
-          <ul className="regym__maps regym__maps_usual">          
+        <div className='regym__main regym__main_deathmatch-official'>
+          <ul className="regym__maps regym__maps_deathmatch-official">          
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Canals"),
               allMapsArray.find((e) => e.name === "Vertigo"),

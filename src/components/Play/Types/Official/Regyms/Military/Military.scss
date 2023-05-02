@@ -1,6 +1,6 @@
 .regym {
 
-  &_military {
+  &_military-official {
   }
 
   &_visible {
@@ -8,17 +8,18 @@
 
   &__settings {
 
-    &_military {
+    &_military-official {
     }
   }
 
   &__main {
-    &_military {
+    &_military-official {
     }
   }
 
   &__maps {
-    &_military {
+    &_military-official {
+      grid-template-columns: repeat(4, 224px);
     }
   }
   
@@ -26,7 +27,7 @@
 
 .wrapper {
 
-  &_military {
+  &_military-official {
     &:nth-child(1) {
       margin-left: auto;
     }

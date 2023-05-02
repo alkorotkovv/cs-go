@@ -35,11 +35,11 @@
 
 @import "./components/Panel/Panel.scss";
 @import "./components/Play/Play.scss";
-@import "./components/Play/Types/Official/Official.scss";
-@import "./components/Play/Types/Bots/Bots.scss";
 
 
-@import "./components/Play/Regym/Regym.scss";
+
+@import "./components/Play/Types/Type.scss";
+@import "./components/Play/Types/Regym.scss";
 @import "./components/Play/Types/Official/Regyms/Competitive/Competitive.scss";
 @import "./components/Play/Types/Official/Regyms/Dual/Dual.scss";
 @import "./components/Play/Types/Official/Regyms/Usual/Usual.scss";
@@ -47,5 +47,9 @@
 @import "./components/Play/Types/Official/Regyms/Military/Military.scss";
 @import "./components/Play/Types/Official/Regyms/Zone/Zone.scss";
 @import "./components/Play/Types/Bots/Regyms/Competitive/Competitive.scss";
+@import "./components/Play/Types/Bots/Regyms/Dual/Dual.scss";
+@import "./components/Play/Types/Bots/Regyms/Usual/Usual.scss";
+@import "./components/Play/Types/Bots/Regyms/Deathmatch/Deathmatch.scss";
+@import "./components/Play/Types/Bots/Regyms/Military/Military.scss";
 
 @import "./components/Inventary/Inventary.scss";

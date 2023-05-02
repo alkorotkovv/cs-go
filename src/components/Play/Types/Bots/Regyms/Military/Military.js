@@ -9,18 +9,15 @@ import { allMapsArray } from '../../../../../../utils/constants';
 function Military(props) {
   
   return (
-    <div className={"regym regym_military-official" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_military-official'>
-      <div className='wrapper wrapper_military-official'>
-          <Setup span="Прайм-статус включён" id="setup_military-official_1" image={setup_prime_icon} />
-        </div>
-        <div className='wrapper wrapper_military-official'>
-          <Switch span="Открытая группа" id="switch_military-official_1"/>
+    <div className={"regym regym_military-bots" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_military-bots'>
+        <div className='wrapper wrapper_military-bots'>
+          <Switch span="Открытая группа" id="switch_military-bots_1"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_military-official'>
-          <ul className="regym__maps regym__maps_military-official">          
+        <div className='regym__main regym__main_military-bots'>
+          <ul className="regym__maps regym__maps_military-bots">          
             <MapDual maps={[
               allMapsArray.find((e) => e.name === "Lake"),
               allMapsArray.find((e) => e.name === "Baggage"),

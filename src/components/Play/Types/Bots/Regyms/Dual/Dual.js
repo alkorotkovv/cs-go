@@ -6,18 +6,15 @@ import { botsDualMapsArray } from '../../../../../../utils/constants';
 function Dual(props) {
   
   return (
-    <div className={"regym regym_dual" + (props.isVisible ? " regym_visible" : " ")}>
-      <div className='regym__settings regym__settings_dual'>
-        <div className='wrapper wrapper_dual'>
-          <Switch span="Рейтинговые игры" id="switch_dual_1"/>
-        </div>
-        <div className='wrapper wrapper_dual'>
-          <Switch span="Открытая группа" id="switch_dual_2"/>
+    <div className={"regym regym_dual-bots" + (props.isVisible ? " regym_visible" : " ")}>
+      <div className='regym__settings regym__settings_dual-bots'>
+        <div className='wrapper wrapper_dual-bots'>
+          <Switch span="Открытая группа" id="switch_dual-bots_1"/>
         </div>
       </div>
       <div className='regym__main-wrapper'>
-        <div className='regym__main regym__main_dual'>
-          <ul className="regym__maps regym__maps_dual">
+        <div className='regym__main regym__main_dual-bots'>
+          <ul className="regym__maps regym__maps_dual-bots">
             {
               botsDualMapsArray.map((element, index) => 
                 <Map 
@@ -27,8 +24,8 @@ function Dual(props) {
                   name={element.name}
                   time={element.time}
                   isCompetitive={element.isCompetitive}
-                  isCheckable={true}
-                  isTimeVisible={true}
+                  isCheckable={false}
+                  isTimeVisible={false}
                 />            
               )
             }  
