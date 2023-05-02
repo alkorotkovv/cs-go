@@ -980,182 +980,6 @@ export const casesArray = [
   }
 ]
 
-//Массив карт для соревновательного режима
-export const competitiveMapsArray = [
-  {
-    logo: premier,
-    icon: premier_icon,
-    name: "Премьер-режим",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_ancient,
-    icon: de_ancient_icon,
-    name: "Ancient",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_anubis,
-    icon: de_anubis_icon,
-    name: "Anubis",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_inferno,
-    icon: de_inferno_icon,
-    name: "Inferno",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_mirage,
-    icon: de_mirage_icon,
-    name: "Mirage",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_nuke,
-    icon: de_nuke_icon,
-    name: "Nuke",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_overpass,
-    icon: de_overpass_icon,
-    name: "Overpass",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_vertigo,
-    icon: de_vertigo_icon,
-    name: "Vertigo",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_tuscan,
-    icon: de_tuscan_icon,
-    name: "Tuscan",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_dust2,
-    icon: de_dust2_icon,
-    name: "Dust 2",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_train,
-    icon: de_train_icon,
-    name: "Train",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_cache,
-    icon: de_cache_icon,
-    name: "Cache",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: cs_agency,
-    icon: cs_agency_icon,
-    name: "Agency",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: cs_office,
-    icon: cs_office_icon,
-    name: "Office",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  }
-]
-
-//Массив карт для режима напарников
-export const dualMapsArray = [
-  {
-    logo: de_boyard,
-    icon: de_boyard_icon,
-    name: "Boyard",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_chalice,
-    icon: de_chalice_icon,
-    name: "Chalice",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_vertigo,
-    icon: de_vertigo_icon,
-    name: "Vertigo",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_inferno,
-    icon: de_inferno_icon,
-    name: "Inferno",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_overpass,
-    icon: de_overpass_icon,
-    name: "Overpass",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_cbble,
-    icon: de_cbble_icon,
-    name: "Cobblestone",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_train,
-    icon: de_train_icon,
-    name: "Train",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_nuke,
-    icon: de_nuke_icon,
-    name: "Nuke",
-    time: "Время ожидания: 02:03",
-    isCompetitive: true
-  },
-  {
-    logo: de_shortdust,
-    icon: de_shortdust_icon,
-    name: "Shortdust",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  },
-  {
-    logo: de_lake,
-    icon: de_lake_icon,
-    name: "Lake",
-    time: "Время ожидания: 02:03",
-    isCompetitive: false
-  }
-]
-
 //Массив всех карт из игры
 export const allMapsArray = [
   {
@@ -1374,5 +1198,51 @@ export const allMapsArray = [
     name: "Sirocco",
     time: "Время ожидания: 02:03",
     isCompetitive: false
+  },
+  {
+    logo: de_boyard,
+    icon: de_boyard_icon,
+    name: "Boyard",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
+  },
+  {
+    logo: de_chalice,
+    icon: de_chalice_icon,
+    name: "Chalice",
+    time: "Время ожидания: 02:03",
+    isCompetitive: false
   }
+]
+
+//Массив карт для соревновательного режима
+export const competitiveMapsArray = [
+  allMapsArray.find((e) => e.name === "Премьер-режим"),
+  allMapsArray.find((e) => e.name === "Ancient"),
+  allMapsArray.find((e) => e.name === "Anubis"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Mirage"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Tuscan"),
+  allMapsArray.find((e) => e.name === "Dust 2"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Cache"),
+  allMapsArray.find((e) => e.name === "Agency"),
+  allMapsArray.find((e) => e.name === "Office")
+]
+
+//Массив карт для режима напарников
+export const dualMapsArray = [
+  allMapsArray.find((e) => e.name === "Boyard"),
+  allMapsArray.find((e) => e.name === "Chalice"),
+  allMapsArray.find((e) => e.name === "Vertigo"),
+  allMapsArray.find((e) => e.name === "Inferno"),
+  allMapsArray.find((e) => e.name === "Overpass"),
+  allMapsArray.find((e) => e.name === "Cobblestone"),
+  allMapsArray.find((e) => e.name === "Train"),
+  allMapsArray.find((e) => e.name === "Nuke"),
+  allMapsArray.find((e) => e.name === "Shortdust"),
+  allMapsArray.find((e) => e.name === "Lake")
 ]
