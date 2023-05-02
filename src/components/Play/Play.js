@@ -1,8 +1,10 @@
 import React  from 'react';
 import Panel from '../Panel/Panel';
 import Select from '../Select/Select';
-import Bots from './Types/Bots/Bots';
 import Official from './Types/Official/Official';
+import Bots from './Types/Bots/Bots';
+import Instruction from './Types/Instruction/Instruction';
+
 
 
 function Play(props) {
@@ -35,12 +37,8 @@ function Play(props) {
   }
 
   function handler3() {
-    setTitle("Инструктаж");
-    setIsOfficial(false);
-    setIsBots(false);
+    //props.setIsInstruction(true);
     setIsInstruction(true);
-    setIsWorkshop(false);
-    setIsServers(false);
   }
 
   function handler4() {
@@ -61,8 +59,13 @@ function Play(props) {
     setIsServers(false);
   }
 
+  //Обработчик закрытия попапа ИНСТРУКТАЖ
+  function handleInstructionClose() {
+    setIsInstruction(false);
+  }
   
   return (
+    <>
     <Panel title={"ИГРАТЬ"} name="play" isVisible={props.isVisible}>
         <div className='play__select'>
         <Select 
@@ -96,6 +99,8 @@ function Play(props) {
         { isOfficial ? <Official isVisible={isOfficial} /> : <></>}
         { isBots ? <Bots isVisible={isBots} /> : <></>}
     </Panel>
+    { isInstruction ? <Instruction isVisible={isInstruction} handleClose={handleInstructionClose} /> : <></>}
+    </>
   )
 }
 

@@ -1,0 +1,98 @@
+.popup {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: black, $alpha: 0.3);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 999;
+
+  &_visible {
+    opacity: 1;
+    animation: soft-show 0.2s linear;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    min-height: 220px;
+    box-sizing: border-box;
+    border: 1px solid #414141;
+    background-color: #2C2C2C;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 20px 28px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: #979797;
+    letter-spacing: 1px;
+    background-color: #252525;
+  }
+
+  &__main {
+    margin: 0;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #C4C4C4;
+  }
+
+  &__buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    
+  }
+
+  &__button {
+    margin: 0;
+    padding: 20px 16px;
+    display: flex;
+    border: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #272727;
+
+    }
+  }
+
+}
+
+@keyframes soft-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

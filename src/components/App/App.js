@@ -5,6 +5,8 @@ import LeftBar from '../LeftBar/LeftBar.js';
 import RightBar from '../RightBar/RightBar.js';
 import Play from '../Play/Play';
 import Inventary from '../Inventary/Inventary.js';
+import Instruction from '../Play/Types/Instruction/Instruction.js';
+import PopupWindow from '../PopupWindow/PopupWindow.js';
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
   const [isTVVisible, setIsTVVisible] = React.useState(false);
   const [isStatisticVisible, setIsStatisticVisible] = React.useState(false);
   const [isSettingsVisible, setIsSettingsVisible] = React.useState(false);
+
 
   function handleMainClick() {
     setIsMainVisible(true);
@@ -85,6 +88,8 @@ function App() {
     setIsStatisticVisible(false);
     setIsSettingsVisible(true);
   }
+
+  
 
   return (
     <div className="page">

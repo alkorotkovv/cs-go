@@ -31,7 +31,7 @@
 
   &__main {
     margin: 0;
-    padding: 24px 0;
+    padding: 0;
     display: flex;
     max-height: 696px;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
 
   &__maps {
     margin: 0;
-    padding: 0;
+    padding: 24px 0;
     box-sizing: border-box;
     display: grid;
     column-gap: 32px;
