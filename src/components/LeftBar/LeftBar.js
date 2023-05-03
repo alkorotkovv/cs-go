@@ -11,8 +11,6 @@ import exitLogo from '../../images/leftBar/exitLogo.png';
 
 function LeftBar(props) {
 
-  console.log(props)
-
   function handleMainClick() {
     props.handleMainClick();
   }
