@@ -7,6 +7,7 @@ import { workshopMapsArray } from '../../../../utils/constants';
 function Workshop(props) {
 
   const [title, setTitle] = React.useState("Легкие боты")
+  const [name, setName] = React.useState("");
 
   //Обработчики селекта
   function handler1() {
@@ -29,10 +30,15 @@ function Workshop(props) {
     setTitle("Сложные боты");
   }
 
+  //Обработчик ввода текста в инпут
+  function handleNameChange(evt) {
+    setName(evt.target.value);
+  }
+
   return (
     <div className={"type type_workshop" + (props.isVisible ? " type_visible" : " ")} >
       <div className='type__regyms'>
-        <input className='workshop__input' id="workshop-map" name="workshop-map" type="text" size="40" placeholder="Поиск по картам" />
+        <input className='workshop__input' id="workshop-map" name="workshop-map" type="text" size="40" placeholder="Поиск по картам" value={name} onChange={handleNameChange} />
         <div className='type__select'>
           <Select 
             class="workshop"
@@ -66,7 +72,6 @@ function Workshop(props) {
           <p className='workshop__button-title'>ОТКРЫТЬ МАСТЕРСКУЮ</p>
         </div>
       </div>
-
       <div className='type__main'>
         <div className={"regym regym_workshop" + (props.isVisible ? " regym_visible" : " ")}>
           <div className='regym__settings regym__settings_workshop'>
@@ -78,7 +83,7 @@ function Workshop(props) {
             <div className='regym__main regym__main_workshop'>
               <ul className="regym__maps regym__maps_workshop">  
                 {
-                  workshopMapsArray.map((element, index) => 
+                  workshopMapsArray.filter((e) => e.name.includes(name)).map((element, index) => 
                     <Map 
                       key={index}
                       logo={element.logo}
