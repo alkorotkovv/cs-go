@@ -46,15 +46,18 @@
     }
 
     &_unactive {
-
       &:hover {
         padding-bottom: 15px;
         border-bottom: 5px solid transparent;
       }
-
     }
     
+    &:nth-of-type(2) {
+      border-right: 1px solid $line_color;
+    }
+
   }
+
 
   &__regym-text {
     margin: 0;
