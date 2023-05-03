@@ -2586,6 +2586,7 @@
 }
 
 .regym__main_zone {
+  margin: 24px 0;
   gap: 245px;
   justify-content: center;
 }
@@ -2630,9 +2631,10 @@
 }
 .table__header {
   margin: 0;
-  padding: 18px 15px 18px 30px;
+  padding: 10px 10px 10px 30px;
   width: 100%;
   display: flex;
+  align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.2);
@@ -2647,10 +2649,14 @@
 }
 .table__update {
   margin: 0;
-  padding: 0;
+  padding: 8px;
   width: 24px;
   height: 24px;
   display: flex;
+  transition: all 0.2s linear;
+}
+.table__update:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .table__rows-header {
   margin: 0;
@@ -2670,12 +2676,24 @@
   text-transform: uppercase;
 }
 .table__rows {
-  margin: 0;
-  padding: 0 40px;
+  margin: 0 40px;
+  padding: 0;
+  max-height: 420px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
   box-sizing: border-box;
   list-style-type: none;
+}
+.table__rows::-webkit-scrollbar {
+  width: 8px;
+}
+.table__rows::-webkit-scrollbar-track {
+  background: transparent; /* цвет дорожки */
+}
+.table__rows::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE; /* цвет плашки */
+  border-radius: 2px; /* закругления плашки */
 }
 
 .row {
@@ -2810,6 +2828,10 @@
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.wrapper_workshop:nth-child(1) {
+  margin-left: auto;
 }
 
 @keyframes input-underline {

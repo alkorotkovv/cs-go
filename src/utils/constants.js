@@ -1381,3 +1381,129 @@ export const workshopMapsArray = [
     isCompetitive: false
   }
 ]
+
+//Массив друзей
+export const zoneFriendsArray = [
+  {
+    avatar: friendPhoto1,
+    name: "дядя Фёдор",
+    number: "28",
+    wins: "64"
+  },
+  {
+    avatar: friendPhoto2,
+    name: "#ЖирныйRust_Deluxe",
+    number: "29",
+    wins: "40"
+  },
+  {
+    avatar: friendPhoto3,
+    name: "-",
+    number: "30",
+    wins: "33"
+  },
+  {
+    avatar: friendPhoto4,
+    name: "Bogdan",
+    number: "31",
+    wins: "15"
+  },
+  {
+    avatar: friendPhoto5,
+    name: "cl",
+    number: "32",
+    wins: "12"
+  },
+  {
+    avatar: friendPhoto6,
+    name: "kent10",
+    number: "33",
+    wins: "12"
+  },
+  {
+    avatar: friendPhoto7,
+    name: "Krizhik",
+    number: "34",
+    wins: "11"
+  },
+  {
+    avatar: friendPhoto8,
+    name: "OneLove",
+    number: "35",
+    wins: "8"
+  },
+  {
+    avatar: friendPhoto9,
+    name: "silenium",
+    number: "36",
+    wins: "6"
+  },
+
+  {
+    avatar: friendPhoto10,
+    name: "Space ASS",
+    number: "37",
+    wins: "6"
+  },
+  {
+    avatar: friendPhoto11,
+    name: "V",
+    number: "38",
+    wins: "6"
+  },
+  {
+    avatar: friendPhoto12,
+    name: "Виталик подошва",
+    number: "39",
+    wins: "5"
+  },
+  {
+    avatar: friendPhoto13,
+    name: "CTAS",
+    number: "40",
+    wins: "5"
+  },
+  {
+    avatar: friendPhoto14,
+    name: "DeadPool",
+    number: "41",
+    wins: "4"
+  },
+  {
+    avatar: friendPhoto15,
+    name: "Gebert",
+    number: "42",
+    wins: "3"
+  },
+  {
+    avatar: friendPhoto16,
+    name: "Renessance",
+    number: "43",
+    wins: "2"
+  },
+  {
+    avatar: friendPhoto17,
+    name: "YaRa",
+    number: "44",
+    wins: "2"
+  },
+  {
+    avatar: friendPhoto18,
+    name: "ZiP",
+    number: "45",
+    wins: "1"
+  },
+  {
+    avatar: friendPhoto19,
+    name: "Киберкотлета",
+    number: "46",
+    wins: "1"
+  },
+  {
+    avatar: friendPhoto20,
+    name: "Рандомный чел",
+    number: "47",
+    wins: "1"
+  },
+  
+]

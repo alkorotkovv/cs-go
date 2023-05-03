@@ -1,8 +1,7 @@
 import React  from 'react';
 import Switch from '../../../../../Switch/Switch';
-import { allMapsArray } from '../../../../../../utils/constants';
+import { allMapsArray, zoneFriendsArray } from '../../../../../../utils/constants';
 import updateIcon from '../../../../../../images/update_icon.png';
-import avatar from '../../../../../../images/avatar.png';
 
 function Zone(props) {
   
@@ -28,30 +27,16 @@ function Zone(props) {
               <p className='table__rows-header-text'>ПОБЕДЫ</p>
             </div>
             <ul className='table__rows'>
-              <li className='row'>
-                <p className='row__number'>34</p>
-                <img className='row__avatar' src={avatar} alt="avatar"/>
-                <p className='row__name'>ВЕЛЬМОЖА</p>
-                <p className='row__wins'>4</p>
-              </li>
-              <li className='row'>
-                <p className='row__number'>35</p>
-                <img className='row__avatar' src={avatar} alt="avatar"/>
-                <p className='row__name'>ВЕЛЬМОЖА</p>
-                <p className='row__wins'>4</p>
-              </li>
-              <li className='row'>
-                <p className='row__number'>35</p>
-                <img className='row__avatar' src={avatar} alt="avatar"/>
-                <p className='row__name'>ВЕЛЬМОЖА</p>
-                <p className='row__wins'>4</p>
-              </li>
-              <li className='row'>
-                <p className='row__number'>35</p>
-                <img className='row__avatar' src={avatar} alt="avatar"/>
-                <p className='row__name'>ВЕЛЬМОЖА</p>
-                <p className='row__wins'>4</p>
-              </li>
+              {
+                zoneFriendsArray.map((element, index) => 
+                <li className='row'>
+                  <p className='row__number'>{element.number}</p>
+                  <img className='row__avatar' src={element.avatar} alt="avatar"/>
+                  <p className='row__name'>{element.name}</p>
+                  <p className='row__wins'>{element.wins}</p>
+                </li>
+                )
+              }  
             </ul>
           </div>
         </div>
