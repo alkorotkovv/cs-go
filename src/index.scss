@@ -10,6 +10,7 @@
 @import "./components/MapBig/MapBig.scss";
 @import "./components/MapDual/MapDual.scss";
 @import "./components/PopupWindow/PopupWindow.scss";
+@import "./components/Panel/Panel.scss";
 
 //Основные компоненты проекта
 @import "./components/App/App.scss";
@@ -33,12 +34,8 @@
 @import "./components/Messages/Messages.scss";
 
 
-
-@import "./components/Panel/Panel.scss";
+//Компоненты вызываемые левым баром
 @import "./components/Play/Play.scss";
-
-
-
 @import "./components/Play/Types/Type.scss";
 @import "./components/Play/Types/Regym.scss";
 @import "./components/Play/Types/Official/Regyms/Competitive/Competitive.scss";
@@ -53,5 +50,5 @@
 @import "./components/Play/Types/Bots/Regyms/Deathmatch/Deathmatch.scss";
 @import "./components/Play/Types/Bots/Regyms/Military/Military.scss";
 @import "./components/Play/Types/Workshop/Workshop.scss";
-
+@import "./components/Net/Net.scss";
 @import "./components/Inventary/Inventary.scss";

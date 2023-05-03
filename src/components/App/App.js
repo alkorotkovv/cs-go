@@ -4,9 +4,9 @@ import Menu from '../Menu/Menu.js';
 import LeftBar from '../LeftBar/LeftBar.js';
 import RightBar from '../RightBar/RightBar.js';
 import Play from '../Play/Play';
+import Net from '../Net/Net.js';
 import Inventary from '../Inventary/Inventary.js';
-import Instruction from '../Play/Types/Instruction/Instruction.js';
-import PopupWindow from '../PopupWindow/PopupWindow.js';
+
 
 function App() {
 
@@ -18,7 +18,9 @@ function App() {
   const [isStatisticVisible, setIsStatisticVisible] = React.useState(false);
   const [isSettingsVisible, setIsSettingsVisible] = React.useState(false);
 
+  const[isSearch, setIsSearch] = React.useState(false);
 
+  //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
     setIsMainVisible(true);
     setIsPlayVisible(false);
@@ -40,13 +42,7 @@ function App() {
   }
 
   function handleNetClick() {
-    setIsMainVisible(false);
-    setIsPlayVisible(false);
     setIsNetVisible(true);
-    setIsInventoryVisible(false);
-    setIsTVVisible(false);
-    setIsStatisticVisible(false);
-    setIsSettingsVisible(false);
   }
 
   function handleInventoryClick() {
@@ -89,7 +85,14 @@ function App() {
     setIsSettingsVisible(true);
   }
 
-  
+  //Обработчик закрытия панели Net
+  function handleNetClose() {
+    setIsNetVisible(false);
+  }
+
+  function handleSearch(isSearch) {
+    setIsSearch(isSearch);
+  }
 
   return (
     <div className="page">
@@ -117,10 +120,12 @@ function App() {
         handleTVClick={handleTVClick}
         handleStatisticClick={handleStatisticClick}
         handleSettingsClick={handleSettingsClick}
+        isSearch={isSearch}
       />
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
       { isInventoryVisible ? <Inventary isVisible={isInventoryVisible} /> : <></> }
+      <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
     </div>
   );
 

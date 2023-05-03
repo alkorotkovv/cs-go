@@ -1,15 +1,17 @@
 import React from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
-import csgoLogo from '../../images/csgoLogo.png';
-import playLogo from '../../images/playLogo.png';
-import netLogo from '../../images/netLogo.png';
-import inventaryLogo from '../../images/inventaryLogo.png';
-import tvLogo from '../../images/tvLogo.png';
-import statisticLogo from '../../images/statisticLogo.png';
-import settingsLogo from '../../images/settingsLogo.png';
-import exitLogo from '../../images/exitLogo.png';
+import csgoLogo from '../../images/leftBar/csgoLogo.png';
+import playLogo from '../../images/leftBar/playLogo.png';
+import netLogo from '../../images/leftBar/netLogo.png';
+import netLogoGreen from '../../images/leftBar/netLogoGreen.png';
+import inventoryLogo from '../../images/leftBar/inventoryLogo.png';
+import tvLogo from '../../images/leftBar/tvLogo.png';
+import statisticLogo from '../../images/leftBar/statisticLogo.png';
+import settingsLogo from '../../images/leftBar/settingsLogo.png';
+import exitLogo from '../../images/leftBar/exitLogo.png';
 
 function LeftBar(props) {
+
+  console.log(props)
 
   function handleMainClick() {
     props.handleMainClick();
@@ -46,10 +48,10 @@ function LeftBar(props) {
   return (
     <div className="leftBar">
       <ul className='leftBar__list'>
-        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isMainVisible ? " leftBar__icon_active" : "")} src={csgoLogo} alt="csgo" onClick={handleMainClick}/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon leftBar__icon_first" + (props.isMainVisible ? " leftBar__icon_active" : "")} src={csgoLogo} alt="csgo" onClick={handleMainClick}/></li>
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isPlayVisible ? " leftBar__icon_active" : "")} src={playLogo} alt="csgo" onClick={handlePlayClick}/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={netLogo} alt="csgo" onClick={handleNetClick}/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={inventaryLogo} alt="csgo" onClick={handleInventoryClick}/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isSearch ? " leftBar__icon_search" : "")} src={(props.isSearch ? netLogoGreen : netLogo)} alt="csgo" onClick={handleNetClick}/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isInventoryVisible ? " leftBar__icon_active" : "")} src={inventoryLogo} alt="csgo" onClick={handleInventoryClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={tvLogo} alt="csgo" onClick={handleTVClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={statisticLogo} alt="csgo" onClick={handleStatisticClick}/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={settingsLogo} alt="csgo" onClick={handleSettingsClick}/></li>

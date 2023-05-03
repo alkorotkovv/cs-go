@@ -54,7 +54,8 @@
     list-style-type: none;
     color: white;
     border-radius: 5px;
-    background-color: #2D2C2C;
+    //background-color: #2D2C2C;
+    background-color: rgba($color: #2C2C2C, $alpha: 0.95);
     z-index: 100;
 
     position: absolute;
