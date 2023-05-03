@@ -6,7 +6,7 @@ function Messages(props) {
   return (
     <div className='messages'>
       <div className='messages__up'>
-        <img className='messages__logo' src={addFriendIcon} alt="добавить"/>
+        <img className='messages__logo' src={addFriendIcon} alt="добавить" draggable="false"/>
       </div>
       <Friends isVisible={props.isVisible} isRankVisible={props.isRankVisible} friendsArray={props.friendsArray}/>
     </div>

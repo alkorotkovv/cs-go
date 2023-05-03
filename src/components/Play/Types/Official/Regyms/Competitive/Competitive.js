@@ -43,15 +43,15 @@ function Competitive(props) {
             <div className='filters__actions-block'>
               <ul className='filters__actions'>
                 <li className='filters__action'>
-                  <img className='filters__action-icon' src={add_all_icon} alt="icon"/>
+                  <img className='filters__action-icon' src={add_all_icon} alt="icon" draggable="false"/>
                   <p className='filters__action-text'>Выбрать все</p>
                 </li>
                 <li className='filters__action'>
-                  <img className='filters__action-icon' src={delete_all_icon} alt="icon"/>
+                  <img className='filters__action-icon' src={delete_all_icon} alt="icon" draggable="false"/>
                   <p className='filters__action-text'>Удалить все</p>
                 </li>
                 <li className='filters__action'>
-                  <img className='filters__action-icon' src={save_icon} alt="icon"/>
+                  <img className='filters__action-icon' src={save_icon} alt="icon" draggable="false"/>
                   <p className='filters__action-text'>Сохранить как ...</p>
                 </li>
               </ul>

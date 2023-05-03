@@ -8,7 +8,7 @@ function News(props) {
   
   return (
     <div className={"news" + (props.isVisible ? " " : " news_unvisible")}>
-      <img className='news__logo' src={newsIcon} alt="новости"/>
+      <img className='news__logo' src={newsIcon} alt="новости" draggable="false"/>
       <p className='news__title'>Новости</p>
       <ul className="news__items">
       {

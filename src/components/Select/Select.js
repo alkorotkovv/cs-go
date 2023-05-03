@@ -35,7 +35,7 @@ function Select(props) {
     <div className={"select" + (isOpen ? " select_active" : "") + ` select-${props.class}`} id={`select-${props.class}`} ref={select}>
       <div className={`select__header select-${props.class}__header`} >
         <p className={`select__title select-${props.class}__title`}>{props.title}</p>
-        <img className={`select__arrow select-${props.class}__arrow`} src={arrowDown} alt="arrow"/>
+        <img className={`select__arrow select-${props.class}__arrow`} src={arrowDown} alt="arrow" draggable="false"/>
       </div>
       <ul className={`select__options select-${props.class}__options` + (isOpen ? ` select__options_visible select-${props.class}__options_visible` : "")}>
         {

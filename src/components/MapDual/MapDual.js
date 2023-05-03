@@ -62,11 +62,11 @@ function MapDual(props) {
                      (isChecked && !isAnim ? " map-dual__logo_checked" : " ") + 
                      (isChecked && isAnim ? " map-dual__logo_checked map-dual__logo_checked-anim" : " ") +
                      (!isChecked && isAnim ? " map-dual__logo_anim" : "")} 
-        src={logoNow} alt="logo"/>
+        src={logoNow} alt="logo" draggable="false"/>
       <ul className='map-dual__list'>
         {
           props.maps.map((element, index) => 
-            <li key={index} className='map-dual__item'><img className='map-dual__icon' src={element.icon} alt="icon"/></li>
+            <li key={index} className='map-dual__item'><img className='map-dual__icon' src={element.icon} alt="icon" draggable="false"/></li>
           )
         }
       </ul>

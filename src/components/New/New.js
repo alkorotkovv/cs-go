@@ -5,7 +5,7 @@ function New(props) {
   return (
     <div className='new'>
       <div className='new__logo-block'>
-        <img className='new__logo' src={props.logo} alt="новость"/>
+        <img className='new__logo' src={props.logo} alt="новость" draggable="false"/>
       </div>
       <div className='new__article-block'>
         <p className='new__date'>{props.date}</p>

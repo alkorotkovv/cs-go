@@ -47,15 +47,15 @@ function Net(props) {
       <div className='net__container'>
         <ul className='net__items'>
           <li className='net__item' onClick={handleMmClick}>
-            <img className='net__item-icon' src={mmIcon} alt="иконка"/>
+            <img className='net__item-icon' src={mmIcon} alt="иконка" draggable="false"/>
             <p className={'net__item-text' + (isMmActive ? " net__item-text_active" : "")}>Соревновательный режим</p>
           </li>
           <li className='net__item' onClick={handleDualClick}>
-            <img className='net__item-icon' src={dualIcon} alt="иконка"/>
+            <img className='net__item-icon' src={dualIcon} alt="иконка" draggable="false"/>
             <p className={'net__item-text' + (isDualActive ? " net__item-text_active" : "")}>Напарники</p>
           </li>
           <li className='net__item' onClick={handleZoneClick}>
-            <img className='net__item-icon' src={zoneIcon} alt="иконка"/>
+            <img className='net__item-icon' src={zoneIcon} alt="иконка" draggable="false"/>
             <p className={'net__item-text' + (isZoneActive ? " net__item-text_active" : "")}>Запретная зона</p>
           </li>
         </ul>

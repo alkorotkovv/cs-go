@@ -1,2 +1,9 @@
 //Цвета
 $line_color: rgba(255, 255, 255, 0.2);
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -25,10 +25,10 @@ function Zone(props) {
       <div className='regym__main-wrapper'>
         <div className='regym__main regym__main_zone'>
           <div className='zone-map'>
-            <img className='zone-map__image' src={allMapsArray.find((e) => e.name === "Sirocco").logo} alt="logo"/>
-            <img className='zone-map__icon' src={allMapsArray.find((e) => e.name === "Sirocco").icon} alt="icon"/>
+            <img className='zone-map__image' src={allMapsArray.find((e) => e.name === "Sirocco").logo} alt="logo" draggable="false"/>
+            <img className='zone-map__icon' src={allMapsArray.find((e) => e.name === "Sirocco").icon} alt="icon" draggable="false"/>
             <div className='zone-map__time'>
-              <img className='zone-map__time-icon' src={timeIcon} alt="icon"/>
+              <img className='zone-map__time-icon' src={timeIcon} alt="icon" draggable="false"/>
               <p className='zone-map__time-time'>02.08</p>
               <p className='zone-map__time-text'>до смены карты на</p>
               <p className='zone-map__time-map'>Sirocco</p>
@@ -37,7 +37,7 @@ function Zone(props) {
           <div className='table'>
             <div className='table__header'>
               <p className='table__title'>Рекорды друзей в отрядах</p>
-              <img className='table__update' src={updateIcon} alt="icon"/>
+              <img className='table__update' src={updateIcon} alt="icon" draggable="false"/>
             </div>
             <div className='table__rows-header'>
               <p className='table__rows-header-text'>ДРУЗЬЯ</p>
@@ -48,7 +48,7 @@ function Zone(props) {
                 zoneFriendsArray.map((element, index) => 
                 <li className='row' key={index}>
                   <p className='row__number'>{element.number}</p>
-                  <img className='row__avatar' src={element.avatar} alt="avatar"/>
+                  <img className='row__avatar' src={element.avatar} alt="avatar" draggable="false"/>
                   <p className='row__name'>{element.name}</p>
                   <p className='row__wins'>{element.wins}</p>
                 </li>

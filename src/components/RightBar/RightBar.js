@@ -158,45 +158,43 @@ function RightBar() {
 
 
 
-
-
   return (
     <div className="rightBar">
       <div className='rightBar__main'>
 
         <div className='profile'>
-          <img className='profile__avatar' src={avatar} alt="аватар"></img>
+          <img className='profile__avatar' src={avatar} alt="аватар" draggable="false" />
           <h2 className='profile__name'>ВЕЛЬМОЖА</h2>
           <div className='profile__medals'>
             <Medals countMedalsBlock={countMedalsBlock} isMedalsSwipingLeft={isMedalsSwipingLeft} isMedalsSwipingRight={isMedalsSwipingRight}/>
             <ul className='profile__arrows'>
               <li className={"profile__arrow" + ((countMedalsBlock > 0) ? " profile__arrow_active" : "")}>
-                <img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick}/>
+                <img className='rank__arrow rank__arrow_left' src={arrowDown} alt="arrow" onClick={handleArrLeftClick} draggable="false"/>
               </li>
               <li className={"profile__arrow" + ((countMedalsBlock < Math.floor(medalsArray.length/5)) ? " profile__arrow_active" : "")}>
-                <img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick}/>
+                <img className='rank__arrow rank__arrow_right' src={arrowDown} alt="arrow" onClick={handleArrRightClick} draggable="false"/>
               </li>
             </ul>
           </div>
         </div>
         <div className='experience'>
-          <img className='experience__logo' src={experienceLogo} alt="csgo"></img>
+          <img className='experience__logo' src={experienceLogo} alt="csgo" draggable="false"/>
           <p className='experience__title'>Ранг: Лейтенант, 22</p>
           <div className='experience__progress'>
             <div className='experience__progress-bar'></div>
           </div>
         </div>
         <div className='rank rank_visible'>
-          <img className='rank__logo' src={rankLogo} alt="rank"></img>
+          <img className='rank__logo' src={rankLogo} alt="rank" draggable="false" />
           <p className='rank__title'>Великий Магистр Высшего Ранга</p>
           <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}/>
         </div>
         <div className={rankFirstSubClassName}>
-          <img className='rank__logo' src={rankOld} alt="rank"></img>
+          <img className='rank__logo' src={rankOld} alt="rank" draggable="false" />
           <p className='rank__title'>"Напарники": звание устарело</p>
         </div>
         <div className={rankSecondSubClassName}>
-          <img className='rank__logo' src={rankZona} alt="rank"></img>
+          <img className='rank__logo' src={rankZona} alt="rank" draggable="false" />
           <p className='rank__title'>Лис-охотник |||</p>
         </div>
       </div>

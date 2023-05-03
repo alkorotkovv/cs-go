@@ -61,7 +61,7 @@ function MapBig(props) {
                      (isChecked && !isAnim ? " map-big__logo_checked" : " ") + 
                      (isChecked && isAnim ? " map-big__logo_checked map-big__logo_checked-anim" : " ") +
                      (!isChecked && isAnim ? " map-big__logo_anim" : "")} 
-        src={logoNow} alt="logo"/>
+        src={logoNow} alt="logo" draggable="false"/>
       {
       /*
       <img className="map-big__logo map-big__logo_back" src={premier} alt="logo"/>
@@ -74,7 +74,7 @@ function MapBig(props) {
       <ul className='map-big__list'>
         {
           props.maps.map((element, index) => 
-            <li key={index} className='map-big__item'><img className='map-big__icon' src={element.icon} alt="icon"/></li>
+            <li key={index} className='map-big__item'><img className='map-big__icon' src={element.icon} alt="icon" draggable="false"/></li>
           )
         }
       </ul>
