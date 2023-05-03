@@ -307,3 +307,12 @@
     color: lightgray;
   }
 }
+
+.wrapper {
+
+  &_zone {
+    &:nth-child(1) {
+      margin-left: auto;
+    }
+  }
+}
