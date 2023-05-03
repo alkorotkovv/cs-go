@@ -33,6 +33,7 @@ function Deathmatch(props) {
                     isCompetitive={element.isCompetitive}
                     isCheckable={false}
                     isTimeVisible={false}
+                    isIconVisible={true}
                   />
                 )
               }  

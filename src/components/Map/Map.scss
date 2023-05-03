@@ -64,19 +64,22 @@
   &__icon {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: none;
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 0.8;
+
+    &_visible {
+      display: flex;
+    }
   }
 
   &__title {
     margin: 0;
     padding: 0;
-    width: 100%;
-    display: flex;
+    max-width: 200px;
     justify-content: center;
     position: absolute;
     font-size: 20px;
@@ -87,6 +90,10 @@
     left: 50%;
     transform: translate(-50%, 0);
     opacity: 0.8;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__time {

@@ -95,33 +95,33 @@ function Bots(props) {
         <li className={"type__regym" + (isMilitary ? " type__regym_active" : " ")} onClick={handleMilitaryClick}><p className='type__regym-text'>Военные игры</p></li>
         <li className={"type__regym type__regym_unactive"} ><p className='type__regym-text type__regym-text_unactive'>Запретная зона</p></li>
         <div className='type__select'>
-        <Select 
-          class="bots"
-          options={[
-              {
-                name:"Без ботов",
-                handle: handler1
-              },
-              {
-                name: "Безобидные боты", 
-                handle: handler2
-              },
-              {
-                name: "Легкие боты", 
-                handle: handler3
-              },
-              {
-                name: "Средние боты", 
-                handle: handler4
-              },
-              {
-                name: "Сложные боты", 
-                handle: handler5
-              }
-            ]} 
-            title={title}
-            minwidth="200px"
-        />
+          <Select 
+            class="bots"
+            options={[
+                {
+                  name:"Без ботов",
+                  handle: handler1
+                },
+                {
+                  name: "Безобидные боты", 
+                  handle: handler2
+                },
+                {
+                  name: "Легкие боты", 
+                  handle: handler3
+                },
+                {
+                  name: "Средние боты", 
+                  handle: handler4
+                },
+                {
+                  name: "Сложные боты", 
+                  handle: handler5
+                }
+              ]} 
+              title={title}
+              minwidth="200px"
+          />
         </div>
       </ul>
       <div className='type__main'>

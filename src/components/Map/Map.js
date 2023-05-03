@@ -14,7 +14,7 @@ function Map(props) {
   return (
     <li className={"map" + (isChecked ? " map_checked" : " ")} onClick={handleClick}>
       <img className={"map__logo" + (isChecked ? " map__logo_checked" : " ")} src={props.logo} alt="logo"/>
-      <img className='map__icon' src={props.icon} alt="icon"/>
+      <img className={'map__icon' + (props.isIconVisible ? " map__icon_visible" : " ")} src={props.icon} alt="icon"/>
       <p className='map__title'>{props.name}</p>
       <div className={"map__time" + (props.isTimeVisible ? " map__time_visible" : " ")}>
         <img className='map__time-icon' src={timeIcon} alt="icon"/>

@@ -56,6 +56,7 @@ function Deathmatch(props) {
               time={""}
               isCompetitive={false}
               isCheckable={false}
+              isIconVisible={true}
             />
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Agency"),

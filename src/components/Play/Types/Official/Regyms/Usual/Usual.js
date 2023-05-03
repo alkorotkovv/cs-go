@@ -52,6 +52,7 @@ function Usual(props) {
               isCompetitive={false}
               isCheckable={false}
               isTimeVisible={false}
+              isIconVisible={true}
             />
             <MapBig maps={[
               allMapsArray.find((e) => e.name === "Agency"),

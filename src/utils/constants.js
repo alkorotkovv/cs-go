@@ -228,6 +228,15 @@ import ar_dizzy_icon from '../images/maps/icons/ar_dizzy_icon.png';
 import sirocco_icon from '../images/maps/icons/sirocco_icon.png';
 import random_icon from '../images/maps/icons/random_icon.png';
 
+//Карты из мастерской
+import crashz from '../images/maps/workshop/crashz.jpg';
+import over from '../images/maps/workshop/over.jpg';
+import superaim from '../images/maps/workshop/superaim.jpg';
+import aim from '../images/maps/workshop/aim.jpg';
+import aimbotz from '../images/maps/workshop/aimbotz.jpg';
+import config from '../images/maps/workshop/config.jpg';
+import hub from '../images/maps/workshop/hub.jpg';
+
 //Массив медалей
 export const medalsArray = [
   
@@ -1332,4 +1341,43 @@ export const botsDeathmatchMapsArray = [
   allMapsArray.find((e) => e.name === "Office"),
   allMapsArray.find((e) => e.name === "Italy"),
   allMapsArray.find((e) => e.name === "Assault")
+]
+
+//Массив карт для ботского режима обычный
+export const workshopMapsArray = [
+  {
+    logo: crashz,
+    name: "crashz' Crosshair Generator v3",
+    isCompetitive: false
+  },
+  {
+    logo: over,
+    name: "Overpass Training by Dolnma",
+    isCompetitive: false
+  },
+  {
+    logo: superaim,
+    name: "Super Aim/Reflex Arena",
+    isCompetitive: false
+  },
+  {
+    logo: aim,
+    name: "training_aim_csgo2",
+    isCompetitive: false
+  },
+  {
+    logo: aimbotz,
+    name: "Aim Botz - Training",
+    isCompetitive: false
+  },
+  {
+    logo: config,
+    name: "Config Generator",
+    isCompetitive: false
+  },
+  {
+    logo: hub,
+    name: "CSGOHUB Skills Training Map by csgostats.gg",
+    isCompetitive: false
+  }
 ]

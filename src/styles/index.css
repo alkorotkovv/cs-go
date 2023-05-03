@@ -220,18 +220,20 @@
 .map__icon {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
   position: absolute;
   top: 40px;
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0.8;
 }
+.map__icon_visible {
+  display: flex;
+}
 .map__title {
   margin: 0;
   padding: 0;
-  width: 100%;
-  display: flex;
+  max-width: 200px;
   justify-content: center;
   position: absolute;
   font-size: 20px;
@@ -242,6 +244,9 @@
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0.8;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .map__time {
   margin: 0;
@@ -2755,7 +2760,8 @@
 
 .workshop__input {
   margin: 4px 0;
-  padding: 7px;
+  padding-left: 7px;
+  padding-bottom: 3px;
   width: 512px;
   display: flex;
   box-sizing: border-box;
@@ -2774,21 +2780,29 @@
 .workshop__input:focus {
   outline: 0;
   outline-offset: 0;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   border-bottom: 5px solid white;
   animation: input-underline 0.2s linear forwards;
 }
 .workshop__button {
   margin: 0;
-  padding: 0;
+  padding: 8px;
+  height: 47px;
   display: flex;
+  align-self: center;
   gap: 16px;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+.workshop__button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .workshop__button-title {
   margin: 0;
-  padding: 0;
+  padding: 17px 8px;
   display: flex;
   font-size: 17px;
   font-weight: 400;
@@ -2800,11 +2814,11 @@
 
 @keyframes input-underline {
   from {
-    padding-bottom: 7px;
+    padding-bottom: 3px;
     border-bottom: 2px solid white;
   }
   to {
-    padding-bottom: 4px;
+    padding-bottom: 0;
     border-bottom: 5px solid white;
   }
 }

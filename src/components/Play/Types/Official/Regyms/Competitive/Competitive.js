@@ -71,6 +71,7 @@ function Competitive(props) {
                     isCompetitive={element.isCompetitive}
                     isCheckable={true}
                     isTimeVisible={true}
+                    isIconVisible={true}
                   />
                 )
               }  

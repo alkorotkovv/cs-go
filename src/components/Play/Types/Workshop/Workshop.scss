@@ -2,7 +2,8 @@
 
   &__input {
     margin: 4px 0;
-    padding: 7px;
+    padding-left: 7px;
+    padding-bottom: 3px;
     width: 512px;    
     display: flex;
     box-sizing: border-box;
@@ -14,6 +15,7 @@
     font-size: 18px;
     line-height: 1.2;
     color: #DDDDDD;
+    
 
     &::placeholder {
       color: #DDDDDD;
@@ -22,7 +24,7 @@
     &:focus {
       outline: 0;
       outline-offset: 0;
-      padding-bottom: 4px;
+      padding-bottom: 0;
       border-bottom: 5px solid white;
       animation: input-underline 0.2s linear forwards;
     }
@@ -30,16 +32,25 @@
 
   &__button {
     margin: 0;
-    padding: 0;
+    padding: 8px;
+    height: 47px;
     display: flex;
+    align-self: center;
     gap: 16px;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
   }
 
   &__button-title {
     margin: 0;
-    padding: 0;
+    padding: 17px 8px;
     display: flex;
     font-size: 17px;
     font-weight: 400;
@@ -47,6 +58,7 @@
     color: white;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
   }
 
 
@@ -54,11 +66,11 @@
 
 @keyframes input-underline {
   from {
-    padding-bottom: 7px;
+    padding-bottom: 3px;
     border-bottom: 2px solid white;
   }
   to {
-    padding-bottom: 4px;
+    padding-bottom: 0;
     border-bottom: 5px solid white;
   }
 }
