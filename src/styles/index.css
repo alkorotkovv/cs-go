@@ -268,6 +268,8 @@
 .map__time-icon {
   margin: 0;
   padding: 0;
+  width: 12px;
+  height: 12px;
 }
 .map__time-text {
   margin: 0;
@@ -2598,6 +2600,7 @@
   display: flex;
   box-sizing: border-box;
   border: 7px solid #BCBCBC;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 .zone-map__image {
@@ -2619,6 +2622,40 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.zone-map__time {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  color: #CCCCCC;
+}
+.zone-map__time-icon {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+.zone-map__time-time {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.zone-map__time-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.zone-map__time-map {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+}
 
 .table {
   margin: 0;
@@ -2627,7 +2664,9 @@
   width: 720px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #414141;
   background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 .table__header {
   margin: 0;
@@ -2660,7 +2699,7 @@
 }
 .table__rows-header {
   margin: 0;
-  padding: 20px 48px 20px 48px;
+  padding: 20px 80px 20px 48px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -2670,7 +2709,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #979797;
   text-transform: uppercase;
@@ -2694,6 +2733,63 @@
 .table__rows::-webkit-scrollbar-thumb {
   background-color: #B6ADAE; /* цвет плашки */
   border-radius: 2px; /* закругления плашки */
+}
+.table__team {
+  margin: 0;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  transition: all 0.2s linear;
+}
+.table__team:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.table__checkbox {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  box-sizing: border-box;
+  background-image: url(../images/table-checkbox.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #4CAE50;
+  border-radius: 5px;
+}
+.table__checkbox_unactive {
+  background-image: none;
+  border: 2px solid #B1AF2D;
+}
+.table__group {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  height: 24px;
+  display: flex;
+  background-image: url(../images/table-group-active.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table__group_unactive {
+  background-image: url(../images/table-group-unactive.png);
+}
+.table__team-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4CAE50;
+}
+.table__team-text_unactive {
+  color: #B1AF2D;
 }
 
 .row {
