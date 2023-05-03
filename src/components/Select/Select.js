@@ -3,14 +3,11 @@ import arrowDown from '../../images/arr_down.png';
 
 function Select(props) {
 
-  console.log(props)
-
   let select = React.useRef("");
 
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {    
-    //console.log(select.current)
     select.current.style.cssText = `--minwidth: ${props.minwidth} `
     document.addEventListener("click", handleClick);
       return () => { document.removeEventListener("click", handleClick)};
@@ -28,6 +25,11 @@ function Select(props) {
       //document.querySelector('.select__options').classList.add('select__options_visible')
     }
   }
+
+  //Обработчик клика на опцию - передаем в handler этой опции сам объект этой опции (handle есть у каждой опции и передается пропсом в селект)
+  function handleOptionClick() {
+    this.handle(this)
+  }
   
   return (
     <div className={"select" + (isOpen ? " select_active" : "") + ` select-${props.class}`} id={`select-${props.class}`} ref={select}>
@@ -39,14 +41,12 @@ function Select(props) {
         {
         props.options.map((element, index) => 
         (
-          <li className={`select__option select-${props.class}_option`} key={index} onClick={element.handle}><p className='select__option-text'>{element.name}</p></li>
+          <li className={`select__option select-${props.class}_option`} key={index} onClick={handleOptionClick.bind(element)}><p className='select__option-text'>{element.name}</p></li>
         )
         )
         } 
       </ul>
     </div>
-
-
   )
 }
 

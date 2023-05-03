@@ -42,7 +42,7 @@ function Zone(props) {
             <ul className='table__rows'>
               {
                 zoneFriendsArray.map((element, index) => 
-                <li className='row'>
+                <li className='row' key={index}>
                   <p className='row__number'>{element.number}</p>
                   <img className='row__avatar' src={element.avatar} alt="avatar"/>
                   <p className='row__name'>{element.name}</p>

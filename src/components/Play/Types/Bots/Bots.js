@@ -22,27 +22,6 @@ function Bots(props) {
   const [isDeathmatch, setIsDeathmatch] = React.useState(false)
   const [isMilitary, setIsMilitary] = React.useState(false)
 
-  //Обработчики селекта
-  function handler1() {
-    setTitle("Без ботов");
-  }
-
-  function handler2() {
-    setTitle("Безобидные боты");
-  }
-
-  function handler3() {
-    setTitle("Легкие боты");
-  }
-
-  function handler4() {
-    setTitle("Средние боты");
-  }
-
-  function handler5() {
-    setTitle("Сложные боты");
-  }
-
   //Обработчики режимов игры
   function handleCompetitiveClick() {
     setIsCompetitive(true);
@@ -98,29 +77,45 @@ function Bots(props) {
           <Select 
             class="bots"
             options={[
-                {
-                  name:"Без ботов",
-                  handle: handler1
-                },
-                {
-                  name: "Безобидные боты", 
-                  handle: handler2
-                },
-                {
-                  name: "Легкие боты", 
-                  handle: handler3
-                },
-                {
-                  name: "Средние боты", 
-                  handle: handler4
-                },
-                {
-                  name: "Сложные боты", 
-                  handle: handler5
+              {
+                name: "Без ботов",
+                handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                  setTitle(arg.name)
                 }
-              ]} 
-              title={title}
-              minwidth="200px"
+              },
+              {
+                name: "Безобидные боты", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                }
+              },
+              {
+                name: "Легкие боты", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                }
+              },
+              {
+                name: "Средние боты", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                }
+              },
+              {
+                name: "Сложные боты", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                }
+              },
+              {
+                name: "Опытные боты", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                }
+              }
+            ]}
+            title={title}
+            minwidth="200px"
           />
         </div>
       </ul>
