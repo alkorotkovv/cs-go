@@ -9,7 +9,7 @@ function Dual(props) {
     <div className={"regym regym_dual-bots" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_dual-bots'>
         <div className='wrapper wrapper_dual-bots'>
-          <Switch span="Открытая группа" id="switch_dual-bots_1"/>
+          <Switch span="Открытая группа" id="switch_dual-bots_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

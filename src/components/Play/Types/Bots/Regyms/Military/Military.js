@@ -10,7 +10,7 @@ function Military(props) {
     <div className={"regym regym_military-bots" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_military-bots'>
         <div className='wrapper wrapper_military-bots'>
-          <Switch span="Открытая группа" id="switch_military-bots_1"/>
+          <Switch span="Открытая группа" id="switch_military-bots_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

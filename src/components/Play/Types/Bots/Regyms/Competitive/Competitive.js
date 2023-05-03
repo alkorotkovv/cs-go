@@ -18,7 +18,7 @@ function Competitive(props) {
           <Setup span="Любая длительность" id="setup_competitive-bots_1" image={setup_setting_icon} />
         </div>
         <div className='wrapper wrapper_competitive-bots'>
-          <Switch span="Открытая группа" id="switch_competitive-bots_2"/>
+          <Switch span="Открытая группа" id="switch_competitive-bots_2" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

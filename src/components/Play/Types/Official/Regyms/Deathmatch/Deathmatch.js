@@ -19,7 +19,7 @@ function Deathmatch(props) {
           <Setup span="Прайм-статус включён" id="setup_deathmatch-official_2" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_deathmatch-official'>
-          <Switch span="Открытая группа" id="switch_deathmatch-official_1"/>
+          <Switch span="Открытая группа" id="switch_deathmatch-official_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

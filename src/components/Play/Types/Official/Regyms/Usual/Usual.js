@@ -16,7 +16,7 @@ function Usual(props) {
           <Setup span="Прайм-статус включён" id="setup_usual-official_1" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_usual-official'>
-          <Switch span="Открытая группа" id="switch_usual-official_1"/>
+          <Switch span="Открытая группа" id="switch_usual-official_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

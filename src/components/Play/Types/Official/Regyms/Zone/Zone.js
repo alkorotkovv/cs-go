@@ -16,10 +16,10 @@ function Zone(props) {
     <div className={"regym regym_zone" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_zone'>
         <div className='wrapper wrapper_zone'>
-          <Switch span="Рейтинговые игры" id="switch_zone_1"/>
+          <Switch span="Рейтинговые игры" id="switch_zone_1" isChecked={true}/>
         </div>
         <div className='wrapper wrapper_zone'>
-          <Switch span="Открытая группа" id="switch_zone_2"/>
+          <Switch span="Открытая группа" id="switch_zone_2" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

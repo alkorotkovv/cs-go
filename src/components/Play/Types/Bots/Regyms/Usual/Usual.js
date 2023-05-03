@@ -10,7 +10,7 @@ function Usual(props) {
     <div className={"regym regym_usual-bots" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_usual-bots'>
         <div className='wrapper wrapper_usual-bots'>
-          <Switch span="Открытая группа" id="switch_usual-bots_1"/>
+          <Switch span="Открытая группа" id="switch_usual-bots_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

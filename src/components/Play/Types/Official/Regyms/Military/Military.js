@@ -15,7 +15,7 @@ function Military(props) {
           <Setup span="Прайм-статус включён" id="setup_military-official_1" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_military-official'>
-          <Switch span="Открытая группа" id="switch_military-official_1"/>
+          <Switch span="Открытая группа" id="switch_military-official_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

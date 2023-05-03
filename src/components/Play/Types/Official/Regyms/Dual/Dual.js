@@ -9,10 +9,10 @@ function Dual(props) {
     <div className={"regym regym_dual-official" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_dual-official'>
         <div className='wrapper wrapper_dual-official'>
-          <Switch span="Рейтинговые игры" id="switch_dual-official_1"/>
+          <Switch span="Рейтинговые игры" id="switch_dual-official_1" isChecked={true}/>
         </div>
         <div className='wrapper wrapper_dual-official'>
-          <Switch span="Открытая группа" id="switch_dual-official_2"/>
+          <Switch span="Открытая группа" id="switch_dual-official_2" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

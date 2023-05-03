@@ -96,7 +96,7 @@ function Workshop(props) {
         <div className={"regym regym_workshop" + (props.isVisible ? " regym_visible" : " ")}>
           <div className='regym__settings regym__settings_workshop'>
             <div className='wrapper wrapper_workshop'>
-              <Switch span="Открытая группа" id="switch_workshop_1"/>
+              <Switch span="Открытая группа" id="switch_workshop_1" isChecked={true}/>
             </div>
           </div>
           <div className='regym__main-wrapper'>

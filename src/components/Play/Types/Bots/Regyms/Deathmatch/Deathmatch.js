@@ -15,7 +15,7 @@ function Deathmatch(props) {
           <Setup span="Команда на команду" id="setup_deathmatch-bots_1" image={setup_setting_icon} />
         </div>
         <div className='wrapper wrapper_deathmatch-bots'>
-          <Switch span="Открытая группа" id="switch_deathmatch-bots_1"/>
+          <Switch span="Открытая группа" id="switch_deathmatch-bots_1" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

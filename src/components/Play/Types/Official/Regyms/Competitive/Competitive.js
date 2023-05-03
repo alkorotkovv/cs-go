@@ -15,16 +15,16 @@ function Competitive(props) {
     <div className={"regym regym_competitive-official" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_competitive-official'>
         <div className='wrapper wrapper_competitive-official'>
-          <Switch span="Закрытый подбор" id="switch_competitive-official_1"/>
+          <Switch span="Закрытый подбор" id="switch_competitive-official_1" isChecked={false} />
         </div>
         <div className='wrapper wrapper_competitive-official'>
           <Setup span="Короткая игра" id="setup_competitive-official_1" image={setup_setting_icon} />
         </div>
         <div className='wrapper wrapper_competitive-official'>
-          <Switch span="Рейтинговые игры" id="switch_competitive-official_2"/>
+          <Switch span="Рейтинговые игры" id="switch_competitive-official_2" isChecked={true}/>
         </div>
         <div className='wrapper wrapper_competitive-official'>
-          <Switch span="Открытая группа" id="switch_competitive-official_3"/>
+          <Switch span="Открытая группа" id="switch_competitive-official_3" isChecked={true}/>
         </div>
       </div>
       <div className='regym__main-wrapper'>

@@ -1,7 +1,4 @@
 import React  from 'react';
-import competitiveIcon from '../../images/csgo_map_icon.png';
-import timeIcon from '../../images/map_time_icon.png';
-import premier from '../../images/maps/premier.jpg';
 
 function MapBig(props) {
 
