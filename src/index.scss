@@ -2,6 +2,10 @@
 @import "../vendor/normalize.css";
 @import "./vendor/config.scss";
 
+//Стили типов и режимов (нет разметки только стили)
+@import "./components/Type and Regym/Type.scss";
+@import "./components/Type and Regym/Regym.scss";
+
 //Вспомогательные компоненты
 @import "./components/Select/Select.scss";
 @import "./components/Switch/Switch.scss";
@@ -36,8 +40,6 @@
 
 //Компоненты вызываемые левым баром
 @import "./components/Play/Play.scss";
-@import "./components/Play/Types/Type.scss";
-@import "./components/Play/Types/Regym.scss";
 @import "./components/Play/Types/Official/Regyms/Competitive/Competitive.scss";
 @import "./components/Play/Types/Official/Regyms/Dual/Dual.scss";
 @import "./components/Play/Types/Official/Regyms/Usual/Usual.scss";

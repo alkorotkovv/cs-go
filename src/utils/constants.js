@@ -237,6 +237,18 @@ import aimbotz from '../images/maps/workshop/aimbotz.jpg';
 import config from '../images/maps/workshop/config.jpg';
 import hub from '../images/maps/workshop/hub.jpg';
 
+//Оружия
+import SawedOff_ForestDDPAT from '../images/guns/SawedOff_ForestDDPAT.png';
+import ButterflyKnife_Slaughter from '../images/guns/ButterflyKnife_Slaughter.png';
+import Glock18_GammaDoppler from '../images/guns/Glock18_GammaDoppler.png';
+import DesertEagle_Conspiracy from '../images/guns/DesertEagle_Conspiracy.png';
+import DesertEagle_Ermungand from '../images/guns/DesertEagle_Ermungand.png';
+import P250_BengalTiger from '../images/guns/P250_BengalTiger.png';
+import DesertEagle_Night from '../images/guns/DesertEagle_Night.png';
+
+
+
+
 //Массив медалей
 export const medalsArray = [
   
@@ -1382,7 +1394,7 @@ export const workshopMapsArray = [
   }
 ]
 
-//Массив друзей
+//Массив друзей в режиме запретной зоны
 export const zoneFriendsArray = [
   {
     avatar: friendPhoto1,
@@ -1504,6 +1516,67 @@ export const zoneFriendsArray = [
     name: "Рандомный чел",
     number: "47",
     wins: "1"
+  }
+]
+
+
+
+//Массив оружий
+export const gunsArray = [
+  {
+    image: ButterflyKnife_Slaughter,
+    weapon: "Нож бабочка",
+    name: "Убийство",
+    rarity: "Knives",
+    category: "Star",
+    type: "Knife"
   },
-  
+  {
+    image: Glock18_GammaDoppler,
+    weapon: "Glock-18",
+    name: "Гамма-волны",
+    rarity: "Covert",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Conspiracy,
+    weapon: "Desert Eagle",
+    name: "Заговор",
+    rarity: "Classified",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Ermungand,
+    weapon: "Desert Eagle",
+    name: "Изумрудный Ёрмунганд",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: P250_BengalTiger,
+    weapon: "P250",
+    name: "Бенгальский тигр",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Night,
+    weapon: "Desert Eagle",
+    name: "Ночь",
+    rarity: "Industrial",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: SawedOff_ForestDDPAT,
+    weapon: "Saved-Off",
+    name: "Пиксельный камуфляж «Лес»",
+    rarity: "Consumer",
+    category: "Default",
+    type: "Shotgun"
+  }
 ]
