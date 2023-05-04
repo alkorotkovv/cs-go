@@ -199,6 +199,9 @@ img {
   flex: 1;
   animation: soft-regym-switch 0.3s linear forwards;
 }
+.regym__main_inventory {
+  max-height: 856px;
+}
 .regym__maps {
   margin: 0;
   padding: 24px 0;
@@ -213,6 +216,7 @@ img {
   margin: 0;
   padding: 32px 0;
   box-sizing: border-box;
+  list-style-type: none;
   display: grid;
   column-gap: 26px;
   row-gap: 26px;
