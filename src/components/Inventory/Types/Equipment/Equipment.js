@@ -5,6 +5,8 @@ import Gun from '../../../Gun/Gun';
 
 function Equipment(props) {
 
+  const [array, setArray] = React.useState(inventoryArray);
+
   const [isAll, setIsAll] = React.useState(true);
   const [isMelee, setIsMelee] = React.useState(false);
   const [isPistol, setIsPistol] = React.useState(false);
@@ -17,6 +19,17 @@ function Equipment(props) {
 
   //Обработчики режимов игры
   function handleAllClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Bomb" || 
+      e.type === "Knife" || 
+      e.type === "Pistol" || 
+      e.type === "PP" || 
+      e.type === "Rifle" || 
+      e.type === "Shotgun" || 
+      e.type === "Machinegun" || 
+      e.type === "Agent" ||
+      e.type === "Gloves" ||
+      e.type === "Music")));
     setIsAll(true);
     setIsMelee(false);
     setIsPistol(false);
@@ -29,6 +42,9 @@ function Equipment(props) {
   }
 
   function handleMeleeClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Bomb" || 
+      e.type === "Knife" )));
     setIsAll(false);
     setIsMelee(true);
     setIsPistol(false);
@@ -41,6 +57,8 @@ function Equipment(props) {
   }
 
   function handlePistolClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Pistol" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(true);
@@ -53,6 +71,8 @@ function Equipment(props) {
   }
 
   function handlePPClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "PP" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -65,6 +85,8 @@ function Equipment(props) {
   }
 
   function handleRifleClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Rifle" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -77,6 +99,9 @@ function Equipment(props) {
   }
 
   function handleHeavyClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Shotgun" || 
+      e.type === "Machinegun" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -89,6 +114,8 @@ function Equipment(props) {
   }
 
   function handleAgentClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Agent" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -101,6 +128,8 @@ function Equipment(props) {
   }
 
   function handleGloveClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Gloves" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -113,6 +142,8 @@ function Equipment(props) {
   }
 
   function handleMusicClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Music" )));
     setIsAll(false);
     setIsMelee(false);
     setIsPistol(false);
@@ -195,7 +226,7 @@ function Equipment(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.filter((e) => (
+                  array.filter((e) => (
                     e.type === "Bomb" || 
                     e.type === "Knife" || 
                     e.type === "Pistol" || 
