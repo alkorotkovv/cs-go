@@ -3,8 +3,6 @@ import Panel from '../Panel/Panel';
 import Select from '../Select/Select';
 
 function Inventary(props) {
-
-  const [title, setTitle] = React.useState("Всё")
   
   return (
     <Panel title={"ИНВЕНТАРЬ"} name="inventary" isVisible={props.isVisible}>
@@ -14,37 +12,42 @@ function Inventary(props) {
           options={[
             {
               name:"Всё",
-              handle: (arg) => {
-                setTitle(arg.name)
+              titled: true,           //Параметр указывает устанавливать ли текст опции в заголовок селекта
+              handle: (arg) => {      //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                
               }
             },
             {
-              name: "Экипировка", 
+              name: "Экипировка",
+              titled: true,
               handle: (arg) => {
-                setTitle(arg.name)
+                
               }
             },
             {
-              name: "Наклейки, граффити и нашивки", 
+              name: "Наклейки, граффити и нашивки",
+              titled: true,
               handle: (arg) => {
-                setTitle(arg.name)
+                
               }
             },
             {
-              name: "Контейнеры и другое", 
+              name: "Контейнеры и другое",
+              titled: true,
               handle: (arg) => {
-                setTitle(arg.name)
+                
               }
             },
             {
-              name: "Трофеи", 
+              name: "Трофеи",
+              titled: true,
               handle: (arg) => {
-                setTitle(arg.name)
+                
               }
             }
           ]}
-          title={title}
           minwidth="324px"
+          isBackground={true}
         />
       </div>
     </Panel>

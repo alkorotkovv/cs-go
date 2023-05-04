@@ -6,7 +6,6 @@ import { workshopMapsArray } from '../../../../utils/constants';
 
 function Workshop(props) {
 
-  const [title, setTitle] = React.useState("Легкие боты")
   const [name, setName] = React.useState("");
 
   //Обработчик ввода текста в инпут
@@ -24,43 +23,49 @@ function Workshop(props) {
             options={[
               {
                 name:"Без ботов",
+                titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  setTitle(arg.name)
+                  
                 }
               },
               {
-                name: "Безобидные боты", 
+                name: "Безобидные боты",
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
-                name: "Легкие боты", 
+                name: "Легкие боты",
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
-                name: "Средние боты", 
+                name: "Средние боты",
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
-                name: "Сложные боты", 
+                name: "Сложные боты",
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
-                name: "Опытные боты", 
+                name: "Опытные боты",
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               }
             ]} 
-            title={title}
             minwidth="200px"
+            isBackground={false}
           />
         </div>
         <div className='workshop__button'>

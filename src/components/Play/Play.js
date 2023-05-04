@@ -11,8 +11,6 @@ import Servers from './Types/Servers/Servers';
 
 function Play(props) {
 
-  const [title, setTitle] = React.useState("Официальный подбор игр")
-
   const [isOfficial, setIsOfficial] = React.useState(true)
   const [isBots, setIsBots] = React.useState(false)
   const [isInstruction, setIsInstruction] = React.useState(false)
@@ -32,14 +30,14 @@ function Play(props) {
   return (
     <>
     <Panel title={"ИГРАТЬ"} name="play" isVisible={props.isVisible}>
-        <div className='panel__header play__select'>
+        <div className='panel__header'>
           <Select 
             class="play"
             options={[
               {
                 name:"Официальный подбор игр",
-                handle: (arg) => {
-                  setTitle(arg.name)
+                titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                   setIsOfficial(true);
                   setIsBots(false);
                   setIsInstruction(false);
@@ -49,8 +47,8 @@ function Play(props) {
               },
               {
                 name: "Тренировка с ботами", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
                   setIsOfficial(false);
                   setIsBots(true);
                   setIsInstruction(false);
@@ -60,14 +58,15 @@ function Play(props) {
               },
               {
                 name: "Инструктаж", 
+                titled: false,
                 handle: (arg) => {
                   setIsInstruction(true);
                 }
               },
               {
                 name: "Карты из мастерской", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
                   setIsOfficial(false);
                   setIsBots(false);
                   setIsInstruction(false);
@@ -77,13 +76,14 @@ function Play(props) {
               },
               {
                 name: "Список серверов сообщества", 
+                titled: false,
                 handle: (arg) => {
                   setIsServers(true);
                 }
               }
             ]}
-            title={title}
             minwidth="300px"
+            isBackground={true}
           />
         </div>
         { isOfficial ? <Official isVisible={isOfficial} /> : <></>}

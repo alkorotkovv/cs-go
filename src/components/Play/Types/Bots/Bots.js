@@ -14,8 +14,6 @@ import Military from './Regyms/Military/Military';
 
 function Bots(props) {
 
-  const [title, setTitle] = React.useState("Легкие боты")
-
   const [isCompetitive, setIsCompetitive] = React.useState(true)
   const [isDual, setIsDual] = React.useState(false)
   const [isUsual, setIsUsual] = React.useState(false)
@@ -80,43 +78,49 @@ function Bots(props) {
             options={[
               {
                 name: "Без ботов",
+                titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  setTitle(arg.name)
+                  
                 }
               },
               {
                 name: "Безобидные боты", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
                 name: "Легкие боты", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
                 name: "Средние боты", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
                 name: "Сложные боты", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               },
               {
                 name: "Опытные боты", 
+                titled: true,
                 handle: (arg) => {
-                  setTitle(arg.name)
+                  
                 }
               }
             ]}
-            title={title}
             minwidth="200px"
+            isBackground={false}
           />
         </div>
       </ul>
@@ -129,7 +133,7 @@ function Bots(props) {
       </div>
       <div className='type__bottom'>
         <div className='type__button'>
-          <p className='type__button-text'>НАЧАТЬ </p>
+          <p className='type__button-text'>НАЧАТЬ</p>
           <div className='type__button-color'></div>
         </div>
       </div>
