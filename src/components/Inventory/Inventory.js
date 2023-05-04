@@ -6,6 +6,9 @@ import link from '../../images/link.png';
 
 import All from './Types/All/All';
 import Equipment from './Types/Equipment/Equipment';
+import Stickers from './Types/Stickers/Stickers';
+import Containers from './Types/Containers/Containers';
+import Trophies from './Types/Trophies/Trophies';
 
 function Inventory(props) {
 
@@ -94,6 +97,9 @@ function Inventory(props) {
       </div>
       { isAll ? <All isVisible={isAll} /> : <></>}
       { isEquipment ? <Equipment isVisible={isEquipment} /> : <></>}
+      { isStickers ? <Stickers isVisible={isStickers} /> : <></>}
+      { isContainers ? <Containers isVisible={isContainers} /> : <></>}
+      { isTrophies ? <Trophies isVisible={isTrophies} /> : <></>}
     </Panel>
   )
 }
