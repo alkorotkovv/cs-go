@@ -5,7 +5,17 @@ import Gun from '../../../Gun/Gun';
 
 function Equipment(props) {
 
-  const [array, setArray] = React.useState(inventoryArray);
+  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
+    e.type === "Bomb" || 
+    e.type === "Knife" || 
+    e.type === "Pistol" || 
+    e.type === "PP" || 
+    e.type === "Rifle" || 
+    e.type === "Shotgun" || 
+    e.type === "Machinegun" || 
+    e.type === "Agent" ||
+    e.type === "Gloves" ||
+    e.type === "Music")));
 
   const [isAll, setIsAll] = React.useState(true);
   const [isMelee, setIsMelee] = React.useState(false);
@@ -226,16 +236,7 @@ function Equipment(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  array.filter((e) => (
-                    e.type === "Bomb" || 
-                    e.type === "Knife" || 
-                    e.type === "Pistol" || 
-                    e.type === "PP" || 
-                    e.type === "Rifle" || 
-                    e.type === "Shotgun" || 
-                    e.type === "Machinegun" || 
-                    e.type === "Agent" ||
-                    e.type === "Gloves")).map((element, index) => 
+                  array.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}
