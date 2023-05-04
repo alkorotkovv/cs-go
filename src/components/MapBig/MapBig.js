@@ -24,7 +24,7 @@ function MapBig(props) {
         console.log("Размонтировали")
         clearInterval(intervalAnimRef.current)
     })
-  }, [])
+  })
 
 //Анимация для плавной смены картинок на фоне
   function Animation() {

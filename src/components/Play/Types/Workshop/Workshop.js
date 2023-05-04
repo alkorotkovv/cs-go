@@ -9,31 +9,6 @@ function Workshop(props) {
   const [title, setTitle] = React.useState("Легкие боты")
   const [name, setName] = React.useState("");
 
-  //Обработчики селекта
-  function handler1() {
-    setTitle("Без ботов");
-  }
-
-  function handler2() {
-    setTitle("Безобидные боты");
-  }
-
-  function handler3() {
-    setTitle("Легкие боты");
-  }
-
-  function handler4() {
-    setTitle("Средние боты");
-  }
-
-  function handler5() {
-    setTitle("Сложные боты");
-  }
-
-  function handler6() {
-    setTitle("Опытные боты");
-  }
-
   //Обработчик ввода текста в инпут
   function handleNameChange(evt) {
     setName(evt.target.value);

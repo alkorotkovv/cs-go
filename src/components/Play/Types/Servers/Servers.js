@@ -1,5 +1,4 @@
 import React  from 'react';
-import PopupWindow from '../../../PopupWindow/PopupWindow';
 import servers from '../../../../images/servers.jpg';
 
 function Servers(props) {

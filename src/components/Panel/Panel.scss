@@ -27,6 +27,13 @@
     letter-spacing: 1px;
     color: white;
   }
+
+  &__header {
+    margin: 0;
+    padding: 8px 22px;
+    display: flex;
+    border-bottom: 1px solid $line_color;
+  }
 }
 
 @keyframes slide-right {

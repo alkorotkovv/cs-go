@@ -673,7 +673,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .popup__button {
   margin: 0;
@@ -726,6 +726,12 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   letter-spacing: 1px;
   color: white;
+}
+.panel__header {
+  margin: 0;
+  padding: 8px 22px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes slide-right {
@@ -2239,13 +2245,6 @@ img {
   height: 26px;
 }
 
-.play__select {
-  margin: 0;
-  padding: 8px 22px;
-  display: flex;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .type {
   margin: 0;
   padding: 0;
@@ -2323,7 +2322,7 @@ img {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);

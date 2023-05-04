@@ -32,59 +32,59 @@ function Play(props) {
   return (
     <>
     <Panel title={"ИГРАТЬ"} name="play" isVisible={props.isVisible}>
-        <div className='play__select'>
-        <Select 
-          class="play"
-          options={[
-            {
-              name:"Официальный подбор игр",
-              handle: (arg) => {
-                setTitle(arg.name)
-                setIsOfficial(true);
-                setIsBots(false);
-                setIsInstruction(false);
-                setIsWorkshop(false);
-                setIsServers(false);
+        <div className='panel__header play__select'>
+          <Select 
+            class="play"
+            options={[
+              {
+                name:"Официальный подбор игр",
+                handle: (arg) => {
+                  setTitle(arg.name)
+                  setIsOfficial(true);
+                  setIsBots(false);
+                  setIsInstruction(false);
+                  setIsWorkshop(false);
+                  setIsServers(false);
+                }
+              },
+              {
+                name: "Тренировка с ботами", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                  setIsOfficial(false);
+                  setIsBots(true);
+                  setIsInstruction(false);
+                  setIsWorkshop(false);
+                  setIsServers(false);
+                }
+              },
+              {
+                name: "Инструктаж", 
+                handle: (arg) => {
+                  setIsInstruction(true);
+                }
+              },
+              {
+                name: "Карты из мастерской", 
+                handle: (arg) => {
+                  setTitle(arg.name)
+                  setIsOfficial(false);
+                  setIsBots(false);
+                  setIsInstruction(false);
+                  setIsWorkshop(true);
+                  setIsServers(false);
+                }
+              },
+              {
+                name: "Список серверов сообщества", 
+                handle: (arg) => {
+                  setIsServers(true);
+                }
               }
-            },
-            {
-              name: "Тренировка с ботами", 
-              handle: (arg) => {
-                setTitle(arg.name)
-                setIsOfficial(false);
-                setIsBots(true);
-                setIsInstruction(false);
-                setIsWorkshop(false);
-                setIsServers(false);
-              }
-            },
-            {
-              name: "Инструктаж", 
-              handle: (arg) => {
-                setIsInstruction(true);
-              }
-            },
-            {
-              name: "Карты из мастерской", 
-              handle: (arg) => {
-                setTitle(arg.name)
-                setIsOfficial(false);
-                setIsBots(false);
-                setIsInstruction(false);
-                setIsWorkshop(true);
-                setIsServers(false);
-              }
-            },
-            {
-              name: "Список серверов сообщества", 
-              handle: (arg) => {
-                setIsServers(true);
-              }
-            }
-          ]}
-          title={title}
-          minwidth="300px"
-        />
+            ]}
+            title={title}
+            minwidth="300px"
+          />
         </div>
         { isOfficial ? <Official isVisible={isOfficial} /> : <></>}
         { isBots ? <Bots isVisible={isBots} /> : <></>}

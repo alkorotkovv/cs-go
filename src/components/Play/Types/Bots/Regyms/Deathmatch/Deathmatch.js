@@ -1,7 +1,6 @@
 import React  from 'react';
 import Setup from '../../../../../Setup/Setup';
 import Switch from '../../../../../Switch/Switch';
-import setup_prime_icon from '../../../../../../images/setup_prime_icon.png';
 import setup_setting_icon from '../../../../../../images/setup_setting_icon.png';
 import Map from '../../../../../Map/Map';
 import { botsDeathmatchMapsArray } from '../../../../../../utils/constants';
