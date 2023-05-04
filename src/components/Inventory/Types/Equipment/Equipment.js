@@ -195,7 +195,16 @@ function Equipment(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.filter((e) => (e.type !== "Medal")).map((element, index) => 
+                  inventoryArray.filter((e) => (
+                    e.type === "Bomb" || 
+                    e.type === "Knife" || 
+                    e.type === "Pistol" || 
+                    e.type === "PP" || 
+                    e.type === "Rifle" || 
+                    e.type === "Shotgun" || 
+                    e.type === "Machinegun" || 
+                    e.type === "Agent" ||
+                    e.type === "Gloves")).map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}

@@ -100,7 +100,7 @@ function Stickers(props) {
         </div>
       </ul>
       <div className='type__main'>
-      <div className='regym__main-wrapper'>
+        <div className='regym__main-wrapper'>
           <div className='regym__main regym__main_inventory'>
             <div className='guns'>
               <ul className="regym__guns">
