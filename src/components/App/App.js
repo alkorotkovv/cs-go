@@ -5,7 +5,7 @@ import LeftBar from '../LeftBar/LeftBar.js';
 import RightBar from '../RightBar/RightBar.js';
 import Play from '../Play/Play';
 import Net from '../Net/Net.js';
-import Inventary from '../Inventary/Inventary.js';
+import Inventory from '../Inventory/Inventory.js';
 
 
 function App() {
@@ -124,8 +124,8 @@ function App() {
       />
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
-      { isInventoryVisible ? <Inventary isVisible={isInventoryVisible} /> : <></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
+      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }      
     </div>
   );
 
