@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.3c3c2195.css",
-    "main.js": "/cs-go/static/js/main.990ff8d4.js",
+    "main.css": "/cs-go/static/css/main.3facd7a0.css",
+    "main.js": "/cs-go/static/js/main.f63071ae.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
     "static/media/servers.jpg": "/cs-go/static/media/servers.a7bc38a362a99f32240c.jpg",
@@ -58,19 +58,24 @@
     "static/media/new6.png": "/cs-go/static/media/new6.8e511e25923dd4319de0.png",
     "static/media/new10.png": "/cs-go/static/media/new10.a86d1fe57cc794c58d86.png",
     "static/media/new7.png": "/cs-go/static/media/new7.2c02cfc0bf268b08896a.png",
+    "static/media/Medal_Stockholm.png": "/cs-go/static/media/Medal_Stockholm.4581d89efb54c2caf16c.png",
     "static/media/new3.png": "/cs-go/static/media/new3.289b630da0129c22b1d6.png",
+    "static/media/Medal_Riptide.png": "/cs-go/static/media/Medal_Riptide.3fd4e23bafc7c70a41de.png",
+    "static/media/Medal_BrokenFang.png": "/cs-go/static/media/Medal_BrokenFang.e167ad1994b4bf3f7fae.png",
+    "static/media/Medal_2017.png": "/cs-go/static/media/Medal_2017.2e1dbc00cbfb285e699e.png",
     "static/media/cupon1.png": "/cs-go/static/media/cupon1.31a73d82aa001bc120f8.png",
     "static/media/de_canals.jpg": "/cs-go/static/media/de_canals.01887d195193ab585d9d.jpg",
     "static/media/case10.png": "/cs-go/static/media/case10.74b39839be1253f72752.png",
+    "static/media/Medal_Antwerp.png": "/cs-go/static/media/Medal_Antwerp.a6d246f003b5c2395187.png",
     "static/media/de_bank_icon.png": "/cs-go/static/media/de_bank_icon.5a243887d9dcb77a74fc.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.3c3c2195.css.map": "/cs-go/static/css/main.3c3c2195.css.map",
-    "main.990ff8d4.js.map": "/cs-go/static/js/main.990ff8d4.js.map",
+    "main.3facd7a0.css.map": "/cs-go/static/css/main.3facd7a0.css.map",
+    "main.f63071ae.js.map": "/cs-go/static/js/main.f63071ae.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c3c2195.css",
-    "static/js/main.990ff8d4.js"
+    "static/css/main.3facd7a0.css",
+    "static/js/main.f63071ae.js"
   ]
 }
