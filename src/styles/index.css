@@ -245,7 +245,7 @@ img {
   display: flex;
 }
 
-.maps .guns {
+.maps, .guns {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -254,13 +254,13 @@ img {
   justify-content: center;
   overflow-y: auto;
 }
-.maps .guns::-webkit-scrollbar {
+.maps::-webkit-scrollbar, .guns::-webkit-scrollbar {
   width: 8px;
 }
-.maps .guns::-webkit-scrollbar-track {
+.maps::-webkit-scrollbar-track, .guns::-webkit-scrollbar-track {
   background: transparent;
 }
-.maps .guns::-webkit-scrollbar-thumb {
+.maps::-webkit-scrollbar-thumb, .guns::-webkit-scrollbar-thumb {
   background-color: #B6ADAE;
   border-radius: 2px;
 }
