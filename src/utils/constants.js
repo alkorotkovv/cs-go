@@ -273,10 +273,63 @@ import Galil_Phoenix from '../images/guns/Galil_Phoenix.png';
 import Agent_Maximus from '../images/guns/Agent_Maximus.png';
 import AUG_Nefrit from '../images/guns/AUG_Nefrit.png';
 import DesertEagle_UrbanRubble from '../images/guns/DesertEagle_UrbanRubble.png';
-
+import DesertEagle_NightHeist from '../images/guns/DesertEagle_NightHeist.png';
+import DesertEagle_Corinfian from '../images/guns/DesertEagle_Corinfian.png';
+import DesertEagle_Sputnik from '../images/guns/DesertEagle_Sputnik.png';
+import MP9_HotRoad from '../images/guns/MP9_HotRoad.png';
+import Tec9_Aizec from '../images/guns/Tec9_Aizec.png';
+import DesertEagle_Bronze from '../images/guns/DesertEagle_Bronze.png';
+import DesertEagle_NightStorm from '../images/guns/DesertEagle_NightStorm.png';
+import DesertEagle_UrbanDDPAT from '../images/guns/DesertEagle_UrbanDDPAT.png';
 import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
 import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
 import Storage from '../images/guns/Storage.png';
+
+import AK47 from '../images/guns/Default/AK47.png';
+import AUG from '../images/guns/Default/AUG.png';
+import AWP from '../images/guns/Default/AWP.png';
+import CZ75 from '../images/guns/Default/CZ75.png';
+import DesertEagle from '../images/guns/Default/DesertEagle.png';
+import DualBerettas from '../images/guns/Default/DualBerettas.png';
+import FAMAS from '../images/guns/Default/FAMAS.png';
+import FiveSeveN from '../images/guns/Default/FiveSeveN.png';
+import G3SG1 from '../images/guns/Default/G3SG1.png';
+import Glock18 from '../images/guns/Default/Glock18.png';
+import M249 from '../images/guns/Default/M249.png';
+import M4A1S from '../images/guns/Default/M4A1S.png';
+import M4A4 from '../images/guns/Default/M4A4.png';
+import MAC10 from '../images/guns/Default/MAC10.png';
+import MAG7 from '../images/guns/Default/MAG7.png';
+import MP5 from '../images/guns/Default/MP5.png';
+import MP7 from '../images/guns/Default/MP7.png';
+import MP9 from '../images/guns/Default/MP9.png';
+import Nova from '../images/guns/Default/Nova.png';
+import P2000 from '../images/guns/Default/P2000.png';
+import P250 from '../images/guns/Default/P250.png';
+import P90 from '../images/guns/Default/P90.png';
+import Scar from '../images/guns/Default/Scar.png';
+import SG from '../images/guns/Default/SG.png';
+import SSG from '../images/guns/Default/SSG.png';
+import SawedOff from '../images/guns/Default/SawedOff.png';
+import Tec9 from '../images/guns/Default/Tec9.png';
+import UMP from '../images/guns/Default/UMP.png';
+import USP from '../images/guns/Default/USP.png';
+import XM1014 from '../images/guns/Default/XM1014.png';
+import Zeus from '../images/guns/Default/Zeus.png';
+import Galil from '../images/guns/Default/Galil.png';
+import C4 from '../images/guns/Default/C4.png';
+import Contract from '../images/guns/Default/Contract.png';
+import Agent_CT from '../images/guns/Default/Agent_CT.png';
+import Agent_T from '../images/guns/Default/Agent_T.png';
+import Music from '../images/guns/Default/Music.png';
+import Negev from '../images/guns/Default/Negev.png';
+import Knife_CT from '../images/guns/Default/Knife_CT.png';
+import Knife_T from '../images/guns/Default/Knife_T.png';
+import Bizon from '../images/guns/Default/Bizon.png';
+import R8 from '../images/guns/Default/R8.png';
+import Gloves_CT from '../images/guns/Default/Gloves_CT.png';
+import Gloves_T from '../images/guns/Default/Gloves_T.png';
+
 
 
 
@@ -1812,13 +1865,50 @@ export const inventoryArray = [
     category: "Default",
     type: "Pistol"
   },
-
-
-
+  {
+    image: DesertEagle_NightHeist,
+    weapon: "Desert Eagle",
+    name: "Ночное ограбление",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Corinfian,
+    weapon: "Desert Eagle",
+    name: "Послание коринфянам",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Sputnik,
+    weapon: "Desert Eagle",
+    name: "Спутник",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: MP9_HotRoad,
+    weapon: "MP9",
+    name: "Хот-род",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "PP"
+  },
   {
     image: P250_BengalTiger,
     weapon: "P250",
     name: "Бенгальский тигр",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: Tec9_Aizec,
+    weapon: "Tec-9",
+    name: "Айзек",
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol"
@@ -1840,9 +1930,33 @@ export const inventoryArray = [
     type: "Patch"
   },
   {
+    image: DesertEagle_Bronze,
+    weapon: "Desert Eagle",
+    name: "Бронзовый",
+    rarity: "Industrial",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_NightStorm,
+    weapon: "Desert Eagle",
+    name: "Ночная буря",
+    rarity: "Industrial",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
     image: DesertEagle_Night,
     weapon: "Desert Eagle",
     name: "Ночь",
+    rarity: "Industrial",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_UrbanDDPAT,
+    weapon: "Desert Eagle",
+    name: "Пиксельный камуфляж «Город»",
     rarity: "Industrial",
     category: "Default",
     type: "Pistol"
@@ -1862,7 +1976,360 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Instrument"
-  }
+  },
+  {
+    image: AK47,
+    weapon: "AK-47",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: AUG,
+    weapon: "AUG",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: AWP,
+    weapon: "AWP",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: CZ75,
+    weapon: "CZ75-Auto",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle,
+    weapon: "Desert Eagle",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DualBerettas,
+    weapon: "Dual Berettas",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: FAMAS,
+    weapon: "FAMAS",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: FiveSeveN,
+    weapon: "Five-SeveN",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: G3SG1,
+    weapon: "G3SG1",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: Glock18,
+    weapon: "Glock-18",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: M249,
+    weapon: "M249",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Machinegun"
+  },
+  {
+    image: M4A1S,
+    weapon: "M4A1-S",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: M4A4,
+    weapon: "M4A4",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: MAC10,
+    weapon: "MAC-10",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: MAG7,
+    weapon: "MAG7",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Shotgun"
+  },
+  {
+    image: MP5,
+    weapon: "MP5-SD",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: MP7,
+    weapon: "MP7",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: MP9,
+    weapon: "MP9",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: Nova,
+    weapon: "Nova",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Shotgun"
+  },
+  {
+    image: P2000,
+    weapon: "P2000",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: P250,
+    weapon: "P250",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: P90,
+    weapon: "P90",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: Scar,
+    weapon: "SCAR-20",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: SG,
+    weapon: "SG 553",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: SSG,
+    weapon: "SSG 08",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: SawedOff,
+    weapon: "Sawed Off",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Shotgun"
+  },
+  {
+    image: Tec9,
+    weapon: "Tec-9",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: UMP,
+    weapon: "UMP-45",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: USP,
+    weapon: "USP-S",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: XM1014,
+    weapon: "XM1014",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Shotgun"
+  },
+  {
+    image: Zeus,
+    weapon: "Zeus",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Zeus"
+  },
+  {
+    image: Galil,
+    weapon: "Автомат «Галиль»",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: C4,
+    weapon: "Взрывчатка С4",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Bomb"
+  },
+  {
+    image: Contract,
+    weapon: "Контракт обмена",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Contract"
+  },
+  {
+    image: Agent_CT,
+    weapon: "Местный агент спецназа",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Agent"
+  },
+  {
+    image: Agent_T,
+    weapon: "Местный агент террористов",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Agent"
+  },
+  {
+    image: Music,
+    weapon: "Набор музыки",
+    name: "CS:GO",
+    rarity: "None",
+    category: "Default",
+    type: "Music"
+  },
+  {
+    image: Negev,
+    weapon: "Негев",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Machinegun"
+  },
+  {
+    image: Knife_CT,
+    weapon: "Нож",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Knife"
+  },
+  {
+    image: Knife_T,
+    weapon: "Нож",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Knife"
+  },
+  {
+    image: Bizon,
+    weapon: "ПП-19 «Бизон»",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "PP"
+  },
+  {
+    image: R8,
+    weapon: "Револьвер R8",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: Gloves_CT,
+    weapon: "Стандартные перчатки спецназа",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Gloves"
+  },
+  {
+    image: Gloves_T,
+    weapon: "Стандартные перчатки террористов",
+    name: "",
+    rarity: "None",
+    category: "Default",
+    type: "Gloves"
+  },
+
 ]
 
 //Массив всевозможных значений type для предметов в инвентаре (пока не используется)
