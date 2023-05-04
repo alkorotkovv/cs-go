@@ -1,5 +1,7 @@
 import React  from 'react';
 import Select from '../../../Select/Select';
+import { inventoryArray } from '../../../../utils/constants';
+import Gun from '../../../Gun/Gun';
 
 function Containers(props) {
 
@@ -68,7 +70,7 @@ function Containers(props) {
   
   return (
     <div className={"type type_official" + (props.isVisible ? " type_visible" : " ")}>
-      <ul className='type__regyms'>
+      <ul className='type__regyms type__regyms_inventory'>
         <li className={"type__regym" + (isAll ? " type__regym_active" : " ")} onClick={handleAllClick}><p className='type__regym-text'>Все</p></li>
         <li className={"type__regym" + (isWeapon ? " type__regym_active" : " ")} onClick={handleWeaponClick}><p className='type__regym-text'>Кейсы с оружием</p></li>
         <li className={"type__regym" + (isSticker ? " type__regym_active" : " ")} onClick={handleStickerClick}><p className='type__regym-text'>Капсулы с наклейками</p></li>
@@ -128,7 +130,27 @@ function Containers(props) {
         </div>
       </ul>
       <div className='type__main'>
-        Containers
+        <div className='regym__main-wrapper'>
+          <div className='regym__main regym__main_inventory'>
+            <div className='guns'>
+              <ul className="regym__guns">
+                {
+                  inventoryArray.filter((e) => (e.type === "Case" || e.type === "Capsule" || e.type === "GraffitiCase" || e.type === "SouvenirCase" || e.type === "Instrument")).map((element, index) => 
+                    <Gun 
+                      key={index}
+                      image={element.image}
+                      weapon={element.weapon}
+                      name={element.name}
+                      rarity={element.rarity}
+                      category={element.category}
+                      type={element.type}
+                    />
+                  )
+                }  
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ function All(props) {
   
   return (
     <div className={"type type_official" + (props.isVisible ? " type_visible" : " ")}>
-      <ul className='type__regyms'>
+      <ul className='type__regyms type__regyms_inventory'>
         <li className={"type__regym" + (isAll ? " type__regym_active" : " ")} onClick={handleAllClick}><p className='type__regym-text'>Все</p></li>
         <div className='type__select'>
           <Select 

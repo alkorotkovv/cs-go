@@ -42,6 +42,7 @@
     &_inventory {
       max-height: 856px;
       overflow-y: auto;
+      animation: soft-regym-show 0.2s linear forwards;
 
       &::-webkit-scrollbar {
         width: 8px;
@@ -123,6 +124,17 @@
     opacity: 1;
     padding-left: 0;
     padding-right: 0;
+    //background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+@keyframes soft-regym-show {
+  from {
+    opacity: 0.1;
+    //background-color: rgba($color: #000000, $alpha: 1);
+  }
+  to {
+    opacity: 1;
     //background-color: rgba($color: #000000, $alpha: 0.2);
   }
 }

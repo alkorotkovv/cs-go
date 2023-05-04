@@ -1,5 +1,7 @@
 import React  from 'react';
 import Select from '../../../Select/Select';
+import { inventoryArray } from '../../../../utils/constants';
+import Gun from '../../../Gun/Gun';
 
 function Equipment(props) {
 
@@ -125,7 +127,7 @@ function Equipment(props) {
   
   return (
     <div className={"type type_official" + (props.isVisible ? " type_visible" : " ")}>
-      <ul className='type__regyms'>
+      <ul className='type__regyms type__regyms_inventory'>
         <li className={"type__regym" + (isAll ? " type__regym_active" : " ")} onClick={handleAllClick}><p className='type__regym-text'>Вся экипировка</p></li>
         <li className={"type__regym" + (isMelee ? " type__regym_active" : " ")} onClick={handleMeleeClick}><p className='type__regym-text'>Оружие ближнего боя</p></li>
         <li className={"type__regym" + (isPistol ? " type__regym_active" : " ")} onClick={handlePistolClick}><p className='type__regym-text'>Пистолет</p></li>
@@ -188,7 +190,27 @@ function Equipment(props) {
         </div>
       </ul>
       <div className='type__main'>
-
+        <div className='regym__main-wrapper'>
+          <div className='regym__main regym__main_inventory'>
+            <div className='guns'>
+              <ul className="regym__guns">
+                {
+                  inventoryArray.filter((e) => (e.type !== "Medal")).map((element, index) => 
+                    <Gun 
+                      key={index}
+                      image={element.image}
+                      weapon={element.weapon}
+                      name={element.name}
+                      rarity={element.rarity}
+                      category={element.category}
+                      type={element.type}
+                    />
+                  )
+                }  
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

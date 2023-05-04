@@ -10,7 +10,7 @@ function Gun(props) {
         ((props.rarity === "Restricted") ? " gun__image-wrapper_purple" : "") +
         ((props.rarity === "Mil-Spec") ? " gun__image-wrapper_blue" : "") +
         ((props.rarity === "Industrial") ? " gun__image-wrapper_industrial" : "") +
-        ((props.rarity === "Consumer") ? " gun__image-wrapper_Consumer" : "")     
+        ((props.rarity === "Consumer") ? " gun__image-wrapper_consumer" : "")     
       }>
         <img className={'gun__image'} src={props.image} alt="gun-img" draggable="false"/>
       </div>

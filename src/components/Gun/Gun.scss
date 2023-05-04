@@ -4,11 +4,9 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
   box-sizing: border-box;
-  position: relative;
-  
+  position: relative;  
   border: 0px solid white;
   transition: all 0.2s linear;
 
@@ -43,7 +41,6 @@
       border-left: 6px solid #B0C3D9;
     }
   }
-    
 
   &__image {
     margin: 0;

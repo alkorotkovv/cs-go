@@ -25,10 +25,13 @@ img {
 .type__regyms {
   margin: 0;
   padding: 0 33px;
-  min-height: 63px;
+  height: 63px;
   display: flex;
   gap: 28px;
   list-style-type: none;
+}
+.type__regyms_inventory {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .type__regym {
   margin: 0;
@@ -202,6 +205,7 @@ img {
 .regym__main_inventory {
   max-height: 856px;
   overflow-y: auto;
+  animation: soft-regym-show 0.2s linear forwards;
 }
 .regym__main_inventory::-webkit-scrollbar {
   width: 8px;
@@ -271,6 +275,14 @@ img {
     opacity: 1;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+@keyframes soft-regym-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 .select {
@@ -3163,7 +3175,7 @@ img {
 
 .inventory__header-item {
   margin: 0;
-  padding: 13px 8px;
+  padding: 10px 8px;
   display: flex;
   align-items: center;
   gap: 8px;

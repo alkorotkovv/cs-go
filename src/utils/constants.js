@@ -274,6 +274,10 @@ import Agent_Maximus from '../images/guns/Agent_Maximus.png';
 import AUG_Nefrit from '../images/guns/AUG_Nefrit.png';
 import DesertEagle_UrbanRubble from '../images/guns/DesertEagle_UrbanRubble.png';
 
+import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
+import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
+import Storage from '../images/guns/Storage.png';
+
 
 
 
@@ -1820,6 +1824,22 @@ export const inventoryArray = [
     type: "Pistol"
   },
   {
+    image: Sticker_VirtusPro2021,
+    weapon: "Наклейка",
+    name: "Virtus Pro | Стокгольм 2021",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Sticker"
+  },
+  {
+    image: Patch_Tyloo2021,
+    weapon: "Нашивка",
+    name: "Tyloo | Стокгольм 2021",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Patch"
+  },
+  {
     image: DesertEagle_Night,
     weapon: "Desert Eagle",
     name: "Ночь",
@@ -1834,5 +1854,39 @@ export const inventoryArray = [
     rarity: "Consumer",
     category: "Default",
     type: "Shotgun"
+  },
+  {
+    image: Storage,
+    weapon: "Хранилище",
+    name: "«1»",
+    rarity: "None",
+    category: "Default",
+    type: "Instrument"
   }
+]
+
+//Массив всевозможных значений type для предметов в инвентаре (пока не используется)
+export const typesArray = [
+  "Bomb",
+  "Knife",
+  "Pistol",
+  "PP",
+  "Rifle",
+  "Shotgun",
+  "Machinegun",
+  "Agent",
+  "Gloves",
+
+  "Patch",
+  "Sticker",
+  "Graffiti",
+  
+  "Case",
+  "Capsule",
+  "GraffitiCase",
+  "SouvenirCase",
+  "Instrument",
+
+  "Medal",
+  "Music"
 ]
