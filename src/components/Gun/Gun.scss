@@ -1,179 +1,92 @@
-.map {
+.gun {
   margin: 0;
   padding: 0;
-  display: flex;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
   box-sizing: border-box;
-  background-color: black;
   position: relative;
-  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+  
   border: 0px solid white;
   transition: all 0.2s linear;
 
-  &:hover &__logo {
-    scale: 1.02;
-  }
-
-  &:hover &__logo_checked {
-    scale: 1.2;
-  }
-  
-  &_checked {
-    border: 7px solid white;
-    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 1);
-  }
-
-  &_checked &__logo {
-      scale: 1.2;
-      opacity: 1;
-    }
-
-  &_checked  &__icon {
-      opacity: 1;
-    }
-
-  &_checked  &__title{
-      opacity: 1;
-    }
-    
-  &_checked  &__time {
-      opacity: 1;
-    }
-
-  &_checked  &__competitive {
-      opacity: 1;
-    } 
-    
-
-  &__logo {
+  &__image-wrapper {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 100%;
-    height: auto;
+    border-left: 6px solid #DED6CC;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+
+    &_red {
+      border-left: 6px solid #EB4B4B;
+    }
+
+    &_pink {
+      border-left: 6px solid #D32CE6;
+    }
+
+    &_purple {
+      border-left: 6px solid #8847FF;
+    }
+
+    &_blue {
+      border-left: 6px solid #4B69FF;
+    }
+
+    &_industrial {
+      border-left: 6px solid #5E98D9;
+    }
+
+    &_consumer {
+      border-left: 6px solid #B0C3D9;
+    }
+  }
+    
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 121px;
+    display: flex;
     box-sizing: border-box;
     object-fit: cover;
     object-position: center;
-    opacity: 0.5;
-    transition: all 0.2s linear;
-    
+    border: 1px solid #544D47;
+    border-left: none;
   }
 
-  &__icon {
+  &__weapon {
     margin: 0;
-    padding: 0;
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0.8;
-
-    &_visible {
-      display: flex;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    padding: 0;
-    max-width: 200px;
-    justify-content: center;
-    position: absolute;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 1px;
-    bottom: 45px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0.8;
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  &__time {
-    margin: 0;
-    padding: 0;
+    padding: 8px 0 0 0;
     width: 100%;
-    display: none;
-    gap: 12px;
-    box-sizing: border-box;
-    justify-content: center;
-    position: absolute;    
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0.8;
-
-    &_visible {
-      display: flex;
-    }
-  }
-
-  &__time-icon {
-    margin: 0;
-    padding: 0;
-    width: 12px;
-    height: 12px;
-  }
-
-  &__time-text {
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 1px;
-  }
-
-  &__checkbox {
-    margin: 0;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    box-sizing: border-box;
     display: flex;
-    border: 2px solid white;
-    border-radius: 5px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    color: white;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7));
 
-    &_visible {
-      background-image: url(../images/map_checkbox_icon.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 1;
-    }
-
-    &_unvisible {
-      opacity: 0;
-    }
   }
 
-  &__competitive {
+  &__name {
     margin: 0;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    box-sizing: border-box;
-    display: none;
-    border: 1px solid white;
-    border-radius: 5px;
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    opacity: 0.8;
+    padding: 2px 0 0 0;
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: white;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7));
+    
 
-    &_visible {
-      display: flex;
-    }
+    //text-overflow: ellipsis;
+    //white-space: nowrap;
+    //overflow: hidden;
   }
+
   
 }

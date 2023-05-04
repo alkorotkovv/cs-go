@@ -141,24 +141,3 @@
   }
 
 }
-
-.maps {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: grid;
-  box-sizing: border-box;
-  justify-content: center;
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        // цвет дорожки 
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    // цвет плашки 
-    border-radius: 2px;       // закругления плашки 
-  }
-}

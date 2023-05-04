@@ -41,6 +41,18 @@
 
     &_inventory {
       max-height: 856px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;        /* цвет дорожки */
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #B6ADAE;    /* цвет плашки */
+        border-radius: 2px;       /* закругления плашки */
+      }
     }
   }
 
@@ -76,6 +88,28 @@
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+//Оболочка для отступов карт и оружия
+.maps .guns {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        // цвет дорожки 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    // цвет плашки 
+    border-radius: 2px;       // закругления плашки 
+  }
 }
 
 @keyframes soft-regym-switch {

@@ -1,6 +1,6 @@
 import React  from 'react';
 import Select from '../../../Select/Select';
-import { gunsArray } from '../../../../utils/constants';
+import { inventoryArray } from '../../../../utils/constants';
 import Gun from '../../../Gun/Gun';
 
 function All(props) {
@@ -72,17 +72,23 @@ function All(props) {
       <div className='type__main'>
         <div className='regym__main-wrapper'>
           <div className='regym__main regym__main_inventory'>
-            <ul className="regym__guns">
-              {
-                gunsArray.map((element, index) => 
-                  <Gun 
-                    image={element.image}
-                    weapon={element.weapon}
-                    name={element.name}
-                  />
-                )
-              }  
-            </ul>
+            <div className='guns'>
+              <ul className="regym__guns">
+                {
+                  inventoryArray.map((element, index) => 
+                    <Gun 
+                      key={index}
+                      image={element.image}
+                      weapon={element.weapon}
+                      name={element.name}
+                      rarity={element.rarity}
+                      category={element.category}
+                      type={element.type}
+                    />
+                  )
+                }  
+              </ul>
+            </div>
           </div>
         </div>
       </div>

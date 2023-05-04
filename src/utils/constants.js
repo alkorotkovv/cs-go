@@ -238,13 +238,42 @@ import config from '../images/maps/workshop/config.jpg';
 import hub from '../images/maps/workshop/hub.jpg';
 
 //Оружия
-import SawedOff_ForestDDPAT from '../images/guns/SawedOff_ForestDDPAT.png';
+import MotoGloves_Boom from '../images/guns/MotoGloves_Boom.png';
 import ButterflyKnife_Slaughter from '../images/guns/ButterflyKnife_Slaughter.png';
+import AK47_EliteMuseum from '../images/guns/AK47_EliteMuseum.png';
 import Glock18_GammaDoppler from '../images/guns/Glock18_GammaDoppler.png';
 import DesertEagle_Conspiracy from '../images/guns/DesertEagle_Conspiracy.png';
 import DesertEagle_Ermungand from '../images/guns/DesertEagle_Ermungand.png';
 import P250_BengalTiger from '../images/guns/P250_BengalTiger.png';
 import DesertEagle_Night from '../images/guns/DesertEagle_Night.png';
+import SawedOff_ForestDDPAT from '../images/guns/SawedOff_ForestDDPAT.png';
+import Medal_Stockholm from '../images/guns/Medal_Stockholm.png';
+import Medal_BrokenFang from '../images/guns/Medal_BrokenFang.png';
+import Medal_Riptide from '../images/guns/Medal_Riptide.png';
+import Medal_Rio from '../images/guns/Medal_Rio.png';
+import Medal_Antwerp from '../images/guns/Medal_Antwerp.png';
+import Medal_Loyalty from '../images/guns/Medal_Loyalty.png';
+import Medal_2017 from '../images/guns/Medal_2017.png';
+import Medal_2018 from '../images/guns/Medal_2018.png';
+import Medal_2019 from '../images/guns/Medal_2019.png';
+import Medal_2020 from '../images/guns/Medal_2020.png';
+import Medal_2021 from '../images/guns/Medal_2021.png';
+import Medal_2022 from '../images/guns/Medal_2022.png';
+import Medal_2023 from '../images/guns/Medal_2023.png';
+import Medal_Birthday from '../images/guns/Medal_Birthday.png';
+import Medal_5years from '../images/guns/Medal_5years.png';
+import M4A4_Hellfire from '../images/guns/M4A4_Hellfire.png';
+import MAC10_Propaganda from '../images/guns/MAC10_Propaganda.png';
+import DesertEagle_CrimsonWeb from '../images/guns/DesertEagle_CrimsonWeb.png';
+import DesertEagle_Heirloom from '../images/guns/DesertEagle_Heirloom.png';
+import DesertEagle_Pilot from '../images/guns/DesertEagle_Pilot.png';
+import FiveSeven_BoostProtocol from '../images/guns/FiveSeven_BoostProtocol.png';
+import USP_OrangeAnolis from '../images/guns/USP_OrangeAnolis.png';
+import Galil_Phoenix from '../images/guns/Galil_Phoenix.png';
+import Agent_Maximus from '../images/guns/Agent_Maximus.png';
+import AUG_Nefrit from '../images/guns/AUG_Nefrit.png';
+import DesertEagle_UrbanRubble from '../images/guns/DesertEagle_UrbanRubble.png';
+
 
 
 
@@ -1522,14 +1551,30 @@ export const zoneFriendsArray = [
 
 
 //Массив оружий
-export const gunsArray = [
+export const inventoryArray = [
+  {
+    image: MotoGloves_Boom,
+    weapon: "Мотоциклетные перчатки",
+    name: "БУХ!",
+    rarity: "Covert",
+    category: "Star",
+    type: "Gloves"
+  },
   {
     image: ButterflyKnife_Slaughter,
     weapon: "Нож бабочка",
     name: "Убийство",
-    rarity: "Knives",
+    rarity: "Covert",
     category: "Star",
     type: "Knife"
+  },
+  {
+    image: AK47_EliteMuseum,
+    weapon: "AK-47",
+    name: "Музей элиты",
+    rarity: "Covert",
+    category: "Default",
+    type: "Rifle"
   },
   {
     image: Glock18_GammaDoppler,
@@ -1540,12 +1585,148 @@ export const gunsArray = [
     type: "Pistol"
   },
   {
+    image: Medal_Stockholm,
+    weapon: "Бриллиантовая монета PGL Major Stockholm 2021",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_BrokenFang,
+    weapon: "Бриллиантовая монета операции «Сломанный клык»",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_Riptide,
+    weapon: "Бриллиантовая монета операции «Хищные воды»",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_Rio,
+    weapon: "Золотая монета IEM Rio Major 2022",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_Antwerp,
+    weapon: "Золотая монета PGL Major Antwerp 2022",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_Loyalty,
+    weapon: "Медаль за верность",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2017,
+    weapon: "Медаль за службу в 2017",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2018,
+    weapon: "Медаль за службу в 2018",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2019,
+    weapon: "Медаль за службу в 2019",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2020,
+    weapon: "Медаль за службу в 2020",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2021,
+    weapon: "Медаль за службу в 2021",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2022,
+    weapon: "Медаль за службу в 2022",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_2023,
+    weapon: "Медаль за службу в 2023",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_Birthday,
+    weapon: "Монета десятилетнего юбилея",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
+    image: Medal_5years,
+    weapon: "Монета за 5 лет службы",
+    name: "",
+    rarity: "Covert",
+    category: "Default",
+    type: "Medal"
+  },
+  {
     image: DesertEagle_Conspiracy,
     weapon: "Desert Eagle",
     name: "Заговор",
     rarity: "Classified",
     category: "Default",
     type: "Pistol"
+  },
+  {
+    image: M4A4_Hellfire,
+    weapon: "M4A4",
+    name: "Адское пламя",
+    rarity: "Classified",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: MAC10_Propaganda,
+    weapon: "MAC-10",
+    name: "Пропаганда",
+    rarity: "Classified",
+    category: "Default",
+    type: "PP"
   },
   {
     image: DesertEagle_Ermungand,
@@ -1555,6 +1736,81 @@ export const gunsArray = [
     category: "Default",
     type: "Pistol"
   },
+  {
+    image: DesertEagle_CrimsonWeb,
+    weapon: "Desert Eagle",
+    name: "Кровавая паутина",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Heirloom,
+    weapon: "Desert Eagle",
+    name: "Наследие",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: DesertEagle_Pilot,
+    weapon: "Desert Eagle",
+    name: "Пилот",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: FiveSeven_BoostProtocol,
+    weapon: "Five-SeveN",
+    name: "Протокол «Подъём»",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: USP_OrangeAnolis,
+    weapon: "USP-S",
+    name: "Оранжевый анолис",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Pistol"
+  },
+  {
+    image: Galil_Phoenix,
+    weapon: "Автомат «Галиль»",
+    name: "Негатив «Феникса»",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: Agent_Maximus,
+    weapon: "Максимус",
+    name: "Кавалерия",
+    rarity: "Restricted",
+    category: "Default",
+    type: "Agent"
+  },
+  {
+    image: AUG_Nefrit,
+    weapon: "AUG",
+    name: "Резной нефрит",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Rifle"
+  },
+  {
+    image: DesertEagle_UrbanRubble,
+    weapon: "Desert Eagle",
+    name: "Городской щебень",
+    rarity: "Mil-Spec",
+    category: "Default",
+    type: "Pistol"
+  },
+
+
+
   {
     image: P250_BengalTiger,
     weapon: "P250",
