@@ -1,5 +1,6 @@
 import React  from 'react';
 import Select from '../../../Select/Select';
+import { gunsArray } from '../../../../utils/constants';
 
 function All(props) {
 
@@ -68,7 +69,21 @@ function All(props) {
         </div>
       </ul>
       <div className='type__main'>
-        ВСЁ
+        <div className='regym__main-wrapper'>
+          <div className='regym__main regym__main_all'>
+            <ul className="regym__guns regym__guns_all">
+              {
+                gunsArray.map((element, index) => 
+                <li className='gun'>
+                  <img className={'gun__image'} src={element.image} alt="gun-img" draggable="false"/>
+                  <p className='gun__weapon'>{element.weapon}</p>
+                  <p className='gun__name'>{element.name}</p>
+                </li>
+                )
+              }  
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
