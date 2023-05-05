@@ -17,6 +17,7 @@ function Gun(props) {
     gunRef.current.contains(evt.target) && !isMenuOpen ? setIsMenuOpen(true) : setIsMenuOpen(false)
   }
 
+  //Обработчики клика по опциям в меню
   function handleOptionClick() {
     console.log("Осмотреть")
   }

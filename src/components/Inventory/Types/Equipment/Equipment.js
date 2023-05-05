@@ -9,8 +9,6 @@ function Equipment(props) {
   const [sortArray, setSortArray] = React.useState(array);
   const [sortType, setSortType] = React.useState("По качеству");
 
-
-
   const [isAll, setIsAll] = React.useState(true);
   const [isMelee, setIsMelee] = React.useState(false);
   const [isPistol, setIsPistol] = React.useState(false);
@@ -39,8 +37,7 @@ function Equipment(props) {
 
   //Обработчики режимов игры
   function handleAllClick() {
-   setArray(props.array
-      .filter((e) => (
+   setArray(props.array.filter((e) => (
       e.type === "Bomb" || 
       e.type === "Knife" || 
       e.type === "Pistol" || 

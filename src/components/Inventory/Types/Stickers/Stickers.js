@@ -6,15 +6,33 @@ import Gun from '../../../Gun/Gun';
 function Stickers(props) {
 
   const [array, setArray] = React.useState(props.array);
+  const [sortArray, setSortArray] = React.useState(array);
+  const [sortType, setSortType] = React.useState("По качеству");
 
   const [isAll, setIsAll] = React.useState(true)
   const [isPatch, setIsPatch] = React.useState(false);
   const [isSticker, setIsSticker] = React.useState(false);
   const [isGraffiti, setIsGraffiti] = React.useState(false);
 
+  React.useEffect(() => {
+    switch (sortType) {
+      case "По качеству":
+        setSortArray(array);
+        break;
+      case "По новизне":
+        setSortArray(array.slice().sort((a, b) => {return new Date(b.date) - new Date(a.date)}));
+        break;
+      case "По алфавиту":
+        setSortArray(array.slice().sort((a, b) => a.weapon + a.name > b.weapon + b.name? 1 : -1));
+        break;
+      default:
+        setSortArray(array);
+    }
+  }, [array, sortType])
+
   //Обработчики режимов игры
   function handleAllClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Sticker" || 
       e.type === "Patch" || 
       e.type === "Graffiti")));
@@ -25,7 +43,7 @@ function Stickers(props) {
   }
 
   function handlePatchClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Patch")));
     setIsAll(false);
     setIsPatch(true);
@@ -34,7 +52,7 @@ function Stickers(props) {
   }
 
   function handleStickerClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Sticker")));
     setIsAll(false);
     setIsPatch(false);
@@ -43,7 +61,7 @@ function Stickers(props) {
   }
 
   function handleGraffitiClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Graffiti")));
     setIsAll(false);
     setIsPatch(false);
@@ -67,42 +85,42 @@ function Stickers(props) {
                 name: "По новизне",
                 titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По качеству", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По алфавиту", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По ячейке", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По коллекции", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По использованию", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               }
             ]}
@@ -118,7 +136,7 @@ function Stickers(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  array.map((element, index) => 
+                  sortArray.map((element, index) => 
                     <Gun 
                       key={index}
                       object={element}

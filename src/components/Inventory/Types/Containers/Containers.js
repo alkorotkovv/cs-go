@@ -6,6 +6,8 @@ import Gun from '../../../Gun/Gun';
 function Containers(props) {
 
   const [array, setArray] = React.useState(props.array);
+  const [sortArray, setSortArray] = React.useState(array);
+  const [sortType, setSortType] = React.useState("По качеству");
 
   const [isAll, setIsAll] = React.useState(true)
   const [isWeapon, setIsWeapon] = React.useState(false);
@@ -14,9 +16,25 @@ function Containers(props) {
   const [isSouvenir, setIsSouvenir] = React.useState(false);
   const [isInstrument, setIsInstrument] = React.useState(false);
 
+  React.useEffect(() => {
+    switch (sortType) {
+      case "По качеству":
+        setSortArray(array);
+        break;
+      case "По новизне":
+        setSortArray(array.slice().sort((a, b) => {return new Date(b.date) - new Date(a.date)}));
+        break;
+      case "По алфавиту":
+        setSortArray(array.slice().sort((a, b) => a.weapon + a.name > b.weapon + b.name? 1 : -1));
+        break;
+      default:
+        setSortArray(array);
+    }
+  }, [array, sortType])
+
   //Обработчики режимов игры
   function handleAllClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Case" || 
       e.type === "Capsule" || 
       e.type === "GraffitiCase" || 
@@ -31,7 +49,7 @@ function Containers(props) {
   }
 
   function handleWeaponClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Case")));
     setIsAll(false);
     setIsWeapon(true);
@@ -42,7 +60,7 @@ function Containers(props) {
   }
 
   function handleStickerClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Capsule")));
     setIsAll(false);
     setIsWeapon(false);
@@ -53,7 +71,7 @@ function Containers(props) {
   }
 
   function handleGraffitiClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "GraffitiCase")));
     setIsAll(false);
     setIsWeapon(false);
@@ -64,7 +82,7 @@ function Containers(props) {
   }
 
   function handleSouvenirClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "SouvenirCase")));
     setIsAll(false);
     setIsWeapon(false);
@@ -75,7 +93,7 @@ function Containers(props) {
   }
 
   function handleInstrumentClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Instrument")));
     setIsAll(false);
     setIsWeapon(false);
@@ -103,42 +121,42 @@ function Containers(props) {
                 name: "По новизне",
                 titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По качеству", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По алфавиту", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По ячейке", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По коллекции", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По использованию", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               }
             ]}
@@ -154,7 +172,7 @@ function Containers(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  array.map((element, index) => 
+                  sortArray.map((element, index) => 
                     <Gun 
                       key={index}
                       object={element}
