@@ -51,6 +51,19 @@ function Gun(props) {
           </li>
           <li className={"gun__option" + 
             ((
+              props.object.type === "Agent" || 
+              props.object.type === "Medal" || 
+              props.object.type === "Music") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Просмотреть ячейку инвентаря</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type === "Medal" && 
+              !props.object.isCT) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Отображать этот предмет</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
               props.object.type !== "Bomb" && 
               props.object.type !== "Instrument" && 
               props.object.type !== "Music" &&
@@ -110,6 +123,12 @@ function Gun(props) {
           </li>
           <li className={"gun__option" + 
             ((
+              props.object.type === "Agent" || 
+              props.object.type === "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Нанести нашивку</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
               props.object.type !== "Gloves" && 
               props.object.type !== "Knife" && 
               props.object.type !== "Bomb" && 
@@ -117,7 +136,6 @@ function Gun(props) {
               props.object.type !== "Music" &&
               props.object.type !== "Agent" &&
               props.object.type !== "Medal" &&
-              props.object.type !== "Sticker" &&
               props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
             <p className='gun__option-text'>Нанести наклейку</p>
           </li>
