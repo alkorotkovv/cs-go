@@ -1619,7 +1619,9 @@ export const inventoryArray = [
     type: "Gloves",
     date: new Date("2023-02-26"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     id: 2,
@@ -1631,7 +1633,9 @@ export const inventoryArray = [
     type: "Knife",
     date: new Date("2023-02-24"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     id: 3,
@@ -1643,7 +1647,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2023-03-26"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     id: 4,
@@ -1655,7 +1661,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-02-26"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     id: 5,
@@ -1667,7 +1675,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2021-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 6,
@@ -1679,7 +1689,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2021-02-24"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 7,
@@ -1691,7 +1703,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2022-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 8,
@@ -1703,7 +1717,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2022-11-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 9,
@@ -1715,7 +1731,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2022-05-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 10,
@@ -1727,7 +1745,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2020-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 11,
@@ -1739,7 +1759,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2017-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 12,
@@ -1751,7 +1773,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2018-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     id: 13,
@@ -1763,7 +1787,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2019-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_2020,
@@ -1774,7 +1800,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2020-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_2021,
@@ -1785,7 +1813,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2021-02-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_2022,
@@ -1796,7 +1826,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2022-02-20"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_2023,
@@ -1807,7 +1839,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2023-02-20"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_Birthday,
@@ -1818,7 +1852,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2022-11-21"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Medal_5years,
@@ -1829,7 +1865,9 @@ export const inventoryArray = [
     type: "Medal",
     date: new Date("2021-04-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: DesertEagle_Conspiracy,
@@ -1840,7 +1878,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2021-03-27"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: M4A4_Hellfire,
@@ -1851,7 +1891,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2023-04-20"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: MAC10_Propaganda,
@@ -1862,7 +1904,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2022-06-26"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: DesertEagle_Ermungand,
@@ -1873,7 +1917,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-11-26"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_CrimsonWeb,
@@ -1884,7 +1930,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2023-04-19"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_Heirloom,
@@ -1895,7 +1943,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-11-21"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_Pilot,
@@ -1906,7 +1956,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2023-11-25"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: FiveSeven_BoostProtocol,
@@ -1917,7 +1969,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2023-05-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: USP_OrangeAnolis,
@@ -1928,7 +1982,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-06-27"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: Galil_Phoenix,
@@ -1939,7 +1995,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2023-05-04"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Agent_Maximus,
@@ -1950,7 +2008,9 @@ export const inventoryArray = [
     type: "Agent",
     date: new Date("2022-11-27"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: AUG_Nefrit,
@@ -1961,7 +2021,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2022-05-20"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: DesertEagle_UrbanRubble,
@@ -1972,7 +2034,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-10-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_NightHeist,
@@ -1983,7 +2047,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2021-09-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_Corinfian,
@@ -1994,7 +2060,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2023-03-12"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_Sputnik,
@@ -2005,7 +2073,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2021-04-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: MP9_HotRoad,
@@ -2016,7 +2086,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2022-09-26"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: P250_BengalTiger,
@@ -2027,7 +2099,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-08-26"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: Tec9_Aizec,
@@ -2038,7 +2112,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2023-04-22"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Sticker_VirtusPro2021,
@@ -2049,7 +2125,9 @@ export const inventoryArray = [
     type: "Sticker",
     date: new Date("2021-04-16"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: false
   },
   {
     image: Patch_Tyloo2021,
@@ -2060,7 +2138,9 @@ export const inventoryArray = [
     type: "Patch",
     date: new Date("2021-04-17"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: false
   },
   {
     image: DesertEagle_Bronze,
@@ -2071,7 +2151,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-07-26"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_NightStorm,
@@ -2082,7 +2164,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-11-28"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_Night,
@@ -2093,7 +2177,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-11-27"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle_UrbanDDPAT,
@@ -2104,7 +2190,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2022-06-22"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: SawedOff_ForestDDPAT,
@@ -2115,7 +2203,9 @@ export const inventoryArray = [
     type: "Shotgun",
     date: new Date("2021-01-11"),
     isT: true,
-    isCT: true
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Storage,
@@ -2126,7 +2216,9 @@ export const inventoryArray = [
     type: "Instrument",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: false
   },
   {
     image: AK47,
@@ -2137,7 +2229,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: AUG,
@@ -2148,7 +2242,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: AWP,
@@ -2159,7 +2255,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: CZ75,
@@ -2170,7 +2268,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DesertEagle,
@@ -2181,7 +2281,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: DualBerettas,
@@ -2192,7 +2294,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: FAMAS,
@@ -2203,7 +2307,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: FiveSeveN,
@@ -2214,7 +2320,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: G3SG1,
@@ -2224,8 +2332,10 @@ export const inventoryArray = [
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
-    isT: false,
-    isCT: true
+    isT: true,
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Glock18,
@@ -2236,7 +2346,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: M249,
@@ -2247,7 +2359,9 @@ export const inventoryArray = [
     type: "Machinegun",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: M4A1S,
@@ -2258,7 +2372,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: M4A4,
@@ -2269,7 +2385,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: MAC10,
@@ -2280,7 +2398,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: MAG7,
@@ -2290,8 +2410,10 @@ export const inventoryArray = [
     category: "Default",
     type: "Shotgun",
     date: new Date("2012-01-01"),
-    isT: true,
-    isCT: true
+    isT: false,
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: MP5,
@@ -2302,7 +2424,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: MP7,
@@ -2313,7 +2437,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: MP9,
@@ -2324,7 +2450,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Nova,
@@ -2335,7 +2463,9 @@ export const inventoryArray = [
     type: "Shotgun",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: P2000,
@@ -2346,7 +2476,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: P250,
@@ -2357,7 +2489,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: P90,
@@ -2368,7 +2502,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: Scar,
@@ -2379,7 +2515,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: SG,
@@ -2390,7 +2528,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: SSG,
@@ -2401,7 +2541,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: SawedOff,
@@ -2412,7 +2554,9 @@ export const inventoryArray = [
     type: "Shotgun",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Tec9,
@@ -2423,7 +2567,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: UMP,
@@ -2434,7 +2580,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: USP,
@@ -2445,7 +2593,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: XM1014,
@@ -2456,7 +2606,9 @@ export const inventoryArray = [
     type: "Shotgun",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: Zeus,
@@ -2467,7 +2619,9 @@ export const inventoryArray = [
     type: "Zeus",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: Galil,
@@ -2478,7 +2632,9 @@ export const inventoryArray = [
     type: "Rifle",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: C4,
@@ -2489,7 +2645,9 @@ export const inventoryArray = [
     type: "Bomb",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Contract,
@@ -2500,7 +2658,9 @@ export const inventoryArray = [
     type: "Contract",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: false
   },
   {
     image: Agent_CT,
@@ -2511,7 +2671,9 @@ export const inventoryArray = [
     type: "Agent",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: true
+    isCT: true,
+    canT: false,
+    canCT: true
   },
   {
     image: Agent_T,
@@ -2522,7 +2684,9 @@ export const inventoryArray = [
     type: "Agent",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Music,
@@ -2533,7 +2697,9 @@ export const inventoryArray = [
     type: "Music",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Negev,
@@ -2544,7 +2710,9 @@ export const inventoryArray = [
     type: "Machinegun",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: Knife_CT,
@@ -2555,7 +2723,9 @@ export const inventoryArray = [
     type: "Knife",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Knife_T,
@@ -2566,7 +2736,9 @@ export const inventoryArray = [
     type: "Knife",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
   {
     image: Bizon,
@@ -2577,7 +2749,9 @@ export const inventoryArray = [
     type: "PP",
     date: new Date("2012-01-01"),
     isT: true,
-    isCT: true
+    isCT: true,
+    canT: true,
+    canCT: true
   },
   {
     image: R8,
@@ -2588,7 +2762,9 @@ export const inventoryArray = [
     type: "Pistol",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: true
   },
   {
     image: Gloves_CT,
@@ -2599,7 +2775,9 @@ export const inventoryArray = [
     type: "Gloves",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: false,
+    canCT: true
   },
   {
     image: Gloves_T,
@@ -2610,7 +2788,9 @@ export const inventoryArray = [
     type: "Gloves",
     date: new Date("2012-01-01"),
     isT: false,
-    isCT: false
+    isCT: false,
+    canT: true,
+    canCT: false
   },
 
 ]
