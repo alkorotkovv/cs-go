@@ -57,6 +57,8 @@ function Gun(props) {
               props.object.type !== "Medal" &&
               props.object.type !== "Patch" &&
               props.object.type !== "Sticker" &&
+              props.object.canCT && 
+              props.object.canT && 
               !props.object.isCT &&
               !props.object.isT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
             <p className='gun__option-text'>Заменить для обеих команд</p>
@@ -69,6 +71,7 @@ function Gun(props) {
               props.object.type !== "Medal" &&
               props.object.type !== "Patch" &&
               props.object.type !== "Sticker" &&
+              props.object.canCT && 
               !props.object.isCT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
             <p className='gun__option-text'>Заменить для спецназа</p>
           </li>
@@ -80,6 +83,7 @@ function Gun(props) {
               props.object.type !== "Medal" &&
               props.object.type !== "Patch" &&
               props.object.type !== "Sticker" &&
+              props.object.canT && 
               !props.object.isT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
             <p className='gun__option-text'>Заменить для террористов</p>
           </li>
