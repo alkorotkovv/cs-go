@@ -5,10 +5,7 @@ import Gun from '../../../Gun/Gun';
 
 function Stickers(props) {
 
-  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
-    e.type === "Sticker" || 
-    e.type === "Patch" || 
-    e.type === "Graffiti")));
+  const [array, setArray] = React.useState(props.array);
 
   const [isAll, setIsAll] = React.useState(true)
   const [isPatch, setIsPatch] = React.useState(false);
@@ -64,7 +61,7 @@ function Stickers(props) {
         <li className={"type__regym" + (isGraffiti ? " type__regym_active" : " ")} onClick={handleGraffitiClick}><p className='type__regym-text'>Граффити</p></li>
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="sort-stickers"
             options={[
               {
                 name: "По новизне",
@@ -109,6 +106,7 @@ function Stickers(props) {
                 }
               }
             ]}
+            title="По качеству"
             minwidth="164px"
             isBackground={false}
           />

@@ -5,12 +5,7 @@ import Gun from '../../../Gun/Gun';
 
 function Containers(props) {
 
-  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
-    e.type === "Case" || 
-    e.type === "Capsule" || 
-    e.type === "GraffitiCase" || 
-    e.type === "SouvenirCase" || 
-    e.type === "Instrument")));
+  const [array, setArray] = React.useState(props.array);
 
   const [isAll, setIsAll] = React.useState(true)
   const [isWeapon, setIsWeapon] = React.useState(false);
@@ -102,7 +97,7 @@ function Containers(props) {
         <li className={"type__regym" + (isInstrument ? " type__regym_active" : " ")} onClick={handleInstrumentClick}><p className='type__regym-text'>Инструменты</p></li>
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="sort-containers"
             options={[
               {
                 name: "По новизне",
@@ -147,6 +142,7 @@ function Containers(props) {
                 }
               }
             ]}
+            title="По качеству"
             minwidth="164px"
             isBackground={false}
           />

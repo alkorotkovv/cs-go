@@ -5,9 +5,7 @@ import Gun from '../../../Gun/Gun';
 
 function Trophies(props) {
 
-  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
-    e.type === "Medal" || 
-    e.type === "Music")));
+  const [array, setArray] = React.useState(props.array);
 
   const [isAll, setIsAll] = React.useState(true)
   const [isMedal, setIsMedal] = React.useState(false);
@@ -15,16 +13,14 @@ function Trophies(props) {
 
   //Обработчики режимов игры
   function handleAllClick() {
-    setArray(inventoryArray.filter((e) => (
-      e.type === "Medal" || 
-      e.type === "Music")));
+    setArray(props.array);
     setIsAll(true);
     setIsMedal(false);
     setIsMusic(false);
   }
 
   function handleMedalClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Medal")));
     setIsAll(false);
     setIsMedal(true);
@@ -32,7 +28,7 @@ function Trophies(props) {
   }
 
   function handleMusicClick() {
-    setArray(inventoryArray.filter((e) => ( 
+    setArray(props.array.filter((e) => ( 
       e.type === "Music")));
     setIsAll(false);
     setIsMedal(false);
@@ -49,13 +45,15 @@ function Trophies(props) {
         <li className={"type__regym" + (isMusic ? " type__regym_active" : " ")} onClick={handleMusicClick}><p className='type__regym-text'>Наборы музыки</p></li>
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="sort-trophies"
             options={[
               {
                 name: "По новизне",
                 titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  
+                  setArray(array.sort(function(a,b) {
+                     return new Date(b.date) - new Date(a.date);
+                  }))
                 }
               },
               {
@@ -94,6 +92,7 @@ function Trophies(props) {
                 }
               }
             ]}
+            title="По качеству"
             minwidth="164px"
             isBackground={false}
           />

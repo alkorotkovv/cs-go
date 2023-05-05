@@ -6,7 +6,7 @@ function Select(props) {
   let select = React.useRef("");
 
   const [isOpen, setIsOpen] = React.useState(false);
-  const [title, setTitle] = React.useState(props.options[0].name);
+  const [title, setTitle] = React.useState(props.title || props.options[0].name);
 
   React.useEffect(() => {    
     select.current.style.cssText = `--minwidth: ${props.minwidth} `

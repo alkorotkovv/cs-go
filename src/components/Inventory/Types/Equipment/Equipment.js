@@ -5,17 +5,11 @@ import Gun from '../../../Gun/Gun';
 
 function Equipment(props) {
 
-  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
-    e.type === "Bomb" || 
-    e.type === "Knife" || 
-    e.type === "Pistol" || 
-    e.type === "PP" || 
-    e.type === "Rifle" || 
-    e.type === "Shotgun" || 
-    e.type === "Machinegun" || 
-    e.type === "Agent" ||
-    e.type === "Gloves" ||
-    e.type === "Music")));
+  const [array, setArray] = React.useState(props.array);
+  const [sortArray, setSortArray] = React.useState(array);
+  const [sortType, setSortType] = React.useState("По качеству");
+
+
 
   const [isAll, setIsAll] = React.useState(true);
   const [isMelee, setIsMelee] = React.useState(false);
@@ -27,9 +21,26 @@ function Equipment(props) {
   const [isGlove, setIsGlove] = React.useState(false);
   const [isMusic, setIsMusic] = React.useState(false);
 
+  React.useEffect(() => {
+    switch (sortType) {
+      case "По качеству":
+        setSortArray(array);
+        break;
+      case "По новизне":
+        setSortArray(array.slice().sort((a, b) => {return new Date(b.date) - new Date(a.date)}));
+        break;
+      case "По алфавиту":
+        setSortArray(array.slice().sort((a, b) => a.weapon + a.name > b.weapon + b.name? 1 : -1));
+        break;
+      default:
+        setSortArray(array);
+    }
+  }, [array, sortType])
+
   //Обработчики режимов игры
   function handleAllClick() {
-    setArray(inventoryArray.filter((e) => (
+   setArray(props.array
+      .filter((e) => (
       e.type === "Bomb" || 
       e.type === "Knife" || 
       e.type === "Pistol" || 
@@ -39,7 +50,7 @@ function Equipment(props) {
       e.type === "Machinegun" || 
       e.type === "Agent" ||
       e.type === "Gloves" ||
-      e.type === "Music")));
+      e.type === "Music")))
     setIsAll(true);
     setIsMelee(false);
     setIsPistol(false);
@@ -52,7 +63,7 @@ function Equipment(props) {
   }
 
   function handleMeleeClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Bomb" || 
       e.type === "Knife" )));
     setIsAll(false);
@@ -67,7 +78,7 @@ function Equipment(props) {
   }
 
   function handlePistolClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Pistol" )));
     setIsAll(false);
     setIsMelee(false);
@@ -81,7 +92,7 @@ function Equipment(props) {
   }
 
   function handlePPClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "PP" )));
     setIsAll(false);
     setIsMelee(false);
@@ -95,7 +106,7 @@ function Equipment(props) {
   }
 
   function handleRifleClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Rifle" )));
     setIsAll(false);
     setIsMelee(false);
@@ -109,7 +120,7 @@ function Equipment(props) {
   }
 
   function handleHeavyClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Shotgun" || 
       e.type === "Machinegun" )));
     setIsAll(false);
@@ -124,7 +135,7 @@ function Equipment(props) {
   }
 
   function handleAgentClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Agent" )));
     setIsAll(false);
     setIsMelee(false);
@@ -138,7 +149,7 @@ function Equipment(props) {
   }
 
   function handleGloveClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Gloves" )));
     setIsAll(false);
     setIsMelee(false);
@@ -152,7 +163,7 @@ function Equipment(props) {
   }
 
   function handleMusicClick() {
-    setArray(inventoryArray.filter((e) => (
+    setArray(props.array.filter((e) => (
       e.type === "Music" )));
     setIsAll(false);
     setIsMelee(false);
@@ -180,51 +191,52 @@ function Equipment(props) {
         <li className={"type__regym" + (isMusic ? " type__regym_active" : " ")} onClick={handleMusicClick}><p className='type__regym-text'>Набор музыки</p></li>
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="sort-equipment"
             options={[
               {
                 name: "По новизне",
                 titled: true,         //Параметр указывает устанавливать ли текст опции в заголовок селекта
                 handle: (arg) => {    //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
-                  
+                   setSortType(arg.name)
                 }
               },
               {
                 name: "По качеству", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По алфавиту", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По ячейке", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По коллекции", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               },
               {
                 name: "По использованию", 
                 titled: true,
                 handle: (arg) => {
-                  
+                  setSortType(arg.name)
                 }
               }
             ]}
+            title="По качеству"
             minwidth="164px"
             isBackground={false}
           />
@@ -236,7 +248,7 @@ function Equipment(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  array.map((element, index) => 
+                  sortArray.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}

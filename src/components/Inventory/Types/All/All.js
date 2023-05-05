@@ -19,7 +19,7 @@ function All(props) {
         <li className={"type__regym" + (isAll ? " type__regym_active" : " ")} onClick={handleAllClick}><p className='type__regym-text'>Все</p></li>
         <div className='type__select'>
           <Select 
-            class="bots"
+            class="sort-all"
             options={[
               {
                 name: "По новизне",
@@ -64,6 +64,7 @@ function All(props) {
                 }
               }
             ]}
+            title="По качеству"
             minwidth="164px"
             isBackground={false}
           />
@@ -75,7 +76,7 @@ function All(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.map((element, index) => 
+                  props.array.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}

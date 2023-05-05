@@ -10,7 +10,11 @@ import Stickers from './Types/Stickers/Stickers';
 import Containers from './Types/Containers/Containers';
 import Trophies from './Types/Trophies/Trophies';
 
+import { inventoryArray } from '../../utils/constants';
+
 function Inventory(props) {
+
+  const [array, setArray] = React.useState(inventoryArray);
 
   const [isAll, setIsAll] = React.useState(true)
   const [isEquipment, setIsEquipment] = React.useState(false)
@@ -22,12 +26,13 @@ function Inventory(props) {
     <Panel title={"ИНВЕНТАРЬ"} name="inventory" isVisible={props.isVisible}>
       <div className='panel__header'>
         <Select 
-          class="play"
+          class="inventory"
           options={[
             {
               name:"Всё",
               titled: true,           //Параметр указывает устанавливать ли текст опции в заголовок селекта
               handle: (arg) => {      //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                setArray(inventoryArray)
                 setIsAll(true);
                 setIsEquipment(false);
                 setIsStickers(false);
@@ -39,6 +44,17 @@ function Inventory(props) {
               name: "Экипировка",
               titled: true,
               handle: (arg) => {
+                setArray(inventoryArray.filter((e) => (
+                  e.type === "Bomb" || 
+                  e.type === "Knife" || 
+                  e.type === "Pistol" || 
+                  e.type === "PP" || 
+                  e.type === "Rifle" || 
+                  e.type === "Shotgun" || 
+                  e.type === "Machinegun" || 
+                  e.type === "Agent" ||
+                  e.type === "Gloves" ||
+                  e.type === "Music")))
                 setIsAll(false);
                 setIsEquipment(true);
                 setIsStickers(false);
@@ -50,6 +66,10 @@ function Inventory(props) {
               name: "Наклейки, граффити и нашивки",
               titled: true,
               handle: (arg) => {
+                setArray(inventoryArray.filter((e) => (
+                  e.type === "Sticker" || 
+                  e.type === "Patch" || 
+                  e.type === "Graffiti")));
                 setIsAll(false);
                 setIsEquipment(false);
                 setIsStickers(true);
@@ -61,6 +81,12 @@ function Inventory(props) {
               name: "Контейнеры и другое",
               titled: true,
               handle: (arg) => {
+                setArray(inventoryArray.filter((e) => (
+                  e.type === "Case" || 
+                  e.type === "Capsule" || 
+                  e.type === "GraffitiCase" || 
+                  e.type === "SouvenirCase" || 
+                  e.type === "Instrument")));
                 setIsAll(false);
                 setIsEquipment(false);
                 setIsStickers(false);
@@ -72,6 +98,9 @@ function Inventory(props) {
               name: "Трофеи",
               titled: true,
               handle: (arg) => {
+                setArray(inventoryArray.filter((e) => (
+                  e.type === "Medal" || 
+                  e.type === "Music")));
                 setIsAll(false);
                 setIsEquipment(false);
                 setIsStickers(false);
@@ -95,11 +124,11 @@ function Inventory(props) {
           <p className='inventory__header-text'>Торговая площадка</p>
         </div>
       </div>
-      { isAll ? <All isVisible={isAll} /> : <></>}
-      { isEquipment ? <Equipment isVisible={isEquipment} /> : <></>}
-      { isStickers ? <Stickers isVisible={isStickers} /> : <></>}
-      { isContainers ? <Containers isVisible={isContainers} /> : <></>}
-      { isTrophies ? <Trophies isVisible={isTrophies} /> : <></>}
+      { isAll ? <All isVisible={isAll} array={array} /> : <></>}
+      { isEquipment ? <Equipment isVisible={isEquipment} array={array} /> : <></>}
+      { isStickers ? <Stickers isVisible={isStickers} array={array} /> : <></>}
+      { isContainers ? <Containers isVisible={isContainers} array={array} /> : <></>}
+      { isTrophies ? <Trophies isVisible={isTrophies} array={array} /> : <></>}
     </Panel>
   )
 }
