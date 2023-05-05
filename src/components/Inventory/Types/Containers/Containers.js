@@ -5,6 +5,13 @@ import Gun from '../../../Gun/Gun';
 
 function Containers(props) {
 
+  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
+    e.type === "Case" || 
+    e.type === "Capsule" || 
+    e.type === "GraffitiCase" || 
+    e.type === "SouvenirCase" || 
+    e.type === "Instrument")));
+
   const [isAll, setIsAll] = React.useState(true)
   const [isWeapon, setIsWeapon] = React.useState(false);
   const [isSticker, setIsSticker] = React.useState(false);
@@ -14,6 +21,12 @@ function Containers(props) {
 
   //Обработчики режимов игры
   function handleAllClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Case" || 
+      e.type === "Capsule" || 
+      e.type === "GraffitiCase" || 
+      e.type === "SouvenirCase" || 
+      e.type === "Instrument")));
     setIsAll(true);
     setIsWeapon(false);
     setIsSticker(false);
@@ -23,6 +36,8 @@ function Containers(props) {
   }
 
   function handleWeaponClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Case")));
     setIsAll(false);
     setIsWeapon(true);
     setIsSticker(false);
@@ -32,6 +47,8 @@ function Containers(props) {
   }
 
   function handleStickerClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Capsule")));
     setIsAll(false);
     setIsWeapon(false);
     setIsSticker(true);
@@ -41,6 +58,8 @@ function Containers(props) {
   }
 
   function handleGraffitiClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "GraffitiCase")));
     setIsAll(false);
     setIsWeapon(false);
     setIsSticker(false);
@@ -50,6 +69,8 @@ function Containers(props) {
   }
 
   function handleSouvenirClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "SouvenirCase")));
     setIsAll(false);
     setIsWeapon(false);
     setIsSticker(false);
@@ -59,6 +80,8 @@ function Containers(props) {
   }
 
   function handleInstrumentClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Instrument")));
     setIsAll(false);
     setIsWeapon(false);
     setIsSticker(false);
@@ -135,7 +158,7 @@ function Containers(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.filter((e) => (e.type === "Case" || e.type === "Capsule" || e.type === "GraffitiCase" || e.type === "SouvenirCase" || e.type === "Instrument")).map((element, index) => 
+                  array.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}

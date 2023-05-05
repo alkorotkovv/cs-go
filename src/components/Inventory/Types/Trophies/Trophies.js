@@ -5,24 +5,35 @@ import Gun from '../../../Gun/Gun';
 
 function Trophies(props) {
 
+  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
+    e.type === "Medal" || 
+    e.type === "Music")));
+
   const [isAll, setIsAll] = React.useState(true)
   const [isMedal, setIsMedal] = React.useState(false);
   const [isMusic, setIsMusic] = React.useState(false);
 
   //Обработчики режимов игры
   function handleAllClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Medal" || 
+      e.type === "Music")));
     setIsAll(true);
     setIsMedal(false);
     setIsMusic(false);
   }
 
   function handleMedalClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Medal")));
     setIsAll(false);
     setIsMedal(true);
     setIsMusic(false);
   }
 
   function handleMusicClick() {
+    setArray(inventoryArray.filter((e) => ( 
+      e.type === "Music")));
     setIsAll(false);
     setIsMedal(false);
     setIsMusic(true);
@@ -94,7 +105,7 @@ function Trophies(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.filter((e) => (e.type === "Medal" || e.type === "Music")).map((element, index) => 
+                  array.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}

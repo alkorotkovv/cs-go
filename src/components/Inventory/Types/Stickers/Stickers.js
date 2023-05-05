@@ -5,6 +5,11 @@ import Gun from '../../../Gun/Gun';
 
 function Stickers(props) {
 
+  const [array, setArray] = React.useState(inventoryArray.filter((e) => (
+    e.type === "Sticker" || 
+    e.type === "Patch" || 
+    e.type === "Graffiti")));
+
   const [isAll, setIsAll] = React.useState(true)
   const [isPatch, setIsPatch] = React.useState(false);
   const [isSticker, setIsSticker] = React.useState(false);
@@ -12,6 +17,10 @@ function Stickers(props) {
 
   //Обработчики режимов игры
   function handleAllClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Sticker" || 
+      e.type === "Patch" || 
+      e.type === "Graffiti")));
     setIsAll(true);
     setIsPatch(false);
     setIsSticker(false);
@@ -19,6 +28,8 @@ function Stickers(props) {
   }
 
   function handlePatchClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Patch")));
     setIsAll(false);
     setIsPatch(true);
     setIsSticker(false);
@@ -26,6 +37,8 @@ function Stickers(props) {
   }
 
   function handleStickerClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Sticker")));
     setIsAll(false);
     setIsPatch(false);
     setIsSticker(true);
@@ -33,6 +46,8 @@ function Stickers(props) {
   }
 
   function handleGraffitiClick() {
+    setArray(inventoryArray.filter((e) => (
+      e.type === "Graffiti")));
     setIsAll(false);
     setIsPatch(false);
     setIsSticker(false);
@@ -105,7 +120,7 @@ function Stickers(props) {
             <div className='guns'>
               <ul className="regym__guns">
                 {
-                  inventoryArray.filter((e) => (e.type === "Sticker" || e.type === "Patch" || e.type === "Graffiti")).map((element, index) => 
+                  array.map((element, index) => 
                     <Gun 
                       key={index}
                       image={element.image}
