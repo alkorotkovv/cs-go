@@ -1616,7 +1616,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Star",
     type: "Gloves",
-    date: new Date("2023-02-26")
+    date: new Date("2023-02-26"),
+    isT: true,
+    isCT: true
   },
   {
     image: ButterflyKnife_Slaughter,
@@ -1625,7 +1627,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Star",
     type: "Knife",
-    date: new Date("2023-02-24")
+    date: new Date("2023-02-24"),
+    isT: true,
+    isCT: true
   },
   {
     image: AK47_EliteMuseum,
@@ -1634,7 +1638,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Rifle",
-    date: new Date("2023-03-26")
+    date: new Date("2023-03-26"),
+    isT: true,
+    isCT: false
   },
   {
     image: Glock18_GammaDoppler,
@@ -1643,7 +1649,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-02-26")
+    date: new Date("2022-02-26"),
+    isT: true,
+    isCT: false
   },
   {
     image: Medal_Stockholm,
@@ -1652,7 +1660,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2021-02-26")
+    date: new Date("2021-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_BrokenFang,
@@ -1661,7 +1671,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2021-02-24")
+    date: new Date("2021-02-24"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_Riptide,
@@ -1670,7 +1682,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2022-02-26")
+    date: new Date("2022-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_Rio,
@@ -1679,7 +1693,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2022-11-26")
+    date: new Date("2022-11-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_Antwerp,
@@ -1688,7 +1704,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2022-05-26")
+    date: new Date("2022-05-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_Loyalty,
@@ -1697,7 +1715,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2020-02-26")
+    date: new Date("2020-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2017,
@@ -1706,7 +1726,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2017-02-26")
+    date: new Date("2017-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2018,
@@ -1715,7 +1737,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2018-02-26")
+    date: new Date("2018-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2019,
@@ -1724,7 +1748,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2019-02-26")
+    date: new Date("2019-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2020,
@@ -1733,7 +1759,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2020-02-26")
+    date: new Date("2020-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2021,
@@ -1742,7 +1770,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2021-02-26")
+    date: new Date("2021-02-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2022,
@@ -1751,7 +1781,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2022-02-20")
+    date: new Date("2022-02-20"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_2023,
@@ -1760,7 +1792,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2023-02-20")
+    date: new Date("2023-02-20"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_Birthday,
@@ -1769,7 +1803,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2022-11-21")
+    date: new Date("2022-11-21"),
+    isT: false,
+    isCT: false
   },
   {
     image: Medal_5years,
@@ -1778,7 +1814,9 @@ export const inventoryArray = [
     rarity: "Covert",
     category: "Default",
     type: "Medal",
-    date: new Date("2021-04-26")
+    date: new Date("2021-04-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Conspiracy,
@@ -1787,7 +1825,9 @@ export const inventoryArray = [
     rarity: "Classified",
     category: "Default",
     type: "Pistol",
-    date: new Date("2021-03-27")
+    date: new Date("2021-03-27"),
+    isT: false,
+    isCT: false
   },
   {
     image: M4A4_Hellfire,
@@ -1796,7 +1836,9 @@ export const inventoryArray = [
     rarity: "Classified",
     category: "Default",
     type: "Rifle",
-    date: new Date("2023-04-20")
+    date: new Date("2023-04-20"),
+    isT: false,
+    isCT: true
   },
   {
     image: MAC10_Propaganda,
@@ -1805,7 +1847,9 @@ export const inventoryArray = [
     rarity: "Classified",
     category: "Default",
     type: "PP",
-    date: new Date("2022-06-26")
+    date: new Date("2022-06-26"),
+    isT: true,
+    isCT: false
   },
   {
     image: DesertEagle_Ermungand,
@@ -1814,7 +1858,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-11-26")
+    date: new Date("2022-11-26"),
+    isT: false,
+    isCT: true
   },
   {
     image: DesertEagle_CrimsonWeb,
@@ -1823,7 +1869,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2023-04-19")
+    date: new Date("2023-04-19"),
+    isT: true,
+    isCT: false
   },
   {
     image: DesertEagle_Heirloom,
@@ -1832,7 +1880,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-11-21")
+    date: new Date("2022-11-21"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Pilot,
@@ -1841,7 +1891,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2023-11-25")
+    date: new Date("2023-11-25"),
+    isT: false,
+    isCT: false
   },
   {
     image: FiveSeven_BoostProtocol,
@@ -1850,7 +1902,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2023-05-01")
+    date: new Date("2023-05-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: USP_OrangeAnolis,
@@ -1859,7 +1913,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-06-27")
+    date: new Date("2022-06-27"),
+    isT: false,
+    isCT: true
   },
   {
     image: Galil_Phoenix,
@@ -1868,7 +1924,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Rifle",
-    date: new Date("2023-05-04")
+    date: new Date("2023-05-04"),
+    isT: true,
+    isCT: false
   },
   {
     image: Agent_Maximus,
@@ -1877,7 +1935,9 @@ export const inventoryArray = [
     rarity: "Restricted",
     category: "Default",
     type: "Agent",
-    date: new Date("2022-11-27")
+    date: new Date("2022-11-27"),
+    isT: true,
+    isCT: false
   },
   {
     image: AUG_Nefrit,
@@ -1886,7 +1946,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Rifle",
-    date: new Date("2022-05-20")
+    date: new Date("2022-05-20"),
+    isT: false,
+    isCT: true
   },
   {
     image: DesertEagle_UrbanRubble,
@@ -1895,7 +1957,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-10-26")
+    date: new Date("2022-10-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_NightHeist,
@@ -1904,7 +1968,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2021-09-26")
+    date: new Date("2021-09-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Corinfian,
@@ -1913,7 +1979,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2023-03-12")
+    date: new Date("2023-03-12"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Sputnik,
@@ -1922,7 +1990,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2021-04-26")
+    date: new Date("2021-04-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: MP9_HotRoad,
@@ -1931,7 +2001,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "PP",
-    date: new Date("2022-09-26")
+    date: new Date("2022-09-26"),
+    isT: false,
+    isCT: true
   },
   {
     image: P250_BengalTiger,
@@ -1940,7 +2012,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-08-26")
+    date: new Date("2022-08-26"),
+    isT: true,
+    isCT: true
   },
   {
     image: Tec9_Aizec,
@@ -1949,7 +2023,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Pistol",
-    date: new Date("2023-04-22")
+    date: new Date("2023-04-22"),
+    isT: true,
+    isCT: false
   },
   {
     image: Sticker_VirtusPro2021,
@@ -1958,7 +2034,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Sticker",
-    date: new Date("2021-04-16")
+    date: new Date("2021-04-16"),
+    isT: false,
+    isCT: false
   },
   {
     image: Patch_Tyloo2021,
@@ -1967,7 +2045,9 @@ export const inventoryArray = [
     rarity: "Mil-Spec",
     category: "Default",
     type: "Patch",
-    date: new Date("2021-04-17")
+    date: new Date("2021-04-17"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Bronze,
@@ -1976,7 +2056,9 @@ export const inventoryArray = [
     rarity: "Industrial",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-07-26")
+    date: new Date("2022-07-26"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_NightStorm,
@@ -1985,7 +2067,9 @@ export const inventoryArray = [
     rarity: "Industrial",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-11-28")
+    date: new Date("2022-11-28"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_Night,
@@ -1994,7 +2078,9 @@ export const inventoryArray = [
     rarity: "Industrial",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-11-27")
+    date: new Date("2022-11-27"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle_UrbanDDPAT,
@@ -2003,7 +2089,9 @@ export const inventoryArray = [
     rarity: "Industrial",
     category: "Default",
     type: "Pistol",
-    date: new Date("2022-06-22")
+    date: new Date("2022-06-22"),
+    isT: false,
+    isCT: false
   },
   {
     image: SawedOff_ForestDDPAT,
@@ -2012,7 +2100,9 @@ export const inventoryArray = [
     rarity: "Consumer",
     category: "Default",
     type: "Shotgun",
-    date: new Date("2021-01-11")
+    date: new Date("2021-01-11"),
+    isT: true,
+    isCT: true
   },
   {
     image: Storage,
@@ -2021,7 +2111,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Instrument",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: AK47,
@@ -2030,7 +2122,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: AUG,
@@ -2039,7 +2133,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: AWP,
@@ -2048,7 +2144,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: CZ75,
@@ -2057,7 +2155,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: DesertEagle,
@@ -2066,7 +2166,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: DualBerettas,
@@ -2075,7 +2177,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: FAMAS,
@@ -2084,7 +2188,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: FiveSeveN,
@@ -2093,7 +2199,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: false
   },
   {
     image: G3SG1,
@@ -2102,7 +2210,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: Glock18,
@@ -2111,7 +2221,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: false
   },
   {
     image: M249,
@@ -2120,7 +2232,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Machinegun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: M4A1S,
@@ -2129,7 +2243,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: M4A4,
@@ -2138,7 +2254,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: MAC10,
@@ -2147,7 +2265,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: MAG7,
@@ -2156,7 +2276,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Shotgun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: MP5,
@@ -2165,7 +2287,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: MP7,
@@ -2174,7 +2298,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: MP9,
@@ -2183,7 +2309,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Nova,
@@ -2192,7 +2320,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Shotgun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: P2000,
@@ -2201,7 +2331,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: P250,
@@ -2210,7 +2342,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: P90,
@@ -2219,7 +2353,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: Scar,
@@ -2228,7 +2364,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: SG,
@@ -2237,7 +2375,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: false
   },
   {
     image: SSG,
@@ -2246,7 +2386,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: SawedOff,
@@ -2255,7 +2397,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Shotgun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Tec9,
@@ -2264,7 +2408,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: UMP,
@@ -2273,7 +2419,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: USP,
@@ -2282,7 +2430,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: XM1014,
@@ -2291,7 +2441,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Shotgun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: Zeus,
@@ -2300,7 +2452,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Zeus",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: Galil,
@@ -2309,7 +2463,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Rifle",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: C4,
@@ -2318,7 +2474,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Bomb",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: false
   },
   {
     image: Contract,
@@ -2327,7 +2485,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Contract",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Agent_CT,
@@ -2336,7 +2496,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Agent",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: true
   },
   {
     image: Agent_T,
@@ -2345,7 +2507,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Agent",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Music,
@@ -2354,7 +2518,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Music",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Negev,
@@ -2363,7 +2529,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Machinegun",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: Knife_CT,
@@ -2372,7 +2540,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Knife",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Knife_T,
@@ -2381,7 +2551,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Knife",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Bizon,
@@ -2390,7 +2562,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "PP",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: true,
+    isCT: true
   },
   {
     image: R8,
@@ -2399,7 +2573,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Pistol",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Gloves_CT,
@@ -2408,7 +2584,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Gloves",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
   {
     image: Gloves_T,
@@ -2417,7 +2595,9 @@ export const inventoryArray = [
     rarity: "None",
     category: "Default",
     type: "Gloves",
-    date: new Date("2012-01-01")
+    date: new Date("2012-01-01"),
+    isT: false,
+    isCT: false
   },
 
 ]
