@@ -60,6 +60,40 @@
     border-left: none;
   }
 
+  &__sides {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+  }
+
+  &__side {
+    margin: 0;
+    padding: 2px;
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 50%;
+    background-clip: content-box;
+
+    &_visible {
+      display: flex;
+    }
+
+    &_t {
+      background-color: #BBB964;
+      border: 2px solid #BBB964;
+    }
+
+    &_ct {
+      background-color: #6895B7;
+      border: 2px solid #6895B7;
+    }
+  }
+
   &__weapon {
     margin: 0;
     padding: 8px 0 0 0;

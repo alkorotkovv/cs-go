@@ -79,12 +79,7 @@ function All(props) {
                   props.array.map((element, index) => 
                     <Gun 
                       key={index}
-                      image={element.image}
-                      weapon={element.weapon}
-                      name={element.name}
-                      rarity={element.rarity}
-                      category={element.category}
-                      type={element.type}
+                      object={element}
                     />
                   )
                 }  

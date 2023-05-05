@@ -1091,6 +1091,35 @@ img {
   border: 1px solid #544D47;
   border-left: none;
 }
+.gun__sides {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.gun__side {
+  margin: 0;
+  padding: 2px;
+  width: 8px;
+  height: 8px;
+  display: none;
+  border-radius: 50%;
+  background-clip: content-box;
+}
+.gun__side_visible {
+  display: flex;
+}
+.gun__side_t {
+  background-color: #BBB964;
+  border: 2px solid #BBB964;
+}
+.gun__side_ct {
+  background-color: #6895B7;
+  border: 2px solid #6895B7;
+}
 .gun__weapon {
   margin: 0;
   padding: 8px 0 0 0;
