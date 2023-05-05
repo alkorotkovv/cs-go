@@ -168,12 +168,17 @@
   &__option {
     margin: 0;
     padding: 18px 32px;
-    display: flex;
+    display: none;
     box-sizing: border-box;
+
+    &_visible {
+      display: flex;
+    }
 
     &:hover {
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 80%);
     }
+    
   }
 
   &__option-text {

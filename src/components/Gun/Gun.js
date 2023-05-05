@@ -39,19 +39,124 @@ function Gun(props) {
       </div>
       <p className='gun__weapon'>{props.object.weapon}</p>
       <p className='gun__name'>{props.object.name}</p>
+      
       <div className={`gun__menu` + (isMenuOpen ? ` gun__menu_visible` : "")}>
         <ul className={`gun__options` + (isMenuOpen ? ` gun__options_visible` : "")}>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Осмотреть</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Заменить для обеих команд</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Заменить для спецназа</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Заменить для террористов</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Изменить случайный выбор</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Переименовать</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Нанести наклейку</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Поскрести наклейку</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Использовать в контракте</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Поместить в хранилище</p></li>
-          <li className={`gun__option`} onClick={handleOptionClick}><p className='gun__option-text'>Продать на Торговой площадке</p></li>
+          <li className={"gun__option" + 
+            ((props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Осмотреть</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Patch" &&
+              props.object.type !== "Sticker" &&
+              !props.object.isCT &&
+              !props.object.isT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Заменить для обеих команд</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Patch" &&
+              props.object.type !== "Sticker" &&
+              !props.object.isCT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Заменить для спецназа</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Patch" &&
+              props.object.type !== "Sticker" &&
+              !props.object.isT ) ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Заменить для террористов</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Sticker" &&
+              props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Изменить случайный выбор</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Gloves" && 
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Agent" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Sticker" &&
+              props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Переименовать</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Gloves" && 
+              props.object.type !== "Knife" && 
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Agent" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Sticker" &&
+              props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Нанести наклейку</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Gloves" && 
+              props.object.type !== "Knife" && 
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Agent" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Sticker" &&
+              props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Поскрести наклейку</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.rarity !== "Covert" &&
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Agent" &&
+              props.object.type !== "Medal" &&
+              props.object.type !== "Sticker" &&
+              props.object.type !== "Patch") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Использовать в контракте</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Medal") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Поместить в хранилище</p>
+          </li>
+          <li className={"gun__option" + 
+            ((
+              props.object.type !== "Bomb" && 
+              props.object.type !== "Instrument" && 
+              props.object.type !== "Music" &&
+              props.object.type !== "Medal") ? " gun__option_visible" : "")} onClick={handleOptionClick}>
+            <p className='gun__option-text'>Продать на Торговой площадке</p>
+          </li>
         </ul>
       </div>
     </li>
@@ -59,3 +164,28 @@ function Gun(props) {
 }
 
 export default Gun;
+
+export const typesArray = [
+  "Bomb",
+  "Knife",
+  "Pistol",
+  "PP",
+  "Rifle",
+  "Shotgun",
+  "Machinegun",
+  "Agent",
+  "Gloves",
+
+  "Patch",
+  "Sticker",
+  "Graffiti",
+  
+  "Case",
+  "Capsule",
+  "GraffitiCase",
+  "SouvenirCase",
+  "Instrument",
+
+  "Medal",
+  "Music"
+]
