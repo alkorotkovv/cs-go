@@ -1610,6 +1610,7 @@ export const zoneFriendsArray = [
 //Массив оружий
 export const inventoryArray = [
   {
+    id: 1,
     image: MotoGloves_Boom,
     weapon: "Мотоциклетные перчатки",
     name: "БУХ!",
@@ -1621,6 +1622,7 @@ export const inventoryArray = [
     isCT: true
   },
   {
+    id: 2,
     image: ButterflyKnife_Slaughter,
     weapon: "Нож бабочка",
     name: "Убийство",
@@ -1632,6 +1634,7 @@ export const inventoryArray = [
     isCT: true
   },
   {
+    id: 3,
     image: AK47_EliteMuseum,
     weapon: "AK-47",
     name: "Музей элиты",
@@ -1643,6 +1646,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 4,
     image: Glock18_GammaDoppler,
     weapon: "Glock-18",
     name: "Гамма-волны",
@@ -1654,6 +1658,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 5,
     image: Medal_Stockholm,
     weapon: "Бриллиантовая монета PGL Major Stockholm 2021",
     name: "",
@@ -1665,6 +1670,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 6,
     image: Medal_BrokenFang,
     weapon: "Бриллиантовая монета операции «Сломанный клык»",
     name: "",
@@ -1676,6 +1682,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 7,
     image: Medal_Riptide,
     weapon: "Бриллиантовая монета операции «Хищные воды»",
     name: "",
@@ -1687,6 +1694,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 8,
     image: Medal_Rio,
     weapon: "Золотая монета IEM Rio Major 2022",
     name: "",
@@ -1698,6 +1706,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 9,
     image: Medal_Antwerp,
     weapon: "Золотая монета PGL Major Antwerp 2022",
     name: "",
@@ -1709,6 +1718,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 10,
     image: Medal_Loyalty,
     weapon: "Медаль за верность",
     name: "",
@@ -1720,6 +1730,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 11,
     image: Medal_2017,
     weapon: "Медаль за службу в 2017",
     name: "",
@@ -1731,6 +1742,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 12,
     image: Medal_2018,
     weapon: "Медаль за службу в 2018",
     name: "",
@@ -1742,6 +1754,7 @@ export const inventoryArray = [
     isCT: false
   },
   {
+    id: 13,
     image: Medal_2019,
     weapon: "Медаль за службу в 2019",
     name: "",

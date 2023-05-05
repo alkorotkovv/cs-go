@@ -1046,7 +1046,6 @@ img {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  position: relative;
   border: 0px solid white;
   transition: all 0.2s linear;
 }
@@ -1141,6 +1140,35 @@ img {
   letter-spacing: 0.5px;
   color: white;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+.gun__menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.gun__menu_visible {
+  display: flex;
+}
+.gun__options {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  display: none;
+  background-color: #5E98D9;
+  position: relative;
+  top: var(--Y);
+  left: var(--X);
+}
+.gun__options_visible {
+  display: flex;
 }
 
 .page {
