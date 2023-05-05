@@ -6,6 +6,7 @@ import RightBar from '../RightBar/RightBar.js';
 import Play from '../Play/Play';
 import Net from '../Net/Net.js';
 import Inventory from '../Inventory/Inventory.js';
+import PopupWindow from '../PopupWindow/PopupWindow.js';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   const [isTVVisible, setIsTVVisible] = React.useState(false);
   const [isStatisticVisible, setIsStatisticVisible] = React.useState(false);
   const [isSettingsVisible, setIsSettingsVisible] = React.useState(false);
+  const [isExitVisible, setIsExitVisible] = React.useState(false);
 
   const[isSearch, setIsSearch] = React.useState(false);
 
@@ -29,6 +31,7 @@ function App() {
     setIsTVVisible(false);
     setIsStatisticVisible(false);
     setIsSettingsVisible(false);
+    setIsExitVisible(false);
   }
 
   function handlePlayClick() {
@@ -39,6 +42,7 @@ function App() {
     setIsTVVisible(false);
     setIsStatisticVisible(false);
     setIsSettingsVisible(false);
+    setIsExitVisible(false);
   }
 
   function handleNetClick() {
@@ -53,6 +57,7 @@ function App() {
     setIsTVVisible(false);
     setIsStatisticVisible(false);
     setIsSettingsVisible(false);
+    setIsExitVisible(false);
   }
 
   function handleTVClick() {
@@ -63,6 +68,7 @@ function App() {
     setIsTVVisible(true);
     setIsStatisticVisible(false);
     setIsSettingsVisible(false);
+    setIsExitVisible(false);
   }
 
   function handleStatisticClick() {
@@ -73,6 +79,7 @@ function App() {
     setIsTVVisible(false);
     setIsStatisticVisible(true);
     setIsSettingsVisible(false);
+    setIsExitVisible(false);
   }
 
   function handleSettingsClick() {
@@ -83,6 +90,11 @@ function App() {
     setIsTVVisible(false);
     setIsStatisticVisible(false);
     setIsSettingsVisible(true);
+    setIsExitVisible(false);
+  }
+
+  function handleExitClick() {
+    setIsExitVisible(true);
   }
 
   //Обработчик закрытия панели Net
@@ -92,6 +104,11 @@ function App() {
 
   function handleSearch(isSearch) {
     setIsSearch(isSearch);
+  }
+
+  //Обработчик закрытия панели Выход
+  function handleExitClose() {
+    setIsExitVisible(false);
   }
 
   return (
@@ -120,12 +137,15 @@ function App() {
         handleTVClick={handleTVClick}
         handleStatisticClick={handleStatisticClick}
         handleSettingsClick={handleSettingsClick}
+        handleExitClick={handleExitClick}
         isSearch={isSearch}
       />
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
-      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }      
+      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }   
+      { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }   
+      
     </div>
   );
 
