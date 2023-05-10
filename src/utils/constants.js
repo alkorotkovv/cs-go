@@ -330,8 +330,31 @@ import R8 from '../images/guns/Default/R8.png';
 import Gloves_CT from '../images/guns/Default/Gloves_CT.png';
 import Gloves_T from '../images/guns/Default/Gloves_T.png';
 
+//Команды
+import outsiders from '../images/majors/outsiders.png';
+import heroic from '../images/majors/heroic.png';
+import mouz from '../images/majors/mouz.png';
+import furia from '../images/majors/furia.png';
+import cloud9 from '../images/majors/cloud9.png';
+import fnatic from '../images/majors/fnatic.png';
+import spirit from '../images/majors/spirit.png';
+import navi from '../images/majors/navi.png';
+import faze from '../images/majors/faze.png';
+import ence from '../images/majors/ence.png';
+import cph from '../images/majors/cph.png';
+import nip from '../images/majors/nip.png';
+import g2 from '../images/majors/g2.png';
+import gambit from '../images/majors/gambit.png';
+import vp from '../images/majors/vp.png';
+import vitality from '../images/majors/vitality.png';
 
 
+//Мажоры и турниры
+import ESLlogo from '../images/majors/ESL_logo.png';
+import PGLlogo from '../images/majors/PGL_logo.png';
+import rio2022 from '../images/majors/rio2022.jpg';
+import antwerpen2022 from '../images/majors/antwerpen2022.jpg';
+import stockholm2022 from '../images/majors/stockholm2022.jpg';
 
 
 
@@ -1605,8 +1628,6 @@ export const zoneFriendsArray = [
   }
 ]
 
-
-
 //Массив оружий
 export const inventoryArray = [
   {
@@ -2819,4 +2840,47 @@ export const typesArray = [
 
   "Medal",
   "Music"
+]
+
+//Массив друзей в режиме запретной зоны
+export const majorsArray = [
+  {
+    operator: {name: "Рио 2022", logo: ESLlogo, background: rio2022},
+    top: [
+      { name: "Outsiders", logo: outsiders, place: "Чемпион" },
+      { name: "Heroic", logo: heroic, place: "Гранд-финалист" },
+      { name: "MOUZ", logo: mouz, place: "Полуфиналист" },
+      { name: "Furia", logo: furia, place: "Полуфиналист" },
+      { name: "Cloud9", logo: cloud9, place: "Четвертьфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" },
+      { name: "Team Spirit", logo: spirit, place: "Четвертьфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" }
+    ]
+  },
+  {
+    operator: {name: "Антверпен 2022", logo: PGLlogo, background: antwerpen2022},
+    top: [
+      { name: "FaZe Clan", logo: faze, place: "Чемпион" },
+      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
+      { name: "Team Spirit", logo: spirit, place: "Полуфиналист" },
+      { name: "ENCE", logo: ence, place: "Полуфиналист" },
+      { name: "Furia", logo: furia, place: "Четвертьфиналист" },
+      { name: "Copenhagen Flames", logo: cph, place: "Четвертьфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Четвертьфиналист" },
+      { name: "Heroic", logo: heroic, place: "Четвертьфиналист" }
+    ]
+  },
+  {
+    operator: {name: "Стокгольм 2021", logo: PGLlogo, background: stockholm2022},
+    top: [
+      { name: "Natus Vincere", logo: navi, place: "Чемпион" },
+      { name: "G2 Esports", logo: g2, place: "Гранд-финалист" },
+      { name: "Heroic", logo: heroic, place: "Полуфиналист" },
+      { name: "Gambit Esports", logo: gambit, place: "Полуфиналист" },
+      { name: "Furia", logo: furia, place: "Четвертьфиналист" },
+      { name: "Furia", logo: furia, place: "Четвертьфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Четвертьфиналист" },
+      { name: "Vitality", logo: vitality, place: "Четвертьфиналист" }
+    ]
+  },
 ]

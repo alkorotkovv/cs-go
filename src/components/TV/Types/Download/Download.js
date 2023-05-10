@@ -11,7 +11,7 @@ function Download(props) {
 
   
   return (
-    <div className={"type type_official" + (props.isVisible ? " type_visible" : " ")}>
+    <div className={"type type_download" + (props.isVisible ? " type_visible" : " ")}>
       <div className='type__main'>
 
       </div>

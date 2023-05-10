@@ -4,6 +4,7 @@ import Majors from './Types/Majors/Majors';
 import Matches from './Types/Matches/Matches';
 import Download from './Types/Download/Download';
 import Tournaments from './Types/Tournaments/Tournaments';
+import Live from './Types/Live/Live';
 
 
 
@@ -61,17 +62,18 @@ function TV(props) {
   return (
     <>
     <Panel title={"СМОТРЕТЬ"} name="tv" isVisible={props.isVisible}>
-        <div className='panel__header'>
           <ul className='type__regyms'>
-            <li className={"type__regym" + (isMajors ? " type__regym_active" : " ")} onClick={handleMajorsClick}><p className='type__regym-text'>Соревновательный</p></li>
-            <li className={"type__regym" + (isMatches ? " type__regym_active" : " ")} onClick={handleMatchesClick}><p className='type__regym-text'>Напарники</p></li>
-            <li className={"type__regym" + (isDownload ? " type__regym_active" : " ")} onClick={handleDownloadClick}><p className='type__regym-text'>Обычный</p></li>
-            <li className={"type__regym" + (isLive ? " type__regym_active" : " ")} onClick={handleLiveClick}><p className='type__regym-text'>Бой насмерть</p></li>
-            <li className={"type__regym" + (isTournaments ? " type__regym_active" : " ")} onClick={handleTournamentsClick}><p className='type__regym-text'>Военные игры</p></li>
+            <li className={"type__regym" + (isMajors ? " type__regym_active" : " ")} onClick={handleMajorsClick}><p className='type__regym-text'>Мейджоры</p></li>
+            <li className={"type__regym" + (isMatches ? " type__regym_active" : " ")} onClick={handleMatchesClick}><p className='type__regym-text'>Ваши матчи</p></li>
+            <li className={"type__regym" + (isDownload ? " type__regym_active" : " ")} onClick={handleDownloadClick}><p className='type__regym-text'>Загружено</p></li>
+            <li className={"type__regym" + (isLive ? " type__regym_active" : " ")} onClick={handleLiveClick}><p className='type__regym-text'>Прямой эфир</p></li>
+            <li className={"type__regym" + (isTournaments ? " type__regym_active" : " ")} onClick={handleTournamentsClick}><p className='type__regym-text'>Турниры</p></li>
           </ul>
-        </div>
         { isMajors ? <Majors isVisible={isMajors} /> : <></>}
-        { isMajors ? <Majors isVisible={isMajors} /> : <></>}
+        { isMatches ? <Matches isVisible={isMatches} /> : <></>}
+        { isDownload ? <Download isVisible={isDownload} /> : <></>}
+        { isLive ? <Live isVisible={isLive} /> : <></>}
+        { isTournaments ? <Tournaments isVisible={isTournaments} /> : <></>}
     </Panel>
     </>
   )

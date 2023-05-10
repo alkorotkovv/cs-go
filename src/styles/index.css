@@ -22,6 +22,21 @@ img {
   position: absolute;
   z-index: 999;
 }
+.type_majors {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.type_matches {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.type_download {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.type_live {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.type_tournaments {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
 .type__regyms {
   margin: 0;
   padding: 0 33px;
@@ -237,6 +252,14 @@ img {
   row-gap: 26px;
   grid-template-columns: repeat(8, 166px);
   grid-auto-rows: 192px;
+}
+.regym__majors {
+  margin: 0;
+  padding: 18px 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 
 .wrapper {
@@ -1198,6 +1221,117 @@ img {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1.5px;
+}
+
+.major {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  filter: brightness(80%);
+}
+.major__card {
+  margin: 0;
+  padding: 30px 30px;
+  width: 240px;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.major__background {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  filter: blur(10px);
+}
+.major__title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.major__winner-logo {
+  margin: 72px 0 30px 0;
+  padding: 0;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  object-fit: cover;
+}
+.major__winner-text {
+  margin: 8px 0 32px 0;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 3px;
+}
+.major__teams {
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  list-style-type: none;
+}
+.major__team {
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  display: grid;
+  justify-items: left;
+  grid-template-columns: 32px auto;
+  grid-template-areas: "logo position" "logo name";
+  column-gap: 10px;
+}
+.major__team-logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+  object-fit: cover;
+  grid-area: logo;
+}
+.major__team-position {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 11px;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  grid-area: position;
+}
+.major__team-name {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  grid-area: name;
 }
 
 .page {

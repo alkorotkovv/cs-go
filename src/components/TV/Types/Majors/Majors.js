@@ -1,10 +1,6 @@
 import React  from 'react';
-/*
-import Deathmatch from './Regyms/Deathmatch/Deathmatch';
-
-import Military from './Regyms/Military/Military';
-
-*/
+import Major from '../../../Major/Major';
+import { majorsArray } from '../../../../utils/constants';
 
 function Majors(props) {
 
@@ -16,14 +12,21 @@ function Majors(props) {
 
   
   return (
-    <div className={"type type_bots" + (props.isVisible ? " type_visible" : " ")}>
+    <div className={"type type_majors" + (props.isVisible ? " type_visible" : " ")}>
       <div className='type__main'>
-
-      </div>
-      <div className='type__bottom'>
-        <div className='type__button'>
-          <p className='type__button-text'>НАЧАТЬ</p>
-          <div className='type__button-color'></div>
+        <div className='regym__main-wrapper'>
+          <div className='regym__main regym__main_majors'>
+            <ul className="regym__majors">
+                {
+                  majorsArray.map((element, index) => 
+                    <Major 
+                      key={index}
+                      object={element}
+                    />
+                  )
+                }  
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -14,6 +14,26 @@
     z-index: 999;
   }
 
+  &_majors {
+    border-top: 1px solid $line_color;
+  }
+
+  &_matches {
+    border-top: 1px solid $line_color;
+  }
+
+  &_download {
+    border-top: 1px solid $line_color;
+  }
+
+  &_live {
+    border-top: 1px solid $line_color;
+  }
+
+  &_tournaments {
+    border-top: 1px solid $line_color;
+  }
+
 
   &__regyms {
     margin: 0;
