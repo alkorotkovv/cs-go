@@ -347,14 +347,29 @@ import g2 from '../images/majors/g2.png';
 import gambit from '../images/majors/gambit.png';
 import vp from '../images/majors/vp.png';
 import vitality from '../images/majors/vitality.png';
+import astralis from '../images/majors/astralis.png';
+import avangar from '../images/majors/avangar.png';
+import nrg from '../images/majors/nrg.png';
+import renegades from '../images/majors/renegades.png';
+import liquid from '../images/majors/liquid.png';
+import mibr from '../images/majors/mibr.png';
+import complexity from '../images/majors/complexity.png';
+import big from '../images/majors/big.png';
+import hr from '../images/majors/hr.png';
 
 
 //Мажоры и турниры
 import ESLlogo from '../images/majors/ESL_logo.png';
 import PGLlogo from '../images/majors/PGL_logo.png';
+import Starladderlogo from '../images/majors/Starladder_logo.png';
+import Faceitlogo from '../images/majors/Faceit_logo.png';
+import ELEAGUElogo from '../images/majors/ELEAGUE_logo.png';
 import rio2022 from '../images/majors/rio2022.jpg';
 import antwerpen2022 from '../images/majors/antwerpen2022.jpg';
-import stockholm2022 from '../images/majors/stockholm2022.jpg';
+import stockholm2021 from '../images/majors/stockholm2021.jpg';
+import berlin2019 from '../images/majors/berlin2019.jpg';
+import katowice2019 from '../images/majors/katowice2019.jpg';
+import london2019 from '../images/majors/london2019.jpg';
 
 
 
@@ -2871,16 +2886,71 @@ export const majorsArray = [
     ]
   },
   {
-    operator: {name: "Стокгольм 2021", logo: PGLlogo, background: stockholm2022},
+    operator: {name: "Стокгольм 2021", logo: PGLlogo, background: stockholm2021},
     top: [
       { name: "Natus Vincere", logo: navi, place: "Чемпион" },
       { name: "G2 Esports", logo: g2, place: "Гранд-финалист" },
       { name: "Heroic", logo: heroic, place: "Полуфиналист" },
       { name: "Gambit Esports", logo: gambit, place: "Полуфиналист" },
       { name: "Furia", logo: furia, place: "Четвертьфиналист" },
-      { name: "Furia", logo: furia, place: "Четвертьфиналист" },
       { name: "Virtus.Pro", logo: vp, place: "Четвертьфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Четвертьфиналист" },
       { name: "Vitality", logo: vitality, place: "Четвертьфиналист" }
+    ]
+  },
+  {
+    operator: {name: "Берлин 2019", logo: Starladderlogo, background: berlin2019},
+    top: [
+      { name: "Astralis", logo: astralis, place: "Чемпион" },
+      { name: "Avangar", logo: avangar, place: "Гранд-финалист" },
+      { name: "NRG", logo: nrg, place: "Полуфиналист" },
+      { name: "Renegades", logo: renegades, place: "Полуфиналист" },
+      { name: "ENCE", logo: ence, place: "Четвертьфиналист" },
+      { name: "Vitality", logo: vitality, place: "Четвертьфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Четвертьфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" }
+    ]
+  },
+  {
+    operator: {name: "Катовице 2019", logo: ESLlogo, background: katowice2019},
+    top: [
+      { name: "Astralis", logo: astralis, place: "Чемпион" },
+      { name: "ENCE", logo: ence, place: "Гранд-финалист" },
+      { name: "Natus Vincere", logo: navi, place: "Полуфиналист" },
+      { name: "MIBR", logo: mibr, place: "Полуфиналист" },
+      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Четвертьфиналист" },
+      { name: "Renegades", logo: renegades, place: "Четвертьфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Лондон 2018", logo: Faceitlogo, background: london2019},
+    top: [
+      { name: "Astralis", logo: astralis, place: "Чемпион" },
+      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
+      { name: "MIBR", logo: mibr, place: "Полуфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Полуфиналист" },
+      { name: "compLexity Gaming", logo: complexity, place: "Четвертьфиналист" },
+      { name: "BIG", logo: big, place: "Четвертьфиналист" },
+      { name: "HellRaisers", logo: hr, place: "Четвертьфиналист" },
+      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Бостон 2018", logo: ELEAGUElogo, background: london2019},
+    top: [
+      { name: "Astralis", logo: astralis, place: "Чемпион" },
+      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
+      { name: "MIBR", logo: mibr, place: "Полуфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Полуфиналист" },
+      { name: "compLexity Gaming", logo: complexity, place: "Четвертьфиналист" },
+      { name: "BIG", logo: big, place: "Четвертьфиналист" },
+      { name: "HellRaisers", logo: hr, place: "Четвертьфиналист" },
+      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" }
+      
     ]
   },
 ]
