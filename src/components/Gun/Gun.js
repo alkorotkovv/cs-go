@@ -40,7 +40,8 @@ function Gun(props) {
       </div>
       <p className='gun__weapon'>{props.object.weapon}</p>
       <p className='gun__name'>{props.object.name}</p>
-      
+
+      { isMenuOpen ? 
       <div className={`gun__menu` + (isMenuOpen ? ` gun__menu_visible` : "")}>
         <ul className={`gun__options` + (isMenuOpen ? ` gun__options_visible` : "")}>
           <li className={"gun__option" + 
@@ -181,7 +182,8 @@ function Gun(props) {
             <p className='gun__option-text'>Продать на Торговой площадке</p>
           </li>
         </ul>
-      </div>
+      </div> : <></> }   
+      
     </li>
   )
 }

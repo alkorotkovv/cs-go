@@ -7,6 +7,7 @@ import Play from '../Play/Play';
 import Net from '../Net/Net.js';
 import Inventory from '../Inventory/Inventory.js';
 import PopupWindow from '../PopupWindow/PopupWindow.js';
+import TV from '../TV/TV.js';
 
 
 function App() {
@@ -102,6 +103,7 @@ function App() {
     setIsNetVisible(false);
   }
 
+  //Обработчик поиска игрока
   function handleSearch(isSearch) {
     setIsSearch(isSearch);
   }
@@ -114,7 +116,7 @@ function App() {
   return (
     <div className="page">
       <Menu 
-        isMainVisible={isMainVisible} 
+        isMainVisible={isMainVisible}
         isPlayVisible={isPlayVisible}
         isNetVisible={isNetVisible}
         isInventoryVisible={isInventoryVisible}
@@ -130,8 +132,8 @@ function App() {
         isTVVisible={isTVVisible}
         isStatisticVisible={isStatisticVisible}
         isSettingsVisible={isSettingsVisible}
-        handleMainClick={handleMainClick} 
-        handlePlayClick={handlePlayClick} 
+        handleMainClick={handleMainClick}
+        handlePlayClick={handlePlayClick}
         handleNetClick={handleNetClick}
         handleInventoryClick={handleInventoryClick}
         handleTVClick={handleTVClick}
@@ -144,6 +146,7 @@ function App() {
       { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }   
+      { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }   
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }   
       
     </div>
