@@ -1,6 +1,5 @@
 import React  from 'react';
 import championLogo from '../../images/championLogo.png';
-import timeIcon from '../../images/map_time_icon.png';
 
 function Major(props) {
 

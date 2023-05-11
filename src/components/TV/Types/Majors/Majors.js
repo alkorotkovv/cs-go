@@ -4,7 +4,7 @@ import { majorsArray } from '../../../../utils/constants';
 
 function Majors(props) {
 
-  let refMajors = React.useRef();
+  let refMajors = React.useRef(null);
 
   //Реализация горизонтальной прокрутки на колесико мышки
   React.useEffect(() => {
