@@ -356,6 +356,11 @@ import mibr from '../images/majors/mibr.png';
 import complexity from '../images/majors/complexity.png';
 import big from '../images/majors/big.png';
 import hr from '../images/majors/hr.png';
+import sk from '../images/majors/sk.png';
+import mousesports from '../images/majors/mousesports.png';
+import qb from '../images/majors/qb.png';
+import immortals from '../images/majors/immortals.png';
+import north from '../images/majors/north.png';
 
 
 //Мажоры и турниры
@@ -370,6 +375,8 @@ import stockholm2021 from '../images/majors/stockholm2021.jpg';
 import berlin2019 from '../images/majors/berlin2019.jpg';
 import katowice2019 from '../images/majors/katowice2019.jpg';
 import london2019 from '../images/majors/london2019.jpg';
+import boston2018 from '../images/majors/boston2018.jpg';
+import krakow2017 from '../images/majors/krakow2017.jpg';
 
 
 
@@ -2940,16 +2947,30 @@ export const majorsArray = [
     ]
   },
   {
-    operator: {name: "Бостон 2018", logo: ELEAGUElogo, background: london2019},
+    operator: {name: "Бостон 2018", logo: ELEAGUElogo, background: boston2018},
     top: [
-      { name: "Astralis", logo: astralis, place: "Чемпион" },
-      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
-      { name: "MIBR", logo: mibr, place: "Полуфиналист" },
-      { name: "Team Liquid", logo: liquid, place: "Полуфиналист" },
-      { name: "compLexity Gaming", logo: complexity, place: "Четвертьфиналист" },
+      { name: "Cloud9", logo: cloud9, place: "Чемпион" },
+      { name: "FaZe Clan", logo: faze, place: "Гранд-финалист" },
+      { name: "Natus Vincere", logo: navi, place: "Полуфиналист" },
+      { name: "SK Gaming", logo: sk, place: "Полуфиналист" },
+      { name: "mousesports", logo: mousesports, place: "Четвертьфиналист" },
+      { name: "Quantum Bellator Fire", logo: qb, place: "Четвертьфиналист" },
+      { name: "G2", logo: g2, place: "Четвертьфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Краков 2017", logo: PGLlogo, background: krakow2017},
+    top: [
+      { name: "Gambit Esports", logo: gambit, place: "Чемпион" },
+      { name: "Immortals", logo: immortals, place: "Гранд-финалист" },
+      { name: "Astralis", logo: astralis, place: "Полуфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Полуфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" },
+      { name: "SK Gaming", logo: sk, place: "Четвертьфиналист" },
       { name: "BIG", logo: big, place: "Четвертьфиналист" },
-      { name: "HellRaisers", logo: hr, place: "Четвертьфиналист" },
-      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" }
+      { name: "North", logo: north, place: "Четвертьфиналист" }
       
     ]
   },

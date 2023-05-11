@@ -58,7 +58,19 @@
 
     &_majors {
       max-height: none;
-      overflow-y: auto;
+      justify-content: left;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;        // цвет дорожки 
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #B6ADAE;    // цвет плашки 
+        border-radius: 2px;       // закругления плашки 
+      }
     }
     
   }
@@ -91,11 +103,13 @@
 
   &__majors {
     margin: 0;
-    padding: 18px 0;
+    padding: 18px 20px;
     box-sizing: border-box;
     list-style-type: none;
     display: flex;
     gap: 40px;
+
+    
   }
   
 
