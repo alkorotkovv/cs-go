@@ -1,40 +1,91 @@
-.settings {
+.customization {
+  width: 100%;
+  padding: 34px 28px;
+  display: grid;
+  box-sizing: border-box;
+  justify-items: center;
+  overflow-y: auto;
 
-  &__header-item {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        // цвет дорожки 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    // цвет плашки 
+    border-radius: 2px;       // закругления плашки 
+  }
+
+  &__title {
+    margin: 0;
+    padding: 60px 0 20px 0;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    color: #CCCCCC;
+    letter-spacing: 1.5px;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  &__list {
     margin: 0;
     padding: 0;
+    width: 818px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom {
+    margin: 0;
+    padding: 0 70px;
+    height: 96px;
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    border-top: 1px solid $line_color;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 10px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid transparent;
-
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    color: white;
+    gap: 12px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: all 0.2s linear;
 
     &:hover {
-      border-bottom: 1px solid white;
+      background-color: rgba($color: #000000, $alpha: 0.3);
     }
-
   }
 
-  &__line {
+  &__button-icon {
     margin: 0;
     padding: 0;
-    width: 1px;
-    height: 38px;
+    width: 26px;
+    height: 26px;
     display: flex;
-    box-sizing: border-box;
-    background-color: $line_color;
+    object-fit: cover;
   }
-}
 
-.setting-list {
-  margin: 0;
-  padding: 0;
-  width: 818px;
-  display: flex;
-  flex-direction: column;
+  &__button-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+
 }
 
 .setting {
@@ -44,6 +95,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $line_color;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 
   &__name {
     margin: 0;

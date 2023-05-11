@@ -208,6 +208,7 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .regym__main {
@@ -251,6 +252,10 @@ img {
   background-color: #B6ADAE;
   border-radius: 2px;
 }
+.regym__main_settings {
+  margin: 0 16px;
+  max-height: 760px;
+}
 .regym__maps {
   margin: 0;
   padding: 24px 0;
@@ -287,8 +292,8 @@ img {
   display: flex;
 }
 
-.maps, .guns {
-  margin: 0;
+.maps {
+  margin: 0 28px;
   padding: 0;
   width: 100%;
   display: grid;
@@ -296,13 +301,33 @@ img {
   justify-content: center;
   overflow-y: auto;
 }
-.maps::-webkit-scrollbar, .guns::-webkit-scrollbar {
+.maps::-webkit-scrollbar {
   width: 8px;
 }
-.maps::-webkit-scrollbar-track, .guns::-webkit-scrollbar-track {
+.maps::-webkit-scrollbar-track {
   background: transparent;
 }
-.maps::-webkit-scrollbar-thumb, .guns::-webkit-scrollbar-thumb {
+.maps::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE;
+  border-radius: 2px;
+}
+
+.guns {
+  margin: 0 16px;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow-y: auto;
+}
+.guns::-webkit-scrollbar {
+  width: 8px;
+}
+.guns::-webkit-scrollbar-track {
+  background: transparent;
+}
+.guns::-webkit-scrollbar-thumb {
   background-color: #B6ADAE;
   border-radius: 2px;
 }
@@ -1896,7 +1921,7 @@ img {
 }
 
 .rightBar {
-  width: 385px;
+  width: 386px;
   height: 1080px;
   margin: 0;
   padding: 0;
@@ -1907,11 +1932,12 @@ img {
   position: absolute;
   top: 0;
   right: -290px;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.2);
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0% 2%, rgba(0, 0, 0, 0.2) 10% 90%, rgba(0, 0, 0, 0.7) 100%);
   backdrop-filter: blur(20px);
   transition: 0.2s linear;
-  z-index: 100;
+  z-index: 101;
 }
 .rightBar__main {
   margin: 0;
@@ -3475,36 +3501,84 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.settings__header-item {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-bottom: 1px solid transparent;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: white;
-}
-.settings__header-item:hover {
-  border-bottom: 1px solid white;
-}
-.settings__line {
-  margin: 0;
-  padding: 0;
-  width: 1px;
-  height: 38px;
-  display: flex;
+.customization {
+  width: 100%;
+  padding: 34px 28px;
+  display: grid;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.2);
+  justify-items: center;
+  overflow-y: auto;
 }
-
-.setting-list {
+.customization::-webkit-scrollbar {
+  width: 8px;
+}
+.customization::-webkit-scrollbar-track {
+  background: transparent;
+}
+.customization::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE;
+  border-radius: 2px;
+}
+.customization__title {
+  margin: 0;
+  padding: 60px 0 20px 0;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  color: #CCCCCC;
+  letter-spacing: 1.5px;
+}
+.customization__title:first-of-type {
+  padding-top: 0;
+}
+.customization__list {
   margin: 0;
   padding: 0;
   width: 818px;
   display: flex;
   flex-direction: column;
+}
+.customization__bottom {
+  margin: 0;
+  padding: 0 70px;
+  height: 96px;
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.customization__button {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+}
+.customization__button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.customization__button-icon {
+  margin: 0;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  object-fit: cover;
+}
+.customization__button-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 .setting {
@@ -3514,6 +3588,9 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.setting:last-of-type {
+  border-bottom: none;
 }
 .setting__name {
   margin: 0;
