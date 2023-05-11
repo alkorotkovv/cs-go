@@ -33,3 +33,27 @@
   src: url(../fonts/Inter-Black.woff2?v=3.19) format("woff2"),
        url(../fonts/Inter-Black.woff?v=3.19) format("woff");
 }
+
+@font-face {
+     font-family: 'Stratum2';
+     font-style:  normal;
+     font-weight: 400;
+     font-display: swap;
+     src: url(../fonts/Stratum2-Regular.woff?v=3.19) format("woff");
+}
+
+@font-face {
+     font-family: 'Stratum2';
+     font-style:  normal;
+     font-weight: 500;
+     font-display: swap;
+     src: url(../fonts/Stratum2-Medium.woff?v=3.19) format("woff");
+}
+
+@font-face {
+     font-family: 'Stratum2';
+     font-style:  normal;
+     font-weight: 700;
+     font-display: swap;
+     src: url(../fonts/Stratum2-Bold.woff?v=3.19) format("woff");
+}
