@@ -18,6 +18,10 @@
     min-height: 63px;
     border-top: 1px solid $line_color;
     border-bottom: 1px solid $line_color;
+
+    &_settings-picture {
+      align-items: flex-start;
+    }
   }
 
   &__main-wrapper {

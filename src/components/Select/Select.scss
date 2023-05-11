@@ -59,8 +59,7 @@
     list-style-type: none;
     color: white;
     border-radius: 5px;
-    //background-color: #2D2C2C;
-    background-color: rgba($color: #2C2C2C, $alpha: 0.95);
+    background-color: rgba($color: #2C2C2C, $alpha: 0.98);
     z-index: 100;
 
     position: absolute;
@@ -79,7 +78,7 @@
     box-sizing: border-box;
 
     &:hover {
-      background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0) 80%);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 80%);
     }
   }
 

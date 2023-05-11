@@ -8,6 +8,7 @@ import Net from '../Net/Net.js';
 import Inventory from '../Inventory/Inventory.js';
 import PopupWindow from '../PopupWindow/PopupWindow.js';
 import TV from '../TV/TV.js';
+import Settings from '../Settings/Settings.js';
 
 
 function App() {
@@ -145,9 +146,10 @@ function App() {
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
-      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }   
-      { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }   
-      { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }   
+      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
+      { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
+      { isSettingsVisible ? <Settings isVisible={isSettingsVisible} /> : <></> }
+      { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
       
     </div>
   );

@@ -1,0 +1,57 @@
+.settings {
+
+  &__header-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid transparent;
+
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: white;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+
+  }
+
+  &__line {
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 38px;
+    display: flex;
+    box-sizing: border-box;
+    background-color: $line_color;
+  }
+}
+
+.setting-list {
+  margin: 0;
+  padding: 0;
+  width: 818px;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting {
+  margin: 0;
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $line_color;
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 17px;
+    font-weight: 400;
+    color: #CCCCCC;
+    letter-spacing: 1.5px;
+  }
+}
