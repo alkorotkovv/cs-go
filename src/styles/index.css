@@ -233,6 +233,7 @@ img {
   border-radius: 2px; /* закругления плашки */
 }
 .regym__main_majors {
+  margin: 0 0 16px 0;
   max-height: none;
   justify-content: left;
   overflow-x: auto;
@@ -332,7 +333,7 @@ img {
   flex-direction: column;
   box-sizing: border-box;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .select:hover {
@@ -562,7 +563,7 @@ img {
   max-width: 200px;
   justify-content: center;
   position: absolute;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   color: white;
   letter-spacing: 1px;
@@ -1165,8 +1166,8 @@ img {
   display: flex;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 1.3;
+  letter-spacing: 1px;
+  line-height: 1.2;
   color: white;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
 }
@@ -1176,7 +1177,7 @@ img {
   display: flex;
   font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   color: white;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
 }
@@ -1428,8 +1429,13 @@ img {
   grid-area: logo;
 }
 .news__title {
-  margin: 0;
+  margin: 4px 0 0 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
   color: white;
   grid-area: title;
 }
@@ -1806,6 +1812,7 @@ img {
   box-sizing: border-box;
   font-size: 13px;
   color: lightgray;
+  letter-spacing: 0.5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
