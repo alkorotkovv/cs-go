@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.36543210.css",
+    "main.css": "/cs-go/static/css/main.6a3e4557.css",
     "main.js": "/cs-go/static/js/main.e4c435bb.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
@@ -52,7 +52,10 @@
     "static/media/de_chalice.jpg": "/cs-go/static/media/de_chalice.2dcb2d87b64f6b4a4ca4.jpg",
     "static/media/de_cache.jpg": "/cs-go/static/media/de_cache.fbaa3a323b3ab251eac8.jpg",
     "static/media/de_boyard.jpg": "/cs-go/static/media/de_boyard.b2612c23562ebcb00ee7.jpg",
+    "static/media/Stratum2-Bold.woff?v=3.19": "/cs-go/static/media/Stratum2-Bold.14ed652d1718e33b77ef.woff",
     "static/media/premier.jpg": "/cs-go/static/media/premier.b2df2dd35b48148c36f8.jpg",
+    "static/media/Stratum2-Medium.woff?v=3.19": "/cs-go/static/media/Stratum2-Medium.f7f8f6eebb10f2c3a4cb.woff",
+    "static/media/Stratum2-Regular.woff?v=3.19": "/cs-go/static/media/Stratum2-Regular.576625777f9cc7b2e36f.woff",
     "static/media/gambit.png": "/cs-go/static/media/gambit.069b0e9e300eda71686e.png",
     "static/media/de_nuke.jpg": "/cs-go/static/media/de_nuke.3e46ad8b4269974b869f.jpg",
     "static/media/de_vertigo.jpg": "/cs-go/static/media/de_vertigo.7e23a5ef90dab7b7240e.jpg",
@@ -101,12 +104,12 @@
     "static/media/fnatic.png": "/cs-go/static/media/fnatic.5c60dd2c9fddd8db9a61.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.36543210.css.map": "/cs-go/static/css/main.36543210.css.map",
+    "main.6a3e4557.css.map": "/cs-go/static/css/main.6a3e4557.css.map",
     "main.e4c435bb.js.map": "/cs-go/static/js/main.e4c435bb.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36543210.css",
+    "static/css/main.6a3e4557.css",
     "static/js/main.e4c435bb.js"
   ]
 }
