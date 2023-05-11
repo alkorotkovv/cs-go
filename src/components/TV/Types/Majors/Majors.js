@@ -8,16 +8,17 @@ function Majors(props) {
 
   //Реализация горизонтальной прокрутки на колесико мышки
   React.useEffect(() => {
-    if (refMajors.current) {
+    const el = refMajors.current
+    if (el) {
       const onWheel = (evt) => {
         evt.preventDefault();
-        refMajors.current.scrollTo({
-          left: refMajors.current.scrollLeft + evt.deltaY * 0.9,
+        el.scrollTo({
+          left: el.scrollLeft + evt.deltaY * 0.9,
           behavior: "auto"
         })
       }
-      refMajors.current.addEventListener('wheel', onWheel);
-      return () => refMajors.current.removeEventListener('wheel', onWheel);
+      el.addEventListener('wheel', onWheel);
+      return () => el.removeEventListener('wheel', onWheel);
     }
   }, [])
 

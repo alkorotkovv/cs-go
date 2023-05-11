@@ -361,6 +361,22 @@ import mousesports from '../images/majors/mousesports.png';
 import qb from '../images/majors/qb.png';
 import immortals from '../images/majors/immortals.png';
 import north from '../images/majors/north.png';
+import flipside from '../images/majors/flipside.png';
+import luminocity from '../images/majors/luminocity.png';
+import clg from '../images/majors/clg.png';
+import envyus from '../images/majors/envyus.png';
+import solomid from '../images/majors/solomid.png';
+import kinguin from '../images/majors/kinguin.png';
+import penta from '../images/majors/penta.png';
+import keyd from '../images/majors/keyd.png';
+import ldlc from '../images/majors/ldlc.png';
+import dignitas from '../images/majors/dignitas.png';
+import epsilon from '../images/majors/epsilon.png';
+import lgb from '../images/majors/lgb.png';
+import very from '../images/majors/very.png';
+import wolves from '../images/majors/wolves.png';
+import rge from '../images/majors/rge.png';
+import astana from '../images/majors/astana.png';
 
 
 //Мажоры и турниры
@@ -369,6 +385,8 @@ import PGLlogo from '../images/majors/PGL_logo.png';
 import Starladderlogo from '../images/majors/Starladder_logo.png';
 import Faceitlogo from '../images/majors/Faceit_logo.png';
 import ELEAGUElogo from '../images/majors/ELEAGUE_logo.png';
+import MLGlogo from '../images/majors/MLG_logo.png';
+import Dreamhacklogo from '../images/majors/Dreamhack_logo.png';
 import rio2022 from '../images/majors/rio2022.jpg';
 import antwerpen2022 from '../images/majors/antwerpen2022.jpg';
 import stockholm2021 from '../images/majors/stockholm2021.jpg';
@@ -377,6 +395,16 @@ import katowice2019 from '../images/majors/katowice2019.jpg';
 import london2019 from '../images/majors/london2019.jpg';
 import boston2018 from '../images/majors/boston2018.jpg';
 import krakow2017 from '../images/majors/krakow2017.jpg';
+import atlanta2017 from '../images/majors/atlanta2017.jpg';
+import cologne2016 from '../images/majors/cologne2016.jpg';
+import columbus2016 from '../images/majors/columbus2016.jpg';
+import clug2015 from '../images/majors/clug2015.jpg';
+import cologne2015 from '../images/majors/cologne2015.jpg';
+import katowice2015 from '../images/majors/katowice2015.jpg';
+import jonchoping2014 from '../images/majors/jonchoping2014.jpg';
+import cologne2014 from '../images/majors/cologne2014.jpg';
+import katowice2014 from '../images/majors/katowice2014.jpg';
+import jonchoping2013 from '../images/majors/jonchoping2013.jpg';
 
 
 
@@ -2971,6 +2999,146 @@ export const majorsArray = [
       { name: "SK Gaming", logo: sk, place: "Четвертьфиналист" },
       { name: "BIG", logo: big, place: "Четвертьфиналист" },
       { name: "North", logo: north, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Атланта 2017", logo: ELEAGUElogo, background: atlanta2017},
+    top: [
+      { name: "Astralis", logo: astralis, place: "Чемпион" },
+      { name: "Virtus.Pro", logo: vp, place: "Гранд-финалист" },
+      { name: "Fnatic", logo: fnatic, place: "Полуфиналист" },
+      { name: "SK Gaming", logo: sk, place: "Полуфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" },
+      { name: "Gambit Esports", logo: gambit, place: "Четвертьфиналист" },
+      { name: "North", logo: north, place: "Четвертьфиналист" },
+      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Кёльн 2016", logo: ESLlogo, background: cologne2016},
+    top: [
+      { name: "SK Gaming", logo: sk, place: "Чемпион" },
+      { name: "Team Liquid", logo: liquid, place: "Гранд-финалист" },
+      { name: "Virtus.Pro", logo: vp, place: "Полуфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Полуфиналист" },
+      { name: "Astralis", logo: astralis, place: "Четвертьфиналист" },
+      { name: "Flipsid3 Tactics", logo: flipside, place: "Четвертьфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" },
+      { name: "Gambit Esports", logo: gambit, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Колумбус 2016", logo: MLGlogo, background: columbus2016},
+    top: [
+      { name: "Luminosity Gaming", logo: luminocity, place: "Чемпион" },
+      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
+      { name: "Astralis", logo: astralis, place: "Полуфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Полуфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Четвертьфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" },
+      { name: "Counter Logic Gaming", logo: clg, place: "Четвертьфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Клуж-Напока 2015", logo: Dreamhacklogo, background: clug2015},
+    top: [
+      { name: "Team EnVyUs", logo: envyus, place: "Чемпион" },
+      { name: "Natus Vincere", logo: navi, place: "Гранд-финалист" },
+      { name: "G2", logo: g2, place: "Полуфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Полуфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Четвертьфиналист" },
+      { name: "Team SoloMid", logo: solomid, place: "Четвертьфиналист" },
+      { name: "Luminosity Gaming", logo: luminocity, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Кёльн 2015", logo: ESLlogo, background: cologne2015},
+    top: [
+      { name: "Fnatic", logo: fnatic, place: "Чемпион" },
+      { name: "Team EnVyUs", logo: envyus, place: "Гранд-финалист" },
+      { name: "Team SoloMid", logo: solomid, place: "Полуфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Полуфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" },
+      { name: "Team Kinguin", logo: kinguin, place: "Четвертьфиналист" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Четвертьфиналист" },
+      { name: "Luminosity Gaming", logo: luminocity, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Катовице 2015", logo: ESLlogo, background: katowice2015},
+    top: [
+      { name: "Fnatic", logo: fnatic, place: "Чемпион" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Гранд-финалист" },
+      { name: "Virtus.Pro", logo: vp, place: "Полуфиналист" },
+      { name: "Team EnVyUs", logo: envyus, place: "Полуфиналист" },
+      { name: "PENTA Sports", logo: penta, place: "Четвертьфиналист" },
+      { name: "Keyd Stars", logo: keyd, place: "Четвертьфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" },
+      { name: "TSM Kinguin", logo: solomid, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Йёнчёпинг 2014", logo: Dreamhacklogo, background: jonchoping2014},
+    top: [
+      { name: "Team LDLC.com", logo: ldlc, place: "Чемпион" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Гранд-финалист" },
+      { name: "Virtus.Pro", logo: vp, place: "Полуфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Полуфиналист" },
+      { name: "HellRaisers", logo: hr, place: "Четвертьфиналист" },
+      { name: "PENTA Sports", logo: penta, place: "Четвертьфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" },
+      { name: "Team Dignitas", logo: dignitas, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Кёльн 2014", logo: ESLlogo, background: cologne2014},
+    top: [
+      { name: "Ninjas in Pijamas", logo: nip, place: "Чемпион" },
+      { name: "Fnatic", logo: fnatic, place: "Гранд-финалист" },
+      { name: "Team Dignitas", logo: dignitas, place: "Полуфиналист" },
+      { name: "Team LDLC.com", logo: ldlc, place: "Полуфиналист" },
+      { name: "Natus Vincere", logo: navi, place: "Четвертьфиналист" },
+      { name: "Epsilon eSports", logo: epsilon, place: "Четвертьфиналист" },
+      { name: "Virtus.Pro", logo: vp, place: "Четвертьфиналист" },
+      { name: "Cloud9", logo: cloud9, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Катовице 2014", logo: ESLlogo, background: katowice2014},
+    top: [
+      { name: "Virtus.Pro", logo: vp, place: "Чемпион" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Гранд-финалист" },
+      { name: "Team Dignitas", logo: dignitas, place: "Полуфиналист" },
+      { name: "LGB eSports", logo: lgb, place: "Полуфиналист" },
+      { name: "compLexity Gaming", logo: complexity, place: "Четвертьфиналист" },
+      { name: "HellRaisers", logo: hr, place: "Четвертьфиналист" },
+      { name: "Team LDLC.com", logo: ldlc, place: "Четвертьфиналист" },
+      { name: "Fnatic", logo: fnatic, place: "Четвертьфиналист" }
+      
+    ]
+  },
+  {
+    operator: {name: "Йёнчёпинг 2013", logo: Dreamhacklogo, background: jonchoping2013},
+    top: [
+      { name: "Fnatic", logo: fnatic, place: "Чемпион" },
+      { name: "Ninjas in Pijamas", logo: nip, place: "Гранд-финалист" },
+      { name: "VeryGames", logo: very, place: "Полуфиналист" },
+      { name: "compLexity Gaming", logo: complexity, place: "Полуфиналист" },
+      { name: "LGB eSports", logo: lgb, place: "Четвертьфиналист" },
+      { name: "Copenhagen Wolves", logo: wolves, place: "Четвертьфиналист" },
+      { name: "We got game", logo: rge, place: "Четвертьфиналист" },
+      { name: "Astana Dragons", logo: astana, place: "Четвертьфиналист" }
       
     ]
   },
