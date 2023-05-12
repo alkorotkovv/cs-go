@@ -1,6 +1,7 @@
 import React  from 'react';
 import Panel from '../Panel/Panel';
 import Picture from './Types/Picture/Picture';
+import Sound from './Types/Sound/Sound';
 
 
 
@@ -64,7 +65,8 @@ function Settings(props) {
         <li className={"type__regym" + (isKeyboardMouse ? " type__regym_active" : " ")} onClick={handleKeyboardMouseClick}><p className='type__regym-text'>Клавиатура и мышь</p></li>
         <li className={"type__regym" + (isController ? " type__regym_active" : " ")} onClick={handleControllerClick}><p className='type__regym-text'>Контроллер</p></li>
       </ul>
-      { Picture ? <Picture isVisible={isPicture} /> : <></>}
+      { isPicture ? <Picture isVisible={isPicture} /> : <></>}
+      { isSound ? <Sound isVisible={isSound} /> : <></>}
     </Panel>
     </>
   )

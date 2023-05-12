@@ -1,13 +1,6 @@
 @charset "UTF-8";
 @import "../vendor/fonts/fonts.css";
 @import "../vendor/normalize.css";
-img {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .type {
   margin: 0;
   padding: 0;
@@ -636,37 +629,37 @@ https://toughengineer.github.io/demo/slider-styler*/
   /*ms*/
 }
 .slider__progress::-webkit-slider-runnable-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress:hover::-webkit-slider-runnable-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress:active::-webkit-slider-runnable-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress::-moz-range-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress::-moz-range-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress::-moz-range-track {
-  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, #707172;
+  background: linear-gradient(#A9A8A8, #A9A8A8) 0/var(--sx) 100% no-repeat, rgba(0, 0, 0, 0.2);
 }
 .slider__progress::-ms-fill-lower {
   height: 8px;
   border-radius: 2px;
   margin: -1px 0 -1px -1px;
-  background: #A9A8A8;
+  background: rgba(0, 0, 0, 0.2);
   border: none;
   border-right-width: 0;
 }
 .slider__progress:hover::-ms-fill-lower {
-  background: #A9A8A8;
+  background: rgba(0, 0, 0, 0.2);
   border-color: transparent;
 }
 .slider__progress:active::-ms-fill-lower {
-  background: #A9A8A8;
+  background: rgba(0, 0, 0, 0.2);
   border-color: transparent;
 }
 
@@ -3768,7 +3761,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 
 .setting {
   margin: 0;
-  padding: 4px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3780,6 +3773,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 .setting__name {
   margin: 0;
   padding: 0;
+  max-width: 400px;
   display: flex;
   font-size: 17px;
   font-weight: 400;

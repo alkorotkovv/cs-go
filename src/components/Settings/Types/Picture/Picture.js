@@ -143,7 +143,13 @@ function Picture(props) {
               </li>
               <li className='setting'>
                 <p className='setting__name'>Яркость</p>
-                <Slider />
+                <Slider 
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="80"
+                  unit=""
+                />
               </li>
               <li className='setting'>
                 <p className='setting__name'>Формат экрана</p>
