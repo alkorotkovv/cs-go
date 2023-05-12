@@ -22,7 +22,6 @@
   animation: showing 0.2s linear forwards;
 
   &_unvisible {
-    //display: none;
     animation: hiding 0.2s linear forwards;
   }
   
@@ -56,16 +55,8 @@
     grid-area: items;
   }
 
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        /* цвет дорожки */
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    /* цвет плашки */
-    border-radius: 2px;       /* закругления плашки */
-  }
+  @include vertical-scrollbar;
+
 }
 
 @keyframes hiding {

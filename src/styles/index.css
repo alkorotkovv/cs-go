@@ -248,6 +248,8 @@ img {
   max-height: none;
   justify-content: left;
   overflow-x: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .regym__main_majors::-webkit-scrollbar {
   height: 8px;
@@ -307,6 +309,8 @@ img {
   box-sizing: border-box;
   justify-content: center;
   overflow-y: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .maps::-webkit-scrollbar {
   width: 8px;
@@ -327,6 +331,8 @@ img {
   box-sizing: border-box;
   justify-content: center;
   overflow-y: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .guns::-webkit-scrollbar {
   width: 8px;
@@ -532,9 +538,10 @@ https://toughengineer.github.io/demo/slider-styler*/
 
 /*progress support*/
 .slider__track, .slider__progress {
+  --thumb: 16px;
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
-  --sx: calc(0.5 * 16px + var(--ratio) * (100% - 16px));
+  --sx: calc(0.5 * var(--thumb) + var(--ratio) * (100% - var(--thumb)));
 }
 
 .slider__track {
@@ -1614,6 +1621,8 @@ https://toughengineer.github.io/demo/slider-styler*/
   grid-template-areas: "logo title" "items items";
   overflow-y: scroll;
   animation: showing 0.2s linear forwards;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .news_unvisible {
   animation: hiding 0.2s linear forwards;
@@ -1648,11 +1657,11 @@ https://toughengineer.github.io/demo/slider-styler*/
   width: 8px;
 }
 .news::-webkit-scrollbar-track {
-  background: transparent; /* цвет дорожки */
+  background: transparent;
 }
 .news::-webkit-scrollbar-thumb {
-  background-color: #B6ADAE; /* цвет плашки */
-  border-radius: 2px; /* закругления плашки */
+  background-color: #B6ADAE;
+  border-radius: 2px;
 }
 
 @keyframes hiding {
@@ -2699,16 +2708,18 @@ https://toughengineer.github.io/demo/slider-styler*/
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .friends::-webkit-scrollbar {
   width: 8px;
 }
 .friends::-webkit-scrollbar-track {
-  background: transparent; /* цвет дорожки */
+  background: transparent;
 }
 .friends::-webkit-scrollbar-thumb {
-  background-color: #B6ADAE; /* цвет плашки */
-  border-radius: 2px; /* закругления плашки */
+  background-color: #B6ADAE;
+  border-radius: 2px;
 }
 
 .friend {
@@ -2761,6 +2772,8 @@ https://toughengineer.github.io/demo/slider-styler*/
   flex-direction: column;
   overflow-y: scroll;
   position: absolute;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .players_big {
   height: 731px;
@@ -2778,11 +2791,11 @@ https://toughengineer.github.io/demo/slider-styler*/
   width: 8px;
 }
 .players::-webkit-scrollbar-track {
-  background: transparent; /* цвет дорожки */
+  background: transparent;
 }
 .players::-webkit-scrollbar-thumb {
-  background-color: #B6ADAE; /* цвет плашки */
-  border-radius: 2px; /* закругления плашки */
+  background-color: #B6ADAE;
+  border-radius: 2px;
 }
 @keyframes players-hide {
   from {
@@ -3323,16 +3336,18 @@ https://toughengineer.github.io/demo/slider-styler*/
   overflow-y: auto;
   box-sizing: border-box;
   list-style-type: none;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .table__rows::-webkit-scrollbar {
   width: 8px;
 }
 .table__rows::-webkit-scrollbar-track {
-  background: transparent; /* цвет дорожки */
+  background: transparent;
 }
 .table__rows::-webkit-scrollbar-thumb {
-  background-color: #B6ADAE; /* цвет плашки */
-  border-radius: 2px; /* закругления плашки */
+  background-color: #B6ADAE;
+  border-radius: 2px;
 }
 .table__team {
   margin: 0;
@@ -3676,6 +3691,8 @@ https://toughengineer.github.io/demo/slider-styler*/
   box-sizing: border-box;
   justify-items: center;
   overflow-y: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
 }
 .customization::-webkit-scrollbar {
   width: 8px;

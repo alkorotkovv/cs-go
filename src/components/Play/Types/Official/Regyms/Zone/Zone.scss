@@ -173,16 +173,7 @@
     box-sizing: border-box;
     list-style-type: none;
 
-    &::-webkit-scrollbar {
-      width: 8px;
-    }
-    &::-webkit-scrollbar-track {
-      background: transparent;        /* цвет дорожки */
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: #B6ADAE;    /* цвет плашки */
-      border-radius: 2px;       /* закругления плашки */
-    }
+    @include vertical-scrollbar;
   }
 
   &__team {

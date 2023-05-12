@@ -1,6 +1,39 @@
 //Цвета
 $line_color: rgba(255, 255, 255, 0.2);
 
+//Миксины
+@mixin vertical-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        // цвет дорожки 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    // цвет плашки 
+    border-radius: 2px;       // закругления плашки 
+  }
+
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
+}
+
+@mixin horizontal-scrollbar {
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        // цвет дорожки 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B6ADAE;    // цвет плашки 
+    border-radius: 2px;       // закругления плашки 
+  }
+
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
+}
+
 img {
   -moz-user-select: none;
   -webkit-user-select: none;

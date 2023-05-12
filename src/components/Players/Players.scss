@@ -23,16 +23,7 @@
     animation: players-hide 3s ease-in forwards;
   }
   
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        /* цвет дорожки */
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    /* цвет плашки */
-    border-radius: 2px;       /* закругления плашки */
-  }
+  @include vertical-scrollbar;
   
   @keyframes players-hide {
     from {

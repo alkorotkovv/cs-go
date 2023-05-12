@@ -21,13 +21,6 @@ function Majors(props) {
       return () => el.removeEventListener('wheel', onWheel);
     }
   }, [])
-
-  const [isCompetitive, setIsCompetitive] = React.useState(true)
-  const [isDual, setIsDual] = React.useState(false)
-  const [isUsual, setIsUsual] = React.useState(false)
-  const [isDeathmatch, setIsDeathmatch] = React.useState(false)
-  const [isMilitary, setIsMilitary] = React.useState(false)
-
   
   return (
     <div className={"type type_majors" + (props.isVisible ? " type_visible" : " ")}>

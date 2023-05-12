@@ -70,17 +70,7 @@
       max-height: none;
       justify-content: left;
       overflow-x: auto;
-
-      &::-webkit-scrollbar {
-        height: 8px;
-      }
-      &::-webkit-scrollbar-track {
-        background: transparent;        // цвет дорожки 
-      }
-      &::-webkit-scrollbar-thumb {
-        background-color: #B6ADAE;    // цвет плашки 
-        border-radius: 2px;       // закругления плашки 
-      }
+      @include horizontal-scrollbar;
     }
 
     &_settings {
@@ -146,16 +136,7 @@
   justify-content: center;
   overflow-y: auto;
 
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        // цвет дорожки 
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    // цвет плашки 
-    border-radius: 2px;       // закругления плашки 
-  }
+  @include vertical-scrollbar;
 }
 
 .guns {
@@ -167,16 +148,7 @@
   justify-content: center;
   overflow-y: auto;
 
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;        // цвет дорожки 
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #B6ADAE;    // цвет плашки 
-    border-radius: 2px;       // закругления плашки 
-  }
+  @include vertical-scrollbar;
 }
 
 @keyframes soft-regym-switch {

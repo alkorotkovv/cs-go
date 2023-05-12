@@ -29,11 +29,12 @@ https://toughengineer.github.io/demo/slider-styler*/
   }
 }
 
-/*progress support*/
+/*progress support*/ 
 .slider__track, .slider__progress {
+  --thumb: 16px;
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
-  --sx: calc(0.5 * 16px + var(--ratio) * (100% - 16px));
+  --sx: calc(0.5 * var(--thumb) + var(--ratio) * (100% - var(--thumb)));
 }
 
 
