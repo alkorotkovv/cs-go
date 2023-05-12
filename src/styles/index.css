@@ -369,15 +369,16 @@
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: all 0.1s linear;
 }
 .select:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.select_active {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 .select_transparent {
   background-color: rgba(0, 0, 0, 0);
+}
+.select_active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .select__header {
   margin: 0;
@@ -416,7 +417,7 @@
   background-color: rgba(44, 44, 44, 0.98);
   z-index: 100;
   position: absolute;
-  top: 38px;
+  top: 47px;
   right: 0;
 }
 .select__options_visible {
@@ -436,10 +437,10 @@
   padding: 0;
   display: flex;
   color: lightgrey;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.2px;
 }
 
 .switch {
@@ -2161,6 +2162,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   color: white;
   font-size: 18px;
   line-height: 1;
+  letter-spacing: 0.7px;
   filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
   grid-area: name;
 }
@@ -2223,7 +2225,9 @@ https://toughengineer.github.io/demo/slider-styler*/
   justify-self: flex-start;
   align-self: flex-end;
   color: white;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
   filter: drop-shadow(2px 2px 3px rgb(0, 0, 0));
   grid-area: title;
 }
@@ -2252,11 +2256,15 @@ https://toughengineer.github.io/demo/slider-styler*/
   align-items: center;
 }
 .rank__title {
-  margin: 0;
+  margin: 0 0 0 18px;
   padding: 0;
   display: flex;
   align-items: center;
   height: 38px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 .rank_visible {
@@ -2349,13 +2357,6 @@ https://toughengineer.github.io/demo/slider-styler*/
   width: 80px;
   height: 33px;
   filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
-}
-.rank__title {
-  margin: 0 0 0 18px;
-  padding: 0;
-  display: flex;
-  color: white;
-  font-size: 16px;
 }
 .rank__arrow {
   margin: 0;
@@ -2745,15 +2746,19 @@ https://toughengineer.github.io/demo/slider-styler*/
   display: flex;
   color: white;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   grid-area: name;
 }
 .friend__status {
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 14px;
+  font-size: 13px;
   color: lightgray;
-  text-shadow: 1px 1px darkgrey;
+  letter-spacing: 1px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   grid-area: status;
 }
 
@@ -2846,6 +2851,9 @@ https://toughengineer.github.io/demo/slider-styler*/
   display: flex;
   color: white;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
   grid-area: name;
 }
 .player__prime {

@@ -81,6 +81,7 @@ $time: 0.5s;
     color: white;
     font-size: 18px;
     line-height: 1;
+    letter-spacing: 0.7px;
     filter: drop-shadow( 2px 2px 3px rgba(0, 0, 0, 1));
     grid-area: name;
   }
@@ -155,7 +156,9 @@ $time: 0.5s;
     justify-self: flex-start;
     align-self: flex-end;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
     filter: drop-shadow( 2px 2px 3px rgba(0, 0, 0, 1));
     grid-area: title;
   }
@@ -188,11 +191,15 @@ $time: 0.5s;
   align-items: center;
 
   &__title {
-    margin: 0;
+    margin: 0 0 0 18px;
     padding: 0;
     display: flex;
     align-items: center;
     height: 38px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
   }
 
@@ -298,14 +305,6 @@ $time: 0.5s;
     width: 80px;
     height: 33px;
     filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 1));
-  }
-
-  &__title {
-    margin: 0 0 0 18px;
-    padding: 0;
-    display: flex;
-    color: white;
-    font-size: 16px;
   }
 
   &__arrow {

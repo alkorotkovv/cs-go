@@ -9,7 +9,6 @@
   "avatar name name name message"
   "avatar prime rank country message"
   ;
-
   
   &:hover {
     cursor: default;
@@ -17,8 +16,7 @@
 
   &_animated {
     animation: player-show 2s ease-in ;
-  }
-  
+  }  
 
   &__avatar {
     margin: 0 0 0 18px;
@@ -42,6 +40,9 @@
     display: flex;
     color: white;
     font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
     grid-area: name;
   }
 

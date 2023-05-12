@@ -33,7 +33,11 @@
     padding: 0;
     display: flex;
     color: white;
+    //font-family: 'Inter';
     font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
     grid-area: name;
   }
 
@@ -41,9 +45,10 @@
     margin: 0;
     padding: 0;
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
     color: lightgray;
-    text-shadow: 1px 1px darkgrey;
+    letter-spacing: 1px;
+    filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.5));
     grid-area: status;
   }
 

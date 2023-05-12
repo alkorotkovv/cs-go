@@ -186,7 +186,7 @@ function RightBar() {
         </div>
         <div className='rank rank_visible'>
           <img className='rank__logo' src={rankLogo} alt="rank" draggable="false" />
-          <p className='rank__title'>Великий Магистр Высшего Ранга</p>
+          <p className='rank__title'>Великий магистр высшего ранга</p>
           <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}/>
         </div>
         <div className={rankFirstSubClassName}>
