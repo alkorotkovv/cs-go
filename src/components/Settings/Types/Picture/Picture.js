@@ -3,6 +3,8 @@ import Select from '../../../Select/Select';
 import timeIcon from '../../../../images/map_time_icon.png';
 
 function Picture(props) {
+
+  const customizationRef = React.useRef(null);
   
   const [isGraphic, setIsGraphic] = React.useState(true)
   const [isAdvanced, setIsAdvanced] = React.useState(false)
@@ -13,12 +15,14 @@ function Picture(props) {
     setIsGraphic(true);
     setIsAdvanced(false);
     setIsInterface(false);
+    customizationRef.current.scrollTo({left: 0, top: document.getElementById('graphic').offsetTop - customizationRef.current.offsetTop, behavior: "smooth"});
   }
 
   function handleAdvancedClick() {
     setIsGraphic(false);
     setIsAdvanced(true);
     setIsInterface(false);
+    customizationRef.current.scrollTo({left: 0, top: document.getElementById('advanced-graphic').offsetTop - customizationRef.current.offsetTop, behavior: "smooth"});
   }
 
   function handleInterfaceClick() {
@@ -26,24 +30,30 @@ function Picture(props) {
     setIsAdvanced(false);
     setIsInterface(true);
   }
-
   
   return (
     <div className={"regym regym_settings-picture" + (props.isVisible ? " regym_visible" : " ")}>
-      <ul className='regym__settings regym__settings_settings-picture'>
-        <li className={"type__regym" + (isGraphic ? " type__regym_active" : " ")} onClick={handleGraphicClick}><p className='type__regym-text'>Графика</p></li>
-        <li className={"type__regym" + (isAdvanced ? " type__regym_active" : " ")} onClick={handleAdvancedClick}><p className='type__regym-text'>Расширенные настройки изображения</p></li>
-        <li className={"type__regym" + (isInterface ? " type__regym_active" : " ")} onClick={handleInterfaceClick}><p className='type__regym-text'>Позиция краёв интерфейса</p></li>
+      <ul className='regym__settings regym__settings_customization'>
+        <li className={"type__regym" + (isGraphic ? " type__regym_active" : " ")} onClick={handleGraphicClick}>
+          <p className='type__regym-text type__regym-text_small'>Графика</p>
+        </li>
+        <li className={"type__regym" + (isAdvanced ? " type__regym_active" : " ")} onClick={handleAdvancedClick}>
+          <p className='type__regym-text type__regym-text_small'>Расширенные настройки изображения</p>
+        </li>
+        <li className={"type__regym" + (isInterface ? " type__regym_active" : " ")} onClick={handleInterfaceClick}>
+          <p className='type__regym-text type__regym-text_small'>Позиция краёв интерфейса</p>
+        </li>
       </ul>
       <div className='regym__main-wrapper'>
         <div className='regym__main regym__main_settings'>
-          <div className='customization'>
+          <div className='customization' ref={customizationRef}>
             <ul className='customization__list'>
-              <p className='customization__title'>Графика</p>
+              <p id="graphic" className='customization__title'>Графика</p>
               <li className='setting'>
                 <p className='setting__name'>Фон в главном меню</p>
                 <Select 
                   class="setting"
+                  title={"Anubis"}
                   options={[
                     {
                       name:"Ancient",
@@ -112,56 +122,14 @@ function Picture(props) {
                   class="setting"
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Монитор",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Телевизор", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -242,58 +210,24 @@ function Picture(props) {
                 <p className='setting__name'>Формат экрана</p>
                 <Select 
                   class="setting"
+                  title={"Широкоэкранный 16:9"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Обычный, 4:3",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Широкоэкранный 16:9", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Широкоэкранный 16:10", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -308,58 +242,31 @@ function Picture(props) {
                 <p className='setting__name'>Разрешение</p>
                 <Select 
                   class="setting"
+                  title={"1920x1080"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"1280x720",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "1366x768", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "1600x900", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "1920x1080", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -374,58 +281,24 @@ function Picture(props) {
                 <p className='setting__name'>Режим отображения</p>
                 <Select 
                   class="setting"
+                  title={"На весь экран"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"В окне",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "На весь экран", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Полноэкранный в окне", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -442,56 +315,14 @@ function Picture(props) {
                   class="setting"
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Вкл.", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -502,63 +333,43 @@ function Picture(props) {
                   isBackground={false}
                 />
               </li>
-              <p className='customization__title'>Расширенные настройки изображения</p>
+              <p id="advanced-graphic" className='customization__title'>Расширенные настройки изображения</p>
               <li className='setting'>
                 <p className='setting__name'>Общее качество теней</p>
                 <Select 
                   class="setting"
+                  title={"Высокое"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Очень низкое",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Низкое", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "Среднее", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Cobblestone", 
+                      name: "Высокое", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Автоматически:Высокое", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -573,58 +384,24 @@ function Picture(props) {
                 <p className='setting__name'>Детализация моделей и текстур</p>
                 <Select 
                   class="setting"
+                  title={"Высокое"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Низкое",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Среднее", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Высокое", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -641,56 +418,14 @@ function Picture(props) {
                   class="setting"
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Вкл.", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -705,58 +440,24 @@ function Picture(props) {
                 <p className='setting__name'>Детализация эффектов</p>
                 <Select 
                   class="setting"
+                  title={"Высокое"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Низкое",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Среднее", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Высокое", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -771,58 +472,31 @@ function Picture(props) {
                 <p className='setting__name'>Детализация шейдеров</p>
                 <Select 
                   class="setting"
+                  title={"Высокое"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Низкое",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Среднее", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "Высокое", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Очень высокое", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -837,58 +511,17 @@ function Picture(props) {
                 <p className='setting__name'>Повышенный контраст игроков</p>
                 <Select 
                   class="setting"
+                  title={"Вкл."}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Вкл.", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -903,58 +536,17 @@ function Picture(props) {
                 <p className='setting__name'>Многоядерная обработка</p>
                 <Select 
                   class="setting"
+                  title={"Вкл."}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Вкл.", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -971,56 +563,28 @@ function Picture(props) {
                   class="setting"
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Нет",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "2x MSAA", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "4x MSAA", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "8x MSAA", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -1035,58 +599,17 @@ function Picture(props) {
                 <p className='setting__name'>Сглаживание с помощью FXAA</p>
                 <Select 
                   class="setting"
+                  title={"Вкл."}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Blacksite", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Cobblestone", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Nuke", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "База «Феникса»", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Вкл.", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -1101,58 +624,52 @@ function Picture(props) {
                 <p className='setting__name'>Режим фильтрации текстур</p>
                 <Select 
                   class="setting"
+                  title={"Анизотропная 16х"}
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Билинейная",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Трилинейная", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "Анизотропная 2х", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Cobblestone", 
+                      name: "Анизотропная 4х", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Nuke", 
+                      name: "Анизотропная 8х", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "База «Феникса»", 
+                      name: "Анизотропная 16х", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Vertigo", 
-                      titled: true,
-                      handle: (arg) => {
-                        
-                      }
-                    },
-                    {
-                      name: "Случайно", 
+                      name: "Автоматически:Анизотропная 16х", 
                       titled: true,
                       handle: (arg) => {
                         
@@ -1169,21 +686,21 @@ function Picture(props) {
                   class="setting"
                   options={[
                     {
-                      name:"Ancient",
+                      name:"Выкл.",
                       titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
                       handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
                         
                       }
                     },
                     {
-                      name: "Anubis", 
+                      name: "Двойная буферизация", 
                       titled: true,
                       handle: (arg) => {
                         
                       }
                     },
                     {
-                      name: "Blacksite", 
+                      name: "Тройная буферизация", 
                       titled: true,
                       handle: (arg) => {
                         

@@ -89,6 +89,10 @@ img {
 .type__regym-text_unactive {
   color: #5A5A5A;
 }
+.type__regym-text_small {
+  font-size: 13px;
+  padding: 3px 0 3px 0;
+}
 .type__main {
   margin: 0;
   padding: 0;
@@ -200,6 +204,9 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .regym__settings_settings-picture {
+  align-items: flex-start;
+}
+.regym__settings_customization {
   align-items: flex-start;
 }
 .regym__main-wrapper {
