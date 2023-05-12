@@ -20,6 +20,12 @@ https://toughengineer.github.io/demo/slider-styler*/
     color: #CCCCCC;
     font-size: 18px;
     font-weight: 500;
+    outline: none;
+    background-color: transparent;
+
+    &:focus {
+      background-color: #424140;
+    }
   }
 }
 

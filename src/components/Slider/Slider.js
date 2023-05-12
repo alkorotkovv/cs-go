@@ -14,14 +14,20 @@ function Slider(props) {
   //Обработчик сдвига ползунка
   function handleChange(evt) {
     setValue(evt.target.value);
-    sliderRef.current.style.setProperty('--value', evt.target.value);
+    sliderRef.current.style.setProperty('--value', evt.target.value || 0);
+  }
+
+  //Обработчик ввода значения вручную
+  function handleValueChange(evt) {
+    setValue(evt.target.value);
+    sliderRef.current.style.setProperty('--value', evt.target.value || 0);
   }
 
   
   return (
     <div className="slider" ref={sliderRef}>
-        <input className="slider__track slider__progress"  type="range" id="slider" min="0" max="100" value={value} onChange={handleChange}/>
-        <div className="slider__value">{value}</div>
+        <input className="slider__track slider__progress"  type="range" id="slider" min="0" max="100" value={value || 0} onChange={handleChange}/>
+        <input className="slider__value"  type="text" id="value" value={value || 0} onChange={handleValueChange}/>
     </div>
   )
 }
