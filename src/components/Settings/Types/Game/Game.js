@@ -640,7 +640,7 @@ function Game(props) {
               <li className='setting'>
                 <p className='setting__name'>Показывать в интерфейсе позиции союзников</p>
                 <Select 
-                  class="setting"
+                  class="small"
                   title={"Показывать позиции и снаряжение"}
                   options={[
                     {

@@ -42,6 +42,10 @@
     color: white;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    &_small {
+      font-size: 15px;
+    }
   }
 
   &__arrow {

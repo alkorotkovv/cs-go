@@ -39,7 +39,7 @@ function Select(props) {
   return (
     <div className={"select" + (isOpen ? " select_active" : "") + (props.isBackground ? "" : " select_transparent")}  ref={selectRef}>
       <div className="select__header">
-        <p className="select__title">{title}</p>
+        <p className={"select__title" + (props.class ==="small" ? " select__title_small" : "")}>{title}</p>
         <img className="select__arrow" src={arrowDown} alt="arrow" draggable="false"/>
       </div>
       <ul className={`select__options` + (isOpen ? ` select__options_visible` : "")}>

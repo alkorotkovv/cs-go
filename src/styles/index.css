@@ -399,6 +399,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.select__title_small {
+  font-size: 15px;
+}
 .select__arrow {
   margin: 0;
   padding: 0;
@@ -3781,7 +3784,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 .setting__name {
   margin: 0;
   padding: 0;
-  max-width: 460px;
+  max-width: 430px;
   display: flex;
   font-size: 17px;
   font-weight: 400;
