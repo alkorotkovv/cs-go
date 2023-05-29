@@ -9,7 +9,7 @@ function Select(props) {
   const [title, setTitle] = React.useState(props.title || props.options[0].name);
 
   React.useEffect(() => {    
-    selectRef.current.style.cssText = `--minwidth: ${props.minwidth} `
+    selectRef.current.style.setProperty('--minwidth', props.minwidth);
     document.addEventListener("click", handleClick);
       return () => { document.removeEventListener("click", handleClick)};
   })
@@ -45,9 +45,9 @@ function Select(props) {
       <ul className={`select__options` + (isOpen ? ` select__options_visible` : "")}>
         {
         props.options.map((element, index) => 
-        (
-          <li className="select__option" key={index} onClick={handleOptionClick.bind(element)}><p className='select__option-text'>{element.name}</p></li>
-        )
+          (
+            <li className="select__option" key={index} onClick={handleOptionClick.bind(element)}><p className='select__option-text'>{element.name}</p></li>
+          )
         )
         } 
       </ul>
