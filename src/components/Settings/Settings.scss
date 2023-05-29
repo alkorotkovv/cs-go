@@ -87,6 +87,10 @@
   align-items: center;
   border-bottom: 1px solid $line_color;
 
+  &_nopadding {
+    padding: 0;
+  }
+
   &:last-of-type {
     border-bottom: none;
   }

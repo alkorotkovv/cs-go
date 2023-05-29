@@ -68,13 +68,13 @@ function Input(props) {
     //evt.preventDefault();
     //console.log(evt.deltaY)
     if (evt.deltaY > 0) {
-      setTitle("WheelDown");
-      setOldTitle("WheelDown");
+      setTitle("MWheelDown");
+      setOldTitle("MWheelDown");
       handleBlur();
     }
     else if (evt.deltaY < 0) {
-      setTitle("WheelUp");
-      setOldTitle("WheelUp");
+      setTitle("MWheelUp");
+      setOldTitle("MWheelUp");
       handleBlur();
     }
   }
