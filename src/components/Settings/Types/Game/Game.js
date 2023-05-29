@@ -1,6 +1,7 @@
 import React  from 'react';
 import Select from '../../../Select/Select';
 import timeIcon from '../../../../images/map_time_icon.png';
+import aim_settings from '../../../../images/aim_settings.png';
 import Slider from '../../../Slider/Slider';
 
 function Game(props) {
@@ -758,7 +759,7 @@ function Game(props) {
                 />
               </li>
 
-              <p id="command" className='customization__title'>Общение</p>
+              <p id="communication" className='customization__title'>Общение</p>
               <li className='setting'>
                 <p className='setting__name'>Метки игроков</p>
                 <Select 
@@ -944,6 +945,896 @@ function Game(props) {
                   isBackground={false}
                 />
               </li>
+
+
+              <p id="table" className='customization__title'>Наблюдение и таблица счёта</p>
+              <li className='setting'>
+                <p className='setting__name'>Клавиши выбора при наблюдении/голосовании</p>
+                <Select 
+                  class="setting"
+                  title={"Клавиши с цифрами"}
+                  options={[
+                    {
+                      name:"Клавиши с цифрами",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Ячейки оружия", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Показать мышь в таблице очков/ таблицу очков после игры</p>
+                <Select 
+                  class="setting"
+                  title={"Альтернативный огонь"}
+                  options={[
+                    {
+                      name:"Альтернативный огонь",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Прыжок", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Присесть", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Бросить оружие", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Последнее оружие", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Радиосообщение", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Использовать", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Показывать число выживших</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Плавная камера наблюдателя</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Скорость плавной камеры наблюдателя</p>
+                <Slider 
+                  min="0"
+                  max="0.4"
+                  step="0.01"
+                  value="0.27"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Передавать управление камерой игроку</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Клавиша отслеживания гранаты</p>
+                <Select 
+                  class="setting"
+                  title={"Alt слева"}
+                  options={[
+                    {
+                      name:"Alt слева",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Shift слева", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Клавиша перезарядки", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Показывать запись убийства автоматически</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+
+
+              <p id="item" className='customization__title'>Предмет</p>
+              <li className='setting'>
+                <p className='setting__name'>Быстрый граффити (наносится отпусканием клавиши)</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Переключать оружие на поднятое</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Задержать выход из прицеливания после выстрела</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Вид модели рук и оружия</p>
+                <Select 
+                  class="setting"
+                  title={"Стандартный"}
+                  options={[
+                    {
+                      name:"Стандартный",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Увеличенный", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Классический", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Всегда показывать снаряжение</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Закрывать магазин после покупки</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Открывать меню покупок кнопкой действия</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Нет",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Да", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Начальная позиция мыши в меню покупок</p>
+                <Select 
+                  class="setting"
+                  title={"Центр кругового меню покупок"}
+                  options={[
+                    {
+                      name:"Центр кругового меню покупок",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Позиция прицела", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Клавиши цифр в меню покупок</p>
+                <Select 
+                  class="setting"
+                  title={"Использовать для покупок"}
+                  options={[
+                    {
+                      name:"Использовать для покупок",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Использовать для игры", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Покупка оружия для союзников</p>
+                <Select 
+                  class="setting"
+                  title={"Левый Ctrl"}
+                  options={[
+                    {
+                      name:"Левый Ctrl",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Левый Alt", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Левый Shift", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Достать последнее оружие кнопкой кругового меню</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+
+
+              <p id="radar" className='customization__title'>Радар/планшет</p>
+              <li className='setting'>
+                <p className='setting__name'>Расположение карты на планшете</p>
+                <Select 
+                  class="setting"
+                  title={"Вращать и показывать всю карту"}
+                  options={[
+                    {
+                      name:"Центрировать на игроке",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Вращать и показывать всю карту", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Закрепить карты севером кверху", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Центрировать радар на игроке</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Вращать радар</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Размер радара</p>
+                <Slider 
+                  min="0.4"
+                  max="1.0"
+                  step="0.01"
+                  value="0.7"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Приближение радара</p>
+                <Slider 
+                  min="0.8"
+                  max="1.3"
+                  step="0.01"
+                  value="1.00"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Изменять форму радара в таблице результатов</p>
+                <Select 
+                  class="setting"
+                  title={"Да"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+
+
+              <p id="aim" className='customization__title'>Прицел</p>
+              <img className='customization__aim' src={aim_settings} alt="aim" draggable="false"/>
+              <li className='setting'>
+                <p className='setting__name'>Стиль прицела</p>
+                <Select 
+                  class="setting"
+                  title={"Классический (статичный)"}
+                  options={[
+                    {
+                      name:"По умолчанию",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "По умолчанию (статичный)", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Классический", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Классический (динамический)", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Классический (статичный)", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Точка в центре</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Длина</p>
+                <Slider 
+                  min="0.0"
+                  max="10.0"
+                  step="0.1"
+                  value="3.3"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Толщина</p>
+                <Slider 
+                  min="0.1"
+                  max="6.0"
+                  step="0.1"
+                  value="0.8"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Зазор</p>
+                <Slider 
+                  min="-5.0"
+                  max="5.0"
+                  step="0.1"
+                  value="1.0"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Обводка</p>
+                <Slider 
+                  min="0.0"
+                  max="3.0"
+                  step="0.1"
+                  value="1.0"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Красный</p>
+                <Slider 
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="50"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Зелёный</p>
+                <Slider 
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="255"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Синий</p>
+                <Slider 
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="55"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Прозрачность</p>
+                <Slider 
+                  min="0"
+                  max="255"
+                  step="1"
+                  value="255"
+                  unit=""
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Т-образный</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Да",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Нет", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Зазор зависит от оружия</p>
+                <Select 
+                  class="setting"
+                  title={"Нет"}
+                  options={[
+                    {
+                      name:"Нет",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Да", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              <li className='setting'>
+                <p className='setting__name'>Показывать чужие прицелы</p>
+                <Select 
+                  class="setting"
+                  title={"Все"}
+                  options={[
+                    {
+                      name:"Нет",
+                      titled: true,                       //Параметр указывает устанавливать ли текст опции в заголовок селекта
+                      handle: (arg) => {                  //arg это и есть объект опции {name: ..., handle: ...}, логика внутри компонента Select по клику на элемент
+                        
+                      }
+                    },
+                    {
+                      name: "Друзья и участники лобби", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    },
+                    {
+                      name: "Все", 
+                      titled: true,
+                      handle: (arg) => {
+                        
+                      }
+                    }
+                  ]}
+                  minwidth="50px"
+                  isBackground={false}
+                />
+              </li>
+              
 
 
               
