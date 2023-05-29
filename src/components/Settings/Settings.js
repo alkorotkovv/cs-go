@@ -2,6 +2,7 @@ import React  from 'react';
 import Panel from '../Panel/Panel';
 import Picture from './Types/Picture/Picture';
 import Sound from './Types/Sound/Sound';
+import Game from './Types/Game/Game';
 
 
 
@@ -67,6 +68,7 @@ function Settings(props) {
       </ul>
       { isPicture ? <Picture isVisible={isPicture} /> : <></>}
       { isSound ? <Sound isVisible={isSound} /> : <></>}
+      { isGame ? <Game isVisible={isGame} /> : <></>}
     </Panel>
     </>
   )
