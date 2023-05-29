@@ -692,6 +692,64 @@ https://toughengineer.github.io/demo/slider-styler*/
   color: white;
 }
 
+.input {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.input__title {
+  margin: 0;
+  padding: 0;
+  width: 224px;
+  height: 48px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #8D9698;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+}
+.input__title:hover {
+  cursor: default;
+  color: white;
+}
+.input__title:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  outline: 1px solid white;
+  animation: pulsating 1.5s linear infinite;
+}
+.input__close {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 9px;
+}
+.input__close_unvisible {
+  display: none;
+}
+
+@keyframes pulsating {
+  from {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
 .map {
   margin: 0;
   padding: 0;

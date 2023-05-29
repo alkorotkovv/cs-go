@@ -3,6 +3,7 @@ import Panel from '../Panel/Panel';
 import Picture from './Types/Picture/Picture';
 import Sound from './Types/Sound/Sound';
 import Game from './Types/Game/Game';
+import Keyboard from './Types/Keyboard/Keyboard';
 
 
 
@@ -11,7 +12,7 @@ function Settings(props) {
   const [isPicture, setIsPicture] = React.useState(true)
   const [isSound, setIsSound] = React.useState(false)
   const [isGame, setIsGame] = React.useState(false)
-  const [isKeyboardMouse, setIsKeyboardMouse] = React.useState(false)
+  const [isKeyboard, setIsKeyboard] = React.useState(false)
   const [isController, setIsController] = React.useState(false)
 
   //Обработчики режимов игры
@@ -19,7 +20,7 @@ function Settings(props) {
     setIsPicture(true);
     setIsSound(false);
     setIsGame(false);
-    setIsKeyboardMouse(false);
+    setIsKeyboard(false);
     setIsController(false);
   }
 
@@ -27,7 +28,7 @@ function Settings(props) {
     setIsPicture(false);
     setIsSound(true);
     setIsGame(false);
-    setIsKeyboardMouse(false);
+    setIsKeyboard(false);
     setIsController(false);
   }
 
@@ -35,15 +36,15 @@ function Settings(props) {
     setIsPicture(false);
     setIsSound(false);
     setIsGame(true);
-    setIsKeyboardMouse(false);
+    setIsKeyboard(false);
     setIsController(false);
   }
 
-  function handleKeyboardMouseClick() {
+  function handleKeyboardClick() {
     setIsPicture(false);
     setIsSound(false);
     setIsGame(false);
-    setIsKeyboardMouse(true);
+    setIsKeyboard(true);
     setIsController(false);
   }
 
@@ -51,7 +52,7 @@ function Settings(props) {
     setIsPicture(false);
     setIsSound(false);
     setIsGame(false);
-    setIsKeyboardMouse(false);
+    setIsKeyboard(false);
     setIsController(true);
   }
 
@@ -63,12 +64,13 @@ function Settings(props) {
         <li className={"type__regym" + (isPicture ? " type__regym_active" : " ")} onClick={handlePictureClick}><p className='type__regym-text'>Изображение</p></li>
         <li className={"type__regym" + (isSound ? " type__regym_active" : " ")} onClick={handleSoundClick}><p className='type__regym-text'>Звук</p></li>
         <li className={"type__regym" + (isGame ? " type__regym_active" : " ")} onClick={handleGameClick}><p className='type__regym-text'>Игра</p></li>
-        <li className={"type__regym" + (isKeyboardMouse ? " type__regym_active" : " ")} onClick={handleKeyboardMouseClick}><p className='type__regym-text'>Клавиатура и мышь</p></li>
+        <li className={"type__regym" + (isKeyboard ? " type__regym_active" : " ")} onClick={handleKeyboardClick}><p className='type__regym-text'>Клавиатура и мышь</p></li>
         <li className={"type__regym" + (isController ? " type__regym_active" : " ")} onClick={handleControllerClick}><p className='type__regym-text'>Контроллер</p></li>
       </ul>
       { isPicture ? <Picture isVisible={isPicture} /> : <></>}
       { isSound ? <Sound isVisible={isSound} /> : <></>}
       { isGame ? <Game isVisible={isGame} /> : <></>}
+      { isKeyboard ? <Keyboard isVisible={isKeyboard} /> : <></>}
     </Panel>
     </>
   )
