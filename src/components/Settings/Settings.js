@@ -4,6 +4,7 @@ import Picture from './Types/Picture/Picture';
 import Sound from './Types/Sound/Sound';
 import Game from './Types/Game/Game';
 import Keyboard from './Types/Keyboard/Keyboard';
+import Controller from './Types/Controller/Controller';
 
 
 
@@ -71,6 +72,7 @@ function Settings(props) {
       { isSound ? <Sound isVisible={isSound} /> : <></>}
       { isGame ? <Game isVisible={isGame} /> : <></>}
       { isKeyboard ? <Keyboard isVisible={isKeyboard} /> : <></>}
+      { isController ? <Controller isVisible={isController} /> : <></>}
     </Panel>
     </>
   )
