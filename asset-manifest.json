@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.8e3b515b.css",
-    "main.js": "/cs-go/static/js/main.59719873.js",
+    "main.css": "/cs-go/static/css/main.7f23bfb9.css",
+    "main.js": "/cs-go/static/js/main.ecde617e.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
     "static/media/servers.jpg": "/cs-go/static/media/servers.a7bc38a362a99f32240c.jpg",
     "static/media/over.jpg": "/cs-go/static/media/over.924aec5d1fc94d8b993d.jpg",
+    "static/media/aim_settings.png": "/cs-go/static/media/aim_settings.1f6bbc8fadd7014fbe68.png",
     "static/media/Inter-Bold.woff?v=3.19": "/cs-go/static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
     "static/media/Inter-Medium.woff?v=3.19": "/cs-go/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff?v=3.19": "/cs-go/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -118,12 +119,12 @@
     "static/media/de_bank_icon.png": "/cs-go/static/media/de_bank_icon.5a243887d9dcb77a74fc.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.8e3b515b.css.map": "/cs-go/static/css/main.8e3b515b.css.map",
-    "main.59719873.js.map": "/cs-go/static/js/main.59719873.js.map",
+    "main.7f23bfb9.css.map": "/cs-go/static/css/main.7f23bfb9.css.map",
+    "main.ecde617e.js.map": "/cs-go/static/js/main.ecde617e.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e3b515b.css",
-    "static/js/main.59719873.js"
+    "static/css/main.7f23bfb9.css",
+    "static/js/main.ecde617e.js"
   ]
 }
