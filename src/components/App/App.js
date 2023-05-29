@@ -24,6 +24,8 @@ function App() {
 
   const[isSearch, setIsSearch] = React.useState(false);
 
+  const[isResetVisible, setIsResetVisible] = React.useState(false);
+
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
     setIsMainVisible(true);
@@ -114,6 +116,15 @@ function App() {
     setIsExitVisible(false);
   }
 
+  function handleResetSettingsClick() {
+    console.log("gfgfgfgh")
+    setIsResetVisible(true);
+  }
+
+  function handleResetSettings() {
+    setIsResetVisible(false);
+  }
+
   return (
     <div className="page">
       <Menu 
@@ -148,8 +159,9 @@ function App() {
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
-      { isSettingsVisible ? <Settings isVisible={isSettingsVisible} /> : <></> }
+      { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
+      { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleResetSettingsClick={handleResetSettingsClick} handleClose={handleResetSettings} /> : <></> }
       
     </div>
   );

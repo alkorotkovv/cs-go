@@ -56,7 +56,6 @@ function Settings(props) {
     setIsKeyboard(false);
     setIsController(true);
   }
-
   
   return (
     <>
@@ -68,11 +67,11 @@ function Settings(props) {
         <li className={"type__regym" + (isKeyboard ? " type__regym_active" : " ")} onClick={handleKeyboardClick}><p className='type__regym-text'>Клавиатура и мышь</p></li>
         <li className={"type__regym" + (isController ? " type__regym_active" : " ")} onClick={handleControllerClick}><p className='type__regym-text'>Контроллер</p></li>
       </ul>
-      { isPicture ? <Picture isVisible={isPicture} /> : <></>}
-      { isSound ? <Sound isVisible={isSound} /> : <></>}
-      { isGame ? <Game isVisible={isGame} /> : <></>}
-      { isKeyboard ? <Keyboard isVisible={isKeyboard} /> : <></>}
-      { isController ? <Controller isVisible={isController} /> : <></>}
+      { isPicture ? <Picture isVisible={isPicture} handleResetSettingsClick={props.handleResetSettingsClick}/> : <></>}
+      { isSound ? <Sound isVisible={isSound} handleResetSettingsClick={props.handleResetSettingsClick}/> : <></>}
+      { isGame ? <Game isVisible={isGame} handleResetSettingsClick={props.handleResetSettingsClick}/> : <></>}
+      { isKeyboard ? <Keyboard isVisible={isKeyboard} handleResetSettingsClick={props.handleResetSettingsClick}/> : <></>}
+      { isController ? <Controller isVisible={isController} handleResetSettingsClick={props.handleResetSettingsClick}/> : <></>}
     </Panel>
     </>
   )

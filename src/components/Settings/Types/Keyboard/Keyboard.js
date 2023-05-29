@@ -583,7 +583,7 @@ function Keyboard(props) {
         <div className='customization__bottom'>
           <div className='customization__button'>
             <img className='customization__button-icon' src={timeIcon} alt="icon" draggable="false"/>
-            <p className='customization__button-text'>СБРОС</p>
+            <p className='customization__button-text' onClick={props.handleResetSettingsClick}>СБРОС</p>
           </div>
         </div>
       </div>

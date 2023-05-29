@@ -776,7 +776,7 @@ function Picture(props) {
         <div className='customization__bottom'>
           <div className='customization__button'>
             <img className='customization__button-icon' src={timeIcon} alt="icon" draggable="false"/>
-            <p className='customization__button-text'>СБРОСИТЬ</p>
+            <p className='customization__button-text' onClick={props.handleResetSettingsClick}>СБРОСИТЬ</p>
           </div>
           <div className='customization__button'>
             <p className='customization__button-text'>ОТМЕНИТЬ ИЗМЕНЕНИЯ</p>
