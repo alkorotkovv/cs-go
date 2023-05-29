@@ -116,12 +116,13 @@ function App() {
     setIsExitVisible(false);
   }
 
+  //Обработчик клика на сброс настроек
   function handleResetSettingsClick() {
-    console.log("gfgfgfgh")
     setIsResetVisible(true);
   }
 
-  function handleResetSettings() {
+  //Обработчик закрытия попапа сброса настроек
+  function handleResetSettingsClose() {
     setIsResetVisible(false);
   }
 
@@ -161,7 +162,7 @@ function App() {
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
       { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
-      { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleResetSettingsClick={handleResetSettingsClick} handleClose={handleResetSettings} /> : <></> }
+      { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
       
     </div>
   );
