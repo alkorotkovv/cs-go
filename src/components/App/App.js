@@ -118,6 +118,7 @@ function App() {
 
   //Обработчик клика на сброс настроек
   function handleResetSettingsClick() {
+    console.log("hfhfgfgfg")
     setIsResetVisible(true);
   }
 

@@ -113,6 +113,7 @@ function Game(props) {
     setIsAim(true);
     customizationRef.current.scrollTo({left: 0, top: document.getElementById('aim').offsetTop - customizationRef.current.offsetTop, behavior: "smooth"});
   }
+
   
   return (
     <div className={"regym regym_settings-picture" + (props.isVisible ? " regym_visible" : " ")}>
@@ -1842,9 +1843,9 @@ function Game(props) {
           </div>        
         </div>
         <div className='customization__bottom'>
-          <div className='customization__button'>
+          <div className='customization__button' onClick={props.handleResetSettingsClick}>
             <img className='customization__button-icon' src={timeIcon} alt="icon" draggable="false"/>
-            <p className='customization__button-text' onClick={props.handleResetSettingsClick}>СБРОС</p>
+            <p className='customization__button-text'>СБРОС</p>
           </div>
         </div>
       </div>
