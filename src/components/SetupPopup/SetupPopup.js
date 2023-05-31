@@ -12,19 +12,19 @@ function SetupPopup(props) {
 
           <fieldset className="setup-popup__fieldset">
             <label className="setup-popup__label">
-              <input className='setup-popup__input' type="radio" name="browser" value="ie" id="ie"/>
+              <input className='setup-popup__input' type="radio" name="type" value="ie" id="ie"/>
               <p className='setup-popup__input-title'>ЛЮБАЯ</p>
               <p className='setup-popup__input-subtitle'>Искать игру любой длительности</p>
             </label>
             <label className="setup-popup__label">
-              <input className='setup-popup__input' type="radio" name="browser" value="ie" id="ie"/>
-              <p className='setup-popup__input-title'>ЛЮБАЯ</p>
-              <p className='setup-popup__input-subtitle'>Искать игру любой длительности</p>
+              <input className='setup-popup__input' type="radio" name="type" value="ie" id="ie" checked/>
+              <p className='setup-popup__input-title'>КОРОТКАЯ ИГРА</p>
+              <p className='setup-popup__input-subtitle'>Победите в 9 раундах, чтобы выиграть</p>
             </label>
             <label className="setup-popup__label">
-              <input className='setup-popup__input' type="radio" name="browser" value="ie" id="ie"/>
-              <p className='setup-popup__input-title'>ЛЮБАЯ</p>
-              <p className='setup-popup__input-subtitle'>Искать игру любой длительности</p>
+              <input className='setup-popup__input' type="radio" name="type" value="ie" id="ie"/>
+              <p className='setup-popup__input-title'>ДЛИННАЯ ИГРА</p>
+              <p className='setup-popup__input-subtitle'>Победите в 16 раундах, чтобы выиграть (классический режим)</p>
             </label>
           </fieldset>
 
