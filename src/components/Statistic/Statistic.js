@@ -12,7 +12,7 @@ function Statistic(props) {
         <img className='statistic__header-logo' src={statisticLogo} alt="logo" draggable="false"/>
         <h1 className='statistic__header-title'>СТАТИСТИКА CS:GO 360</h1>
         <button className='statistic__header-button' onClick={props.handleStatisticPopupClick}>Подписаться</button>
-        <p className='statistic__header-subtitle'>Подписка неактивна - подпшитесь, чтобы собирать статистику новых игр</p>
+        <p className='statistic__header-subtitle'>Подписка неактивна - подпишитесь, чтобы собирать статистику новых игр</p>
       </div>
       <div className='statistic__main'>
         <div className='statistic__selects'>
