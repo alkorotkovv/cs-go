@@ -1190,27 +1190,6 @@ https://toughengineer.github.io/demo/slider-styler*/
     opacity: 1;
   }
 }
-.popup {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 999;
-}
-.popup_visible {
-  opacity: 1;
-  animation: soft-show 0.2s linear;
-}
 .popup__container {
   margin: 0;
   padding: 0;
@@ -1333,6 +1312,36 @@ https://toughengineer.github.io/demo/slider-styler*/
     left: -1920px;
     right: 1920px;
     visibility: hidden;
+  }
+}
+.popup {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 999;
+}
+.popup_visible {
+  opacity: 1;
+  animation: soft-show 0.2s linear;
+}
+
+@keyframes soft-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .gun {

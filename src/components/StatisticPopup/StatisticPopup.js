@@ -1,12 +1,13 @@
 import React  from 'react';
 import statisticLogo from '../../images/statisticLogo.png';
 import statisticLine from '../../images/statistic-line.jpg';
+import Popup from '../Popup/Popup';
 
 
 function StatisticPopup(props) {
   
   return (
-    <div className={`popup statistic-popup` + (props.isVisible ? " popup_visible":"")}>
+    <Popup name="statistic-popup" isVisible={props.isVisible}>
       <div className='statistic-popup__container'>
         <div className='statistic-popup__main'>
           <div className='statistic-popup__header'>
@@ -24,7 +25,7 @@ function StatisticPopup(props) {
           <button className='statistic-popup__button' onClick={props.handleClose}>Закрыть</button>
         </div>
       </div>
-    </div>
+    </Popup>
   )
 }
 

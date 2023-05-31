@@ -1,24 +1,4 @@
 .popup {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba($color: black, $alpha: 0.3);
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 999;
-
-  &_visible {
-    opacity: 1;
-    animation: soft-show 0.2s linear;
-  }
 
   &__container {
     margin: 0;

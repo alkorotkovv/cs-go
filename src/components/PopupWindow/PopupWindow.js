@@ -1,10 +1,10 @@
 import React  from 'react';
-
+import Popup from '../Popup/Popup';
 
 function PopupWindow(props) {
   
   return (
-    <div className={`popup` + (props.isVisible ? " popup_visible" : "")}>
+    <Popup name="default-popup" isVisible={props.isVisible}>
       <div className='popup__container'>
         <h2 className='popup__title'>{props.title}</h2>
         <div className='popup__main'>
@@ -15,7 +15,7 @@ function PopupWindow(props) {
           </div>
         </div>
       </div>
-    </div>
+    </Popup>
   )
 }
 
