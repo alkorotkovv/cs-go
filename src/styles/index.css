@@ -3708,6 +3708,50 @@ https://toughengineer.github.io/demo/slider-styler*/
   display: none;
 }
 
+.statistic__header {
+  margin: 0;
+  padding: 12.5px 32px;
+  display: grid;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  column-gap: 20px;
+  row-gap: 5px;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "logo title" "logo subtitle";
+}
+.statistic__header-logo {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  grid-area: logo;
+}
+.statistic__header-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: white;
+  grid-area: title;
+}
+.statistic__header-subtitle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: white;
+  grid-area: subtitle;
+}
+
 .inventory__header-item {
   margin: 0;
   padding: 10px 8px;

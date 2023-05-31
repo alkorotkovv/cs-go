@@ -9,6 +9,7 @@ import Inventory from '../Inventory/Inventory.js';
 import PopupWindow from '../PopupWindow/PopupWindow.js';
 import TV from '../TV/TV.js';
 import Settings from '../Settings/Settings.js';
+import Statistic from '../Statistic/Statistic.js';
 
 
 function App() {
@@ -160,6 +161,7 @@ function App() {
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
+      { isStatisticVisible ? <Statistic isVisible={isStatisticVisible} /> : <></> }
       { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
       { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
