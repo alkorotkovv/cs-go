@@ -88,6 +88,7 @@ function App() {
     setIsStatisticVisible(true);
     setIsSettingsVisible(false);
     setIsExitVisible(false);
+    setIsStatisticPopupVisible(true);
   }
 
   function handleSettingsClick() {

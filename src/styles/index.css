@@ -3153,16 +3153,19 @@ https://toughengineer.github.io/demo/slider-styler*/
 .statistic-popup__header {
   margin: 0;
   padding: 33px 100px;
+  height: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: #070707;
+  background: linear-gradient(rgb(0, 0, 0) 0% 80%, rgba(255, 255, 255, 0) 100%);
+  z-index: 100;
 }
 .statistic-popup__line {
-  margin: 0;
+  margin: -100px 0 0 0;
   padding: 0;
-  height: 535px;
+  height: 497px;
   overflow-y: auto;
   scrollbar-color: #B6ADAE transparent;
   scrollbar-width: thin;
@@ -3214,8 +3217,11 @@ https://toughengineer.github.io/demo/slider-styler*/
 .statistic-popup__bottom {
   margin: 0;
   padding: 29px 36px 20px 36px;
+  height: 98px;
   display: flex;
   justify-content: flex-end;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   gap: 8px;
   flex-shrink: 0;
 }
