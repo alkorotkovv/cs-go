@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.8210f2f5.css",
-    "main.js": "/cs-go/static/js/main.b73957d9.js",
+    "main.css": "/cs-go/static/css/main.e7fde5d6.css",
+    "main.js": "/cs-go/static/js/main.f74d823a.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
     "static/media/servers.jpg": "/cs-go/static/media/servers.a7bc38a362a99f32240c.jpg",
@@ -32,6 +32,7 @@
     "static/media/krakow2017.jpg": "/cs-go/static/media/krakow2017.5e21f1a945bef7eb7926.jpg",
     "static/media/berlin2019.jpg": "/cs-go/static/media/berlin2019.51938678fe8e8c2410a1.jpg",
     "static/media/aim.jpg": "/cs-go/static/media/aim.35b39bfcc7d388c9af92.jpg",
+    "static/media/statistic-line.jpg": "/cs-go/static/media/statistic-line.323bff19ea49be47019c.jpg",
     "static/media/Roboto-Medium.woff2?v=3.19": "/cs-go/static/media/Roboto-Medium.fc0337b9cf1cce2e6e1e.woff2",
     "static/media/boston2018.jpg": "/cs-go/static/media/boston2018.46255eba5869d6919b66.jpg",
     "static/media/Roboto-Bold.woff2?v=3.19": "/cs-go/static/media/Roboto-Bold.6cd35edfbc0d7a417131.woff2",
@@ -119,12 +120,12 @@
     "static/media/de_bank_icon.png": "/cs-go/static/media/de_bank_icon.5a243887d9dcb77a74fc.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.8210f2f5.css.map": "/cs-go/static/css/main.8210f2f5.css.map",
-    "main.b73957d9.js.map": "/cs-go/static/js/main.b73957d9.js.map",
+    "main.e7fde5d6.css.map": "/cs-go/static/css/main.e7fde5d6.css.map",
+    "main.f74d823a.js.map": "/cs-go/static/js/main.f74d823a.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8210f2f5.css",
-    "static/js/main.b73957d9.js"
+    "static/css/main.e7fde5d6.css",
+    "static/js/main.f74d823a.js"
   ]
 }
