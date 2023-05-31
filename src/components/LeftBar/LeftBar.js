@@ -50,9 +50,9 @@ function LeftBar(props) {
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isPlayVisible ? " leftBar__icon_active" : "")} src={playLogo} alt="csgo" onClick={handlePlayClick} draggable="false"/></li>
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isSearch ? " leftBar__icon_search" : "")} src={(props.isSearch ? netLogoGreen : netLogo)} alt="csgo" onClick={handleNetClick} draggable="false"/></li>
         <li className='leftBar__item'><img className={"leftBar__icon" + (props.isInventoryVisible ? " leftBar__icon_active" : "")} src={inventoryLogo} alt="csgo" onClick={handleInventoryClick} draggable="false"/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={tvLogo} alt="csgo" onClick={handleTVClick} draggable="false"/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={statisticLogo} alt="csgo" onClick={handleStatisticClick} draggable="false"/></li>
-        <li className='leftBar__item'><img className="leftBar__icon" src={settingsLogo} alt="csgo" onClick={handleSettingsClick} draggable="false"/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isTVVisible ? " leftBar__icon_active" : "")} src={tvLogo} alt="csgo" onClick={handleTVClick} draggable="false"/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isStatisticVisible ? " leftBar__icon_active" : "")} src={statisticLogo} alt="csgo" onClick={handleStatisticClick} draggable="false"/></li>
+        <li className='leftBar__item'><img className={"leftBar__icon" + (props.isSettingsVisible ? " leftBar__icon_active" : "")} src={settingsLogo} alt="csgo" onClick={handleSettingsClick} draggable="false"/></li>
         <li className='leftBar__item'><img className="leftBar__icon" src={exitLogo} alt="csgo" onClick={handleExitClick} draggable="false"/></li>
       </ul>
     </div>
