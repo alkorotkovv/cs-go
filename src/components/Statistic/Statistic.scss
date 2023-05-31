@@ -11,9 +11,9 @@
     row-gap: 5px;
     grid-template-columns: auto 1fr;
     grid-template-areas: 
-    "logo title"
-    "logo subtitle"
-  ;
+      "logo title"
+      "logo subtitle"
+    ;
   }
 
   &__header-logo {
@@ -49,6 +49,92 @@
     letter-spacing: 1px;
     color: white;
     grid-area: subtitle;
+  }
+
+  &__selects {
+    margin: 0;
+    padding: 6px 12px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__blocks {
+    margin: 0;
+    padding: 1px 8px;
+    display: grid;
+    column-gap: 8px;
+    row-gap: 4px;
+    //grid-template-columns: auto 1fr;
+    grid-template-areas: 
+      "block1  block1 block1 block3"
+      "block2  block2 block2 block3"
+      "block4 block5 block6 block6"
+    ;
+  }
+
+  &__block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position: relative;
+
+    &_1 {
+      width: 1387px;
+      height: 268px;
+      grid-area: block1;
+    }
+
+    &_2 {
+      width: 1387px;
+      height: 268px;
+      grid-area: block2;
+    }
+
+    &_3 {
+      width: 317px;
+      height: 542px;
+      grid-area: block3;
+    }
+
+    &_4 {
+      width: 565px;
+      height: 360px;
+      grid-area: block4;
+    }
+
+    &_5 {
+      width: 565px;
+      height: 360px;
+      grid-area: block5;
+    }
+
+    &_6 {
+      width: 565px;
+      height: 360px;
+      grid-area: block6;
+    }
+  }
+
+  &__block-logo {
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    left: 635px;
+  }
+
+  &__block-text {
+    margin: 0;
+    padding: 0;
+    max-width: 365px;
+    display: flex;
+    color: #CCCCCC;
+    position: absolute;
+    bottom: 55px;
+    left: 680px;
   }
  
 }

@@ -3751,6 +3751,76 @@ https://toughengineer.github.io/demo/slider-styler*/
   color: white;
   grid-area: subtitle;
 }
+.statistic__selects {
+  margin: 0;
+  padding: 6px 12px;
+  display: flex;
+  gap: 8px;
+}
+.statistic__blocks {
+  margin: 0;
+  padding: 1px 8px;
+  display: grid;
+  column-gap: 8px;
+  row-gap: 4px;
+  grid-template-areas: "block1  block1 block1 block3" "block2  block2 block2 block3" "block4 block5 block6 block6";
+}
+.statistic__block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.statistic__block_1 {
+  width: 1387px;
+  height: 268px;
+  grid-area: block1;
+}
+.statistic__block_2 {
+  width: 1387px;
+  height: 268px;
+  grid-area: block2;
+}
+.statistic__block_3 {
+  width: 317px;
+  height: 542px;
+  grid-area: block3;
+}
+.statistic__block_4 {
+  width: 565px;
+  height: 360px;
+  grid-area: block4;
+}
+.statistic__block_5 {
+  width: 565px;
+  height: 360px;
+  grid-area: block5;
+}
+.statistic__block_6 {
+  width: 565px;
+  height: 360px;
+  grid-area: block6;
+}
+.statistic__block-logo {
+  margin: 0;
+  padding: 0;
+  width: 29px;
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  left: 635px;
+}
+.statistic__block-text {
+  margin: 0;
+  padding: 0;
+  max-width: 365px;
+  display: flex;
+  color: #CCCCCC;
+  position: absolute;
+  bottom: 55px;
+  left: 680px;
+}
 
 .inventory__header-item {
   margin: 0;

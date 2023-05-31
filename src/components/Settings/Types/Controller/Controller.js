@@ -136,8 +136,6 @@ function Controller(props) {
                   isBackground={false}
                 />
               </li>
-
-
               <p id="aimsticks" className='customization__title'>Прицеливание стиком</p>
               <li className='setting'>
                 <p className='setting__name'>FlickStick</p>
