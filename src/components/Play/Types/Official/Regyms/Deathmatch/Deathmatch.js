@@ -13,7 +13,7 @@ function Deathmatch(props) {
     <div className={"regym regym_deathmatch-official" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_deathmatch-official'>
         <div className='wrapper wrapper_deathmatch-official'>
-          <Setup span="Классический" id="setup_deathmatch-official_1" type="style" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
+          <Setup span="Классический" id="setup_deathmatch-official_1" type="style" value="3" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
         </div>
         <div className='wrapper wrapper_deathmatch-official'>
           <Setup span="Прайм-статус включён" id="setup_deathmatch-official_2" image={setup_prime_icon} />

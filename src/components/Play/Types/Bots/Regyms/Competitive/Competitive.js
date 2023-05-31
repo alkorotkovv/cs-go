@@ -12,7 +12,7 @@ function Competitive(props) {
     <div className={"regym regym_competitive-bots" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_competitive-bots'>
         <div className='wrapper wrapper_competitive-bots'>
-          <Setup span="Любая длительность" id="setup_competitive-bots_1" type="length" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
+          <Setup span="Любая длительность" id="setup_competitive-bots_1" type="length" value="1" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
         </div>
         <div className='wrapper wrapper_competitive-bots'>
           <Switch span="Открытая группа" id="switch_competitive-bots_2" isChecked={true}/>

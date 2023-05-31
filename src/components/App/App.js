@@ -32,7 +32,8 @@ function App() {
   const[isStatisticPopupVisible, setIsStatisticPopupVisible] = React.useState(false);
 
   const [isSetupPopupVisible, setIsSetupPopupVisible] = React.useState(false);
-  const [setupType, setSetupType] = React.useState("")
+  const [setupType, setSetupType] = React.useState("");
+  const [setupValue, setSetupValue] = React.useState(0);
 
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
@@ -146,10 +147,16 @@ function App() {
   }
 
   //Обработчик клика по сетапу (в разделе Play)
-  function handleSetupClick(type) {
-    console.log(type);
+  function handleSetupClick(type, value) {
+    console.log(type)
+    console.log(value)
     setSetupType(type);
+    setSetupValue(value);
     setIsSetupPopupVisible(true);
+  }
+
+  function handleSetupPopupCheck(value) {
+    setSetupValue(value);
   }
 
   //Обработчик закрытия попапа сетапа
@@ -203,7 +210,9 @@ function App() {
           isVisible={isSetupPopupVisible} 
           title={setupType === "length" ? "Длительность игры" : "Стиль боя насмерть"} 
           text={setupType === "length" ? "Выберите длительность игры" : "Выберите стиль режима «Бой насмерть»"} 
-          handleClose={handleSetupPopupClose} 
+          value={setupValue}
+          handleClose={handleSetupPopupClose}
+          handleCheck={handleSetupPopupCheck} 
         /> : < ></> }
     </div>
   );
