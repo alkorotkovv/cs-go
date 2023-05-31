@@ -29,6 +29,14 @@
     background-color: #070707;
   }
 
+  &__line {
+    margin: 0;
+    padding: 0;
+    height: 535px;
+    overflow-y: auto;
+    @include vertical-scrollbar;
+  }
+
   &__header-logo {
     margin: 0;
     padding: 0;

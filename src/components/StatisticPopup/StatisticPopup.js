@@ -1,7 +1,6 @@
 import React  from 'react';
 import statisticLogo from '../../images/statisticLogo.png';
-import infoIcon from '../../images/info-icon.png';
-import Select from '../Select/Select';
+import statisticLine from '../../images/statistic-line.jpg';
 
 
 function StatisticPopup(props) {
@@ -16,6 +15,9 @@ function StatisticPopup(props) {
             <p className='statistic-popup__header-subtitle'>Узнай больше о своих играх в режимах «Соревновательный» и «Напарники». Статистика CS:GO 360 - это ежемесячная подписка.</p>
             <p className='statistic-popup__header-text'>Активировать ежемесячную подписку 81 руб / месяц</p>
           </div>
+          <div className='statistic-popup__line'>
+            <img className='statistic-popup__images' src={statisticLine} alt="line" draggable="false"/>
+          </div>          
         </div>
         <div className='statistic-popup__bottom'>
           <button className='statistic-popup__button statistic-popup__button_green'>Подписаться</button>

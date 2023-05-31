@@ -3159,6 +3159,24 @@ https://toughengineer.github.io/demo/slider-styler*/
   flex-direction: column;
   background-color: #070707;
 }
+.statistic-popup__line {
+  margin: 0;
+  padding: 0;
+  height: 535px;
+  overflow-y: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
+}
+.statistic-popup__line::-webkit-scrollbar {
+  width: 8px;
+}
+.statistic-popup__line::-webkit-scrollbar-track {
+  background: transparent;
+}
+.statistic-popup__line::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE;
+  border-radius: 2px;
+}
 .statistic-popup__header-logo {
   margin: 0;
   padding: 0;
