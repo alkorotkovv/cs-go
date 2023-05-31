@@ -5,14 +5,15 @@
     margin: 0;
     padding: 12.5px 32px;
     display: grid;
+    align-items: center;
     color: white;
     border-bottom: 1px solid $line-color;
     column-gap: 20px;
     row-gap: 5px;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     grid-template-areas: 
-      "logo title"
-      "logo subtitle"
+      "logo title button"
+      "logo subtitle subtitle"
     ;
   }
 
@@ -38,6 +39,27 @@
     grid-area: title;
   }
 
+  &__header-button {
+    margin: 0;
+    padding: 0;
+    width: 124px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #60EC7E;
+    background-color: #515F49;
+    border-radius: 5px;
+    color: #60EC7E;
+    text-transform: uppercase;
+    font-size: 14px;
+    grid-area: button;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
   &__header-subtitle {
     margin: 0;
     padding: 0;
@@ -49,6 +71,12 @@
     letter-spacing: 1px;
     color: white;
     grid-area: subtitle;
+  }
+  
+  &__main {
+    margin: 0;
+    padding: 0;
+    background-color: rgba($color: #000000, $alpha: 0.2);
   }
 
   &__selects {
@@ -76,7 +104,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    border-radius: 10px;
     position: relative;
 
     &_1 {

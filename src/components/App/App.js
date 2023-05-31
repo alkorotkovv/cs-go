@@ -10,6 +10,7 @@ import PopupWindow from '../PopupWindow/PopupWindow.js';
 import TV from '../TV/TV.js';
 import Settings from '../Settings/Settings.js';
 import Statistic from '../Statistic/Statistic.js';
+import StatisticPopup from '../StatisticPopup/StatisticPopup.js';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
   const[isSearch, setIsSearch] = React.useState(false);
 
   const[isResetVisible, setIsResetVisible] = React.useState(false);
+
+  const[isStatisticPopupVisible, setIsStatisticPopupVisible] = React.useState(false);
 
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
@@ -127,6 +130,16 @@ function App() {
     setIsResetVisible(false);
   }
 
+  //Обработчик клика на подписаться в статистике
+  function handleStatisticPopupClick() {
+    setIsStatisticPopupVisible(true);
+  }
+
+  //Обработчик закрытия попапа статистики
+  function handleStatisticPopupClose() {
+    setIsStatisticPopupVisible(false);
+  }
+
   return (
     <div className="page">
       <Menu 
@@ -161,11 +174,11 @@ function App() {
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
-      { isStatisticVisible ? <Statistic isVisible={isStatisticVisible} /> : <></> }
+      { isStatisticVisible ? <Statistic isVisible={isStatisticVisible} isStatisticPopupVisible={isStatisticPopupVisible} handleStatisticPopupClick={handleStatisticPopupClick} /> : <></> }
       { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
       { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
-      
+      { isStatisticPopupVisible ? <StatisticPopup isVisible={isStatisticPopupVisible} handleClose={handleStatisticPopupClose} /> : < ></> }
     </div>
   );
 

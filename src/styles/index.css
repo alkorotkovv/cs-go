@@ -3133,6 +3133,98 @@ https://toughengineer.github.io/demo/slider-styler*/
   height: 26px;
 }
 
+.statistic-popup__container {
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  height: 961px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #2B2B2B;
+}
+.statistic-popup__main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.statistic-popup__header {
+  margin: 0;
+  padding: 33px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #070707;
+}
+.statistic-popup__header-logo {
+  margin: 0;
+  padding: 0;
+  width: 94px;
+  height: 94px;
+  display: flex;
+}
+.statistic-popup__header-title {
+  margin: 0;
+  padding: 20px 0 0 0;
+  display: flex;
+  color: #D0C393;
+}
+.statistic-popup__header-subtitle {
+  margin: 0;
+  padding: 0 0 10px 0;
+  display: flex;
+  text-align: center;
+  color: #CCCCCC;
+  letter-spacing: 0.5px;
+}
+.statistic-popup__header-text {
+  margin: 0;
+  padding: 14px;
+  max-width: 430px;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #927F27;
+  border-radius: 5px;
+  color: #C1B481;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.statistic-popup__bottom {
+  margin: 0;
+  padding: 29px 36px 20px 36px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.statistic-popup__button {
+  margin: 0;
+  padding: 14px 13px;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.statistic-popup__button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.statistic-popup__button_green {
+  background-color: #4CAF50;
+}
+.statistic-popup__button_green:hover {
+  background-color: #4CAF50;
+  filter: brightness(120%);
+}
+
 .wrapper_competitive-official:nth-child(3) {
   margin-left: auto;
 }
@@ -3712,12 +3804,13 @@ https://toughengineer.github.io/demo/slider-styler*/
   margin: 0;
   padding: 12.5px 32px;
   display: grid;
+  align-items: center;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   column-gap: 20px;
   row-gap: 5px;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "logo title" "logo subtitle";
+  grid-template-columns: auto auto 1fr;
+  grid-template-areas: "logo title button" "logo subtitle subtitle";
 }
 .statistic__header-logo {
   margin: 0;
@@ -3739,6 +3832,25 @@ https://toughengineer.github.io/demo/slider-styler*/
   color: white;
   grid-area: title;
 }
+.statistic__header-button {
+  margin: 0;
+  padding: 0;
+  width: 124px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #60EC7E;
+  background-color: #515F49;
+  border-radius: 5px;
+  color: #60EC7E;
+  text-transform: uppercase;
+  font-size: 14px;
+  grid-area: button;
+}
+.statistic__header-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .statistic__header-subtitle {
   margin: 0;
   padding: 0;
@@ -3750,6 +3862,11 @@ https://toughengineer.github.io/demo/slider-styler*/
   letter-spacing: 1px;
   color: white;
   grid-area: subtitle;
+}
+.statistic__main {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .statistic__selects {
   margin: 0;
@@ -3769,7 +3886,8 @@ https://toughengineer.github.io/demo/slider-styler*/
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   position: relative;
 }
 .statistic__block_1 {
