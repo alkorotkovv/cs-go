@@ -125,10 +125,10 @@ function Bots(props) {
         </div>
       </ul>
       <div className='type__main'>
-        { isCompetitive ? <Competitive isVisible={isCompetitive} /> : <></>}
+        { isCompetitive ? <Competitive isVisible={isCompetitive} handleSetupClick={props.handleSetupClick}/> : <></>}
         { isDual ? <Dual isVisible={isDual} /> : <></>}
         { isUsual ? <Usual isVisible={isUsual} /> : <></>}
-        { isDeathmatch ? <Deathmatch isVisible={isDeathmatch} /> : <></>}
+        { isDeathmatch ? <Deathmatch isVisible={isDeathmatch} handleSetupClick={props.handleSetupClick}/> : <></>}
         { isMilitary ? <Military isVisible={isMilitary} /> : <></>}
       </div>
       <div className='type__bottom'>

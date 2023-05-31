@@ -1,0 +1,45 @@
+.setup-popup {
+
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+  }
+
+  &__label {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+      "input  title"
+      "input  subtitle"
+    ;
+    color: white;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-area: input;
+  }
+
+  &__input-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-area: title;
+  }
+
+  &__input-subtitle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-area: subtitle;
+  }
+}

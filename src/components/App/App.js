@@ -11,6 +11,7 @@ import TV from '../TV/TV.js';
 import Settings from '../Settings/Settings.js';
 import Statistic from '../Statistic/Statistic.js';
 import StatisticPopup from '../StatisticPopup/StatisticPopup.js';
+import SetupPopup from '../SetupPopup/SetupPopup.js';
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
   const[isResetVisible, setIsResetVisible] = React.useState(false);
 
   const[isStatisticPopupVisible, setIsStatisticPopupVisible] = React.useState(false);
+
+  const [isSetupPopupVisible, setIsSetupPopupVisible] = React.useState(false);
+  const [setupType, setSetupType] = React.useState("")
 
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
@@ -141,6 +145,20 @@ function App() {
     setIsStatisticPopupVisible(false);
   }
 
+  //Обработчик клика по сетапу (в разделе Play)
+  function handleSetupClick(type) {
+    console.log(type);
+    setSetupType(type);
+    setIsSetupPopupVisible(true);
+  }
+
+  //Обработчик закрытия попапа сетапа
+  function handleSetupPopupClose() {
+    setIsSetupPopupVisible(false);
+  }
+
+
+
   return (
     <div className="page">
       <Menu 
@@ -171,7 +189,7 @@ function App() {
         isSearch={isSearch}
       />
       <RightBar />
-      { isPlayVisible ? <Play isVisible={isPlayVisible} /> : < ></> }
+      { isPlayVisible ? <Play isVisible={isPlayVisible} handleSetupClick={handleSetupClick} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
@@ -180,6 +198,13 @@ function App() {
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
       { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
       { isStatisticPopupVisible ? <StatisticPopup isVisible={isStatisticPopupVisible} handleClose={handleStatisticPopupClose} /> : < ></> }
+      {isSetupPopupVisible ? 
+        <SetupPopup 
+          isVisible={isSetupPopupVisible} 
+          title={setupType === "length" ? "Длительность игры" : "Стиль боя насмерть"} 
+          text={setupType === "length" ? "Выберите длительность игры" : "Выберите стиль режима «Бой насмерть»"} 
+          handleClose={handleSetupPopupClose} 
+        /> : < ></> }
     </div>
   );
 

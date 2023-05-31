@@ -18,7 +18,7 @@ function Competitive(props) {
           <Switch span="Закрытый подбор" id="switch_competitive-official_1" isChecked={false} />
         </div>
         <div className='wrapper wrapper_competitive-official'>
-          <Setup span="Короткая игра" id="setup_competitive-official_1" image={setup_setting_icon} />
+          <Setup span="Короткая игра" id="setup_competitive-official_1" type="length" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
         </div>
         <div className='wrapper wrapper_competitive-official'>
           <Switch span="Рейтинговые игры" id="switch_competitive-official_2" isChecked={true}/>

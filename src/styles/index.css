@@ -1191,72 +1191,6 @@ https://toughengineer.github.io/demo/slider-styler*/
     opacity: 1;
   }
 }
-.popup__container {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 512px;
-  min-height: 220px;
-  box-sizing: border-box;
-  border: 1px solid #414141;
-  background-color: #2C2C2C;
-}
-.popup__title {
-  margin: 0;
-  padding: 20px 28px;
-  display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  color: #979797;
-  letter-spacing: 1px;
-  background-color: #252525;
-}
-.popup__main {
-  margin: 0;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-.popup__text {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  color: #C4C4C4;
-}
-.popup__buttons {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-.popup__button {
-  margin: 0;
-  padding: 20px 16px;
-  display: flex;
-  border: none;
-  box-sizing: border-box;
-  font-size: 18px;
-  color: white;
-  background-color: transparent;
-  border-radius: 4px;
-  transition: all 0.2s linear;
-}
-.popup__button:hover {
-  background-color: #272727;
-}
-
-@keyframes soft-show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .panel {
   margin: 0;
   padding: 0 96px;
@@ -3257,6 +3191,107 @@ https://toughengineer.github.io/demo/slider-styler*/
 .statistic-popup__button_green:hover {
   background-color: #4CAF50;
   filter: brightness(120%);
+}
+
+.popup__container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 512px;
+  min-height: 220px;
+  box-sizing: border-box;
+  border: 1px solid #414141;
+  background-color: #2C2C2C;
+}
+.popup__title {
+  margin: 0;
+  padding: 20px 28px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  color: #979797;
+  letter-spacing: 1px;
+  background-color: #252525;
+}
+.popup__main {
+  margin: 0;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.popup__text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #C4C4C4;
+}
+.popup__buttons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.popup__button {
+  margin: 0;
+  padding: 20px 16px;
+  display: flex;
+  border: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+.popup__button:hover {
+  background-color: #272727;
+}
+
+@keyframes soft-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.setup-popup__fieldset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+}
+.setup-popup__label {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "input  title" "input  subtitle";
+  color: white;
+}
+.setup-popup__input {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-area: input;
+}
+.setup-popup__input-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-area: title;
+}
+.setup-popup__input-subtitle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-area: subtitle;
 }
 
 .wrapper_competitive-official:nth-child(3) {
