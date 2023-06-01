@@ -331,6 +331,10 @@ import Gloves_CT from '../images/guns/Default/Gloves_CT.png';
 import Gloves_T from '../images/guns/Default/Gloves_T.png';
 
 //Команды
+import gl from '../images/majors/gl.png';
+import apeks from '../images/majors/apeks.png';
+import monte from '../images/majors/monte.png';
+import itb from '../images/majors/itb.png';
 import outsiders from '../images/majors/outsiders.png';
 import heroic from '../images/majors/heroic.png';
 import mouz from '../images/majors/mouz.png';
@@ -380,6 +384,7 @@ import astana from '../images/majors/astana.png';
 
 
 //Мажоры и турниры
+import Blastlogo from '../images/majors/Blast_logo.png';
 import ESLlogo from '../images/majors/ESL_logo.png';
 import PGLlogo from '../images/majors/PGL_logo.png';
 import Starladderlogo from '../images/majors/Starladder_logo.png';
@@ -387,6 +392,7 @@ import Faceitlogo from '../images/majors/Faceit_logo.png';
 import ELEAGUElogo from '../images/majors/ELEAGUE_logo.png';
 import MLGlogo from '../images/majors/MLG_logo.png';
 import Dreamhacklogo from '../images/majors/Dreamhack_logo.png';
+import paris2023 from '../images/majors/paris2023.jpg';
 import rio2022 from '../images/majors/rio2022.jpg';
 import antwerpen2022 from '../images/majors/antwerpen2022.jpg';
 import stockholm2021 from '../images/majors/stockholm2021.jpg';
@@ -2894,6 +2900,19 @@ export const typesArray = [
 
 //Массив друзей в режиме запретной зоны
 export const majorsArray = [
+  {
+    operator: {name: "Париж 2023", logo: Blastlogo, background: paris2023},
+    top: [
+      { name: "Vitality", logo: vitality, place: "Чемпион" },
+      { name: "GamerLegion", logo: gl, place: "Гранд-финалист" },
+      { name: "Heroic", logo: heroic, place: "Полуфиналист" },
+      { name: "Apeks", logo: apeks, place: "Полуфиналист" },
+      { name: "FaZe Clan", logo: faze, place: "Четвертьфиналист" },
+      { name: "Monte", logo: monte, place: "Четвертьфиналист" },
+      { name: "Team Liquid", logo: liquid, place: "Четвертьфиналист" },
+      { name: "Into The Breach", logo: itb, place: "Четвертьфиналист" }
+    ]
+  },
   {
     operator: {name: "Рио 2022", logo: ESLlogo, background: rio2022},
     top: [
