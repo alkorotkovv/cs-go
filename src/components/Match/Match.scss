@@ -1,0 +1,74 @@
+.match {
+  margin: 0;
+  padding: 6px;
+  width: 359px;
+  height: 110px;
+  display: grid;
+  box-sizing: border-box;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  grid-template-columns: 130px auto;
+  grid-template-areas: 
+    "logo score"
+    "logo time"
+    "logo result"
+    "name ."
+  ;
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 78px;
+    height: 78px;
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    grid-area: logo;
+  }
+
+  &__score {
+    margin: 0;
+    padding: 14px 0 0 0;
+    display: flex;
+    align-self: flex-end;
+    font-size: 30px;
+    font-weight: 600;
+    color: #EAD18A;
+    grid-area: score;
+  }
+
+  &__time {
+    margin: 0;
+    padding: 3px 0 0 0;
+    display: flex;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    grid-area: time;
+  }
+
+  &__result {
+    margin: 0;
+    padding: 3px 0 0 0;
+    display: flex;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: white;
+    grid-area: result;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    grid-area: name;
+  }
+
+
+
+}

@@ -1,0 +1,24 @@
+.download {
+  
+  &__logo {
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    display: flex;
+    position: absolute;
+    bottom: 40.5%;
+    left: 40%;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    display: flex;
+    color: #CCCCCC;
+    position: absolute;
+    bottom: 40%;
+    left: 42%;
+  }
+ 
+}

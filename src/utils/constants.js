@@ -3162,3 +3162,24 @@ export const majorsArray = [
     ]
   },
 ]
+
+export const matchesArray = [
+  {
+    map: "Anubis",
+    score: "13 - 16",
+    time: "Вчера, 20:36",
+    result: "Поражение"
+  },
+  {
+    map: "Anubis",
+    score: "13 - 16",
+    time: "Вчера, 20:36",
+    result: "Поражение"
+  },
+  {
+    map: "Anubis",
+    score: "13 - 16",
+    time: "Вчера, 20:36",
+    result: "Поражение"
+  },
+]
