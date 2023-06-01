@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.e7fde5d6.css",
-    "main.js": "/cs-go/static/js/main.f74d823a.js",
+    "main.css": "/cs-go/static/css/main.c6aac0b5.css",
+    "main.js": "/cs-go/static/js/main.c46bdb9d.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
     "static/media/servers.jpg": "/cs-go/static/media/servers.a7bc38a362a99f32240c.jpg",
@@ -11,6 +11,7 @@
     "static/media/Inter-Medium.woff?v=3.19": "/cs-go/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff?v=3.19": "/cs-go/static/media/Inter-Black.c6938660eec019fefd68.woff",
     "static/media/Inter-Regular.woff?v=3.19": "/cs-go/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/monte.png": "/cs-go/static/media/monte.a6801df774ff72c469be.png",
     "static/media/hub.jpg": "/cs-go/static/media/hub.ca51e9a61548dfdd2434.jpg",
     "static/media/superaim.jpg": "/cs-go/static/media/superaim.50b749ac2439e3865824.jpg",
     "static/media/Inter-Bold.woff2?v=3.19": "/cs-go/static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
@@ -45,18 +46,23 @@
     "static/media/clug2015.jpg": "/cs-go/static/media/clug2015.97453c19ce5c928195c4.jpg",
     "static/media/rio2022.jpg": "/cs-go/static/media/rio2022.664dc46c9443a2ca90a2.jpg",
     "static/media/london2019.jpg": "/cs-go/static/media/london2019.e38b5ef21bc65a4a5593.jpg",
+    "static/media/paris2023.jpg": "/cs-go/static/media/paris2023.55ad6f3c4732b35d7e5f.jpg",
     "static/media/rge.png": "/cs-go/static/media/rge.15b36ffa74fad2862591.png",
+    "static/media/itb.png": "/cs-go/static/media/itb.6a9750bcde46598059a0.png",
     "static/media/jonchoping2014.jpg": "/cs-go/static/media/jonchoping2014.d9d3be843ee86e52d876.jpg",
     "static/media/antwerpen2022.jpg": "/cs-go/static/media/antwerpen2022.f5dd63c695df8d06132b.jpg",
+    "static/media/heroic.png": "/cs-go/static/media/heroic.94c8315d8492c725b0a7.png",
     "static/media/keyd.png": "/cs-go/static/media/keyd.affa606ace0b5e0b8075.png",
     "static/media/cologne2014.jpg": "/cs-go/static/media/cologne2014.67d80c913e003d1e2f69.jpg",
     "static/media/dignitas.png": "/cs-go/static/media/dignitas.eeb058151438e774497b.png",
     "static/media/outsiders.png": "/cs-go/static/media/outsiders.83747fba4f30aea5c0a7.png",
     "static/media/jonchoping2013.jpg": "/cs-go/static/media/jonchoping2013.883e04b79a64f1056ebf.jpg",
     "static/media/katowice2014.jpg": "/cs-go/static/media/katowice2014.357c41915bcad3d995c8.jpg",
+    "static/media/gl.png": "/cs-go/static/media/gl.0fcc07c752198679f98c.png",
     "static/media/mibr.png": "/cs-go/static/media/mibr.84ff8752864cfa1e4c1e.png",
     "static/media/experienceLogo.png": "/cs-go/static/media/experienceLogo.951b00020a7b1a55edd1.png",
     "static/media/wolves.png": "/cs-go/static/media/wolves.cd4381078aec957af104.png",
+    "static/media/apeks.png": "/cs-go/static/media/apeks.c5c6fd7b61a12baa7b01.png",
     "static/media/luminocity.png": "/cs-go/static/media/luminocity.ad1a1c3d394ca8bf7214.png",
     "static/media/lunacy.jpg": "/cs-go/static/media/lunacy.4da040b4fab95e5dea85.jpg",
     "static/media/de_safehouse.jpg": "/cs-go/static/media/de_safehouse.dc2cf70e262656027bb8.jpg",
@@ -120,12 +126,12 @@
     "static/media/de_bank_icon.png": "/cs-go/static/media/de_bank_icon.5a243887d9dcb77a74fc.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.e7fde5d6.css.map": "/cs-go/static/css/main.e7fde5d6.css.map",
-    "main.f74d823a.js.map": "/cs-go/static/js/main.f74d823a.js.map",
+    "main.c6aac0b5.css.map": "/cs-go/static/css/main.c6aac0b5.css.map",
+    "main.c46bdb9d.js.map": "/cs-go/static/js/main.c46bdb9d.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7fde5d6.css",
-    "static/js/main.f74d823a.js"
+    "static/css/main.c6aac0b5.css",
+    "static/js/main.c46bdb9d.js"
   ]
 }
