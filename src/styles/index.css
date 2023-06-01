@@ -1585,6 +1585,15 @@ https://toughengineer.github.io/demo/slider-styler*/
   grid-template-columns: 130px auto;
   grid-template-areas: "logo score" "logo time" "logo result" "name .";
 }
+.match:hover .match__time {
+  opacity: 1;
+}
+.match:hover .match__result {
+  opacity: 1;
+}
+.match:hover .match__name {
+  opacity: 1;
+}
 .match__logo {
   margin: 0;
   padding: 0;
@@ -1612,6 +1621,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   font-size: 13px;
   letter-spacing: 1px;
   color: white;
+  opacity: 0.9;
   grid-area: time;
 }
 .match__result {
@@ -1621,6 +1631,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   font-size: 13px;
   letter-spacing: 1px;
   color: white;
+  opacity: 0.9;
   grid-area: result;
 }
 .match__name {
@@ -1633,6 +1644,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+  opacity: 0.9;
   grid-area: name;
 }
 
