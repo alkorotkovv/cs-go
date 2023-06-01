@@ -3,7 +3,8 @@ import React  from 'react';
 function Setup(props) {
   
   function handleClick() {
-    props.handleSetupClick(props.type, props.value)
+    if (props.type !== "prime")
+      props.handleSetupClick(props.type, props.value)
   }
 
   return (
@@ -16,7 +17,7 @@ function Setup(props) {
           props.type === "length" && props.value === "3" ? "Длинная игра" : 
           props.type === "style" && props.value === "1" ? "Команда на команду" : 
           props.type === "style" && props.value === "2" ? "Все против всех" : 
-          props.type === "style" && props.value === "3" ? "Классический" : ""
+          props.type === "style" && props.value === "3" ? "Классический" : "Прайм-статус включён"
         }
       </span>
     </div>

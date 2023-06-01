@@ -12,7 +12,7 @@ function Military(props) {
     <div className={"regym regym_military-official" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_military-official'>
       <div className='wrapper wrapper_military-official'>
-          <Setup span="Прайм-статус включён" id="setup_military-official_1" image={setup_prime_icon} />
+          <Setup span="Прайм-статус включён" id="setup_military-official_1" type="prime" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_military-official'>
           <Switch span="Открытая группа" id="switch_military-official_1" isChecked={true}/>

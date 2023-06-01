@@ -16,7 +16,7 @@ function Deathmatch(props) {
           <Setup span="Классический" id="setup_deathmatch-official_1" type="style" value={props.setupValue || "3"} image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
         </div>
         <div className='wrapper wrapper_deathmatch-official'>
-          <Setup span="Прайм-статус включён" id="setup_deathmatch-official_2" image={setup_prime_icon} />
+          <Setup span="Прайм-статус включён" id="setup_deathmatch-official_2" type="prime" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_deathmatch-official'>
           <Switch span="Открытая группа" id="switch_deathmatch-official_1" isChecked={true}/>

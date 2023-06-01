@@ -13,7 +13,7 @@ function Usual(props) {
     <div className={"regym regym_usual-official" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_usual-official'>
         <div className='wrapper wrapper_usual-official'>
-          <Setup span="Прайм-статус включён" id="setup_usual-official_1" image={setup_prime_icon} />
+          <Setup span="Прайм-статус включён" id="setup_usual-official_1" type="prime" image={setup_prime_icon} />
         </div>
         <div className='wrapper wrapper_usual-official'>
           <Switch span="Открытая группа" id="switch_usual-official_1" isChecked={true}/>
