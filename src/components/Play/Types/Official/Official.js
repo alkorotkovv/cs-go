@@ -82,10 +82,10 @@ function Official(props) {
         <li className={"type__regym" + (isZone ? " type__regym_active" : " ")} onClick={handleZoneClick}><p className='type__regym-text'>Запретная зона</p></li>
       </ul>
       <div className='type__main'>
-        { isCompetitive ? <Competitive isVisible={isCompetitive} handleSetupClick={props.handleSetupClick}/> : <></>}
+        { isCompetitive ? <Competitive isVisible={isCompetitive} setupValue={props.setupValue} handleSetupClick={props.handleSetupClick}/> : <></>}
         { isDual ? <Dual isVisible={isDual} /> : <></>}
         { isUsual ? <Usual isVisible={isUsual} /> : <></>}
-        { isDeathmatch ? <Deathmatch isVisible={isDeathmatch} handleSetupClick={props.handleSetupClick}/> : <></>}
+        { isDeathmatch ? <Deathmatch isVisible={isDeathmatch} setupValue={props.setupValue} handleSetupClick={props.handleSetupClick}/> : <></>}
         { isMilitary ? <Military isVisible={isMilitary} /> : <></>}
         { isZone ? <Zone isVisible={isZone} /> : <></>}
       </div>

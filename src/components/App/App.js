@@ -148,15 +148,15 @@ function App() {
 
   //Обработчик клика по сетапу (в разделе Play)
   function handleSetupClick(type, value) {
-    console.log(type)
-    console.log(value)
     setSetupType(type);
     setSetupValue(value);
     setIsSetupPopupVisible(true);
   }
 
-  function handleSetupPopupCheck(value) {
+  //Обработчик сохранения попапа сетапа
+  function handleSetupPopupSave(value) {
     setSetupValue(value);
+    setIsSetupPopupVisible(false);
   }
 
   //Обработчик закрытия попапа сетапа
@@ -196,7 +196,7 @@ function App() {
         isSearch={isSearch}
       />
       <RightBar />
-      { isPlayVisible ? <Play isVisible={isPlayVisible} handleSetupClick={handleSetupClick} /> : < ></> }
+      { isPlayVisible ? <Play isVisible={isPlayVisible} setupValue={setupValue} handleSetupClick={handleSetupClick} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
       { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
@@ -210,9 +210,10 @@ function App() {
           isVisible={isSetupPopupVisible} 
           title={setupType === "length" ? "Длительность игры" : "Стиль боя насмерть"} 
           text={setupType === "length" ? "Выберите длительность игры" : "Выберите стиль режима «Бой насмерть»"} 
+          type={setupType}
           value={setupValue}
+          handleSave={handleSetupPopupSave}
           handleClose={handleSetupPopupClose}
-          handleCheck={handleSetupPopupCheck} 
         /> : < ></> }
     </div>
   );

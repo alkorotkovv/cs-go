@@ -86,8 +86,8 @@ function Play(props) {
             isBackground={true}
           />
         </div>
-        { isOfficial ? <Official isVisible={isOfficial} handleSetupClick={props.handleSetupClick} /> : <></>}
-        { isBots ? <Bots isVisible={isBots} handleSetupClick={props.handleSetupClick} /> : <></>}
+        { isOfficial ? <Official isVisible={isOfficial} setupValue={props.setupValue} handleSetupClick={props.handleSetupClick} /> : <></>}
+        { isBots ? <Bots isVisible={isBots} setupValue={props.setupValue} handleSetupClick={props.handleSetupClick} /> : <></>}
         { isWorkshop ? <Workshop isVisible={isWorkshop} /> : <></>}
     </Panel>
     { isInstruction ? <Instruction isVisible={isInstruction} handleClose={handleInstructionClose} /> : <></>}

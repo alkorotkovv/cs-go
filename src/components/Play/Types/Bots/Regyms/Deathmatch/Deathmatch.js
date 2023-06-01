@@ -11,7 +11,7 @@ function Deathmatch(props) {
     <div className={"regym regym_deathmatch-bots" + (props.isVisible ? " regym_visible" : " ")}>
       <div className='regym__settings regym__settings_deathmatch-bots'>
         <div className='wrapper wrapper_deathmatch-bots'>
-          <Setup span="Команда на команду" id="setup_deathmatch-bots_1" type="style" value="1" image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
+          <Setup span="Команда на команду" id="setup_deathmatch-bots_1" type="style" value={props.setupValue || "1"} image={setup_setting_icon} handleSetupClick={props.handleSetupClick}/>
         </div>
         <div className='wrapper wrapper_deathmatch-bots'>
           <Switch span="Открытая группа" id="switch_deathmatch-bots_1" isChecked={true}/>
