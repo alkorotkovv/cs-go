@@ -4281,6 +4281,8 @@ https://toughengineer.github.io/demo/slider-styler*/
   font-size: 16px;
   letter-spacing: 0.5px;
   color: white;
+  text-decoration: none;
+  cursor: default;
 }
 .inventory__line {
   margin: 0;

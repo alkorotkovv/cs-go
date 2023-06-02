@@ -121,7 +121,7 @@ function Inventory(props) {
         </div>
         <div className="inventory__header-item">
           <img className="inventory__header-image" src={link} alt="link" draggable="false"/>
-          <p className='inventory__header-text'>Торговая площадка</p>
+          <a className='inventory__header-text' href="https://steamcommunity.com/market/" target="_blank" rel='noreferrer'>Торговая площадка</a>
         </div>
       </div>
       { isAll ? <All isVisible={isAll} array={array} /> : <></>}
