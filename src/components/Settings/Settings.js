@@ -7,7 +7,6 @@ import Keyboard from './Types/Keyboard/Keyboard';
 import Controller from './Types/Controller/Controller';
 
 
-
 function Settings(props) {
 
   const [isPicture, setIsPicture] = React.useState(true)

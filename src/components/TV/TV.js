@@ -6,10 +6,7 @@ import Download from './Types/Download/Download';
 import Tournaments from './Types/Tournaments/Tournaments';
 import Live from './Types/Live/Live';
 
-
-
 function TV(props) {
-
   
   const [isMajors, setIsMajors] = React.useState(true)
   const [isMatches, setIsMatches] = React.useState(false)

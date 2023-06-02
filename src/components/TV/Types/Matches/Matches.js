@@ -4,6 +4,18 @@ import Match from '../../../Match/Match';
 
 function Matches(props) {
 
+  const [matches, setMatches] = React.useState(matchesArray);
+
+  function handleMatchClick(id) {
+    setMatches(
+      matches.map((item, index) =>
+        index === id ? { ...item, checked: true } : { ...item, checked: false }
+      )
+    );
+  };
+
+  
+
   return (
     <div className={"type type_matches" + (props.isVisible ? " type_visible" : " ")}>
       <div className='type__main'>
@@ -11,18 +23,12 @@ function Matches(props) {
           <div className='matches'>
             <ul className="regym__matches">
               {
-                matchesArray.map((element, index) => 
+                matches.map((element, index) => 
                   <Match 
                     key={index}
+                    index={index}
                     object={element}
-                    logo={element.logo}
-                    icon={element.icon}
-                    name={element.name}
-                    time={element.time}
-                    isCompetitive={element.isCompetitive}
-                    isCheckable={false}
-                    isTimeVisible={false}
-                    isIconVisible={true}
+                    handleMatchClick={handleMatchClick}
                   />
                 )
               }  

@@ -3168,18 +3168,21 @@ export const matchesArray = [
     map: "Anubis",
     score: "13 - 16",
     time: "Вчера, 20:36",
-    result: "Поражение"
+    result: "Поражение",
+    checked: true
   },
   {
-    map: "Anubis",
-    score: "13 - 16",
-    time: "Вчера, 20:36",
-    result: "Поражение"
+    map: "Dust 2",
+    score: "16 - 4",
+    time: "Вчера, 19:55",
+    result: "Победа",
+    checked: false
   },
   {
-    map: "Anubis",
-    score: "13 - 16",
-    time: "Вчера, 20:36",
-    result: "Поражение"
+    map: "Inferno",
+    score: "16 - 12",
+    time: "Вчера, 18:55",
+    result: "Победа",
+    checked: false
   },
 ]
