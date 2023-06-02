@@ -1,3 +1,4 @@
+
 .match {
   margin: 0;
   padding: 6px;
@@ -26,6 +27,16 @@
     }  
   }
 
+  &_lightgreen {
+    border-left: 8px solid rgba(82, 175, 82, 0.4);
+    background: linear-gradient(90deg, rgba(82, 175, 82, 0.4) 0%, rgba(82, 175, 82, 0.4) 20%, rgba(82, 175, 82, 0.3) 40%, rgba(82, 175, 82, 0.2) 60%  , rgba(82, 175, 82, 0.1) 80%, rgba(82, 175, 82, 0.0) 100%);
+    
+    &:hover {
+      border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.15%, rgba(82, 175, 82, 0.4) 0.15%);
+      border-image-slice: 1;
+    }  
+  }
+
   &_red {
     border-left: 8px solid rgba(170, 24, 24, 0.4);
     background: linear-gradient(90deg, rgba(170, 24, 24, 0.4) 0%, rgba(170, 24, 24, 0.4) 20%, rgba(170, 24, 24, 0.3) 40%, rgba(170, 24, 24, 0.2) 60%  , rgba(170, 24, 24, 0.1) 80%, rgba(170, 24, 24, 0) 100%);
@@ -43,6 +54,18 @@
       border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.3%, rgb(255, 255, 255) 0.3%);
       border-image-slice: 1;
     }
+  }
+
+  &_checked &__time {
+    opacity: 1;
+  }
+
+  &_checked &__result {
+    opacity: 1;
+  }
+
+  &_checked &__name {
+    opacity: 1;
   }
   
   &:hover &__time {
@@ -68,6 +91,12 @@
     grid-area: logo;
   }
 
+  &__score-block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
   &__score {
     margin: 0;
     padding: 14px 0 0 0;
@@ -75,8 +104,16 @@
     align-self: flex-end;
     font-size: 30px;
     font-weight: 600;
-    color: #EAD18A;
+    color: #CCCCCC;
     grid-area: score;
+
+    &_t {
+      color: #EAD18A;
+    }
+
+    &_ct {
+      color: #B5D4EE;
+    }
   }
 
   &__time {
@@ -90,9 +127,28 @@
     grid-area: time;
   }
 
-  &__result {
+  &__result-block {
     margin: 0;
     padding: 3px 0 0 0;
+    display: flex;
+    gap: 6px;
+  }
+
+  &__cup {
+    margin: 0;
+    padding: 0;
+    width: 13px;
+    height: 13px;
+    display: none;
+
+    &_visible {
+      display: flex;
+    }
+  }
+
+  &__result {
+    margin: 0;
+    padding: 0;
     display: flex;
     font-size: 13px;
     letter-spacing: 1px;

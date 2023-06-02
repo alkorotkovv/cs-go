@@ -258,6 +258,33 @@
   margin: 0 16px;
   max-height: 760px;
 }
+.regym__secondary {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  flex: 1;
+  animation: soft-regym-opacity 0.3s linear forwards;
+}
+.regym__secondary_majors {
+  margin: 0 0 16px 0;
+  max-height: none;
+  justify-content: left;
+  overflow-x: auto;
+  scrollbar-color: #B6ADAE transparent;
+  scrollbar-width: thin;
+}
+.regym__secondary_majors::-webkit-scrollbar {
+  height: 8px;
+}
+.regym__secondary_majors::-webkit-scrollbar-track {
+  background: transparent;
+}
+.regym__secondary_majors::-webkit-scrollbar-thumb {
+  background-color: #B6ADAE;
+  border-radius: 2px;
+}
 .regym__maps {
   margin: 0;
   padding: 24px 0;
@@ -359,6 +386,14 @@
   }
 }
 @keyframes soft-regym-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes soft-regym-opacity {
   from {
     opacity: 0.1;
   }
@@ -1595,6 +1630,14 @@ https://toughengineer.github.io/demo/slider-styler*/
   border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.15%, rgba(27, 179, 27, 0.4) 0.15%);
   border-image-slice: 1;
 }
+.match_lightgreen {
+  border-left: 8px solid rgba(82, 175, 82, 0.4);
+  background: linear-gradient(90deg, rgba(82, 175, 82, 0.4) 0%, rgba(82, 175, 82, 0.4) 20%, rgba(82, 175, 82, 0.3) 40%, rgba(82, 175, 82, 0.2) 60%, rgba(82, 175, 82, 0.1) 80%, rgba(82, 175, 82, 0) 100%);
+}
+.match_lightgreen:hover {
+  border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.15%, rgba(82, 175, 82, 0.4) 0.15%);
+  border-image-slice: 1;
+}
 .match_red {
   border-left: 8px solid rgba(170, 24, 24, 0.4);
   background: linear-gradient(90deg, rgba(170, 24, 24, 0.4) 0%, rgba(170, 24, 24, 0.4) 20%, rgba(170, 24, 24, 0.3) 40%, rgba(170, 24, 24, 0.2) 60%, rgba(170, 24, 24, 0.1) 80%, rgba(170, 24, 24, 0) 100%);
@@ -1609,6 +1652,15 @@ https://toughengineer.github.io/demo/slider-styler*/
 .match_checked:hover {
   border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.3%, rgb(255, 255, 255) 0.3%);
   border-image-slice: 1;
+}
+.match_checked .match__time {
+  opacity: 1;
+}
+.match_checked .match__result {
+  opacity: 1;
+}
+.match_checked .match__name {
+  opacity: 1;
 }
 .match:hover .match__time {
   opacity: 1;
@@ -1629,6 +1681,11 @@ https://toughengineer.github.io/demo/slider-styler*/
   justify-self: center;
   grid-area: logo;
 }
+.match__score-block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 .match__score {
   margin: 0;
   padding: 14px 0 0 0;
@@ -1636,8 +1693,14 @@ https://toughengineer.github.io/demo/slider-styler*/
   align-self: flex-end;
   font-size: 30px;
   font-weight: 600;
-  color: #EAD18A;
+  color: #CCCCCC;
   grid-area: score;
+}
+.match__score_t {
+  color: #EAD18A;
+}
+.match__score_ct {
+  color: #B5D4EE;
 }
 .match__time {
   margin: 0;
@@ -1649,9 +1712,25 @@ https://toughengineer.github.io/demo/slider-styler*/
   opacity: 0.9;
   grid-area: time;
 }
-.match__result {
+.match__result-block {
   margin: 0;
   padding: 3px 0 0 0;
+  display: flex;
+  gap: 6px;
+}
+.match__cup {
+  margin: 0;
+  padding: 0;
+  width: 13px;
+  height: 13px;
+  display: none;
+}
+.match__cup_visible {
+  display: flex;
+}
+.match__result {
+  margin: 0;
+  padding: 0;
   display: flex;
   font-size: 13px;
   letter-spacing: 1px;
@@ -3451,6 +3530,13 @@ https://toughengineer.github.io/demo/slider-styler*/
   flex-direction: column;
   box-sizing: border-box;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.legend {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
 }
 
 .wrapper_competitive-official:nth-child(3) {

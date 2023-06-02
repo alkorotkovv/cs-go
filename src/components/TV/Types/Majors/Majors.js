@@ -26,7 +26,7 @@ function Majors(props) {
     <div className={"type type_majors" + (props.isVisible ? " type_visible" : " ")}>
       <div className='type__main'>
         <div className='regym__main-wrapper'>
-          <div className='regym__main regym__main_majors' ref={refMajors}>
+          <div className='regym__secondary regym__secondary_majors' ref={refMajors}>
             <ul className="regym__majors">
                 {
                   majorsArray.map((element, index) => 

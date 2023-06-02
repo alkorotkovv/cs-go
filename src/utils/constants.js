@@ -3166,23 +3166,74 @@ export const majorsArray = [
 export const matchesArray = [
   {
     map: "Anubis",
-    score: "13 - 16",
+    scoreT: "13",
+    scoreCT: "16",
     time: "Вчера, 20:36",
     result: "Поражение",
+    side: "T",
     checked: true
   },
   {
     map: "Dust 2",
-    score: "16 - 4",
+    scoreT: "16",
+    scoreCT: "4",
     time: "Вчера, 19:55",
     result: "Победа",
+    side: "T",
     checked: false
   },
   {
     map: "Inferno",
-    score: "16 - 12",
+    scoreT: "12",
+    scoreCT: "16",
     time: "Вчера, 18:55",
     result: "Победа",
+    side: "CT",
+    checked: false
+  },
+  {
+    map: "Anubis",
+    scoreT: "16",
+    scoreCT: "9",
+    time: "Вторник, 21:29",
+    result: "Победа",
+    side: "T",
+    checked: false
+  },
+  {
+    map: "Dust 2",
+    scoreT: "15",
+    scoreCT: "15",
+    time: "Вторник, 20:37",
+    result: "Ничья",
+    side: "T",
+    checked: false
+  },
+  {
+    map: "Inferno",
+    scoreT: "2",
+    scoreCT: "16",
+    time: "Вчера, 20:01",
+    result: "Поражение",
+    side: "T",
+    checked: false
+  },
+  {
+    map: "Dust 2",
+    scoreT: "16",
+    scoreCT: "13",
+    time: "Вчера, 19:07",
+    result: "Победа",
+    side: "T",
+    checked: false
+  },
+  {
+    map: "Dust 2",
+    scoreT: "6",
+    scoreCT: "16",
+    time: "Воскресенье, 21:30",
+    result: "Победа",
+    side: "CT",
     checked: false
   },
 ]

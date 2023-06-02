@@ -19,23 +19,25 @@ function Matches(props) {
   return (
     <div className={"type type_matches" + (props.isVisible ? " type_visible" : " ")}>
       <div className='type__main'>
-        <div className={"regym regym_matches" + (props.isVisible ? " regym_visible" : " ")}>
-          <div className='matches'>
-            <ul className="regym__matches">
-              {
-                matches.map((element, index) => 
-                  <Match 
-                    key={index}
-                    index={index}
-                    object={element}
-                    handleMatchClick={handleMatchClick}
-                  />
-                )
-              }  
-            </ul>
-          </div>
-          <div className='legend'>
+        <div className='regym__main-wrapper'>
+          <div className="regym__secondary regym__secondary_matches">
+            <div className='matches'>
+              <ul className="regym__matches">
+                {
+                  matches.map((element, index) => 
+                    <Match 
+                      key={index}
+                      index={index}
+                      object={element}
+                      handleMatchClick={handleMatchClick}
+                    />
+                  )
+                }  
+              </ul>
+            </div>
+            <div className='legend'>
 
+            </div>
           </div>
         </div>
       </div>

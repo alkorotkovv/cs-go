@@ -9,10 +9,6 @@
     display: flex;
   }
 
-  &_matches {
-    
-  }
-
   &__settings {
     margin: 0;
     padding: 0 33px;
@@ -42,6 +38,7 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
 
+  //режим плавно выезжающий справа налево
   &__main {
     margin: 0;
     padding: 0;
@@ -81,7 +78,27 @@
       margin: 0 16px;
       max-height: 760px;
     }
+
     
+  }
+
+  //режим плавно появляющийся (opacity)
+  &__secondary {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex: 1;
+    animation: soft-regym-opacity 0.3s linear forwards;
+
+    &_majors {
+      margin: 0 0 16px 0;
+      max-height: none;
+      justify-content: left;
+      overflow-x: auto;
+      @include horizontal-scrollbar;
+    }
   }
 
   &__maps {
@@ -178,6 +195,17 @@
 }
 
 @keyframes soft-regym-show {
+  from {
+    opacity: 0.1;
+    //background-color: rgba($color: #000000, $alpha: 1);
+  }
+  to {
+    opacity: 1;
+    //background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+@keyframes soft-regym-opacity {
   from {
     opacity: 0.1;
     //background-color: rgba($color: #000000, $alpha: 1);
