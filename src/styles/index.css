@@ -1672,16 +1672,6 @@ https://toughengineer.github.io/demo/slider-styler*/
   opacity: 0.9;
   grid-area: name;
 }
-@keyframes slow-border {
-  from {
-    border-left: 4px solid white;
-    padding-left: 10px;
-  }
-  to {
-    border-left: 8px solid white;
-    padding-left: 6px;
-  }
-}
 
 .page {
   width: 100vw;
