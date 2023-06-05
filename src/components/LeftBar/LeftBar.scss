@@ -1,9 +1,10 @@
 .leftBar {
-  width: 95px;
+  width: 96px;
   height: 1080px;
   margin: 0;
   padding: 0;
   display: flex;
+  box-sizing: border-box;
   border-right: 1px solid $line_color;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1.5;

@@ -1,11 +1,47 @@
 import React  from 'react';
-import servers from '../../../../images/servers.jpg';
+import MatchOnline from '../../../MatchOnline/MatchOnline';
 
 function Live(props) {
 
+  const [id, setId] = React.useState(props.matches[0].id);
+
+  //Обработчик клика по матчу
+  function handleMatchClick(id) {
+    setId(id);
+  };
+
+
   return (
-    <div className={"type type_live" + (props.isVisible ? " type_visible" : " ")} >
-      <img className='servers' src={servers} alt="сервера" onClick={props.handleClose} draggable="false"/>
+    <div className={"type type_matches" + (props.isVisible ? " type_visible" : " ")}>
+      <div className='type__main'>
+        <div className='regym__main-wrapper'>
+          <div className="regym__secondary regym__secondary_matches">
+            <div className='matches'>
+              <ul className="regym__matches">
+                {
+                  props.matches.map((element, index) => 
+                    <MatchOnline
+                      key={index}
+                      index={index}
+                      id={id}
+                      object={element}                      
+                      handleMatchClick={handleMatchClick}
+                    />
+                  )
+                }  
+              </ul>
+            </div>
+            <div className='legend'>
+              <div className='legend__main'>
+                <img className='legend__match-picture' src={props.matches.find((item) => item.id === id).image} alt="match" draggable="false"/>
+              </div>
+              <div className='legend__bottom'>
+                <button className='legend__button'>Смотреть в прямом эфире</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

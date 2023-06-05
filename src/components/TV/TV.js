@@ -5,7 +5,7 @@ import Matches from './Types/Matches/Matches';
 import Download from './Types/Download/Download';
 import Tournaments from './Types/Tournaments/Tournaments';
 import Live from './Types/Live/Live';
-import { matchesArray } from '../../utils/constants';
+import { matchesArray, matchesOnlineArray } from '../../utils/constants';
 
 function TV(props) {
   
@@ -72,7 +72,7 @@ function TV(props) {
         <Majors isVisible={isMajors} />
         <Matches isVisible={isMatches} matches={matches} setMatches={setMatches}/>
         <Download isVisible={isDownload} matches={matches} setMatches={setMatches}/>
-        <Live isVisible={isLive} />
+        <Live isVisible={isLive} matches={matchesOnlineArray} />
         <Tournaments isVisible={isTournaments} />
     </Panel>
     </>

@@ -421,6 +421,14 @@ import match5 from '../images/matches/match5.jpg';
 import match6 from '../images/matches/match6.jpg';
 import match7 from '../images/matches/match7.jpg';
 import match8 from '../images/matches/match8.jpg';
+import matchOnline1 from '../images/matches/matchOnline1.jpg';
+import matchOnline2 from '../images/matches/matchOnline2.jpg';
+import matchOnline3 from '../images/matches/matchOnline3.jpg';
+import matchOnline4 from '../images/matches/matchOnline4.jpg';
+import matchOnline5 from '../images/matches/matchOnline5.jpg';
+import matchOnline6 from '../images/matches/matchOnline6.jpg';
+import matchOnline7 from '../images/matches/matchOnline7.jpg';
+import matchOnline8 from '../images/matches/matchOnline8.jpg';
 
 
 //Массив медалей
@@ -3270,4 +3278,79 @@ export const matchesArray = [
     download: false,
     image: match8
   },
+]
+
+export const matchesOnlineArray = [
+  {
+    id: 2001,
+    map: "Mirage",
+    scoreT: "11",
+    scoreCT: "15",
+    rank: global_mm,
+    viewers: "Зрителей: 51",
+    image: matchOnline1
+  },
+  {
+    id: 2002,
+    map: "Inferno",
+    scoreT: "8",
+    scoreCT: "3",
+    rank: global_mm,
+    viewers: "Зрителей: 7",
+    image: matchOnline2
+  },
+  {
+    id: 2003,
+    map: "Dust 2",
+    scoreT: "2",
+    scoreCT: "5",
+    rank: global_mm,
+    viewers: "Зрителей: 6",
+    image: matchOnline3
+  },
+  {
+    id: 2004,
+    map: "Ancient",
+    scoreT: "3",
+    scoreCT: "15",
+    rank: global_mm,
+    viewers: "Зрителей: 2",
+    image: matchOnline4
+  },
+  {
+    id: 2005,
+    map: "Nuke",
+    scoreT: "0",
+    scoreCT: "2",
+    rank: global_mm,
+    viewers: "",
+    image: matchOnline5
+  },
+  {
+    id: 2006,
+    map: "Dust 2",
+    scoreT: "2",
+    scoreCT: "4",
+    rank: global_mm,
+    viewers: "Зрителей: 2",
+    image: matchOnline6
+  },
+  {
+    id: 2007,
+    map: "Anubis",
+    scoreT: "0",
+    scoreCT: "5",
+    rank: global_mm,
+    viewers: "Зрителей: 1",
+    image: matchOnline7
+  },
+  {
+    id: 2008,
+    map: "Cache",
+    scoreT: "4",
+    scoreCT: "2",
+    rank: global_mm,
+    viewers: "Зрителей: 3",
+    image: matchOnline8
+  }
 ]
