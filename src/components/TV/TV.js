@@ -69,11 +69,11 @@ function TV(props) {
             <li className={"type__regym" + (isLive ? " type__regym_active" : " ")} onClick={handleLiveClick}><p className='type__regym-text'>Прямой эфир</p></li>
             <li className={"type__regym" + (isTournaments ? " type__regym_active" : " ")} onClick={handleTournamentsClick}><p className='type__regym-text'>Турниры</p></li>
           </ul>
-        { isMajors ? <Majors isVisible={isMajors} /> : <></>}
+        <Majors isVisible={isMajors} />
         <Matches isVisible={isMatches} matches={matches} setMatches={setMatches}/>
         <Download isVisible={isDownload} matches={matches} setMatches={setMatches}/>
-        { isLive ? <Live isVisible={isLive} /> : <></>}
-        { isTournaments ? <Tournaments isVisible={isTournaments} /> : <></>}
+        <Live isVisible={isLive} />
+        <Tournaments isVisible={isTournaments} />
     </Panel>
     </>
   )

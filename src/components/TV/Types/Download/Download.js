@@ -9,10 +9,9 @@ function Download(props) {
   const [id, setId] = React.useState(-1);
   
   React.useEffect(() => {
-    props.matches.find((item) => item.download) ? setId(props.matches[0].id) : setId(-1);
+    props.matches.find((item) => item.download) ? setId(props.matches.find((item) => item.download).id) : setId(-1);
   }, [props.matches])
   
-
   //Обработчик клика по матчу
   function handleMatchClick(id) {
     setId(id);
