@@ -1,0 +1,32 @@
+.cinema {
+  margin: 0;
+  padding: 16px 0;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+  border-left: 8px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05) 60%  , rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.9;
+
+  &:hover {
+    //background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.05) 40%, rgba(255, 255, 255, 0.05) 60%  , rgba(255, 255, 255, 0) 100%);
+    border-image: linear-gradient(90deg, rgb(255, 255, 255) 0% 0.15%, rgba(255, 255, 255, 0.2) 0.15%);
+    border-image-slice: 1;
+    opacity: 1;
+  }
+
+  &__icon {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+    letter-spacing: 1px;
+  }
+}

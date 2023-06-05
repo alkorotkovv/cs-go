@@ -1,5 +1,6 @@
 import React  from 'react';
 import MatchOnline from '../../../MatchOnline/MatchOnline';
+import gotvIcon from '../../../../images/gotv_icon.png';
 
 function Live(props) {
 
@@ -28,7 +29,11 @@ function Live(props) {
                       handleMatchClick={handleMatchClick}
                     />
                   )
-                }  
+                }
+                <div className='cinema'>
+                  <img className='cinema__icon' src={gotvIcon} alt="cinema" draggable="false"/>
+                  <p className='cinema__text'>Кинотеатр GOTV</p>
+                </div>
               </ul>
             </div>
             <div className='legend'>
