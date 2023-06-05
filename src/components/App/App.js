@@ -37,7 +37,6 @@ function App() {
   const [setupType, setSetupType] = React.useState("");
   const [setupValue, setSetupValue] = React.useState(0);
 
-  const [isTooltipVisible, setIsTooltipVisible] = React.useState(false);
   const [tooltip, setTooltip] = React.useState({visible: false, text: "", x: "-100", y: "-100"});
 
   //Обработчики нажатий кнопок на левом баре

@@ -8,6 +8,7 @@
   position: absolute;
   left: var(--X);
   top: var(--Y);
+  z-index: 1000;
 
   &_visible {
     display: flex;

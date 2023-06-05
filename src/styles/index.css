@@ -414,6 +414,7 @@
   position: absolute;
   left: var(--X);
   top: var(--Y);
+  z-index: 1000;
 }
 .tooltip_visible {
   display: flex;
