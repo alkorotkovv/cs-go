@@ -5,6 +5,7 @@ import Matches from './Types/Matches/Matches';
 import Download from './Types/Download/Download';
 import Tournaments from './Types/Tournaments/Tournaments';
 import Live from './Types/Live/Live';
+import { matchesArray } from '../../utils/constants';
 
 function TV(props) {
   
@@ -13,6 +14,8 @@ function TV(props) {
   const [isDownload, setIsDownload] = React.useState(false)
   const [isLive, setIsLive] = React.useState(false)
   const [isTournaments, setIsTournaments] = React.useState(false)
+
+  const [matches, setMatches] = React.useState(matchesArray);
 
   //Обработчики режимов игры
   function handleMajorsClick() {
@@ -67,8 +70,8 @@ function TV(props) {
             <li className={"type__regym" + (isTournaments ? " type__regym_active" : " ")} onClick={handleTournamentsClick}><p className='type__regym-text'>Турниры</p></li>
           </ul>
         { isMajors ? <Majors isVisible={isMajors} /> : <></>}
-        { isMatches ? <Matches isVisible={isMatches} /> : <></>}
-        { isDownload ? <Download isVisible={isDownload} /> : <></>}
+        <Matches isVisible={isMatches} matches={matches} setMatches={setMatches}/>
+        <Download isVisible={isDownload} matches={matches} setMatches={setMatches}/>
         { isLive ? <Live isVisible={isLive} /> : <></>}
         { isTournaments ? <Tournaments isVisible={isTournaments} /> : <></>}
     </Panel>

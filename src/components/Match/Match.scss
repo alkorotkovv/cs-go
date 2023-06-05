@@ -5,6 +5,7 @@
   width: 359px;
   height: 110px;
   display: grid;
+  position: relative;
   box-sizing: border-box;
   border-left: 8px solid transparent;
   background-color: rgba($color: #000000, $alpha: 0.2);
@@ -169,6 +170,32 @@
     color: white;
     opacity: 0.9;
     grid-area: name;
+  }
+
+  &__downloading {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+
+    &_visible {
+      display: flex;
+    }
+  }
+
+  &__download {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+
+    &_visible {
+      display: flex;
+    }
   }
 
 }

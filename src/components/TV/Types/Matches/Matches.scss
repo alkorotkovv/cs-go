@@ -14,5 +14,101 @@
   padding: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   //background-color: rgba($color: #000000, $alpha: 0.2);
+
+  &__main {
+    margin: 0;
+    padding: 0;
+    height: 824px;
+    display: flex;
+  }
+
+  &__bottom {
+    margin: 0;
+    padding: 0 75px;
+    height: 96px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-top: 1px solid $line-color;
+  }
+
+  &__download {
+    margin: 0;
+    padding: 0;
+    display: none;
+    align-items: center;
+    margin-right: auto;
+
+    &_visible {
+      display: flex;
+    }
+  }
+
+  &__download-icon {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: rotation 1s infinite linear;
+  }
+
+  &__download-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 14px 13px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #4CAF50;
+        filter: brightness(120%);
+    }
+  }
+
+  &__link {
+    margin: 0;
+    padding: 7px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    box-sizing: border-box;
+
+    &_unactive {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      animation: search-opacity-up 0.3s ease-in forwards;
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -412,6 +412,15 @@ import cologne2014 from '../images/majors/cologne2014.jpg';
 import katowice2014 from '../images/majors/katowice2014.jpg';
 import jonchoping2013 from '../images/majors/jonchoping2013.jpg';
 
+//Картинки матчей
+import match1 from '../images/matches/match1.jpg';
+import match2 from '../images/matches/match2.jpg';
+import match3 from '../images/matches/match3.jpg';
+import match4 from '../images/matches/match4.jpg';
+import match5 from '../images/matches/match5.jpg';
+import match6 from '../images/matches/match6.jpg';
+import match7 from '../images/matches/match7.jpg';
+import match8 from '../images/matches/match8.jpg';
 
 
 //Массив медалей
@@ -3163,77 +3172,102 @@ export const majorsArray = [
   },
 ]
 
+//Массив сыгранных матчей
 export const matchesArray = [
   {
-    map: "Anubis",
-    scoreT: "13",
-    scoreCT: "16",
-    time: "Вчера, 20:36",
-    result: "Поражение",
-    side: "T",
-    checked: true
-  },
-  {
-    map: "Dust 2",
-    scoreT: "16",
-    scoreCT: "4",
-    time: "Вчера, 19:55",
-    result: "Победа",
-    side: "T",
-    checked: false
-  },
-  {
+    id: 1001,
     map: "Inferno",
     scoreT: "12",
     scoreCT: "16",
-    time: "Вчера, 18:55",
-    result: "Победа",
-    side: "CT",
-    checked: false
+    time: "Вчера, 20:03",
+    result: "Поражение",
+    side: "T",
+    checked: true,
+    download: false,
+    image: match1
   },
   {
+    id: 1002,
     map: "Anubis",
     scoreT: "16",
-    scoreCT: "9",
-    time: "Вторник, 21:29",
+    scoreCT: "13",
+    time: "Вчера, 19:09",
     result: "Победа",
     side: "T",
-    checked: false
+    checked: false,
+    download: false,
+    image: match2
   },
   {
+    id: 1003,
+    map: "Dust 2",
+    scoreT: "16",
+    scoreCT: "11",
+    time: "Вчера, 18:15",
+    result: "Победа",
+    side: "T",
+    checked: false,
+    download: false,
+    image: match3
+  },
+  {
+    id: 1004,
+    map: "Nuke",
+    scoreT: "16",
+    scoreCT: "10",
+    time: "Вчера, 17:29",
+    result: "Победа",
+    side: "T",
+    checked: false,
+    download: false,
+    image: match4
+  },
+  {
+    id: 1005,
+    map: "Inferno",
+    scoreT: "15",
+    scoreCT: "15",
+    time: "Вчера, 16:14",
+    result: "Ничья",
+    side: "T",
+    checked: false,
+    download: false,
+    image: match5
+  },
+  {
+    id: 1006,
     map: "Dust 2",
     scoreT: "15",
     scoreCT: "15",
-    time: "Вторник, 20:37",
+    time: "Вчера, 15:21",
     result: "Ничья",
     side: "T",
-    checked: false
+    checked: false,
+    download: false,
+    image: match6
   },
   {
-    map: "Inferno",
-    scoreT: "2",
-    scoreCT: "16",
-    time: "Вчера, 20:01",
-    result: "Поражение",
-    side: "T",
-    checked: false
-  },
-  {
+    id: 1007,
     map: "Dust 2",
     scoreT: "16",
-    scoreCT: "13",
-    time: "Вчера, 19:07",
+    scoreCT: "8",
+    time: "Суббота, 12:17",
     result: "Победа",
     side: "T",
-    checked: false
+    checked: false,
+    download: false,
+    image: match7
   },
   {
+    id: 1008,
     map: "Dust 2",
-    scoreT: "6",
+    scoreT: "5",
     scoreCT: "16",
-    time: "Воскресенье, 21:30",
-    result: "Победа",
-    side: "CT",
-    checked: false
+    time: "Суббота, 11:20",
+    result: "Поражение",
+    side: "T",
+    checked: false,
+    download: false,
+    image: match8
   },
 ]

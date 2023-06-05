@@ -1618,6 +1618,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   width: 359px;
   height: 110px;
   display: grid;
+  position: relative;
   box-sizing: border-box;
   border-left: 8px solid transparent;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1753,6 +1754,28 @@ https://toughengineer.github.io/demo/slider-styler*/
   color: white;
   opacity: 0.9;
   grid-area: name;
+}
+.match__downloading {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+.match__downloading_visible {
+  display: flex;
+}
+.match__download {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+.match__download_visible {
+  display: flex;
 }
 
 .page {
@@ -3540,8 +3563,92 @@ https://toughengineer.github.io/demo/slider-styler*/
   padding: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+.legend__main {
+  margin: 0;
+  padding: 0;
+  height: 824px;
+  display: flex;
+}
+.legend__bottom {
+  margin: 0;
+  padding: 0 75px;
+  height: 96px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.legend__download {
+  margin: 0;
+  padding: 0;
+  display: none;
+  align-items: center;
+  margin-right: auto;
+}
+.legend__download_visible {
+  display: flex;
+}
+.legend__download-icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  animation: rotation 1s infinite linear;
+}
+.legend__download-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.legend__button {
+  margin: 0;
+  padding: 14px 13px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.legend__button:hover {
+  background-color: #4CAF50;
+  filter: brightness(120%);
+}
+.legend__link {
+  margin: 0;
+  padding: 7px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  box-sizing: border-box;
+}
+.legend__link_unactive {
+  opacity: 0.3;
+}
+.legend__link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: search-opacity-up 0.3s ease-in forwards;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .tournaments {
   margin: 0;
   padding: 0;
