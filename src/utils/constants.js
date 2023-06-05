@@ -435,31 +435,31 @@ import matchOnline8 from '../images/matches/matchOnline8.jpg';
 export const medalsArray = [
   
   {
-    name: "Сломанный клык",
+    name: "Бриллиантовая монета операции «Сломанный клык»",
     logo: medalLogo1
   },
   {
-    name: "Сломанный клык",
+    name: "Медаль за службу в 2023 году",
     logo: medalLogo2
   },
   {
-    name: "Сломанный клык",
+    name: "Монета десятилетнего юбилея",
     logo: medalLogo3
   },
   {
-    name: "Сломанный клык",
+    name: "Золотая монета IEM Rio Major 2022",
     logo: medalLogo4
   },
   {
-    name: "Сломанный клык",
+    name: "Золотая монета PGL Major Antwerp 2022",
     logo: medalLogo5
   },
   {
-    name: "Сломанный клык",
+    name: "Золотая монета IEM Rio Major 2022",
     logo: medalLogo6
   },
   {
-    name: "Сломанный клык",
+    name: "Монета десятилетнего юбилея",
     logo: medalLogo7
   },
 ]

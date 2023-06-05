@@ -168,9 +168,8 @@ function App() {
     setIsSetupPopupVisible(false);
   }
 
-
+  //Обработчик показа всплывающей подсказки
   function showTooltip(tooltipObject) {
-    console.log(tooltipObject)
     setTooltip(tooltipObject);
   }
 
