@@ -1,0 +1,21 @@
+.tooltip {
+  margin: 0;
+  padding: 18px 17px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  position: absolute;
+  left: var(--X);
+  top: var(--Y);
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    color: #C2C2C2;
+    letter-spacing: 1px;
+  }
+}

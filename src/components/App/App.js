@@ -12,6 +12,7 @@ import Settings from '../Settings/Settings.js';
 import Statistic from '../Statistic/Statistic.js';
 import StatisticPopup from '../StatisticPopup/StatisticPopup.js';
 import SetupPopup from '../SetupPopup/SetupPopup.js';
+import Tooltip from '../Tooltip/Tooltip.js';
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
   const [isSetupPopupVisible, setIsSetupPopupVisible] = React.useState(false);
   const [setupType, setSetupType] = React.useState("");
   const [setupValue, setSetupValue] = React.useState(0);
+
+  const [isTooltipVisible, setIsTooltipVisible] = React.useState(false);
+  const [tooltip, setTooltip] = React.useState({text: "", x: "0px", y: "0px"});
 
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
@@ -165,6 +169,12 @@ function App() {
   }
 
 
+  function showTooltip(isVisible, tooltipObject) {
+    console.log(tooltipObject)
+    setTooltip(tooltipObject);
+    setIsTooltipVisible(isVisible);
+  }
+
 
   return (
     <div className="page">
@@ -194,6 +204,7 @@ function App() {
         handleSettingsClick={handleSettingsClick}
         handleExitClick={handleExitClick}
         isSearch={isSearch}
+        showTooltip={showTooltip}
       />
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} setupValue={setupValue} handleSetupClick={handleSetupClick} /> : < ></> }
@@ -215,6 +226,7 @@ function App() {
           handleSave={handleSetupPopupSave}
           handleClose={handleSetupPopupClose}
         /> : < ></> }
+        {isTooltipVisible ? <Tooltip tooltip={tooltip} /> : <></>}
     </div>
   );
 
