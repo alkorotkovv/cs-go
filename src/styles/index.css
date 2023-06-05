@@ -407,13 +407,16 @@
 .tooltip {
   margin: 0;
   padding: 18px 17px;
-  display: flex;
+  display: none;
   box-sizing: border-box;
   border-radius: 7px;
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   left: var(--X);
   top: var(--Y);
+}
+.tooltip_visible {
+  display: flex;
 }
 .tooltip__text {
   margin: 0;

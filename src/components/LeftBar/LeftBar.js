@@ -1,4 +1,5 @@
 import React from 'react';
+import TooltipContext from '../../context/TooltipContext';
 import csgoLogo from '../../images/leftBar/csgoLogo.png';
 import playLogo from '../../images/leftBar/playLogo.png';
 import netLogo from '../../images/leftBar/netLogo.png';
@@ -8,9 +9,10 @@ import tvLogo from '../../images/leftBar/tvLogo.png';
 import statisticLogo from '../../images/leftBar/statisticLogo.png';
 import settingsLogo from '../../images/leftBar/settingsLogo.png';
 import exitLogo from '../../images/leftBar/exitLogo.png';
-import Tooltip from '../Tooltip/Tooltip';
 
 function LeftBar(props) {
+
+  const showTooltip = React.useContext(TooltipContext);
 
   function handleMainClick() {
     props.handleMainClick();
@@ -44,17 +46,6 @@ function LeftBar(props) {
     props.handleExitClick();
   }
 
-  //Обработчики наведения мыши для всплывающих подсказок
-
-  function handleOnMouseEnter(object) {
-    console.log(object);
-    props.showTooltip(true, object);
-  }
-
-  function handleOnMouseLeave(object) {
-    props.showTooltip(false, object);
-  }
-
   return (
     <div className="leftBar">
       <ul className='leftBar__list'>
@@ -63,8 +54,8 @@ function LeftBar(props) {
             src={csgoLogo} 
             alt="csgo" 
             onClick={handleMainClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Главное меню", x:"114", y:"23"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Главное меню", x:"114", y:"23"})} 
+            onMouseLeave={() => showTooltip(false, {})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -72,8 +63,8 @@ function LeftBar(props) {
             src={playLogo} 
             alt="csgo" 
             onClick={handlePlayClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Играть в CS:GO", x:"114", y:"119"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Играть в CS:GO", x:"114", y:"119"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -81,8 +72,8 @@ function LeftBar(props) {
             src={(props.isSearch ? netLogoGreen : netLogo)} 
             alt="csgo" 
             onClick={handleNetClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Поиск команды", x:"114", y:"211"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Поиск команды", x:"114", y:"211"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -90,8 +81,8 @@ function LeftBar(props) {
             src={inventoryLogo} 
             alt="csgo" 
             onClick={handleInventoryClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Инвентарь", x:"114", y:"311"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Инвентарь", x:"114", y:"311"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -99,8 +90,8 @@ function LeftBar(props) {
             src={tvLogo} 
             alt="csgo" 
             onClick={handleTVClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Смотреть игры и турниры", x:"114", y:"407"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Смотреть игры и турниры", x:"114", y:"407"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -108,8 +99,8 @@ function LeftBar(props) {
             src={statisticLogo} 
             alt="csgo" 
             onClick={handleStatisticClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Вся статистика ваших игр в одном месте", x:"114", y:"503"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Вся статистика ваших игр в одном месте", x:"114", y:"503"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -117,8 +108,8 @@ function LeftBar(props) {
             src={settingsLogo} 
             alt="csgo" 
             onClick={handleSettingsClick}
-            onMouseEnter={() => handleOnMouseEnter({text:"Настройки", x:"114", y:"599"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Настройки", x:"114", y:"599"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
         <li className='leftBar__item'>
@@ -126,8 +117,8 @@ function LeftBar(props) {
             src={exitLogo} 
             alt="csgo" 
             onClick={handleExitClick} 
-            onMouseEnter={() => handleOnMouseEnter({text:"Выйти из игры", x:"114", y:"1007"})} 
-            onMouseLeave={handleOnMouseLeave} 
+            onMouseEnter={() => showTooltip({visible: true, text:"Выйти из игры", x:"114", y:"1007"})} 
+            onMouseLeave={() => showTooltip({visible: false, text:"", x:"", y:""})} 
             draggable="false"/>
         </li>
       </ul>

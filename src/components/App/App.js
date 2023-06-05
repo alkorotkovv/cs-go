@@ -1,5 +1,6 @@
 import React from 'react';
 //import { Route, Switch, useHistory } from 'react-router-dom';
+import TooltipContext from '../../context/TooltipContext';
 import Menu from '../Menu/Menu.js';
 import LeftBar from '../LeftBar/LeftBar.js';
 import RightBar from '../RightBar/RightBar.js';
@@ -37,7 +38,7 @@ function App() {
   const [setupValue, setSetupValue] = React.useState(0);
 
   const [isTooltipVisible, setIsTooltipVisible] = React.useState(false);
-  const [tooltip, setTooltip] = React.useState({text: "", x: "0px", y: "0px"});
+  const [tooltip, setTooltip] = React.useState({visible: false, text: "", x: "-100", y: "-100"});
 
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
@@ -169,14 +170,14 @@ function App() {
   }
 
 
-  function showTooltip(isVisible, tooltipObject) {
+  function showTooltip(tooltipObject) {
     console.log(tooltipObject)
     setTooltip(tooltipObject);
-    setIsTooltipVisible(isVisible);
   }
 
 
   return (
+    <TooltipContext.Provider value={showTooltip}>
     <div className="page">
       <Menu 
         isMainVisible={isMainVisible}
@@ -226,8 +227,9 @@ function App() {
           handleSave={handleSetupPopupSave}
           handleClose={handleSetupPopupClose}
         /> : < ></> }
-        {isTooltipVisible ? <Tooltip tooltip={tooltip} /> : <></>}
+        <Tooltip tooltip={tooltip} /> : <></>
     </div>
+    </TooltipContext.Provider>
   );
 
 }
