@@ -14,9 +14,9 @@ function InspectionPopup(props) {
         <div className='inspection-popup__background-semicircle'></div>
       </div>
       <div className='inspection-popup__header'>
-        <img className='inspection-popup__header-collection-logo' src={north} alt="collection" draggable="false"/>
+        <img className={'inspection-popup__icon' + (props.weapon.collection.image ? " inspection-popup__icon_visible" : "")} src={props.weapon.collection.image} alt="collection" draggable="false"/>
         <h1 className='inspection-popup__header-title'>{props.weapon.weapon} | {props.weapon.name}</h1>
-        <p className='inspection-popup__header-subtitle'>{props.weapon.collection}</p>
+        <p className='inspection-popup__header-subtitle'>{props.weapon.collection.name || ""}</p>
         <div className={'inspection-popup__underline' + 
           ((props.weapon.rarity === "Covert") ? " inspection-popup__underline_covert" : "") +
           ((props.weapon.rarity === "Classified") ? " inspection-popup__underline_classified" : "") +
@@ -26,7 +26,7 @@ function InspectionPopup(props) {
           ((props.weapon.rarity === "Consumer") ? " inspection-popup__underline_consumer" : "")}>
         </div>
       </div>
-      <div className='inspection-popup__main'>
+      <div className={'inspection-popup__main' + (props.weapon.type === "Gloves" ? " inspection-popup__main_type_moto" : "")}>
         <img className='inspection-popup__image' src={props.weapon.image_inspect} alt="weapon" draggable="false"/>
         <p className='inspection-popup__description'>{props.weapon.description}</p>
       </div>

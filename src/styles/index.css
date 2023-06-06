@@ -3935,16 +3935,20 @@ https://toughengineer.github.io/demo/slider-styler*/
   padding: 60px 0 0 0;
   z-index: 1;
   display: grid;
-  grid-template-columns: 128px auto;
+  grid-template-columns: 1fr auto;
   column-gap: 10px;
   grid-template-areas: "logo title" "logo subtitle" "underline underline";
 }
-.inspection-popup__header-collection-logo {
+.inspection-popup__icon {
   margin: 0;
   padding: 0;
-  width: 128px;
-  display: flex;
+  width: 130px;
+  height: 100px;
+  display: none;
   grid-area: logo;
+}
+.inspection-popup__icon_visible {
+  display: flex;
 }
 .inspection-popup__header-title {
   margin: 0;
@@ -3969,7 +3973,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   grid-area: subtitle;
 }
 .inspection-popup__underline {
-  margin: 0;
+  margin: 8px 0 0 0;
   padding: 0;
   width: 100%;
   height: 6px;
@@ -3998,17 +4002,23 @@ https://toughengineer.github.io/demo/slider-styler*/
 }
 .inspection-popup__main {
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   flex: 1;
   box-sizing: border-box;
   z-index: 1;
+}
+.inspection-popup__main_type_moto {
+  padding: 0;
+  position: absolute;
 }
 .inspection-popup__image {
   margin: 0;
   padding: 0;
   object-fit: contain;
+  align-self: center;
 }
 .inspection-popup__description {
   margin: 0;
@@ -4024,7 +4034,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   bottom: 86px;
 }
 .inspection-popup__bottom {
-  margin: 0;
+  margin: auto 0 0 0;
   padding: 0;
   width: 968px;
   height: 85px;

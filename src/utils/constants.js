@@ -293,10 +293,6 @@ import DesertEagle_UrbanDDPAT from '../images/guns/DesertEagle_UrbanDDPAT.png';
 import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
 import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
 import Storage from '../images/guns/Storage.png';
-
-//Оружие для осмотра
-import DesertEagle_Ermungand_inspect from '../images/inspect_guns/DesertEagle_Ermungand.png';
-
 import AK47 from '../images/guns/Default/AK47.png';
 import AUG from '../images/guns/Default/AUG.png';
 import AWP from '../images/guns/Default/AWP.png';
@@ -341,6 +337,17 @@ import Bizon from '../images/guns/Default/Bizon.png';
 import R8 from '../images/guns/Default/R8.png';
 import Gloves_CT from '../images/guns/Default/Gloves_CT.png';
 import Gloves_T from '../images/guns/Default/Gloves_T.png';
+
+//Оружие для осмотра
+import MotoGloves_Boom_inspect from '../images/inspect_guns/MotoGloves_Boom.png';
+import ButterflyKnife_Slaughter_inspect from '../images/inspect_guns/ButterflyKnife_Slaughter.png';
+import AK47_EliteMuseum_inspect from '../images/inspect_guns/AK47_EliteMuseum.png';
+import Glock18_GammaDoppler_inspect from '../images/inspect_guns/Glock18_GammaDoppler.png';
+import Medal_Stockholm_inspect from '../images/inspect_guns/Medal_Stockholm.png';
+
+import DesertEagle_Ermungand_inspect from '../images/inspect_guns/DesertEagle_Ermungand.png';
+
+
 
 //Команды
 import gl from '../images/majors/gl.png';
@@ -441,6 +448,31 @@ import matchOnline5 from '../images/matches/matchOnline5.jpg';
 import matchOnline6 from '../images/matches/matchOnline6.jpg';
 import matchOnline7 from '../images/matches/matchOnline7.jpg';
 import matchOnline8 from '../images/matches/matchOnline8.jpg';
+
+
+//Коллекции
+import northCollection from '../images/collections/north.png';
+import riptideCollection from '../images/collections/riptide.png';
+import train2021Collection from '../images/collections/train2021.png';
+import havocCollection from '../images/collections/havoc.png';
+import hydraCollection from '../images/collections/hydra.png';
+import hunterCollection from '../images/collections/hunter.png';
+import trainCollection from '../images/collections/train.png';
+import summer2014Collection from '../images/collections/summer2014.png';
+import bankCollection from '../images/collections/bank.png';
+import mirageCollection from '../images/collections/mirage.png';
+import dust2021Collection from '../images/collections/dust2021.png';
+import ancientCollection from '../images/collections/ancient.png';
+import baggageCollection from '../images/collections/baggage.png';
+import chopchopCollection from '../images/collections/chopchop.png';
+import risingsunCollection from '../images/collections/risingsun.png';
+import overpassCollection from '../images/collections/overpass.png';
+import arms3Collection from '../images/collections/arms3.png';
+import breakoutCollection from '../images/collections/breakout.png';
+import revolverCollection from '../images/collections/revolver.png';
+import controlCollection from '../images/collections/control.png';
+import webCollection from '../images/collections/web.png';
+
 
 
 //Массив медалей
@@ -1748,15 +1780,105 @@ export const zoneFriendsArray = [
   }
 ]
 
+//Массив коллекций
+export const collectionsArray = [
+  {
+    name: "Коллекция «Север»",
+    image: northCollection
+  },
+  {
+    name: "Коллекция операции «Хищные воды»",
+    image: riptideCollection    
+  },
+  {
+    name: "Коллекция Train 2021",
+    image: train2021Collection
+  },
+  {
+    name: "Коллекция «Хаос»",
+    image: havocCollection
+  },
+  {
+    name: "Коллекция операции «Гидра»",
+    image: hydraCollection
+  },
+  {
+    name: "Охотничья коллекция",
+    image: hunterCollection
+  },
+  {
+    name: "Коллекция «Train»",
+    image: trainCollection
+  },
+  {
+    name: "Коллекция eSports 2014 Summer",
+    image: summer2014Collection
+  },
+  {
+    name: "Коллекция «Bank»",
+    image: bankCollection
+  },
+  {
+    name: "Коллекция «Mirage»",
+    image: mirageCollection
+  },
+  {
+    name: "Коллекция Dust 2 2021",
+    image: dust2021Collection
+  },
+  {
+    name: "Коллекция «Ancient»",
+    image: ancientCollection
+  },
+  {
+    name: "Коллекция «Baggage»",
+    image: baggageCollection
+  },
+  {
+    name: "Коллекция «Чик-чик»",
+    image: chopchopCollection
+  },
+  {
+    name: "Коллекция «Рассвет»",
+    image: risingsunCollection
+  },
+  {
+    name: "Коллекция «Overpass»",
+    image: overpassCollection
+  },
+  {
+    name: "Коллекция «Arms Deal 3»",
+    image: arms3Collection
+  },
+  {
+    name: "Коллекция «Прорыв»",
+    image: breakoutCollection
+  },
+  {
+    name: "Револьверная коллекция",
+    image: revolverCollection
+  },
+  {
+    name: "Коллекция «Контроль»",
+    image: controlCollection
+  },
+  {
+    name: "Агенты «Расколотой сети»",
+    image: webCollection
+  }
+]
+
 //Массив оружий
 export const inventoryArray = [
   {
     id: 1,
     image: MotoGloves_Boom,
-    image_inspect: DesertEagle_Ermungand_inspect,
-    weapon: "Мотоциклетные перчатки",
+    image_inspect: MotoGloves_Boom_inspect,
+    weapon: "★ Мотоциклетные перчатки",    
     name: "БУХ!",
     rarity: "Covert",
+    collection : {},
+    description: "Эти объемистые перчатки с защитой костяшек спасут руки владельца даже от сильного трения с асфальтом. Эти перчатки покрыты яркими надписями звукоподражаний из комиксов.",
     category: "Star",
     type: "Gloves",
     date: new Date("2023-02-26"),
@@ -1768,10 +1890,12 @@ export const inventoryArray = [
   {
     id: 2,
     image: ButterflyKnife_Slaughter,
-    image_inspect: DesertEagle_Ermungand_inspect,
-    weapon: "Нож бабочка",
+    image_inspect: ButterflyKnife_Slaughter_inspect,
+    weapon: "★ Нож бабочка",
     name: "Убийство",
     rarity: "Covert",
+    collection : {},
+    description: "Специально разработанный балисонг, широко известный как нож-бабочка. Главной особенностью этого оружия является молниеносное приведение его в боевое состояние при помощи взмаха руки, обнажающего свободно крепящееся лезвие. Как результат, ножи-бабочки запрещены во многих странах. Был покрашен в полоску красками с алюминиевым и хромовым отблеском, а потом покрыт томатно-красным цветом. Валерия платила Хавьеру не за то, чтобы тот задавал вопросы… а за то, чтобы он выбивал ответы",
     category: "Star",
     type: "Knife",
     date: new Date("2023-02-24"),
@@ -1783,10 +1907,12 @@ export const inventoryArray = [
   {
     id: 3,
     image: AK47_EliteMuseum,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: AK47_EliteMuseum_inspect,
     weapon: "AK-47",
     name: "Музей элиты",
     rarity: "Covert",
+    collection : collectionsArray.find((e) => e.name === "Коллекция операции «Хищные воды»") || {},
+    description: "Мощная и надежная штурмовая винтовка АК-47 — одна из самых известных в мире. Наиболее смертельна стрельба короткими и точными очередями. На корпус нанесена кубистская картина: элитный отряд террористов крадётся по «Длине» на карте Dust II. «Всё воображаемое реально»",
     category: "Default",
     type: "Rifle",
     date: new Date("2023-03-26"),
@@ -1798,10 +1924,12 @@ export const inventoryArray = [
   {
     id: 4,
     image: Glock18_GammaDoppler,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Glock18_GammaDoppler_inspect,
     weapon: "Glock-18",
     name: "Гамма-волны",
     rarity: "Covert",
+    collection : collectionsArray.find((e) => e.name === "Коллекция Train 2021") || {},
+    description: "Пистолет Glock-18 подходит для первого раунда. Он наиболее эффективен против противников без бронежилета и может вести огонь очередями из трёх выстрелов. Окрашено черной и серебряной металлической краской под мрамор, а затем нанесен градиент.",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-02-26"),
@@ -1813,10 +1941,12 @@ export const inventoryArray = [
   {
     id: 5,
     image: Medal_Stockholm,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Stockholm_inspect,
     weapon: "Бриллиантовая монета PGL Major Stockholm 2021",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Эта памятная монета мейджор-турнира PGL Major Stockholm 2021 по CS:GO засчитывает ваши успехи на протяжении турнира, а также даёт доступ к прогнозам, метке для чата Steam.tv, внутриигровым испытаниям и неограниченным граффити команды на время турнира. Чтобы улучшить монету турнира, проходите её испытания. Вы получите по сувенирному жетону за каждое улучшение монеты.",
     category: "Default",
     type: "Medal",
     date: new Date("2021-02-26"),
@@ -1832,6 +1962,8 @@ export const inventoryArray = [
     weapon: "Бриллиантовая монета операции «Сломанный клык»",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "За завершение операции «Сломанный клык»",
     category: "Default",
     type: "Medal",
     date: new Date("2021-02-24"),
@@ -1847,6 +1979,8 @@ export const inventoryArray = [
     weapon: "Бриллиантовая монета операции «Хищные воды»",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "За завершение операции «Хищные воды».",
     category: "Default",
     type: "Medal",
     date: new Date("2022-02-26"),
@@ -1862,6 +1996,8 @@ export const inventoryArray = [
     weapon: "Золотая монета IEM Rio Major 2022",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Эта памятная монета мейджор-турнира IEM Rio Major 2022 по CS:GO засчитывает ваши успехи на протяжении турнира, а также даёт доступ к прогнозам, метке для чата Steam.tv, внутриигровым испытаниям и неограниченным граффити команды на время турнира. Чтобы улучшить монету турнира, проходите её испытания. Вы получите по сувенирному жетону за каждое улучшение монеты.",
     category: "Default",
     type: "Medal",
     date: new Date("2022-11-26"),
@@ -1877,6 +2013,8 @@ export const inventoryArray = [
     weapon: "Золотая монета PGL Major Antwerp 2022",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Эта памятная монета мейджор-турнира PGL Major Antwerp 2022 по CS:GO засчитывает ваши успехи на протяжении турнира, а также даёт доступ к прогнозам, метке для чата Steam.tv, внутриигровым испытаниям и неограниченным граффити команды на время турнира. Чтобы улучшить монету турнира, проходите её испытания. Вы получите по сувенирному жетону за каждое улучшение монеты.",
     category: "Default",
     type: "Medal",
     date: new Date("2022-05-26"),
@@ -1892,6 +2030,8 @@ export const inventoryArray = [
     weapon: "Медаль за верность",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Выдаётся преданным членам сообщества Counter-Strike, вступившим в него до выхода обновления «Запретная зона». Сила в преданности.",
     category: "Default",
     type: "Medal",
     date: new Date("2020-02-26"),
@@ -1907,6 +2047,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2017",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2017 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2017-02-26"),
@@ -1922,6 +2064,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2018",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2018 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2018-02-26"),
@@ -1937,6 +2081,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2019",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2019 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2019-02-26"),
@@ -1951,6 +2097,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2020",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2020 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2020-02-26"),
@@ -1965,6 +2113,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2021",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2021 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2021-02-26"),
@@ -1979,6 +2129,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2022",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2022 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2022-02-20"),
@@ -1993,6 +2145,8 @@ export const inventoryArray = [
     weapon: "Медаль за службу в 2023",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "Награда за выдающиеся достижения и службу в 2023 году.",
     category: "Default",
     type: "Medal",
     date: new Date("2023-02-20"),
@@ -2007,6 +2161,8 @@ export const inventoryArray = [
     weapon: "Монета десятилетнего юбилея",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "За празднование десятого дня рождения CS:GO вместе с сообществом игры. Отметим десять лет хедшотов, клатчей и дружбы. С днём рождения, CS:GO!",
     category: "Default",
     type: "Medal",
     date: new Date("2022-11-21"),
@@ -2021,6 +2177,8 @@ export const inventoryArray = [
     weapon: "Монета за 5 лет службы",
     name: "",
     rarity: "Covert",
+    collection : {},
+    description: "За участие в сообществе Counter-Strike на протяжении более пяти лет.",
     category: "Default",
     type: "Medal",
     date: new Date("2021-04-26"),
@@ -2035,6 +2193,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Заговор",
     rarity: "Classified",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Прорыв»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Раскрашено тёмной металлической краской с бледно-жёлтыми вставками.",
     category: "Default",
     type: "Pistol",
     date: new Date("2021-03-27"),
@@ -2049,6 +2209,8 @@ export const inventoryArray = [
     weapon: "M4A4",
     name: "Адское пламя",
     rarity: "Classified",
+    collection : collectionsArray.find((e) => e.name === "Коллекция операции «Гидра»") || {},
+    description: "M4A4 — более точный, но слабый аналог АК-47 — полностью автоматическая штурмовая винтовка, которая находится исключительно на вооружении у спецназа. Вручную нанесён рисунок чёртика в огне и цепях. И серые черепушки",
     category: "Default",
     type: "Rifle",
     date: new Date("2023-04-20"),
@@ -2063,6 +2225,8 @@ export const inventoryArray = [
     weapon: "MAC-10",
     name: "Пропаганда",
     rarity: "Classified",
+    collection : collectionsArray.find((e) => e.name === "Коллекция Train 2021") || {},
+    description: "Пистолет-пулемёт MAC-10 похож на коробку, из которой летят пули. Он может похвастаться высокой скорострельностью, но расплатиться за это придется низкой точностью и сильной отдачей. На корпусе нарисована пара глаз и написаны различные слова. Ты же им не веришь?",
     category: "Default",
     type: "PP",
     date: new Date("2022-06-26"),
@@ -2077,6 +2241,7 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Изумрудный Ёрмунганд",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Север»") || {},
     description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён зелёный узор Ёрмунганда, «Мирового Змея». Пробуди богов",
     collection: "Коллекция «Север»",
     category: "Default",
@@ -2093,6 +2258,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Кровавая паутина",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция eSports 2014 Summer") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На отдельные части оружия нанесли водостойкую краску красного цвета, черные узоры паутины и слой полуглянца. Внимательно смотри, куда идешь, ведь никогда не знаешь, где можно угодить в паутину",
     category: "Default",
     type: "Pistol",
     date: new Date("2023-04-19"),
@@ -2107,6 +2274,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Наследие",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Arms Deal 3»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Выгравировано вручную и инкрустировано спиральным орнаментом.",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-21"),
@@ -2121,6 +2290,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Пилот",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Baggage»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Нанесена латунная инкрустация крыльев пилота. Противник потерпит крушение",
     category: "Default",
     type: "Pistol",
     date: new Date("2023-11-25"),
@@ -2135,6 +2306,8 @@ export const inventoryArray = [
     weapon: "Five-SeveN",
     name: "Протокол «Подъём»",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция операции «Хищные воды»") || {},
+    description: "Five-Seven стоит дорого и медленно перезаряжается, однако эти недостатки компенсируются высокой точностью, бронебойностью, щедрым магазином на 20 патронов и снисходительной отдачей. Корпус окрашен в контрастные цвета. Иконка робота под целиком соответствует изображению на затворе. Позывной: МЕХА-0272",
     category: "Default",
     type: "Pistol",
     date: new Date("2023-05-01"),
@@ -2149,6 +2322,8 @@ export const inventoryArray = [
     weapon: "USP-S",
     name: "Оранжевый анолис",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция Dust 2 2021") || {},
+    description: "Пистолет USP, любимец игроков в Counter-Strike: Source, имеет отсоединяемый глушитель, который позволяет наносить точные выстрелы, одновременно поглощая привлекающий излишнее внимание шум. На корпус нанесён красно-золотой узор, напоминающий чешую ящерицы. Щерится как ящерица",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-06-27"),
@@ -2163,6 +2338,8 @@ export const inventoryArray = [
     weapon: "Автомат «Галиль»",
     name: "Негатив «Феникса»",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Хаос»") || {},
+    description: "Автомат «Галиль» — относительно дешевая штурмовая винтовка у террористов, которая считается хорошим оружием на средних и дальних дистанциях. На корпус нанесён цветной узор из разных граффити подразделения «Феникс». «Мы спляшем на ваших костях!»",
     category: "Default",
     type: "Rifle",
     date: new Date("2023-05-04"),
@@ -2177,6 +2354,8 @@ export const inventoryArray = [
     weapon: "Максимус",
     name: "Кавалерия",
     rarity: "Restricted",
+    collection : collectionsArray.find((e) => e.name === "Агенты «Расколотой сети»") || {},
+    description: "Ведомый кипящей яростью и непреходящей жаждой мести за проступки любого масштаба и формы, Максимус — первый претендент «Кавалерии», если требуется поддержка в ближнем бою. За каждую обиду ответят кровью. «Кто буйный? Ты буйный!»",
     category: "Default",
     type: "Agent",
     date: new Date("2022-11-27"),
@@ -2191,6 +2370,8 @@ export const inventoryArray = [
     weapon: "AUG",
     name: "Резной нефрит",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Ancient»") || {},
+    description: "Мощная и точная винтовка с оптическим прицелом AUG компенсирует свою долгую перезарядку низким разбросом пуль и высокой скорострельностью. На основу нанесли хромовое покрытие, а потом окрасили тонким слоем нефритово-зелёной краски, чтобы создать эффект анодированного металла. Лучшее из лучшего",
     category: "Default",
     type: "Rifle",
     date: new Date("2022-05-20"),
@@ -2205,6 +2386,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Городской щебень",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Train»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Узор в виде смешанного камуфляжа нанесен с помощью аквапечати. Заново строят только после разрухи",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-10-26"),
@@ -2219,6 +2402,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Ночное ограбление",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Хаос»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На фиолетовую основу нанесли анодированный узор в виде карты. Похоже, что после этого на ней уже кто-то успел порисовать. Планирование — это одно, а исполнение — совсем другое",
     category: "Default",
     type: "Pistol",
     date: new Date("2021-09-26"),
@@ -2233,6 +2418,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Послание коринфянам",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Револьверная коллекция") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Обработан лазером и оснащен кожаной рукоятью. Покрывает. Верит. Надеется. Переносит.",
     category: "Default",
     type: "Pistol",
     date: new Date("2023-03-12"),
@@ -2247,6 +2434,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Спутник",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция Train 2021") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён космический узор в виде звёзд и спутников. Отправляй и получай",
     category: "Default",
     type: "Pistol",
     date: new Date("2021-04-26"),
@@ -2261,6 +2450,8 @@ export const inventoryArray = [
     weapon: "MP9",
     name: "Хот-род",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Mirage»") || {},
+    description: "Производимый в Швейцарии передовой пистолет-пулемёт МР9 — это эргономичное полимерное оружие, используемое частными охранными фирмами. На основу нанесли хромовое покрытие, а потом окрасили тонким слоем красной краски, чтобы создать эффект анодированного металла. Автоматическое. Систематическое. Гидродинамическое.",
     category: "Default",
     type: "PP",
     date: new Date("2022-09-26"),
@@ -2275,6 +2466,8 @@ export const inventoryArray = [
     weapon: "P250",
     name: "Бенгальский тигр",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Хаос»") || {},
+    description: "Пистолет P250 — огнестрельное оружие с высоким темпом стрельбы и низкой отдачей, представляющее собой относительно недорогой выбор против бронированных противников. Окрашено в тигровые полосы с использованием аквапечати.",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-08-26"),
@@ -2289,6 +2482,8 @@ export const inventoryArray = [
     weapon: "Tec-9",
     name: "Айзек",
     rarity: "Mil-Spec",
+    collection : collectionsArray.find((e) => e.name === "Охотничья коллекция") || {},
+    description: "Tec-9 обладает вместительным магазином и идеально подходит для террориста, предпочитающего бой на небольших расстояниях. Покрашено вручную на мотив научной фантастики.",
     category: "Default",
     type: "Pistol",
     date: new Date("2023-04-22"),
@@ -2303,6 +2498,8 @@ export const inventoryArray = [
     weapon: "Наклейка",
     name: "Virtus Pro | Стокгольм 2021",
     rarity: "Mil-Spec",
+    collection : {},
+    description: "Эту наклейку можно наклеить на любое ваше оружие, а также ее можно скрести, чтобы она выглядела более поношенной. Одну и ту же наклейку можно поскрести несколько раз. Каждый раз она будет выглядеть всё более поношенной, пока окончательно не исчезнет с оружия.",
     category: "Default",
     type: "Sticker",
     date: new Date("2021-04-16"),
@@ -2317,6 +2514,8 @@ export const inventoryArray = [
     weapon: "Нашивка",
     name: "Tyloo | Стокгольм 2021",
     rarity: "Mil-Spec",
+    collection : {},
+    description: "Эту нашивку можно нанести на любого вашего агента. После этого её можно будет снять, но не вернуть в инвентарь.",
     category: "Default",
     type: "Patch",
     date: new Date("2021-04-17"),
@@ -2331,6 +2530,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Бронзовый",
     rarity: "Industrial",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Контроль»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён разноцветный узор из случайных цифр. Цифры не лгут... в отличие от меня",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-07-26"),
@@ -2345,10 +2546,11 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Ночная буря",
     rarity: "Industrial",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Рассвет»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На металлическую основу аквапечатью нанесено изображение бушующего моря. «Во мне нет ненависти к тебе, Себастьен… Только жалость», – Чейс Тернер, дезертир Коалиции",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-28"),
-    image_inspect: DesertEagle_Ermungand_inspect,
     isT: false,
     isCT: false,
     canT: true,
@@ -2360,6 +2562,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Ночь",
     rarity: "Industrial",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Чик-чик»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Отдельные части оружия покрашены аэрозольной краской в сплошные цвета ночного пейзажа. Словно шепот ветра… Словно укус в шею",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-27"),
@@ -2374,6 +2578,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Пиксельный камуфляж «Город»",
     rarity: "Industrial",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Overpass»") || {},
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. Текстура пиксельного камуфляжа была нанесена водостойкой краской. Когда ты сможешь различить камуфляж, будет уже слишком поздно",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-06-22"),
@@ -2388,6 +2594,8 @@ export const inventoryArray = [
     weapon: "Saved-Off",
     name: "Пиксельный камуфляж «Лес»",
     rarity: "Consumer",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Bank»") || {},
+    description: "Классический обрез наносит большой урон на ближних дистанциях, но имеет невысокую точность, высокий разброс и медленную скорость стрельбы, поэтому вам лучше бы поскорее убивать то, во что вы попали. Текстура пиксельного камуфляжа была нанесена водостойкой краской. Когда ты сможешь различить камуфляж, будет уже слишком поздно",
     category: "Default",
     type: "Shotgun",
     date: new Date("2021-01-11"),
@@ -2402,6 +2610,8 @@ export const inventoryArray = [
     weapon: "Хранилище",
     name: "«1»",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Instrument",
     date: new Date("2012-01-01"),
@@ -2416,6 +2626,8 @@ export const inventoryArray = [
     weapon: "AK-47",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2430,6 +2642,8 @@ export const inventoryArray = [
     weapon: "AUG",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2444,6 +2658,8 @@ export const inventoryArray = [
     weapon: "AWP",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2458,6 +2674,8 @@ export const inventoryArray = [
     weapon: "CZ75-Auto",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2472,6 +2690,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2486,6 +2706,8 @@ export const inventoryArray = [
     weapon: "Dual Berettas",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2500,6 +2722,8 @@ export const inventoryArray = [
     weapon: "FAMAS",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2514,6 +2738,8 @@ export const inventoryArray = [
     weapon: "Five-SeveN",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2528,6 +2754,8 @@ export const inventoryArray = [
     weapon: "G3SG1",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2542,6 +2770,8 @@ export const inventoryArray = [
     weapon: "Glock-18",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2556,6 +2786,8 @@ export const inventoryArray = [
     weapon: "M249",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Machinegun",
     date: new Date("2012-01-01"),
@@ -2570,6 +2802,8 @@ export const inventoryArray = [
     weapon: "M4A1-S",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2584,6 +2818,8 @@ export const inventoryArray = [
     weapon: "M4A4",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2598,6 +2834,8 @@ export const inventoryArray = [
     weapon: "MAC-10",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2612,6 +2850,8 @@ export const inventoryArray = [
     weapon: "MAG7",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Shotgun",
     date: new Date("2012-01-01"),
@@ -2626,6 +2866,8 @@ export const inventoryArray = [
     weapon: "MP5-SD",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2640,6 +2882,8 @@ export const inventoryArray = [
     weapon: "MP7",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2654,6 +2898,8 @@ export const inventoryArray = [
     weapon: "MP9",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2668,6 +2914,8 @@ export const inventoryArray = [
     weapon: "Nova",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Shotgun",
     date: new Date("2012-01-01"),
@@ -2682,6 +2930,8 @@ export const inventoryArray = [
     weapon: "P2000",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2696,6 +2946,8 @@ export const inventoryArray = [
     weapon: "P250",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2710,6 +2962,8 @@ export const inventoryArray = [
     weapon: "P90",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2724,6 +2978,8 @@ export const inventoryArray = [
     weapon: "SCAR-20",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2738,6 +2994,8 @@ export const inventoryArray = [
     weapon: "SG 553",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2752,6 +3010,8 @@ export const inventoryArray = [
     weapon: "SSG 08",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2766,6 +3026,8 @@ export const inventoryArray = [
     weapon: "Sawed Off",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Shotgun",
     date: new Date("2012-01-01"),
@@ -2780,6 +3042,8 @@ export const inventoryArray = [
     weapon: "Tec-9",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2794,6 +3058,8 @@ export const inventoryArray = [
     weapon: "UMP-45",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2808,6 +3074,8 @@ export const inventoryArray = [
     weapon: "USP-S",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -2822,6 +3090,8 @@ export const inventoryArray = [
     weapon: "XM1014",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Shotgun",
     date: new Date("2012-01-01"),
@@ -2836,6 +3106,8 @@ export const inventoryArray = [
     weapon: "Zeus",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Zeus",
     date: new Date("2012-01-01"),
@@ -2850,6 +3122,8 @@ export const inventoryArray = [
     weapon: "Автомат «Галиль»",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Rifle",
     date: new Date("2012-01-01"),
@@ -2864,6 +3138,8 @@ export const inventoryArray = [
     weapon: "Взрывчатка С4",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Bomb",
     date: new Date("2012-01-01"),
@@ -2878,6 +3154,8 @@ export const inventoryArray = [
     weapon: "Контракт обмена",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Contract",
     date: new Date("2012-01-01"),
@@ -2892,6 +3170,8 @@ export const inventoryArray = [
     weapon: "Местный агент спецназа",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Agent",
     date: new Date("2012-01-01"),
@@ -2906,6 +3186,8 @@ export const inventoryArray = [
     weapon: "Местный агент террористов",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Agent",
     date: new Date("2012-01-01"),
@@ -2920,6 +3202,8 @@ export const inventoryArray = [
     weapon: "Набор музыки",
     name: "CS:GO",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Music",
     date: new Date("2012-01-01"),
@@ -2934,6 +3218,8 @@ export const inventoryArray = [
     weapon: "Негев",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Machinegun",
     date: new Date("2012-01-01"),
@@ -2948,6 +3234,8 @@ export const inventoryArray = [
     weapon: "Нож",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Knife",
     date: new Date("2012-01-01"),
@@ -2962,6 +3250,8 @@ export const inventoryArray = [
     weapon: "Нож",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Knife",
     date: new Date("2012-01-01"),
@@ -2976,6 +3266,8 @@ export const inventoryArray = [
     weapon: "ПП-19 «Бизон»",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "PP",
     date: new Date("2012-01-01"),
@@ -2990,6 +3282,8 @@ export const inventoryArray = [
     weapon: "Револьвер R8",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Pistol",
     date: new Date("2012-01-01"),
@@ -3004,6 +3298,8 @@ export const inventoryArray = [
     weapon: "Стандартные перчатки спецназа",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Gloves",
     date: new Date("2012-01-01"),
@@ -3018,6 +3314,8 @@ export const inventoryArray = [
     weapon: "Стандартные перчатки террористов",
     name: "",
     rarity: "None",
+    collection : {},
+    description: "",
     category: "Default",
     type: "Gloves",
     date: new Date("2012-01-01"),

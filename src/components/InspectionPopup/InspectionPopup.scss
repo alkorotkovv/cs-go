@@ -48,7 +48,7 @@
     padding: 60px 0 0 0;
     z-index: 1;
     display: grid;    
-    grid-template-columns: 128px auto;
+    grid-template-columns: 1fr auto;
     column-gap: 10px;
     grid-template-areas: 
     "logo title"
@@ -57,12 +57,17 @@
   ;
   }
 
-  &__header-collection-logo {
+  &__icon {
     margin: 0;
     padding: 0;
-    width: 128px;
-    display: flex;
+    width: 130px;
+    height: 100px;
+    display: none;
     grid-area: logo;
+
+    &_visible {
+      display: flex;
+    }
   }
 
   &__header-title {
@@ -90,7 +95,7 @@
   }
 
   &__underline {
-    margin: 0;
+    margin: 8px 0 0 0;
     padding: 0;
     width: 100%;
     height: 6px;
@@ -126,18 +131,25 @@
 
   &__main {
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 0;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex: 1;
     box-sizing: border-box;
     z-index: 1;
+
+    &_type_moto {
+      padding: 0;
+      position: absolute;
+    }
   }
 
   &__image {
     margin: 0;
     padding: 0;
     object-fit: contain;
+    align-self: center;
   }
 
   &__description {
@@ -155,7 +167,7 @@
   }
 
   &__bottom {
-    margin: 0;
+    margin: auto 0 0 0;
     padding: 0;
     width: 968px;
     height: 85px;
