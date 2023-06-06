@@ -107,13 +107,22 @@ import lastPhoto19 from '../images/last/last_avatar19.png';
 import lastPhoto20 from '../images/last/last_avatar20.png';
 
 //Иконки медалей
-import medalLogo1 from '../images/broken_fang_medal.png';
-import medalLogo2 from '../images/2023.png';
-import medalLogo3 from '../images/chicken.png';
-import medalLogo4 from '../images/rio.png';
-import medalLogo5 from '../images/stockholm.png';
-import medalLogo6 from '../images/rio.png';
-import medalLogo7 from '../images/chicken.png';
+import medalLogo1 from '../images/medals/paris.png';
+import medalLogo2 from '../images/medals/2023.png';
+import medalLogo3 from '../images/medals/rio.png';
+import medalLogo4 from '../images/medals/chicken.png';
+import medalLogo5 from '../images/medals/antwerp.png';
+import medalLogo6 from '../images/medals/2022.png';
+import medalLogo7 from '../images/medals/riptide.png';
+import medalLogo8 from '../images/medals/stockholm.png';
+import medalLogo9 from '../images/medals/2021.png';
+import medalLogo10 from '../images/medals/5year.png';
+import medalLogo11 from '../images/medals/broken_fang.png';
+import medalLogo12 from '../images/medals/2020.png';
+import medalLogo13 from '../images/medals/loyalty.png';
+import medalLogo14 from '../images/medals/2019.png';
+import medalLogo15 from '../images/medals/2018.png';
+import medalLogo16 from '../images/medals/2017.png';
 
 //Баннеры новостей
 import new1 from '../images/news/new1.png';
@@ -433,9 +442,8 @@ import matchOnline8 from '../images/matches/matchOnline8.jpg';
 
 //Массив медалей
 export const medalsArray = [
-  
   {
-    name: "Бриллиантовая монета операции «Сломанный клык»",
+    name: "Золотая монета BLAST.tv Paris Major 2023",
     logo: medalLogo1
   },
   {
@@ -443,11 +451,11 @@ export const medalsArray = [
     logo: medalLogo2
   },
   {
-    name: "Монета десятилетнего юбилея",
+    name: "Золотая монета IEM Rio Major 2022",
     logo: medalLogo3
   },
   {
-    name: "Золотая монета IEM Rio Major 2022",
+    name: "Монета десятилетнего юбилея",
     logo: medalLogo4
   },
   {
@@ -455,13 +463,49 @@ export const medalsArray = [
     logo: medalLogo5
   },
   {
-    name: "Золотая монета IEM Rio Major 2022",
+    name: "Медаль за службу в 2022",
     logo: medalLogo6
   },
   {
-    name: "Монета десятилетнего юбилея",
+    name: "Бриллиантовая монета операции «Хищные воды»",
     logo: medalLogo7
   },
+  {
+    name: "Бриллиантовая монета PGL Major Stokholm 2021",
+    logo: medalLogo8
+  },
+  {
+    name: "Медаль за службу в 2021",
+    logo: medalLogo9
+  },
+  {
+    name: "Монета за 5 лет службы",
+    logo: medalLogo10
+  },
+  {
+    name: "Бриллиантовая монета операции «Сломанный клык»",
+    logo: medalLogo11
+  },
+  {
+    name: "Медаль за службу в 2020",
+    logo: medalLogo12
+  },
+  {
+    name: "Медаль за службу в 2019",
+    logo: medalLogo13
+  },
+  {
+    name: "Медаль за верность",
+    logo: medalLogo14
+  },
+  {
+    name: "Медаль за службу в 2018",
+    logo: medalLogo15
+  },
+  {
+    name: "Медаль за службу в 2017",
+    logo: medalLogo16
+  }
 ]
 
 //Массив друзей

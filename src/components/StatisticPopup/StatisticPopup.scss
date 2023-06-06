@@ -37,6 +37,7 @@
     padding: 0;
     height: 497px;
     overflow-y: auto;
+    overflow-x: hidden;
     @include vertical-scrollbar;
   }
 
