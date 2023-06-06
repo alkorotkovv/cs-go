@@ -3950,7 +3950,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 .inspection-popup__icon_visible {
   display: flex;
 }
-.inspection-popup__header-title {
+.inspection-popup__title {
   margin: 0;
   padding: 6px 0 0 0;
   display: flex;

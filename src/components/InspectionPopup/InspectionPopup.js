@@ -5,7 +5,10 @@ import de from '../../images/inspect_guns/DesertEagle_Ermungand.png';
 
 function InspectionPopup(props) {
 
-  console.log(props.weapon)
+  //console.log(props.weapon)
+
+  const title = props.weapon.weapon + (props.weapon.name === "" ? "" : " | " + props.weapon.name)
+  console.log(title);
   
   return (
     <Popup name="inspection-popup" isVisible={props.isVisible}>
@@ -15,7 +18,7 @@ function InspectionPopup(props) {
       </div>
       <div className='inspection-popup__header'>
         <img className={'inspection-popup__icon' + (props.weapon.collection.image ? " inspection-popup__icon_visible" : "")} src={props.weapon.collection.image} alt="collection" draggable="false"/>
-        <h1 className='inspection-popup__header-title'>{props.weapon.weapon} | {props.weapon.name}</h1>
+        <h1 className='inspection-popup__title'>{title}</h1>
         <p className='inspection-popup__header-subtitle'>{props.weapon.collection.name || ""}</p>
         <div className={'inspection-popup__underline' + 
           ((props.weapon.rarity === "Covert") ? " inspection-popup__underline_covert" : "") +

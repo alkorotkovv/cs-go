@@ -343,10 +343,96 @@ import MotoGloves_Boom_inspect from '../images/inspect_guns/MotoGloves_Boom.png'
 import ButterflyKnife_Slaughter_inspect from '../images/inspect_guns/ButterflyKnife_Slaughter.png';
 import AK47_EliteMuseum_inspect from '../images/inspect_guns/AK47_EliteMuseum.png';
 import Glock18_GammaDoppler_inspect from '../images/inspect_guns/Glock18_GammaDoppler.png';
-import Medal_Stockholm_inspect from '../images/inspect_guns/Medal_Stockholm.png';
-
+//import DesertEagle_Conspiracy from '../images/guns/DesertEagle_Conspiracy.png';
 import DesertEagle_Ermungand_inspect from '../images/inspect_guns/DesertEagle_Ermungand.png';
-
+//import P250_BengalTiger from '../images/guns/P250_BengalTiger.png';
+//import DesertEagle_Night from '../images/guns/DesertEagle_Night.png';
+//import SawedOff_ForestDDPAT from '../images/guns/SawedOff_ForestDDPAT.png';
+import Medal_Stockholm_inspect from '../images/inspect_guns/Medal_Stockholm.png';
+import Medal_BrokenFang_inspect from '../images/inspect_guns/Medal_BrokenFang.png';
+import Medal_Riptide_inspect from '../images/inspect_guns/Medal_Riptide.png';
+import Medal_Rio_inspect from '../images/inspect_guns/Medal_Rio.png';
+import Medal_Antwerp_inspect from '../images/inspect_guns/Medal_Antwerp.png';
+/*
+import Medal_Loyalty from '../images/guns/Medal_Loyalty.png';
+import Medal_2017 from '../images/guns/Medal_2017.png';
+import Medal_2018 from '../images/guns/Medal_2018.png';
+import Medal_2019 from '../images/guns/Medal_2019.png';
+import Medal_2020 from '../images/guns/Medal_2020.png';
+import Medal_2021 from '../images/guns/Medal_2021.png';
+import Medal_2022 from '../images/guns/Medal_2022.png';
+import Medal_2023 from '../images/guns/Medal_2023.png';
+import Medal_Birthday from '../images/guns/Medal_Birthday.png';
+import Medal_5years from '../images/guns/Medal_5years.png';
+*/
+import M4A4_Hellfire_inspect from '../images/inspect_guns/M4A4_Hellfire.png';
+/*
+import MAC10_Propaganda from '../images/guns/MAC10_Propaganda.png';
+import DesertEagle_CrimsonWeb from '../images/guns/DesertEagle_CrimsonWeb.png';
+import DesertEagle_Heirloom from '../images/guns/DesertEagle_Heirloom.png';
+import DesertEagle_Pilot from '../images/guns/DesertEagle_Pilot.png';
+import FiveSeven_BoostProtocol from '../images/guns/FiveSeven_BoostProtocol.png';
+import USP_OrangeAnolis from '../images/guns/USP_OrangeAnolis.png';
+import Galil_Phoenix from '../images/guns/Galil_Phoenix.png';
+import Agent_Maximus from '../images/guns/Agent_Maximus.png';
+import AUG_Nefrit from '../images/guns/AUG_Nefrit.png';
+import DesertEagle_UrbanRubble from '../images/guns/DesertEagle_UrbanRubble.png';
+import DesertEagle_NightHeist from '../images/guns/DesertEagle_NightHeist.png';
+import DesertEagle_Corinfian from '../images/guns/DesertEagle_Corinfian.png';
+import DesertEagle_Sputnik from '../images/guns/DesertEagle_Sputnik.png';
+import MP9_HotRoad from '../images/guns/MP9_HotRoad.png';
+import Tec9_Aizec from '../images/guns/Tec9_Aizec.png';
+import DesertEagle_Bronze from '../images/guns/DesertEagle_Bronze.png';
+import DesertEagle_NightStorm from '../images/guns/DesertEagle_NightStorm.png';
+import DesertEagle_UrbanDDPAT from '../images/guns/DesertEagle_UrbanDDPAT.png';
+import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
+import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
+import Storage from '../images/guns/Storage.png';
+import AK47 from '../images/guns/Default/AK47.png';
+import AUG from '../images/guns/Default/AUG.png';
+import AWP from '../images/guns/Default/AWP.png';
+import CZ75 from '../images/guns/Default/CZ75.png';
+import DesertEagle from '../images/guns/Default/DesertEagle.png';
+import DualBerettas from '../images/guns/Default/DualBerettas.png';
+import FAMAS from '../images/guns/Default/FAMAS.png';
+import FiveSeveN from '../images/guns/Default/FiveSeveN.png';
+import G3SG1 from '../images/guns/Default/G3SG1.png';
+import Glock18 from '../images/guns/Default/Glock18.png';
+import M249 from '../images/guns/Default/M249.png';
+import M4A1S from '../images/guns/Default/M4A1S.png';
+import M4A4 from '../images/guns/Default/M4A4.png';
+import MAC10 from '../images/guns/Default/MAC10.png';
+import MAG7 from '../images/guns/Default/MAG7.png';
+import MP5 from '../images/guns/Default/MP5.png';
+import MP7 from '../images/guns/Default/MP7.png';
+import MP9 from '../images/guns/Default/MP9.png';
+import Nova from '../images/guns/Default/Nova.png';
+import P2000 from '../images/guns/Default/P2000.png';
+import P250 from '../images/guns/Default/P250.png';
+import P90 from '../images/guns/Default/P90.png';
+import Scar from '../images/guns/Default/Scar.png';
+import SG from '../images/guns/Default/SG.png';
+import SSG from '../images/guns/Default/SSG.png';
+import SawedOff from '../images/guns/Default/SawedOff.png';
+import Tec9 from '../images/guns/Default/Tec9.png';
+import UMP from '../images/guns/Default/UMP.png';
+import USP from '../images/guns/Default/USP.png';
+import XM1014 from '../images/guns/Default/XM1014.png';
+import Zeus from '../images/guns/Default/Zeus.png';
+import Galil from '../images/guns/Default/Galil.png';
+import C4 from '../images/guns/Default/C4.png';
+import Contract from '../images/guns/Default/Contract.png';
+import Agent_CT from '../images/guns/Default/Agent_CT.png';
+import Agent_T from '../images/guns/Default/Agent_T.png';
+import Music from '../images/guns/Default/Music.png';
+import Negev from '../images/guns/Default/Negev.png';
+import Knife_CT from '../images/guns/Default/Knife_CT.png';
+import Knife_T from '../images/guns/Default/Knife_T.png';
+import Bizon from '../images/guns/Default/Bizon.png';
+import R8 from '../images/guns/Default/R8.png';
+import Gloves_CT from '../images/guns/Default/Gloves_CT.png';
+import Gloves_T from '../images/guns/Default/Gloves_T.png';
+*/
 
 
 //Команды
@@ -1958,7 +2044,7 @@ export const inventoryArray = [
   {
     id: 6,
     image: Medal_BrokenFang,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_BrokenFang_inspect,
     weapon: "Бриллиантовая монета операции «Сломанный клык»",
     name: "",
     rarity: "Covert",
@@ -1975,7 +2061,7 @@ export const inventoryArray = [
   {
     id: 7,
     image: Medal_Riptide,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Riptide_inspect,
     weapon: "Бриллиантовая монета операции «Хищные воды»",
     name: "",
     rarity: "Covert",
@@ -1992,7 +2078,7 @@ export const inventoryArray = [
   {
     id: 8,
     image: Medal_Rio,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Rio_inspect,
     weapon: "Золотая монета IEM Rio Major 2022",
     name: "",
     rarity: "Covert",
@@ -2009,7 +2095,7 @@ export const inventoryArray = [
   {
     id: 9,
     image: Medal_Antwerp,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Antwerp_inspect,
     weapon: "Золотая монета PGL Major Antwerp 2022",
     name: "",
     rarity: "Covert",
@@ -2205,7 +2291,7 @@ export const inventoryArray = [
   },
   {
     image: M4A4_Hellfire,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: M4A4_Hellfire_inspect,
     weapon: "M4A4",
     name: "Адское пламя",
     rarity: "Classified",
