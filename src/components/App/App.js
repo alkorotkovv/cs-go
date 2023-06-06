@@ -14,6 +14,7 @@ import Statistic from '../Statistic/Statistic.js';
 import StatisticPopup from '../StatisticPopup/StatisticPopup.js';
 import SetupPopup from '../SetupPopup/SetupPopup.js';
 import Tooltip from '../Tooltip/Tooltip.js';
+import InspectionPopup from '../InspectionPopup/InspectionPopup';
 
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
   const [isSetupPopupVisible, setIsSetupPopupVisible] = React.useState(false);
   const [setupType, setSetupType] = React.useState("");
   const [setupValue, setSetupValue] = React.useState(0);
+
+  const[isInspectionPopupVisible, setIsInspectionPopupVisible] = React.useState(false);
 
   const [tooltip, setTooltip] = React.useState({visible: false, text: "", x: "-100", y: "-100"});
 
@@ -168,6 +171,16 @@ function App() {
     setIsSetupPopupVisible(false);
   }
 
+  //Обработчик клика осмотра оружия
+  function handleInspectClick() {
+    setIsInspectionPopupVisible(true);
+  }
+
+  //Обработчик закрытия попапа осмотра оружия
+  function handleInspectionPopupClose() {
+    setIsInspectionPopupVisible(false);
+  }
+
   //Обработчик показа всплывающей подсказки
   function showTooltip(tooltipObject) {
     setTooltip(tooltipObject);
@@ -208,7 +221,7 @@ function App() {
       <RightBar />
       { isPlayVisible ? <Play isVisible={isPlayVisible} setupValue={setupValue} handleSetupClick={handleSetupClick} /> : < ></> }
       <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
-      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} /> : <></> }
+      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} handleInspectClick={handleInspectClick} /> : <></> }
       { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
       { isStatisticVisible ? <Statistic isVisible={isStatisticVisible} isStatisticPopupVisible={isStatisticPopupVisible} handleStatisticPopupClick={handleStatisticPopupClick} /> : <></> }
       { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
@@ -226,6 +239,7 @@ function App() {
           handleClose={handleSetupPopupClose}
         /> : < ></> }
         <Tooltip tooltip={tooltip} /> : <></>
+        { isInspectionPopupVisible ? <InspectionPopup isVisible={isInspectionPopupVisible} handleClose={handleInspectionPopupClose} />:<></>}
     </div>
     </TooltipContext.Provider>
   );

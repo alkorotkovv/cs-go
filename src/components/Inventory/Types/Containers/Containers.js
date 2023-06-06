@@ -176,6 +176,7 @@ function Containers(props) {
                     <Gun 
                       key={index}
                       object={element}
+                      handleInspectClick={props.handleInspectClick}
                     />
                   )
                 }  

@@ -124,11 +124,11 @@ function Inventory(props) {
           <a className='inventory__header-text' href="https://steamcommunity.com/market/" target="_blank" rel='noreferrer'>Торговая площадка</a>
         </div>
       </div>
-      { isAll ? <All isVisible={isAll} array={array} /> : <></>}
-      { isEquipment ? <Equipment isVisible={isEquipment} array={array} /> : <></>}
-      { isStickers ? <Stickers isVisible={isStickers} array={array} /> : <></>}
-      { isContainers ? <Containers isVisible={isContainers} array={array} /> : <></>}
-      { isTrophies ? <Trophies isVisible={isTrophies} array={array} /> : <></>}
+      { isAll ? <All isVisible={isAll} array={array} handleInspectClick={props.handleInspectClick}/> : <></>}
+      { isEquipment ? <Equipment isVisible={isEquipment} array={array} handleInspectClick={props.handleInspectClick}/> : <></>}
+      { isStickers ? <Stickers isVisible={isStickers} array={array} handleInspectClick={props.handleInspectClick}/> : <></>}
+      { isContainers ? <Containers isVisible={isContainers} array={array} handleInspectClick={props.handleInspectClick}/> : <></>}
+      { isTrophies ? <Trophies isVisible={isTrophies} array={array} handleInspectClick={props.handleInspectClick}/> : <></>}
     </Panel>
   )
 }

@@ -1,0 +1,139 @@
+
+
+.inspection-popup {
+  width: 1920px;
+  height: 1080px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba($color: #5f5d5d, $alpha: 0.7);
+  backdrop-filter: blur(30px);
+
+  &__backgroud {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: -1;
+  } 
+
+  &__background-circle {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    //background-color: rgba($color: #4d4b4b, $alpha: 0.7);
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 220px solid rgba($color: #585656, $alpha: 0.7);
+    position: absolute;
+    top: 185px;
+    left: calc(50% - 355px);
+  }
+
+  &__background-semicircle {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 120px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background-color: rgba($color: #585656, $alpha: 0.7);
+    position: absolute;
+    left: calc(50% - 120px);
+    top: calc(50%);
+  }
+
+  &__header {
+    margin: 0;
+    padding: 60px 0 0 0;
+    z-index: 1;
+    display: grid;    
+    grid-template-columns: 128px auto;
+    column-gap: 10px;
+    grid-template-areas: 
+    "logo title"
+    "logo subtitle"
+    "underline underline"
+  ;
+  }
+
+  &__header-collection-logo {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    display: flex;
+    grid-area: logo;
+  }
+
+  &__header-title {
+    margin: 0;
+    padding: 6px 0 0 0;
+    display: flex;
+    align-self: flex-start;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+    grid-area: title;
+  }
+
+  &__header-subtitle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+    grid-area: subtitle;
+  }
+
+  &__header-underline {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 6px;
+    display: flex;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: $retricted_color;
+    grid-area: underline;
+  }
+
+  &__main {
+    margin: 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    z-index: 1;
+  }
+
+  &__bottom {
+    margin: 0;
+    padding: 0;
+    width: 968px;
+    height: 85px;
+    display: flex;
+    z-index: 1;
+    box-sizing: border-box;
+    border-top: 1px solid $line-color;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 14px 13px;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.4);
+    }
+
+  }
+}

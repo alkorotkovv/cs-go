@@ -124,6 +124,7 @@ function Trophies(props) {
                     <Gun 
                       key={index}
                       object={element}
+                      handleInspectClick={props.handleInspectClick}
                     />
                   )
                 }  

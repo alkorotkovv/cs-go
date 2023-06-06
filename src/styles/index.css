@@ -1380,7 +1380,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   border-left: 6px solid #D32CE6;
 }
 .gun__image-wrapper_purple {
-  border-left: 6px solid #8847FF;
+  border-left: 6px solid #8847ff;
 }
 .gun__image-wrapper_blue {
   border-left: 6px solid #4B69FF;
@@ -3455,6 +3455,7 @@ https://toughengineer.github.io/demo/slider-styler*/
   padding: 0;
   height: 497px;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-color: #B6ADAE transparent;
   scrollbar-width: thin;
 }
@@ -3888,6 +3889,126 @@ https://toughengineer.github.io/demo/slider-styler*/
   display: flex;
   color: white;
   letter-spacing: 1px;
+}
+
+.inspection-popup {
+  width: 1920px;
+  height: 1080px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(95, 93, 93, 0.7);
+  backdrop-filter: blur(30px);
+}
+.inspection-popup__backgroud {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+}
+.inspection-popup__background-circle {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  border-radius: 50%;
+  background-clip: content-box;
+  border: 220px solid rgba(88, 86, 86, 0.7);
+  position: absolute;
+  top: 185px;
+  left: calc(50% - 355px);
+}
+.inspection-popup__background-semicircle {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  height: 120px;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  background-color: rgba(88, 86, 86, 0.7);
+  position: absolute;
+  left: calc(50% - 120px);
+  top: 50%;
+}
+.inspection-popup__header {
+  margin: 0;
+  padding: 60px 0 0 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 128px auto;
+  column-gap: 10px;
+  grid-template-areas: "logo title" "logo subtitle" "underline underline";
+}
+.inspection-popup__header-collection-logo {
+  margin: 0;
+  padding: 0;
+  width: 128px;
+  display: flex;
+  grid-area: logo;
+}
+.inspection-popup__header-title {
+  margin: 0;
+  padding: 6px 0 0 0;
+  display: flex;
+  align-self: flex-start;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  grid-area: title;
+}
+.inspection-popup__header-subtitle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: flex-start;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  grid-area: subtitle;
+}
+.inspection-popup__header-underline {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 6px;
+  display: flex;
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #8847ff;
+  grid-area: underline;
+}
+.inspection-popup__main {
+  margin: 0;
+  padding: 20px 0 0 0;
+  display: flex;
+  z-index: 1;
+}
+.inspection-popup__bottom {
+  margin: 0;
+  padding: 0;
+  width: 968px;
+  height: 85px;
+  display: flex;
+  z-index: 1;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.inspection-popup__button {
+  margin: 0;
+  padding: 14px 13px;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.inspection-popup__button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .wrapper_competitive-official:nth-child(3) {

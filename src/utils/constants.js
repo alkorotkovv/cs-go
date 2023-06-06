@@ -294,6 +294,9 @@ import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
 import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
 import Storage from '../images/guns/Storage.png';
 
+//Оружие для осмотра
+import DesertEagle_Ermungand_inspect from '../images/inspect_guns/DesertEagle_Ermungand.png';
+
 import AK47 from '../images/guns/Default/AK47.png';
 import AUG from '../images/guns/Default/AUG.png';
 import AWP from '../images/guns/Default/AWP.png';
@@ -1750,6 +1753,7 @@ export const inventoryArray = [
   {
     id: 1,
     image: MotoGloves_Boom,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Мотоциклетные перчатки",
     name: "БУХ!",
     rarity: "Covert",
@@ -1764,6 +1768,7 @@ export const inventoryArray = [
   {
     id: 2,
     image: ButterflyKnife_Slaughter,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Нож бабочка",
     name: "Убийство",
     rarity: "Covert",
@@ -1778,6 +1783,7 @@ export const inventoryArray = [
   {
     id: 3,
     image: AK47_EliteMuseum,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "AK-47",
     name: "Музей элиты",
     rarity: "Covert",
@@ -1792,6 +1798,7 @@ export const inventoryArray = [
   {
     id: 4,
     image: Glock18_GammaDoppler,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Glock-18",
     name: "Гамма-волны",
     rarity: "Covert",
@@ -1806,6 +1813,7 @@ export const inventoryArray = [
   {
     id: 5,
     image: Medal_Stockholm,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Бриллиантовая монета PGL Major Stockholm 2021",
     name: "",
     rarity: "Covert",
@@ -1820,6 +1828,7 @@ export const inventoryArray = [
   {
     id: 6,
     image: Medal_BrokenFang,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Бриллиантовая монета операции «Сломанный клык»",
     name: "",
     rarity: "Covert",
@@ -1834,6 +1843,7 @@ export const inventoryArray = [
   {
     id: 7,
     image: Medal_Riptide,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Бриллиантовая монета операции «Хищные воды»",
     name: "",
     rarity: "Covert",
@@ -1848,6 +1858,7 @@ export const inventoryArray = [
   {
     id: 8,
     image: Medal_Rio,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Золотая монета IEM Rio Major 2022",
     name: "",
     rarity: "Covert",
@@ -1862,6 +1873,7 @@ export const inventoryArray = [
   {
     id: 9,
     image: Medal_Antwerp,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Золотая монета PGL Major Antwerp 2022",
     name: "",
     rarity: "Covert",
@@ -1876,6 +1888,7 @@ export const inventoryArray = [
   {
     id: 10,
     image: Medal_Loyalty,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за верность",
     name: "",
     rarity: "Covert",
@@ -1890,6 +1903,7 @@ export const inventoryArray = [
   {
     id: 11,
     image: Medal_2017,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2017",
     name: "",
     rarity: "Covert",
@@ -1904,6 +1918,7 @@ export const inventoryArray = [
   {
     id: 12,
     image: Medal_2018,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2018",
     name: "",
     rarity: "Covert",
@@ -1918,6 +1933,7 @@ export const inventoryArray = [
   {
     id: 13,
     image: Medal_2019,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2019",
     name: "",
     rarity: "Covert",
@@ -1931,6 +1947,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2020,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2020",
     name: "",
     rarity: "Covert",
@@ -1944,6 +1961,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2021,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2021",
     name: "",
     rarity: "Covert",
@@ -1957,6 +1975,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2022,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2022",
     name: "",
     rarity: "Covert",
@@ -1970,6 +1989,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2023,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Медаль за службу в 2023",
     name: "",
     rarity: "Covert",
@@ -1983,6 +2003,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_Birthday,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Монета десятилетнего юбилея",
     name: "",
     rarity: "Covert",
@@ -1996,6 +2017,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_5years,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Монета за 5 лет службы",
     name: "",
     rarity: "Covert",
@@ -2009,6 +2031,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Conspiracy,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Заговор",
     rarity: "Classified",
@@ -2022,6 +2045,7 @@ export const inventoryArray = [
   },
   {
     image: M4A4_Hellfire,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "M4A4",
     name: "Адское пламя",
     rarity: "Classified",
@@ -2035,6 +2059,7 @@ export const inventoryArray = [
   },
   {
     image: MAC10_Propaganda,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MAC-10",
     name: "Пропаганда",
     rarity: "Classified",
@@ -2048,6 +2073,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Ermungand,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Изумрудный Ёрмунганд",
     rarity: "Restricted",
@@ -2061,6 +2087,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_CrimsonWeb,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Кровавая паутина",
     rarity: "Restricted",
@@ -2074,6 +2101,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Heirloom,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Наследие",
     rarity: "Restricted",
@@ -2087,6 +2115,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Pilot,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Пилот",
     rarity: "Restricted",
@@ -2100,6 +2129,7 @@ export const inventoryArray = [
   },
   {
     image: FiveSeven_BoostProtocol,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Five-SeveN",
     name: "Протокол «Подъём»",
     rarity: "Restricted",
@@ -2113,6 +2143,7 @@ export const inventoryArray = [
   },
   {
     image: USP_OrangeAnolis,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "USP-S",
     name: "Оранжевый анолис",
     rarity: "Restricted",
@@ -2126,6 +2157,7 @@ export const inventoryArray = [
   },
   {
     image: Galil_Phoenix,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Автомат «Галиль»",
     name: "Негатив «Феникса»",
     rarity: "Restricted",
@@ -2139,6 +2171,7 @@ export const inventoryArray = [
   },
   {
     image: Agent_Maximus,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Максимус",
     name: "Кавалерия",
     rarity: "Restricted",
@@ -2152,6 +2185,7 @@ export const inventoryArray = [
   },
   {
     image: AUG_Nefrit,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "AUG",
     name: "Резной нефрит",
     rarity: "Mil-Spec",
@@ -2165,6 +2199,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_UrbanRubble,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Городской щебень",
     rarity: "Mil-Spec",
@@ -2178,6 +2213,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_NightHeist,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Ночное ограбление",
     rarity: "Mil-Spec",
@@ -2191,6 +2227,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Corinfian,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Послание коринфянам",
     rarity: "Mil-Spec",
@@ -2204,6 +2241,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Sputnik,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Спутник",
     rarity: "Mil-Spec",
@@ -2217,6 +2255,7 @@ export const inventoryArray = [
   },
   {
     image: MP9_HotRoad,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MP9",
     name: "Хот-род",
     rarity: "Mil-Spec",
@@ -2230,6 +2269,7 @@ export const inventoryArray = [
   },
   {
     image: P250_BengalTiger,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "P250",
     name: "Бенгальский тигр",
     rarity: "Mil-Spec",
@@ -2243,6 +2283,7 @@ export const inventoryArray = [
   },
   {
     image: Tec9_Aizec,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Tec-9",
     name: "Айзек",
     rarity: "Mil-Spec",
@@ -2256,6 +2297,7 @@ export const inventoryArray = [
   },
   {
     image: Sticker_VirtusPro2021,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Наклейка",
     name: "Virtus Pro | Стокгольм 2021",
     rarity: "Mil-Spec",
@@ -2269,6 +2311,7 @@ export const inventoryArray = [
   },
   {
     image: Patch_Tyloo2021,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Нашивка",
     name: "Tyloo | Стокгольм 2021",
     rarity: "Mil-Spec",
@@ -2282,6 +2325,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Bronze,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Бронзовый",
     rarity: "Industrial",
@@ -2295,12 +2339,14 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_NightStorm,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Ночная буря",
     rarity: "Industrial",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-28"),
+    image_inspect: DesertEagle_Ermungand_inspect,
     isT: false,
     isCT: false,
     canT: true,
@@ -2308,6 +2354,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Night,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Ночь",
     rarity: "Industrial",
@@ -2321,6 +2368,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_UrbanDDPAT,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "Пиксельный камуфляж «Город»",
     rarity: "Industrial",
@@ -2334,6 +2382,7 @@ export const inventoryArray = [
   },
   {
     image: SawedOff_ForestDDPAT,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Saved-Off",
     name: "Пиксельный камуфляж «Лес»",
     rarity: "Consumer",
@@ -2347,6 +2396,7 @@ export const inventoryArray = [
   },
   {
     image: Storage,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Хранилище",
     name: "«1»",
     rarity: "None",
@@ -2360,6 +2410,7 @@ export const inventoryArray = [
   },
   {
     image: AK47,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "AK-47",
     name: "",
     rarity: "None",
@@ -2373,6 +2424,7 @@ export const inventoryArray = [
   },
   {
     image: AUG,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "AUG",
     name: "",
     rarity: "None",
@@ -2386,6 +2438,7 @@ export const inventoryArray = [
   },
   {
     image: AWP,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "AWP",
     name: "",
     rarity: "None",
@@ -2399,6 +2452,7 @@ export const inventoryArray = [
   },
   {
     image: CZ75,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "CZ75-Auto",
     name: "",
     rarity: "None",
@@ -2412,6 +2466,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Desert Eagle",
     name: "",
     rarity: "None",
@@ -2425,6 +2480,7 @@ export const inventoryArray = [
   },
   {
     image: DualBerettas,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Dual Berettas",
     name: "",
     rarity: "None",
@@ -2438,6 +2494,7 @@ export const inventoryArray = [
   },
   {
     image: FAMAS,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "FAMAS",
     name: "",
     rarity: "None",
@@ -2451,6 +2508,7 @@ export const inventoryArray = [
   },
   {
     image: FiveSeveN,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Five-SeveN",
     name: "",
     rarity: "None",
@@ -2464,6 +2522,7 @@ export const inventoryArray = [
   },
   {
     image: G3SG1,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "G3SG1",
     name: "",
     rarity: "None",
@@ -2477,6 +2536,7 @@ export const inventoryArray = [
   },
   {
     image: Glock18,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Glock-18",
     name: "",
     rarity: "None",
@@ -2490,6 +2550,7 @@ export const inventoryArray = [
   },
   {
     image: M249,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "M249",
     name: "",
     rarity: "None",
@@ -2503,6 +2564,7 @@ export const inventoryArray = [
   },
   {
     image: M4A1S,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "M4A1-S",
     name: "",
     rarity: "None",
@@ -2516,6 +2578,7 @@ export const inventoryArray = [
   },
   {
     image: M4A4,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "M4A4",
     name: "",
     rarity: "None",
@@ -2529,6 +2592,7 @@ export const inventoryArray = [
   },
   {
     image: MAC10,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MAC-10",
     name: "",
     rarity: "None",
@@ -2542,6 +2606,7 @@ export const inventoryArray = [
   },
   {
     image: MAG7,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MAG7",
     name: "",
     rarity: "None",
@@ -2555,6 +2620,7 @@ export const inventoryArray = [
   },
   {
     image: MP5,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MP5-SD",
     name: "",
     rarity: "None",
@@ -2568,6 +2634,7 @@ export const inventoryArray = [
   },
   {
     image: MP7,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MP7",
     name: "",
     rarity: "None",
@@ -2581,6 +2648,7 @@ export const inventoryArray = [
   },
   {
     image: MP9,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "MP9",
     name: "",
     rarity: "None",
@@ -2594,6 +2662,7 @@ export const inventoryArray = [
   },
   {
     image: Nova,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Nova",
     name: "",
     rarity: "None",
@@ -2607,6 +2676,7 @@ export const inventoryArray = [
   },
   {
     image: P2000,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "P2000",
     name: "",
     rarity: "None",
@@ -2620,6 +2690,7 @@ export const inventoryArray = [
   },
   {
     image: P250,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "P250",
     name: "",
     rarity: "None",
@@ -2633,6 +2704,7 @@ export const inventoryArray = [
   },
   {
     image: P90,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "P90",
     name: "",
     rarity: "None",
@@ -2646,6 +2718,7 @@ export const inventoryArray = [
   },
   {
     image: Scar,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "SCAR-20",
     name: "",
     rarity: "None",
@@ -2659,6 +2732,7 @@ export const inventoryArray = [
   },
   {
     image: SG,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "SG 553",
     name: "",
     rarity: "None",
@@ -2672,6 +2746,7 @@ export const inventoryArray = [
   },
   {
     image: SSG,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "SSG 08",
     name: "",
     rarity: "None",
@@ -2685,6 +2760,7 @@ export const inventoryArray = [
   },
   {
     image: SawedOff,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Sawed Off",
     name: "",
     rarity: "None",
@@ -2698,6 +2774,7 @@ export const inventoryArray = [
   },
   {
     image: Tec9,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Tec-9",
     name: "",
     rarity: "None",
@@ -2711,6 +2788,7 @@ export const inventoryArray = [
   },
   {
     image: UMP,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "UMP-45",
     name: "",
     rarity: "None",
@@ -2724,6 +2802,7 @@ export const inventoryArray = [
   },
   {
     image: USP,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "USP-S",
     name: "",
     rarity: "None",
@@ -2737,6 +2816,7 @@ export const inventoryArray = [
   },
   {
     image: XM1014,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "XM1014",
     name: "",
     rarity: "None",
@@ -2750,6 +2830,7 @@ export const inventoryArray = [
   },
   {
     image: Zeus,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Zeus",
     name: "",
     rarity: "None",
@@ -2763,6 +2844,7 @@ export const inventoryArray = [
   },
   {
     image: Galil,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Автомат «Галиль»",
     name: "",
     rarity: "None",
@@ -2776,6 +2858,7 @@ export const inventoryArray = [
   },
   {
     image: C4,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Взрывчатка С4",
     name: "",
     rarity: "None",
@@ -2789,6 +2872,7 @@ export const inventoryArray = [
   },
   {
     image: Contract,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Контракт обмена",
     name: "",
     rarity: "None",
@@ -2802,6 +2886,7 @@ export const inventoryArray = [
   },
   {
     image: Agent_CT,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Местный агент спецназа",
     name: "",
     rarity: "None",
@@ -2815,6 +2900,7 @@ export const inventoryArray = [
   },
   {
     image: Agent_T,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Местный агент террористов",
     name: "",
     rarity: "None",
@@ -2828,6 +2914,7 @@ export const inventoryArray = [
   },
   {
     image: Music,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Набор музыки",
     name: "CS:GO",
     rarity: "None",
@@ -2841,6 +2928,7 @@ export const inventoryArray = [
   },
   {
     image: Negev,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Негев",
     name: "",
     rarity: "None",
@@ -2854,6 +2942,7 @@ export const inventoryArray = [
   },
   {
     image: Knife_CT,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Нож",
     name: "",
     rarity: "None",
@@ -2867,6 +2956,7 @@ export const inventoryArray = [
   },
   {
     image: Knife_T,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Нож",
     name: "",
     rarity: "None",
@@ -2880,6 +2970,7 @@ export const inventoryArray = [
   },
   {
     image: Bizon,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "ПП-19 «Бизон»",
     name: "",
     rarity: "None",
@@ -2893,6 +2984,7 @@ export const inventoryArray = [
   },
   {
     image: R8,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Револьвер R8",
     name: "",
     rarity: "None",
@@ -2906,6 +2998,7 @@ export const inventoryArray = [
   },
   {
     image: Gloves_CT,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Стандартные перчатки спецназа",
     name: "",
     rarity: "None",
@@ -2919,6 +3012,7 @@ export const inventoryArray = [
   },
   {
     image: Gloves_T,
+    image_inspect: DesertEagle_Ermungand_inspect,
     weapon: "Стандартные перчатки террористов",
     name: "",
     rarity: "None",
