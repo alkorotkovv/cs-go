@@ -23,28 +23,28 @@
     position: relative;
     transition: box-shadow 0.2s linear;
 
-    &_red {
-      border-left: 6px solid #EB4B4B;
+    &_covert {
+      border-left: 6px solid $covert_color;
     }
 
-    &_pink {
-      border-left: 6px solid #D32CE6;
+    &_classified {
+      border-left: 6px solid $classified_color;
     }
 
-    &_purple {
+    &_retricted {
       border-left: 6px solid $retricted_color;
     }
 
-    &_blue {
-      border-left: 6px solid #4B69FF;
+    &_milspec {
+      border-left: 6px solid $milspec_color;
     }
 
     &_industrial {
-      border-left: 6px solid #5E98D9;
+      border-left: 6px solid $industrial_color;
     }
 
     &_consumer {
-      border-left: 6px solid #B0C3D9;
+      border-left: 6px solid $consumer_color;
     }
   }
 

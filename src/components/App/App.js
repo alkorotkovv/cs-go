@@ -39,6 +39,7 @@ function App() {
   const [setupValue, setSetupValue] = React.useState(0);
 
   const[isInspectionPopupVisible, setIsInspectionPopupVisible] = React.useState(false);
+  const[weapon, setWeapon] = React.useState({});
 
   const [tooltip, setTooltip] = React.useState({visible: false, text: "", x: "-100", y: "-100"});
 
@@ -172,7 +173,9 @@ function App() {
   }
 
   //Обработчик клика осмотра оружия
-  function handleInspectClick() {
+  function handleInspectClick(object) {
+    console.log(object)
+    setWeapon(object);
     setIsInspectionPopupVisible(true);
   }
 
@@ -239,7 +242,7 @@ function App() {
           handleClose={handleSetupPopupClose}
         /> : < ></> }
         <Tooltip tooltip={tooltip} /> : <></>
-        { isInspectionPopupVisible ? <InspectionPopup isVisible={isInspectionPopupVisible} handleClose={handleInspectionPopupClose} />:<></>}
+        { isInspectionPopupVisible ? <InspectionPopup isVisible={isInspectionPopupVisible} weapon={weapon} handleClose={handleInspectionPopupClose} />:<></>}
     </div>
     </TooltipContext.Provider>
   );

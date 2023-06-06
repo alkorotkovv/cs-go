@@ -5,6 +5,7 @@ import de from '../../images/inspect_guns/DesertEagle_Ermungand.png';
 
 function InspectionPopup(props) {
 
+  console.log(props.weapon)
   
   return (
     <Popup name="inspection-popup" isVisible={props.isVisible}>
@@ -14,12 +15,20 @@ function InspectionPopup(props) {
       </div>
       <div className='inspection-popup__header'>
         <img className='inspection-popup__header-collection-logo' src={north} alt="collection" draggable="false"/>
-        <h1 className='inspection-popup__header-title'>Desert Eagle | Изумрудный Ёрмунганд</h1>
-        <p className='inspection-popup__header-subtitle'>Коллекция "Север"</p>
-        <div className='inspection-popup__header-underline'></div>
+        <h1 className='inspection-popup__header-title'>{props.weapon.weapon} | {props.weapon.name}</h1>
+        <p className='inspection-popup__header-subtitle'>{props.weapon.collection}</p>
+        <div className={'inspection-popup__underline' + 
+          ((props.weapon.rarity === "Covert") ? " inspection-popup__underline_covert" : "") +
+          ((props.weapon.rarity === "Classified") ? " inspection-popup__underline_classified" : "") +
+          ((props.weapon.rarity === "Restricted") ? " inspection-popup__underline_retricted" : "") +
+          ((props.weapon.rarity === "Mil-Spec") ? " inspection-popup__underline_milspec" : "") +
+          ((props.weapon.rarity === "Industrial") ? " inspection-popup__underline_industrial" : "") +
+          ((props.weapon.rarity === "Consumer") ? " inspection-popup__underline_consumer" : "")}>
+        </div>
       </div>
       <div className='inspection-popup__main'>
-        <img className='inspection-popup__main-logo' src={de} alt="weapon" draggable="false"/>
+        <img className='inspection-popup__image' src={props.weapon.image_inspect} alt="weapon" draggable="false"/>
+        <p className='inspection-popup__description'>{props.weapon.description}</p>
       </div>
       <div className='inspection-popup__bottom'>
         <button className='inspection-popup__button' onClick={props.handleClose}>Закрыть</button>

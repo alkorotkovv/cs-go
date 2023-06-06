@@ -19,16 +19,16 @@ function Gun(props) {
   //Обработчики клика по опциям в меню
   function handleOptionClick() {
     console.log("Осмотреть")
-    props.handleInspectClick();
+    props.handleInspectClick(props.object);
   }
 
   return (
     <li className={`gun`} ref={gunRef}>
       <div className={`gun__image-wrapper gun__image-wrapper-${props.object.name}` + 
-        ((props.object.rarity === "Covert") ? " gun__image-wrapper_red" : "") +
-        ((props.object.rarity === "Classified") ? " gun__image-wrapper_pink" : "") +
-        ((props.object.rarity === "Restricted") ? " gun__image-wrapper_purple" : "") +
-        ((props.object.rarity === "Mil-Spec") ? " gun__image-wrapper_blue" : "") +
+        ((props.object.rarity === "Covert") ? " gun__image-wrapper_covert" : "") +
+        ((props.object.rarity === "Classified") ? " gun__image-wrapper_classified" : "") +
+        ((props.object.rarity === "Restricted") ? " gun__image-wrapper_retricted" : "") +
+        ((props.object.rarity === "Mil-Spec") ? " gun__image-wrapper_milspec" : "") +
         ((props.object.rarity === "Industrial") ? " gun__image-wrapper_industrial" : "") +
         ((props.object.rarity === "Consumer") ? " gun__image-wrapper_consumer" : "")     
         }>

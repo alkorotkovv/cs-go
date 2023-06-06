@@ -2077,6 +2077,8 @@ export const inventoryArray = [
     weapon: "Desert Eagle",
     name: "Изумрудный Ёрмунганд",
     rarity: "Restricted",
+    description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён зелёный узор Ёрмунганда, «Мирового Змея». Пробуди богов",
+    collection: "Коллекция «Север»",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-26"),
