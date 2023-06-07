@@ -2,6 +2,20 @@ import React  from 'react';
 import Popup from '../Popup/Popup';
 
 function PopupWindow(props) {
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    switch (evt.code) {
+      case "Escape": props.handleClose(); break;
+      default: ;
+    }
+  };
   
   return (
     <Popup name="default-popup" isVisible={props.isVisible}>

@@ -174,7 +174,6 @@ function App() {
 
   //Обработчик клика осмотра оружия
   function handleInspectClick(object) {
-    console.log(object)
     setWeapon(object);
     setIsInspectionPopupVisible(true);
   }

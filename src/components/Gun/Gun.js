@@ -18,7 +18,6 @@ function Gun(props) {
 
   //Обработчики клика по опциям в меню
   function handleOptionClick() {
-    console.log("Осмотреть")
     props.handleInspectClick(props.object);
   }
 

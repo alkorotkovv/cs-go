@@ -3,7 +3,21 @@ import Popup from '../Popup/Popup';
 
 function SetupPopup(props) {
 
-  const [nowValue, setNowValue] = React.useState(props.value)
+  const [nowValue, setNowValue] = React.useState(props.value);
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    switch (evt.code) {
+      case "Escape": props.handleClose(); break;
+      default: ;
+    }
+  };
 
   function changeValue(evt) {
     setNowValue(evt.target.value)

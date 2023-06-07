@@ -5,6 +5,20 @@ import Popup from '../Popup/Popup';
 
 
 function StatisticPopup(props) {
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    switch (evt.code) {
+      case "Escape": props.handleClose(); break;
+      default: ;
+    }
+  };
   
   return (
     <Popup name="statistic-popup" isVisible={props.isVisible}>
