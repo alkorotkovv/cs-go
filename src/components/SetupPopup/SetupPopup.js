@@ -5,20 +5,6 @@ function SetupPopup(props) {
 
   const [nowValue, setNowValue] = React.useState(props.value);
 
-  React.useEffect(() => {        
-    document.addEventListener("keydown", handleKeyDown);
-      return () => { document.removeEventListener("keydown", handleKeyDown)};
-  });
-
-  //Обработчик нажатия ESC
-  function handleKeyDown(evt) {
-    evt.preventDefault();
-    switch (evt.code) {
-      case "Escape": props.handleClose(); break;
-      default: ;
-    }
-  };
-
   function changeValue(evt) {
     setNowValue(evt.target.value)
     //props.handleCheck(evt.target.value);
@@ -29,7 +15,7 @@ function SetupPopup(props) {
   }
   
   return (
-    <Popup name="setup-popup" isVisible={props.isVisible}>
+    <Popup name="setup-popup" isVisible={props.isVisible} handleClose={props.handleClose}>
       <div className='popup__container'>
         <h2 className='popup__title'>{props.title}</h2>
         <div className='popup__main'>

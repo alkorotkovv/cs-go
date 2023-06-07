@@ -9,6 +9,21 @@ function Net(props) {
   const [isDualActive, setIsDualActive] = React.useState(false);
   const [isZoneActive, setIsZoneActive] = React.useState(false);
 
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    if (!props.isAnyPopupVisible)
+    switch (evt.code) {
+      case "Escape": props.handleMainClick(); break;
+      default: ;
+    }
+  };
+
   //Обработчики выбора режима
   function handleMmClick() {
     setIsMmActive(true);

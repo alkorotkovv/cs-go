@@ -43,6 +43,13 @@ function App() {
 
   const [tooltip, setTooltip] = React.useState({visible: false, text: "", x: "-100", y: "-100"});
 
+  const [isAnyPopupVisible, setIsAnyPopupVisible] = React.useState(false);
+
+
+  React.useEffect(() => {        
+    setIsAnyPopupVisible(isExitVisible || isResetVisible || isStatisticPopupVisible || isInspectionPopupVisible || isSetupPopupVisible)
+  }, [isExitVisible, isInspectionPopupVisible, isResetVisible, isSetupPopupVisible, isStatisticPopupVisible]);
+
   //Обработчики нажатий кнопок на левом баре
   function handleMainClick() {
     setIsMainVisible(true);
@@ -221,12 +228,60 @@ function App() {
         showTooltip={showTooltip}
       />
       <RightBar />
-      { isPlayVisible ? <Play isVisible={isPlayVisible} setupValue={setupValue} handleSetupClick={handleSetupClick} /> : < ></> }
-      <Net isVisible={isNetVisible} handleClose={handleNetClose} handleSearch={handleSearch} />
-      { isInventoryVisible ? <Inventory isVisible={isInventoryVisible} handleInspectClick={handleInspectClick} /> : <></> }
-      { isTVVisible ? <TV isVisible={isTVVisible} /> : <></> }
-      { isStatisticVisible ? <Statistic isVisible={isStatisticVisible} isStatisticPopupVisible={isStatisticPopupVisible} handleStatisticPopupClick={handleStatisticPopupClick} /> : <></> }
-      { isSettingsVisible ? <Settings isVisible={isSettingsVisible} handleResetSettingsClick={handleResetSettingsClick} /> : <></> }
+
+      { isPlayVisible ? 
+        <Play 
+          isVisible={isPlayVisible} 
+          setupValue={setupValue} 
+          handleSetupClick={handleSetupClick}
+          handleMainClick={handleMainClick}
+          isAnyPopupVisible={isAnyPopupVisible}
+        /> : < ></> 
+      }
+
+      <Net 
+        isVisible={isNetVisible} 
+        handleClose={handleNetClose} 
+        handleSearch={handleSearch}
+        handleMainClick={handleMainClick}
+        isAnyPopupVisible={isAnyPopupVisible}
+      /> 
+
+      { isInventoryVisible ? 
+        <Inventory 
+          isVisible={isInventoryVisible} 
+          handleInspectClick={handleInspectClick} 
+          handleMainClick={handleMainClick}
+          isAnyPopupVisible={isAnyPopupVisible}
+        /> : <></> 
+      }
+
+      { isTVVisible ? 
+        <TV isVisible={isTVVisible} 
+        handleMainClick={handleMainClick}
+        isAnyPopupVisible={isAnyPopupVisible}
+        /> : <></> 
+      }
+
+      { isStatisticVisible ? 
+        <Statistic 
+          isVisible={isStatisticVisible} 
+          isStatisticPopupVisible={isStatisticPopupVisible} 
+          handleStatisticPopupClick={handleStatisticPopupClick} 
+          handleMainClick={handleMainClick}
+          isAnyPopupVisible={isAnyPopupVisible}
+        /> : <></> 
+      }
+
+      { isSettingsVisible ? 
+        <Settings 
+          isVisible={isSettingsVisible} 
+          handleResetSettingsClick={handleResetSettingsClick} 
+          handleMainClick={handleMainClick}
+          isAnyPopupVisible={isAnyPopupVisible}
+        /> : <></> 
+      }
+
       { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
       { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
       { isStatisticPopupVisible ? <StatisticPopup isVisible={isStatisticPopupVisible} handleClose={handleStatisticPopupClose} /> : < ></> }

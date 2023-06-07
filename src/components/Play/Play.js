@@ -7,15 +7,28 @@ import Instruction from './Types/Instruction/Instruction';
 import Workshop from './Types/Workshop/Workshop';
 import Servers from './Types/Servers/Servers';
 
-
-
 function Play(props) {
 
-  const [isOfficial, setIsOfficial] = React.useState(true)
-  const [isBots, setIsBots] = React.useState(false)
-  const [isInstruction, setIsInstruction] = React.useState(false)
-  const [isWorkshop, setIsWorkshop] = React.useState(false)
-  const [isServers, setIsServers] = React.useState(false)
+  const [isOfficial, setIsOfficial] = React.useState(true);
+  const [isBots, setIsBots] = React.useState(false);
+  const [isInstruction, setIsInstruction] = React.useState(false);
+  const [isWorkshop, setIsWorkshop] = React.useState(false);
+  const [isServers, setIsServers] = React.useState(false);
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    if (!props.isAnyPopupVisible)
+    switch (evt.code) {
+      case "Escape": props.handleMainClick(); break;
+      default: ;
+    }
+  };
 
   //Обработчик закрытия попапа ИНСТРУКТАЖ
   function handleInstructionClose() {

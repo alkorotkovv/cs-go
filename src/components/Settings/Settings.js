@@ -9,11 +9,26 @@ import Controller from './Types/Controller/Controller';
 
 function Settings(props) {
 
-  const [isPicture, setIsPicture] = React.useState(true)
-  const [isSound, setIsSound] = React.useState(false)
-  const [isGame, setIsGame] = React.useState(false)
-  const [isKeyboard, setIsKeyboard] = React.useState(false)
-  const [isController, setIsController] = React.useState(false)
+  const [isPicture, setIsPicture] = React.useState(true);
+  const [isSound, setIsSound] = React.useState(false);
+  const [isGame, setIsGame] = React.useState(false);
+  const [isKeyboard, setIsKeyboard] = React.useState(false);
+  const [isController, setIsController] = React.useState(false);
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    if (!props.isAnyPopupVisible)
+    switch (evt.code) {
+      case "Escape": props.handleMainClick(); break;
+      default: ;
+    }
+  };
 
   //Обработчики режимов игры
   function handlePictureClick() {

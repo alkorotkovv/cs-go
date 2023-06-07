@@ -5,6 +5,21 @@ import Select from '../Select/Select';
 
 
 function Statistic(props) {
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    if (!props.isAnyPopupVisible)
+    switch (evt.code) {
+      case "Escape": props.handleMainClick(); break;
+      default: ;
+    }
+  };
   
   return (
     <div className={`statistic` + (props.isVisible ? " panel_visible":"") + " panel"}>

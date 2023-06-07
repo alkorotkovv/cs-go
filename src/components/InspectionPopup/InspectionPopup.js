@@ -20,24 +20,10 @@ function InspectionPopup(props) {
   Шаблон раскраски: 15
   
   Степень износа: ${props.weapon.float}`;
-
-  React.useEffect(() => {        
-    document.addEventListener("keydown", handleKeyDown);
-      return () => { document.removeEventListener("keydown", handleKeyDown)};
-  });
-
-  //Обработчик нажатия ESC
-  function handleKeyDown(evt) {
-    evt.preventDefault();
-    switch (evt.code) {
-      case "Escape": props.handleClose(); break;
-      default: ;
-    }
-  };
-
+  
   
   return (
-    <Popup name="inspection-popup" isVisible={props.isVisible}>
+    <Popup name="inspection-popup" isVisible={props.isVisible} handleClose={props.handleClose}>
       <div className='inspection-popup__background'>
         <div className='inspection-popup__background-circle'></div>
         <div className='inspection-popup__background-semicircle'></div>

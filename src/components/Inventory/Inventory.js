@@ -16,11 +16,26 @@ function Inventory(props) {
 
   const [array, setArray] = React.useState(inventoryArray);
 
-  const [isAll, setIsAll] = React.useState(true)
-  const [isEquipment, setIsEquipment] = React.useState(false)
-  const [isStickers, setIsStickers] = React.useState(false)
-  const [isContainers, setIsContainers] = React.useState(false)
-  const [isTrophies, setIsTrophies] = React.useState(false)
+  const [isAll, setIsAll] = React.useState(true);
+  const [isEquipment, setIsEquipment] = React.useState(false);
+  const [isStickers, setIsStickers] = React.useState(false);
+  const [isContainers, setIsContainers] = React.useState(false);
+  const [isTrophies, setIsTrophies] = React.useState(false);
+
+  React.useEffect(() => {        
+    document.addEventListener("keydown", handleKeyDown);
+      return () => { document.removeEventListener("keydown", handleKeyDown)};
+  });
+
+  //Обработчик нажатия ESC
+  function handleKeyDown(evt) {
+    evt.preventDefault();
+    if (!props.isAnyPopupVisible)
+    switch (evt.code) {
+      case "Escape": props.handleMainClick(); break;
+      default: ;
+    }
+  };
   
   return (
     <Panel title={"ИНВЕНТАРЬ"} name="inventory" isVisible={props.isVisible}>
