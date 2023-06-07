@@ -28,6 +28,9 @@ function All(props) {
       case "По алфавиту":
         setSortArray(array.slice().sort((a, b) => a.weapon + a.name > b.weapon + b.name? 1 : -1));
         break;
+      case "По коллекции":
+        setSortArray(array.slice().sort((a, b) => a.collection.name > b.collection.name? 1 : -1));
+        break;
       default:
         setSortArray(array);
     }
