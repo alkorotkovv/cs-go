@@ -66,7 +66,7 @@
      font-style:  normal;
      font-weight: 400;
      font-display: swap;
-     src: url(../fonts/Stratum2-Regular.woff?v=3.19) format("woff");
+     src: url(../fonts/Stratum2-Medium.woff?v=3.19) format("woff");
 }
 
 @font-face {
@@ -84,3 +84,37 @@
      font-display: swap;
      src: url(../fonts/Stratum2-Bold.woff?v=3.19) format("woff");
 }
+
+
+@font-face {
+     font-family: 'Noto Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: url(../fonts/NotoSans-Bold.woff2?v=3.19) format('woff2'),
+          url(../fonts/NotoSans-Bold.woff?v=3.19) format('woff');
+ }
+
+ @font-face {
+     font-family: 'Noto Sans';
+     font-style: normal;
+     font-weight: 500;
+     src: url(../fonts/NotoSans-Medium.woff2?v=3.19) format('woff2'),
+          url(../fonts/NotoSans-Medium.woff?v=3.19) format('woff');
+ }
+ 
+ @font-face {
+     font-family: 'Noto Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: url(../fonts/NotoSans-Regular.woff) format('woff2'),
+          url(../fonts/NotoSans-Regular.woff) format('woff');
+ }
+
+ @font-face {
+     font-family: 'Noto Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: url(../fonts/NotoSans-Light.woff2?v=3.19) format('woff2'),
+          url(../fonts/NotoSans-Light.woff?v=3.19) format('woff');
+ }
+ 

@@ -9,7 +9,7 @@ import { medalsArray,
 
 import avatar from '../../images/avatar.png';
 import experienceLogo from '../../images/experienceLogo.png';
-import rankLogo from '../../images/rankLogo.png';
+import rankLogo from '../../images/ranks/mm/global.png';
 import rankOld from '../../images/rankOld.png';
 import rankZona from '../../images/rankZona.png';
 import arrowDown from '../../images/arr_down.png';
@@ -186,7 +186,7 @@ function RightBar() {
         </div>
         <div className='rank rank_visible'>
           <img className='rank__logo' src={rankLogo} alt="rank" draggable="false" />
-          <p className='rank__title'>Великий магистр высшего ранга</p>
+          <p className='rank__title'>Всемирная элита</p>
           <img className={rankArrowClassName} src={arrowDown} alt="arrow" onClick={handleRankClick}/>
         </div>
         <div className={rankFirstSubClassName}>
