@@ -343,50 +343,48 @@ import MotoGloves_Boom_inspect from '../images/inspect_guns/MotoGloves_Boom.png'
 import ButterflyKnife_Slaughter_inspect from '../images/inspect_guns/ButterflyKnife_Slaughter.png';
 import AK47_EliteMuseum_inspect from '../images/inspect_guns/AK47_EliteMuseum.png';
 import Glock18_GammaDoppler_inspect from '../images/inspect_guns/Glock18_GammaDoppler.png';
-//import DesertEagle_Conspiracy from '../images/guns/DesertEagle_Conspiracy.png';
+import DesertEagle_Conspiracy_inspect from '../images/inspect_guns/DesertEagle_Conspiracy.png';
 import DesertEagle_Ermungand_inspect from '../images/inspect_guns/DesertEagle_Ermungand.png';
-//import P250_BengalTiger from '../images/guns/P250_BengalTiger.png';
-//import DesertEagle_Night from '../images/guns/DesertEagle_Night.png';
-//import SawedOff_ForestDDPAT from '../images/guns/SawedOff_ForestDDPAT.png';
+import P250_BengalTiger_inspect from '../images/inspect_guns/P250_BengalTiger.png';
+import DesertEagle_Night_inspect from '../images/inspect_guns/DesertEagle_Night.png';
+import SawedOff_ForestDDPAT_inspect from '../images/inspect_guns/SawedOff_ForestDDPAT.png';
 import Medal_Stockholm_inspect from '../images/inspect_guns/Medal_Stockholm.png';
 import Medal_BrokenFang_inspect from '../images/inspect_guns/Medal_BrokenFang.png';
 import Medal_Riptide_inspect from '../images/inspect_guns/Medal_Riptide.png';
 import Medal_Rio_inspect from '../images/inspect_guns/Medal_Rio.png';
 import Medal_Antwerp_inspect from '../images/inspect_guns/Medal_Antwerp.png';
-/*
-import Medal_Loyalty from '../images/guns/Medal_Loyalty.png';
-import Medal_2017 from '../images/guns/Medal_2017.png';
-import Medal_2018 from '../images/guns/Medal_2018.png';
-import Medal_2019 from '../images/guns/Medal_2019.png';
-import Medal_2020 from '../images/guns/Medal_2020.png';
-import Medal_2021 from '../images/guns/Medal_2021.png';
-import Medal_2022 from '../images/guns/Medal_2022.png';
-import Medal_2023 from '../images/guns/Medal_2023.png';
-import Medal_Birthday from '../images/guns/Medal_Birthday.png';
-import Medal_5years from '../images/guns/Medal_5years.png';
-*/
+import Medal_Loyalty_inspect from '../images/inspect_guns/Medal_Loyalty.png';
+import Medal_2017_inspect from '../images/inspect_guns/Medal_2017.png';
+import Medal_2018_inspect from '../images/inspect_guns/Medal_2018.png';
+import Medal_2019_inspect from '../images/inspect_guns/Medal_2019.png';
+import Medal_2020_inspect from '../images/inspect_guns/Medal_2020.png';
+import Medal_2021_inspect from '../images/inspect_guns/Medal_2021.png';
+import Medal_2022_inspect from '../images/inspect_guns/Medal_2022.png';
+import Medal_2023_inspect from '../images/inspect_guns/Medal_2023.png';
+import Medal_Birthday_inspect from '../images/inspect_guns/Medal_Birthday.png';
+import Medal_5years_inspect from '../images/inspect_guns/Medal_5years.png';
 import M4A4_Hellfire_inspect from '../images/inspect_guns/M4A4_Hellfire.png';
+import MAC10_Propaganda_inspect from '../images/inspect_guns/MAC10_Propaganda.png';
+import DesertEagle_CrimsonWeb_inspect from '../images/inspect_guns/DesertEagle_CrimsonWeb.png';
+import DesertEagle_Heirloom_inspect from '../images/inspect_guns/DesertEagle_Heirloom.png';
+import DesertEagle_Pilot_inspect from '../images/inspect_guns/DesertEagle_Pilot.png';
+import FiveSeven_BoostProtocol_inspect from '../images/inspect_guns/FiveSeven_BoostProtocol.png';
+import USP_OrangeAnolis_inspect from '../images/inspect_guns/USP_OrangeAnolis.png';
+import Galil_Phoenix_inspect from '../images/inspect_guns/Galil_Phoenix.png';
+import Agent_Maximus_inspect from '../images/inspect_guns/Agent_Maximus.png';
+import AUG_Nefrit_inspect from '../images/inspect_guns/AUG_Nefrit.png';
+import DesertEagle_UrbanRubble_inspect from '../images/inspect_guns/DesertEagle_UrbanRubble.png';
+import DesertEagle_NightHeist_inspect from '../images/inspect_guns/DesertEagle_NightHeist.png';
+import DesertEagle_Corinfian_inspect from '../images/inspect_guns/DesertEagle_Corinfian.png';
+import DesertEagle_Sputnik_inspect from '../images/inspect_guns/DesertEagle_Sputnik.png';
+import MP9_HotRoad_inspect from '../images/inspect_guns/MP9_HotRoad.png';
+import Tec9_Aizec_inspect from '../images/inspect_guns/Tec9_Aizec.png';
+import DesertEagle_Bronze_inspect from '../images/inspect_guns/DesertEagle_Bronze.png';
+import DesertEagle_NightStorm_inspect from '../images/inspect_guns/DesertEagle_NightStorm.png';
+import DesertEagle_UrbanDDPAT_inspect from '../images/inspect_guns/DesertEagle_UrbanDDPAT.png';
+import Sticker_VirtusPro2021_inspect from '../images/inspect_guns/Sticker_VirtusPro2021.png';
+import Patch_Tyloo2021_inspect from '../images/inspect_guns/Patch_Tyloo2021.png';
 /*
-import MAC10_Propaganda from '../images/guns/MAC10_Propaganda.png';
-import DesertEagle_CrimsonWeb from '../images/guns/DesertEagle_CrimsonWeb.png';
-import DesertEagle_Heirloom from '../images/guns/DesertEagle_Heirloom.png';
-import DesertEagle_Pilot from '../images/guns/DesertEagle_Pilot.png';
-import FiveSeven_BoostProtocol from '../images/guns/FiveSeven_BoostProtocol.png';
-import USP_OrangeAnolis from '../images/guns/USP_OrangeAnolis.png';
-import Galil_Phoenix from '../images/guns/Galil_Phoenix.png';
-import Agent_Maximus from '../images/guns/Agent_Maximus.png';
-import AUG_Nefrit from '../images/guns/AUG_Nefrit.png';
-import DesertEagle_UrbanRubble from '../images/guns/DesertEagle_UrbanRubble.png';
-import DesertEagle_NightHeist from '../images/guns/DesertEagle_NightHeist.png';
-import DesertEagle_Corinfian from '../images/guns/DesertEagle_Corinfian.png';
-import DesertEagle_Sputnik from '../images/guns/DesertEagle_Sputnik.png';
-import MP9_HotRoad from '../images/guns/MP9_HotRoad.png';
-import Tec9_Aizec from '../images/guns/Tec9_Aizec.png';
-import DesertEagle_Bronze from '../images/guns/DesertEagle_Bronze.png';
-import DesertEagle_NightStorm from '../images/guns/DesertEagle_NightStorm.png';
-import DesertEagle_UrbanDDPAT from '../images/guns/DesertEagle_UrbanDDPAT.png';
-import Sticker_VirtusPro2021 from '../images/guns/Sticker_VirtusPro2021.png';
-import Patch_Tyloo2021 from '../images/guns/Patch_Tyloo2021.png';
 import Storage from '../images/guns/Storage.png';
 import AK47 from '../images/guns/Default/AK47.png';
 import AUG from '../images/guns/Default/AUG.png';
@@ -2112,7 +2110,7 @@ export const inventoryArray = [
   {
     id: 10,
     image: Medal_Loyalty,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Loyalty_inspect,
     weapon: "Медаль за верность",
     name: "",
     rarity: "Covert",
@@ -2129,7 +2127,7 @@ export const inventoryArray = [
   {
     id: 11,
     image: Medal_2017,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2017_inspect,
     weapon: "Медаль за службу в 2017",
     name: "",
     rarity: "Covert",
@@ -2146,7 +2144,7 @@ export const inventoryArray = [
   {
     id: 12,
     image: Medal_2018,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2018_inspect,
     weapon: "Медаль за службу в 2018",
     name: "",
     rarity: "Covert",
@@ -2163,7 +2161,7 @@ export const inventoryArray = [
   {
     id: 13,
     image: Medal_2019,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2019_inspect,
     weapon: "Медаль за службу в 2019",
     name: "",
     rarity: "Covert",
@@ -2179,7 +2177,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2020,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2020_inspect,
     weapon: "Медаль за службу в 2020",
     name: "",
     rarity: "Covert",
@@ -2195,7 +2193,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2021,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2021_inspect,
     weapon: "Медаль за службу в 2021",
     name: "",
     rarity: "Covert",
@@ -2211,7 +2209,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2022,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2022_inspect,
     weapon: "Медаль за службу в 2022",
     name: "",
     rarity: "Covert",
@@ -2227,7 +2225,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_2023,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_2023_inspect,
     weapon: "Медаль за службу в 2023",
     name: "",
     rarity: "Covert",
@@ -2243,7 +2241,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_Birthday,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_Birthday_inspect,
     weapon: "Монета десятилетнего юбилея",
     name: "",
     rarity: "Covert",
@@ -2259,7 +2257,7 @@ export const inventoryArray = [
   },
   {
     image: Medal_5years,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Medal_5years_inspect,
     weapon: "Монета за 5 лет службы",
     name: "",
     rarity: "Covert",
@@ -2275,7 +2273,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Conspiracy,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Conspiracy_inspect,
     weapon: "Desert Eagle",
     name: "Заговор",
     rarity: "Classified",
@@ -2307,7 +2305,7 @@ export const inventoryArray = [
   },
   {
     image: MAC10_Propaganda,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: MAC10_Propaganda_inspect,
     weapon: "MAC-10",
     name: "Пропаганда",
     rarity: "Classified",
@@ -2329,7 +2327,6 @@ export const inventoryArray = [
     rarity: "Restricted",
     collection : collectionsArray.find((e) => e.name === "Коллекция «Север»") || {},
     description: "Дорогой и крайне мощный Desert Eagle — знаковый пистолет, который непросто освоить, хоть он и удивительно точен на дальних дистанциях. На корпус нанесён зелёный узор Ёрмунганда, «Мирового Змея». Пробуди богов",
-    collection: "Коллекция «Север»",
     category: "Default",
     type: "Pistol",
     date: new Date("2022-11-26"),
@@ -2340,7 +2337,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_CrimsonWeb,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_CrimsonWeb_inspect,
     weapon: "Desert Eagle",
     name: "Кровавая паутина",
     rarity: "Restricted",
@@ -2356,7 +2353,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Heirloom,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Heirloom_inspect,
     weapon: "Desert Eagle",
     name: "Наследие",
     rarity: "Restricted",
@@ -2372,7 +2369,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Pilot,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Pilot_inspect,
     weapon: "Desert Eagle",
     name: "Пилот",
     rarity: "Restricted",
@@ -2388,7 +2385,7 @@ export const inventoryArray = [
   },
   {
     image: FiveSeven_BoostProtocol,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: FiveSeven_BoostProtocol_inspect,
     weapon: "Five-SeveN",
     name: "Протокол «Подъём»",
     rarity: "Restricted",
@@ -2404,7 +2401,7 @@ export const inventoryArray = [
   },
   {
     image: USP_OrangeAnolis,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: USP_OrangeAnolis_inspect,
     weapon: "USP-S",
     name: "Оранжевый анолис",
     rarity: "Restricted",
@@ -2420,7 +2417,7 @@ export const inventoryArray = [
   },
   {
     image: Galil_Phoenix,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Galil_Phoenix_inspect,
     weapon: "Автомат «Галиль»",
     name: "Негатив «Феникса»",
     rarity: "Restricted",
@@ -2436,7 +2433,7 @@ export const inventoryArray = [
   },
   {
     image: Agent_Maximus,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Agent_Maximus_inspect,
     weapon: "Максимус",
     name: "Кавалерия",
     rarity: "Restricted",
@@ -2452,7 +2449,7 @@ export const inventoryArray = [
   },
   {
     image: AUG_Nefrit,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: AUG_Nefrit_inspect,
     weapon: "AUG",
     name: "Резной нефрит",
     rarity: "Mil-Spec",
@@ -2468,7 +2465,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_UrbanRubble,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_UrbanRubble_inspect,
     weapon: "Desert Eagle",
     name: "Городской щебень",
     rarity: "Mil-Spec",
@@ -2484,7 +2481,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_NightHeist,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_NightHeist_inspect,
     weapon: "Desert Eagle",
     name: "Ночное ограбление",
     rarity: "Mil-Spec",
@@ -2500,7 +2497,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Corinfian,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Corinfian_inspect,
     weapon: "Desert Eagle",
     name: "Послание коринфянам",
     rarity: "Mil-Spec",
@@ -2516,7 +2513,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Sputnik,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Sputnik_inspect,
     weapon: "Desert Eagle",
     name: "Спутник",
     rarity: "Mil-Spec",
@@ -2532,7 +2529,7 @@ export const inventoryArray = [
   },
   {
     image: MP9_HotRoad,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: MP9_HotRoad_inspect,
     weapon: "MP9",
     name: "Хот-род",
     rarity: "Mil-Spec",
@@ -2548,7 +2545,7 @@ export const inventoryArray = [
   },
   {
     image: P250_BengalTiger,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: P250_BengalTiger_inspect,
     weapon: "P250",
     name: "Бенгальский тигр",
     rarity: "Mil-Spec",
@@ -2564,7 +2561,7 @@ export const inventoryArray = [
   },
   {
     image: Tec9_Aizec,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Tec9_Aizec_inspect,
     weapon: "Tec-9",
     name: "Айзек",
     rarity: "Mil-Spec",
@@ -2580,7 +2577,7 @@ export const inventoryArray = [
   },
   {
     image: Sticker_VirtusPro2021,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Sticker_VirtusPro2021_inspect,
     weapon: "Наклейка",
     name: "Virtus Pro | Стокгольм 2021",
     rarity: "Mil-Spec",
@@ -2596,7 +2593,7 @@ export const inventoryArray = [
   },
   {
     image: Patch_Tyloo2021,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: Patch_Tyloo2021_inspect,
     weapon: "Нашивка",
     name: "Tyloo | Стокгольм 2021",
     rarity: "Mil-Spec",
@@ -2612,7 +2609,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Bronze,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Bronze_inspect,
     weapon: "Desert Eagle",
     name: "Бронзовый",
     rarity: "Industrial",
@@ -2628,7 +2625,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_NightStorm,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_NightStorm_inspect,
     weapon: "Desert Eagle",
     name: "Ночная буря",
     rarity: "Industrial",
@@ -2644,7 +2641,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_Night,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_Night_inspect,
     weapon: "Desert Eagle",
     name: "Ночь",
     rarity: "Industrial",
@@ -2660,7 +2657,7 @@ export const inventoryArray = [
   },
   {
     image: DesertEagle_UrbanDDPAT,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: DesertEagle_UrbanDDPAT_inspect,
     weapon: "Desert Eagle",
     name: "Пиксельный камуфляж «Город»",
     rarity: "Industrial",
@@ -2676,7 +2673,7 @@ export const inventoryArray = [
   },
   {
     image: SawedOff_ForestDDPAT,
-    image_inspect: DesertEagle_Ermungand_inspect,
+    image_inspect: SawedOff_ForestDDPAT_inspect,
     weapon: "Saved-Off",
     name: "Пиксельный камуфляж «Лес»",
     rarity: "Consumer",
