@@ -14,17 +14,16 @@ function MapDual(props) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
   
-
   //Эффект для плавной смены картинок на фоне
   React.useEffect(() => {
     intervalAnimRef.current = setInterval( Animation, period );
-    console.log("Смонтировали")
+    //console.log("Смонтировали")
 
     return(() => {
-        console.log("Размонтировали")
+        //console.log("Размонтировали")
         clearInterval(intervalAnimRef.current)
     })
-  })
+  },[])
 
   //Анимация для плавной смены картинок на фоне
   function Animation() {
@@ -43,15 +42,14 @@ function MapDual(props) {
       setIsAnim(false);
     }, period+1500)
 
-    console.log(period)
-    console.log("Анимируется задний фон дуал-мап")
+    //console.log(period)
+    //console.log("Анимируется задний фон дуал-мап")
   }
 
   //Обработчик нажатия на чекбокс 
   function handleClick() {
     setIsChecked(!isChecked);
   }
-
 
   return (
     <li className={"map-dual" + (isChecked ? " map-dual_checked" : " ")} onClick={handleClick}>

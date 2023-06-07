@@ -14,17 +14,16 @@ function MapBig(props) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
   
-
   //Эффект для плавной смены картинок на фоне
   React.useEffect(() => {
     intervalAnimRef.current = setInterval( Animation, period );
-    console.log("Смонтировали")
+    //console.log("Смонтировали")
 
     return(() => {
-        console.log("Размонтировали")
+        //console.log("Размонтировали")
         clearInterval(intervalAnimRef.current)
     })
-  })
+  }, [])
 
 //Анимация для плавной смены картинок на фоне
   function Animation() {
@@ -43,14 +42,13 @@ function MapBig(props) {
       setIsAnim(false);
     }, period+1500)
 
-    console.log(period)
-    console.log("Анимируется задний фон биг-мап")
+    //console.log(period)
+    //console.log("Анимируется задний фон биг-мап")
   }
 
   function handleClick() {
     setIsChecked(!isChecked);
   }
-
 
   return (
     <li className={"map-big" + (isChecked ? " map-big_checked" : " ")} onClick={handleClick}>
