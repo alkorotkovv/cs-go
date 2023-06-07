@@ -10,7 +10,6 @@ function Popup(props) {
 
   //Обработчик нажатия ESC
   function handleKeyDown(evt) {
-    evt.preventDefault();
     switch (evt.code) {
       case "Escape": props.handleClose(); break;
       default: ;

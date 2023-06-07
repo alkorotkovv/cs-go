@@ -15,6 +15,7 @@ function Play(props) {
   const [isWorkshop, setIsWorkshop] = React.useState(false);
   const [isServers, setIsServers] = React.useState(false);
 
+  
   React.useEffect(() => {        
     document.addEventListener("keydown", handleKeyDown);
       return () => { document.removeEventListener("keydown", handleKeyDown)};
@@ -22,13 +23,13 @@ function Play(props) {
 
   //Обработчик нажатия ESC
   function handleKeyDown(evt) {
-    evt.preventDefault();
     if (!props.isAnyPopupVisible)
     switch (evt.code) {
       case "Escape": props.handleMainClick(); break;
       default: ;
     }
   };
+  
 
   //Обработчик закрытия попапа ИНСТРУКТАЖ
   function handleInstructionClose() {

@@ -16,7 +16,6 @@ function Net(props) {
 
   //Обработчик нажатия ESC
   function handleKeyDown(evt) {
-    evt.preventDefault();
     if (!props.isAnyPopupVisible)
     switch (evt.code) {
       case "Escape": props.handleMainClick(); break;
