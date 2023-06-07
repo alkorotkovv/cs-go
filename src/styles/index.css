@@ -427,6 +427,7 @@
   font-size: 14px;
   color: #C2C2C2;
   letter-spacing: 1px;
+  white-space: pre;
 }
 
 .select {
@@ -4035,7 +4036,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 }
 .inspection-popup__bottom {
   margin: auto 0 0 0;
-  padding: 0;
+  padding: 18px 0;
   width: 968px;
   height: 85px;
   display: flex;
@@ -4043,9 +4044,30 @@ https://toughengineer.github.io/demo/slider-styler*/
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-.inspection-popup__button {
+.inspection-popup__about {
   margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+}
+.inspection-popup__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: all 0.2s linear;
+}
+.inspection-popup__item_unvisible {
+  display: none;
+}
+.inspection-popup__item:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.inspection-popup__button {
+  margin: 0 0 0 auto;
   padding: 14px 13px;
+  display: flex;
   background-color: transparent;
   border: none;
   border-radius: 2px;

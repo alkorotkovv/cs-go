@@ -5,7 +5,7 @@ function Tooltip(props) {
   const tooltipRef = React.useRef(null);
 
   React.useEffect(() => {
-    tooltipRef.current.style.cssText = `--X: ${props.tooltip.x || -100}px; --Y: ${props.tooltip.y || -100}px`;
+    tooltipRef.current.style.cssText = `--X: ${props.tooltip.x || -1000}px; --Y: ${props.tooltip.y || -1000}px`;
   })
   
   return (
