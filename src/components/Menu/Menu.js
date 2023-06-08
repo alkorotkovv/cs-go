@@ -1,5 +1,5 @@
 import React from 'react';
-//import menuLogo from '../../images/background.jpg';
+import terr from '../../images/terr.png';
 import anubis from '../../movies/anubis.webm';
 //import terr from '../../movies/terr.webm';
 //import terrgif from '../../movies/giff.gif';
@@ -25,7 +25,7 @@ function Menu(props) {
         {/*<source src={terr} type='video/webm' ></source>*/}
       </video>
       {/*<img src={terrgif} alt="я джифка"></img>*/}
-      {/*<img className="menu__background" src={menuLogo} alt="закрыть" onClick={props.onClose} />*/}
+      <img className="menu__terr" src={terr} alt="закрыть" draggable={false} />
       <News isVisible={props.isMainVisible} />
       <Shop isVisible={props.isMainVisible} />
       

@@ -1936,12 +1936,93 @@ https://toughengineer.github.io/demo/slider-styler*/
   text-rendering: optimizeLegibility;
 }
 
+.intro {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.intro_visible {
+  display: flex;
+}
+.intro__logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  opacity: 0;
+}
+.intro__logo_visible {
+  opacity: 1;
+  animation: soft-show 4s ease-in;
+}
+.intro__text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 26px;
+  font-weight: 400;
+  color: #FFDB2E;
+  opacity: 0;
+}
+.intro__text_visible {
+  opacity: 1;
+  animation: soft-show-long 8s linear, blinking 2s 8s linear infinite;
+}
+
+@keyframes soft-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes soft-show-long {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blinking {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .menu {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
+}
+.menu__terr {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 250px;
 }
 
 .news {

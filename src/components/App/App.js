@@ -15,6 +15,7 @@ import StatisticPopup from '../StatisticPopup/StatisticPopup.js';
 import SetupPopup from '../SetupPopup/SetupPopup.js';
 import Tooltip from '../Tooltip/Tooltip.js';
 import InspectionPopup from '../InspectionPopup/InspectionPopup';
+import Intro from '../Intro/Intro';
 
 
 function App() {
@@ -136,6 +137,44 @@ function App() {
     setIsSearch(isSearch);
   }
 
+  //Функция вводв/вывода в/из полноэкрана
+  function fullscreen() {
+    var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
+        (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
+        (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
+        (document.msFullscreenElement && document.msFullscreenElement !== null);
+
+    var docElm = document.documentElement;
+    if (!isInFullScreen) {
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        } else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        } else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        } else if (docElm.msRequestFullscreen) {
+            docElm.msRequestFullscreen();
+        }
+    } 
+    else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+  }
+
+  //Обработчик выхода из игры
+  function handleExitOK() {
+    setIsExitVisible(false);
+    fullscreen();
+  }
+
   //Обработчик закрытия панели Выход
   function handleExitClose() {
     setIsExitVisible(false);
@@ -199,6 +238,7 @@ function App() {
   return (
     <TooltipContext.Provider value={showTooltip}>
     <div className="page">
+      <Intro handleFullscreen={fullscreen} />
       <Menu 
         isMainVisible={isMainVisible}
         isPlayVisible={isPlayVisible}
@@ -282,7 +322,7 @@ function App() {
         /> : <></> 
       }
 
-      { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleClose={handleExitClose} /> : <></> }
+      { isExitVisible ? <PopupWindow isVisible={isExitVisible} title="Выход" text="Вы уверены что хотите выйти?" handleOK={handleExitOK} handleClose={handleExitClose} /> : <></> }
       { isResetVisible ? <PopupWindow isVisible={isResetVisible} title="Сбросить настройки" text="Вы уверены, что хотите сбросить настройки?" handleClose={handleResetSettingsClose} /> : <></> }
       { isStatisticPopupVisible ? <StatisticPopup isVisible={isStatisticPopupVisible} handleClose={handleStatisticPopupClose} /> : < ></> }
       {isSetupPopupVisible ? 

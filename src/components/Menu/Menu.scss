@@ -4,4 +4,14 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  &__terr {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    //z-index: 10;
+    bottom: 0;
+    right: 250px;
+  }
 }

@@ -1,0 +1,82 @@
+.intro {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &_visible {
+    display: flex;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    opacity: 0;
+
+    &_visible {
+      opacity: 1;
+      animation: soft-show 4s ease-in;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFDB2E;
+    opacity: 0;
+
+    &_visible {
+      opacity: 1;
+      animation: soft-show-long 8s linear,
+                 blinking 2s 8s linear infinite;
+    }
+  }
+}
+
+@keyframes soft-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes soft-show-long {
+  from {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes blinking {
+  from {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
