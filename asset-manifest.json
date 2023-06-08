@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/cs-go/static/css/main.63622ea3.css",
-    "main.js": "/cs-go/static/js/main.8008d029.js",
+    "main.css": "/cs-go/static/css/main.2ac5536a.css",
+    "main.js": "/cs-go/static/js/main.18ffa3a8.js",
     "static/js/787.50084d6e.chunk.js": "/cs-go/static/js/787.50084d6e.chunk.js",
     "static/media/anubis.webm": "/cs-go/static/media/anubis.abbb112420bbf9129587.webm",
+    "static/media/terr.png": "/cs-go/static/media/terr.eb0f6eb3fbbbdc17a82e.png",
     "static/media/MotoGloves_Boom.png": "/cs-go/static/media/MotoGloves_Boom.b6268d1e376c07e3554b.png",
     "static/media/tournaments.png": "/cs-go/static/media/tournaments.146a47fb44051e7f7a43.png",
     "static/media/servers.jpg": "/cs-go/static/media/servers.a7bc38a362a99f32240c.jpg",
+    "static/media/AWP_DragonLore.png": "/cs-go/static/media/AWP_DragonLore.6aeb21b1453d92086e53.png",
     "static/media/Medal_Riptide.png": "/cs-go/static/media/Medal_Riptide.3fd4e23bafc7c70a41de.png",
     "static/media/over.jpg": "/cs-go/static/media/over.924aec5d1fc94d8b993d.jpg",
     "static/media/aim_settings.png": "/cs-go/static/media/aim_settings.1f6bbc8fadd7014fbe68.png",
@@ -96,6 +98,7 @@
     "static/media/DesertEagle_CrimsonWeb.png": "/cs-go/static/media/DesertEagle_CrimsonWeb.66b6b4fc5289ea8130cd.png",
     "static/media/DesertEagle_UrbanRubble.png": "/cs-go/static/media/DesertEagle_UrbanRubble.b329103445392942abc1.png",
     "static/media/mirage.png": "/cs-go/static/media/mirage.f867d6478036459a5fc9.png",
+    "static/media/cbble.png": "/cs-go/static/media/cbble.d485ca1f8176b2b3cbed.png",
     "static/media/summer2014.png": "/cs-go/static/media/summer2014.dce814844db97a8d7c56.png",
     "static/media/london2019.jpg": "/cs-go/static/media/london2019.e38b5ef21bc65a4a5593.jpg",
     "static/media/match3.jpg": "/cs-go/static/media/match3.f30ecf9b44218f7ee909.jpg",
@@ -183,6 +186,7 @@
     "static/media/ar_baggage.jpg": "/cs-go/static/media/ar_baggage.f1e468de0494f51686b8.jpg",
     "static/media/de_overpass.jpg": "/cs-go/static/media/de_overpass.d3adf6b1d146dddadcfd.jpg",
     "static/media/ar_dizzy.jpg": "/cs-go/static/media/ar_dizzy.196c52a2d888aaf985f4.jpg",
+    "static/media/intro.png": "/cs-go/static/media/intro.4c27a00564dd8d570689.png",
     "static/media/de_inferno.jpg": "/cs-go/static/media/de_inferno.9fddccbc01430ee13b6e.jpg",
     "static/media/vp.png": "/cs-go/static/media/vp.ecdd78d1dead0e0c9acb.png",
     "static/media/cloud9.png": "/cs-go/static/media/cloud9.7a150068f742b22d8855.png",
@@ -210,12 +214,12 @@
     "static/media/de_bank_icon.png": "/cs-go/static/media/de_bank_icon.5a243887d9dcb77a74fc.png",
     "static/media/cupon2.png": "/cs-go/static/media/cupon2.bb1461bafd2fa84d4f53.png",
     "index.html": "/cs-go/index.html",
-    "main.63622ea3.css.map": "/cs-go/static/css/main.63622ea3.css.map",
-    "main.8008d029.js.map": "/cs-go/static/js/main.8008d029.js.map",
+    "main.2ac5536a.css.map": "/cs-go/static/css/main.2ac5536a.css.map",
+    "main.18ffa3a8.js.map": "/cs-go/static/js/main.18ffa3a8.js.map",
     "787.50084d6e.chunk.js.map": "/cs-go/static/js/787.50084d6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63622ea3.css",
-    "static/js/main.8008d029.js"
+    "static/css/main.2ac5536a.css",
+    "static/js/main.18ffa3a8.js"
   ]
 }
