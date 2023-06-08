@@ -249,6 +249,7 @@ import hub from '../images/maps/workshop/hub.jpg';
 //Оружия
 import MotoGloves_Boom from '../images/guns/MotoGloves_Boom.png';
 import ButterflyKnife_Slaughter from '../images/guns/ButterflyKnife_Slaughter.png';
+import AWP_DragonLore from '../images/guns/AWP_DragonLore.png';
 import AK47_EliteMuseum from '../images/guns/AK47_EliteMuseum.png';
 import Glock18_GammaDoppler from '../images/guns/Glock18_GammaDoppler.png';
 import DesertEagle_Conspiracy from '../images/guns/DesertEagle_Conspiracy.png';
@@ -341,6 +342,7 @@ import Gloves_T from '../images/guns/Default/Gloves_T.png';
 //Оружие для осмотра
 import MotoGloves_Boom_inspect from '../images/inspect_guns/MotoGloves_Boom.png';
 import ButterflyKnife_Slaughter_inspect from '../images/inspect_guns/ButterflyKnife_Slaughter.png';
+import AWP_DragonLore_inspect from '../images/inspect_guns/AWP_DragonLore.png';
 import AK47_EliteMuseum_inspect from '../images/inspect_guns/AK47_EliteMuseum.png';
 import Glock18_GammaDoppler_inspect from '../images/inspect_guns/Glock18_GammaDoppler.png';
 import DesertEagle_Conspiracy_inspect from '../images/inspect_guns/DesertEagle_Conspiracy.png';
@@ -536,6 +538,7 @@ import matchOnline8 from '../images/matches/matchOnline8.jpg';
 
 //Коллекции
 import northCollection from '../images/collections/north.png';
+import cbbleCollection from '../images/collections/cbble.png';
 import riptideCollection from '../images/collections/riptide.png';
 import train2021Collection from '../images/collections/train2021.png';
 import havocCollection from '../images/collections/havoc.png';
@@ -1871,6 +1874,10 @@ export const collectionsArray = [
     image: northCollection
   },
   {
+    name: "Коллекция «Cobblestone»",
+    image: cbbleCollection
+  },
+  {
     name: "Коллекция операции «Хищные воды»",
     image: riptideCollection    
   },
@@ -1985,6 +1992,24 @@ export const inventoryArray = [
     type: "Knife",
     float: 0.18317654728889,
     date: new Date("2023-02-24"),
+    isT: true,
+    isCT: true,
+    canT: true,
+    canCT: true
+  },
+  {
+    id: 3,
+    image: AWP_DragonLore,
+    image_inspect: AWP_DragonLore_inspect,
+    weapon: "AWP",
+    name: "История о драконе",
+    rarity: "Covert",
+    collection : collectionsArray.find((e) => e.name === "Коллекция «Cobblestone»") || {},
+    description: "Печально известная снайперская винтовка AWP — очень опасное и очень эффективное оружие, которое легко узнается по характерному звуку выстрела и жестокому правилу: «один выстрел, один труп». Узловой рисунок в виде дракона нанесен вручную. Даже две сотни ключей не раскроют его секретов",
+    category: "Default",
+    type: "Rifle",
+    float: 0.05317654728889,
+    date: new Date("2023-06-08"),
     isT: true,
     isCT: true,
     canT: true,
