@@ -17,7 +17,7 @@ function Tools(props) {
           src={friendsLogo} 
           alt="друзья" 
           draggable="false"
-          onMouseEnter={(evt) => showTooltip({visible: true, text:"Друзья в сети", x:"1485", y:evt.target.getBoundingClientRect().top + 60})}
+          onMouseEnter={(evt) => showTooltip({visible: true, text:"Друзья в сети", x:"1485", y:evt.target.getBoundingClientRect().top + 65})}
           onMouseLeave={() => showTooltip(false, {})} 
         />
         <div className={'tools__underline' + (props.isFriensVisible ? " tools__underline_active" : "")}></div>
@@ -28,7 +28,7 @@ function Tools(props) {
           src={searchLogo} 
           alt="поиск" 
           draggable="false"
-          onMouseEnter={(evt) => showTooltip({visible: true, text:"Поиск команды", x:"1569", y:evt.target.getBoundingClientRect().top + 60})}
+          onMouseEnter={(evt) => showTooltip({visible: true, text:"Поиск команды", x:"1569", y:evt.target.getBoundingClientRect().top + 65})}
           onMouseLeave={() => showTooltip(false, {})} 
         />
         <div className={'tools__underline' + (props.isSearchVisible ? " tools__underline_active" : "")}></div>
@@ -39,7 +39,7 @@ function Tools(props) {
           src={lastLogo} 
           alt="недавние" 
           draggable="false"
-          onMouseEnter={(evt) => showTooltip({visible: true, text:"Недавние союзники", x:"1636", y:evt.target.getBoundingClientRect().top + 60})} 
+          onMouseEnter={(evt) => showTooltip({visible: true, text:"Недавние союзники", x:"1636", y:evt.target.getBoundingClientRect().top + 65})} 
           onMouseLeave={() => showTooltip(false, {})} 
         />
         <div className={'tools__underline' + (props.isLastVisible ? " tools__underline_active" : "")}></div>
@@ -50,7 +50,7 @@ function Tools(props) {
           src={messageLogo} 
           alt="приглашение" 
           draggable="false"
-          onMouseEnter={(evt) => showTooltip({visible: true, text:"Заявки в друзья", x:"1752", y:evt.target.getBoundingClientRect().top + 60})} 
+          onMouseEnter={(evt) => showTooltip({visible: true, text:"Заявки в друзья", x:"1752", y:evt.target.getBoundingClientRect().top + 65})} 
           onMouseLeave={() => showTooltip(false, {})} 
         />
         <div className={'tools__underline' + (props.isMessageVisible ? " tools__underline_active" : "")}></div>
